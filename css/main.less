@@ -1,0 +1,487 @@
+//variables
+@headline-font: 'BebasNeue Light', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
+@numeric-font: 'BebasNeue Bold', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
+@copy-font: 'Courier Prime', 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+@background-color: #0a1724;
+@dark-grey: #2e3944;
+@light-blue: #39d8ff;
+@morse-code-color: #dc3e38;
+
+//fonts
+@font-face {
+  font-family: 'BebasNeue Bold';
+  src: url('../fonts/BebasNeue_Bold.otf')  format('opentype'),    
+}
+@font-face {
+  font-family: 'BebasNeue Light';
+  src: url('../fonts/BebasNeue_Light.ttf')  format('truetype'),    
+}
+@font-face {
+  font-family: 'Courier Prime';
+  src: url('../fonts/Courier_Prime.ttf')  format('truetype'),    
+}
+
+//globals
+body {
+  background-color: @background-color;
+  overflow-x: hidden;
+  width:100%;
+}
+
+h1, h2, .h2, h3, .h3, h4, h5, h6 {
+  margin-top: 0;
+  font-family: @headline-font;
+  font-weight: normal;
+  opacity: 0.9;
+  color: #ffffff;
+}
+h1 {
+  font-size:7.8vw;
+  letter-spacing: .6vw;
+  margin-bottom: 3rem;
+}
+h2, .h2 {
+  font-size:1rem;
+  letter-spacing: .34vw;
+  line-height: 1.35rem;
+  margin-bottom: 1.5rem;
+}
+p, cite {
+  line-height: 23px;
+  font-family: @copy-font;
+  font-size: .9rem;
+  opacity: 0.9;
+  color: #ffffff;
+}
+blockquote {
+  margin:0;
+}
+.smallcaps {
+  line-height: 18px;
+  letter-spacing: 2px;
+  font-size: .6rem;
+}
+cite.smallcaps {
+  clear:left;
+  line-height: 2.2rem;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  width:100%;
+}
+
+//navbar
+.navbar {
+  height:53px;
+  width:100%;
+  white-space: nowrap;
+  display: table;
+  * {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  h2, span  {
+    display:table-cell;
+    vertical-align: middle;
+    text-align: left;
+  }
+  #binoculars {
+    position:relative;
+    left:20px;
+    top:2px;
+  }
+  #chevron {
+    position: absolute;
+    left:105px;
+    top:21px;
+  }
+  h2:first-of-type {
+    padding-left: 1.7rem;
+  }
+  span:last-of-type {
+    position:relative;
+    width: 175px;
+    border-left: solid 1px rgba(255, 255, 255, 0.3);
+    padding-left: 10px;
+  }
+}
+#logo {
+  width: 73px;
+  border-right: solid 1px rgba(255, 255, 255, 0.3);
+}
+
+
+#header-wrap {
+  width:100%;
+  margin-bottom: -4rem;
+}
+#map {
+  display:block;
+  width:100%;
+}
+.page-header {
+  position: relative;
+  left:17vw;
+  bottom: 15.5vw;
+  height:17.8vw;
+  width:51.5vw;
+  background-color: @morse-code-color;
+  * {margin-left: 3.5vw}
+  img {
+    margin-top:2.5vw;
+    margin-left:4vw;
+  }
+}
+.page-title {
+  margin-left: 3.2vw;
+  margin-bottom: .8vw;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+.sidebar ol ol {
+  margin-left: 16px;
+}
+
+main {
+  display: block;
+  margin-left: 21vw;
+  width: 60vw;
+}
+
+
+/*
+ * sections
+ */
+
+section {
+  clear: both;
+  margin-bottom: 19rem;
+ // overflow: hidden;
+}
+section#current-staff::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+h1#staff {
+  margin-bottom: -1rem;
+}
+#current-staff ul li {
+  float: left;
+  margin-right: 15px;
+  height:240px;
+  width: 135px;
+  .smallcaps {
+    margin-top: -10px;
+  }
+}
+#current-staff li, #team li {
+  margin-top: 3rem;
+}
+
+#letter .section-title, #at-a-glance .section-title {
+  color: @light-blue;
+}
+.text-column {
+  width: 43.5vw;
+}
+div.floated-pair {
+  clear:both;
+  margin:-.7rem 0;
+  width:69vw;
+  * {vertical-align: top}
+  img {
+    position: relative;
+    background-color: @dark-grey;
+  }
+  p:first-child.pair-left {
+    display: inline-block;
+    width:28vw;
+  }
+}
+.pair-left {
+  display: inline-block;
+}
+.pair-right {
+  display: inline-block;
+  float: right;
+}
+.blockquote {
+  blockquote {
+    margin-bottom: -.3rem;
+    padding:1rem 2rem 0 1.6rem;
+  }
+  cite {
+    padding-left: 1.6rem;
+  }
+  p {
+    float:left;
+    font-size:1.5rem;
+    padding:1rem 0 0 1rem;
+    width:auto;
+  }
+}
+div#yerika {
+  background-color: @dark-grey;
+  display: inline-block;
+  float:right;
+  height:20vw;
+  width:33.6vw;
+  margin: 1.5rem 1.5rem 0 0;
+
+}
+#updates .floated-pair {
+  margin-bottom: 10vw;
+}
+#signature {
+  background-image: url('../images/Kendra%27sSignature.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 8.6vw;
+  position: relative;
+  left:-20px;
+  p {
+    position: absolute;
+    bottom: -5px;
+    left:20px;
+  }
+}
+#mission-statement {
+  height: 784px;
+  margin-top: -6rem;
+  margin-bottom: 7rem;
+  position: relative;
+  >* {position: absolute;}
+  img:nth-child(1) {
+    left:-134px;
+    top:95px;
+  }
+  img:nth-child(2) {
+    left:139px;
+    top:0;
+  }
+  img:nth-child(3) {
+    left:325px;
+    top:30px;
+  }
+  img:nth-child(4) {
+    left:-16px;
+    top:450px;
+  }
+  img:nth-child(5) {
+    left:415px;
+    top:450px;
+  }
+  div{
+    background-color: @dark-grey;
+    left:-55px;
+    top:251px;
+    height: 379px;
+    width:620px;
+    * {
+      padding: 0 55px 0 55px;
+    }
+    h2 {
+      padding-top: 3rem;
+    }
+  }
+}
+#at-a-glance {
+  .row {
+   border-bottom: 1px solid #979797;
+   padding: 1rem 0;
+  div {
+    vertical-align: top;
+  }
+  }
+  .row:last-of-type {
+    border-bottom: none;
+  }
+
+  //row heights
+  .row:nth-child(3), 
+  .row:nth-child(4) {
+      height: 20.7vw;
+  }
+  .row:nth-child(5), 
+  .row:nth-child(6) {
+      height: 14.25vw;
+  }
+  //col divs
+  .col-2 {
+    position:relative;
+    display: inline-block;
+    height:100%;
+    width: 50%;
+  }
+  .col-2:nth-child(2) {
+    position: relative;
+    left:1px;
+    border-left: 1px solid #979797;
+    width:49%;
+  }
+  .col-2:nth-child(3) {
+    width:49%;
+  }
+  .col-4 {
+    position: relative;
+    border-right: 1px solid #979797;
+    display: inline-block;
+    height:100%;
+    width:25%;
+  }
+  .col-4:last-of-type {
+    border-right: none;
+    width:23%
+  }
+}
+
+//margins
+.col-2 div, .col-4 div {
+  margin-left: 1rem;
+  height:100%;
+}
+.col-2:first-of-type, .col-4:first-of-type {
+  div {
+    margin-left: 0;
+  }
+}
+
+[id^=n] {
+  font-family: @numeric-font;
+  line-height: 0;
+  margin:0;
+  position: absolute;
+}
+#n2361 {
+  font-size: 16vw;
+  margin-bottom: 4.9vw;
+  bottom:9vw;
+}
+#n302 {
+  font-size: 9.9vw;
+  margin-bottom: 3.1vw;
+  bottom:9vw;
+}
+#n114 {
+  font-size: 7.8vw;
+  margin-bottom:2.3vw;
+  margin-left:-.4rem;
+  bottom:9vw;
+  }
+#n103 {
+  font-size: 6.9vw;
+  margin-bottom:2vw;
+  margin-left:-.4rem;
+  bottom:9vw;
+  }
+#n70 {
+  font-size: 5.5vw;
+  margin-bottom:1.7vw;
+  bottom:9vw;
+  }
+#n69 {
+  font-size: 5.5vw;
+  margin-bottom:1.7vw;
+  bottom:6vw;
+  }
+#n60 {
+  font-size: 5.5vw;
+  margin-bottom:1.7vw;
+  bottom:6vw;
+  }
+#n28 {
+  font-size: 3vw;
+  margin-bottom:.8vw;
+  bottom:6vw;
+  }
+#n5 {
+  font-size: 2.2vw;
+  margin-bottom:.7vw;
+  bottom:9vw;
+  }
+#n1 {
+  font-size: 2.2vw;
+  margin-bottom:.7vw;
+  bottom:9vw;
+  }
+.col-4 div p:last-child,
+.col-2 div p:last-child {
+  margin-top:0;
+  position:absolute;
+  bottom:0;
+}
+.row1 {
+  top:13vw;
+}
+.row2 {
+  top:13vw;
+}
+.row3 {
+  top:9vw;
+}
+.row4 {
+  top:6vw;
+}
+.box {
+  background-color: @light-blue;
+  position: absolute;
+  padding:2vw;
+  right: 10vw;
+  * {color: @dark-grey}
+}
+#core-programs .box {
+  margin-top: -3vw;
+  height: 18vw;
+  width: 22.8vw;
+}
+#volunteers .box{
+  margin-top:-18vw;
+  height:16vw;
+  width:43vw;
+}
+#n97 {
+  font-size: 7.8vw;
+  line-height: 6.6vw;
+  position: static;
+  //margin: 3.2vw 0 2.3vw 0;
+}
+
+#quotes-div {
+  border-top: 1px solid #979797;
+  padding-top: 1rem;
+  width:100%;
+  height:16.9vw;
+}
+.column {
+    display: inline-block;
+    height:100%;
+    width:49%;
+    vertical-align: top;
+}
+.column {
+  border-right: 1px solid #979797;
+}
+.column:last-of-type {
+  border: none;
+}
+#expenses-wrap {
+  float: right;
+}
+/*
+ * Footer
+ */
+
+footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+footer p:last-child {
+  margin-bottom: 0;
+}
