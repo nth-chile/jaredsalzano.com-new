@@ -27,7 +27,13 @@ body {
   overflow-x: hidden;
   width:100%;
 }
-
+canvas {
+    position: relative;
+    top: -1rem;
+}
+cite {
+  font-style: normal;
+}
 h1, h2, .h2, h3, .h3, h4, h5, h6 {
   margin-top: 0;
   font-family: @headline-font;
@@ -46,6 +52,12 @@ h2, .h2 {
   line-height: 1.35rem;
   margin-bottom: 1.5rem;
 }
+h3, .h3 {
+  font-size: 1rem;
+  letter-spacing: .34vw;
+  line-height: .3rem;
+  margin-bottom: 1rem;
+}
 p, cite {
   line-height: 23px;
   font-family: @copy-font;
@@ -63,7 +75,7 @@ blockquote {
 }
 cite.smallcaps {
   clear:left;
-  line-height: 2.2rem;
+  display: inline-block;
 }
 ul {
   list-style: none;
@@ -123,7 +135,7 @@ ul {
   position: relative;
   left:17vw;
   bottom: 15.5vw;
-  height:17.8vw;
+  height:17.4vw;
   width:51.5vw;
   background-color: @morse-code-color;
   * {margin-left: 3.5vw}
@@ -161,15 +173,41 @@ section {
   margin-bottom: 19rem;
  // overflow: hidden;
 }
-section#current-staff::after {
+section#current-staff::after,
+section#updates::after,
+#updates .floated-pair::after,
+section#financials-report::after,
+section#team::after,
+section#team ul::after {
     content: "";
     display: table;
     clear: both;
 }
+section#core-programs {
+  margin-bottom: 15rem;
+}
+section#financials-report {
+  margin-bottom: 17rem;
+}
+section#team {
+  margin-bottom: 3rem;
+}
 h1#staff {
   margin-bottom: -1rem;
 }
-#current-staff ul li {
+#updates h1 {
+  margin-bottom: 2rem;
+}
+section#board-of-directors,
+section#interns,
+section#associate-board,
+section#design-cohort-members {
+  margin-bottom: 3.5rem;
+}
+section#volunteers2 {
+  margin-bottom: 10rem;
+}
+#current-staff ul li, #team li {
   float: left;
   margin-right: 15px;
   height:240px;
@@ -181,9 +219,23 @@ h1#staff {
 #current-staff li, #team li {
   margin-top: 3rem;
 }
-
+.section-title {
+  max-width:28rem;
+}
+#team h2.section-title {
+  margin-bottom: 0;
+}
 #letter .section-title, #at-a-glance .section-title {
   color: @light-blue;
+}
+#letter h1 {
+  margin-bottom: 4rem;
+}
+#financials-report .section-title{
+  margin-bottom: 2rem;
+}
+#updates {
+  margin-bottom: 13rem;
 }
 .text-column {
   width: 43.5vw;
@@ -211,7 +263,7 @@ div.floated-pair {
 }
 .blockquote {
   blockquote {
-    margin-bottom: -.3rem;
+    margin-bottom: .2rem;
     padding:1rem 2rem 0 1.6rem;
   }
   cite {
@@ -234,7 +286,10 @@ div#yerika {
 
 }
 #updates .floated-pair {
-  margin-bottom: 10vw;
+  margin-bottom: 14vw;
+}
+#updates .floated-pair:last-of-type {
+  margin-bottom: 0;
 }
 #signature {
   background-image: url('../images/Kendra%27sSignature.png');
@@ -289,10 +344,16 @@ div#yerika {
     }
   }
 }
-#at-a-glance {
+section#at-a-glance {
+  margin-bottom: 11rem;
+  p[class^=row] {
+    font-size: .88rem;
+    width: 10em;
+  }
   .row {
    border-bottom: 1px solid #979797;
-   padding: 1rem 0;
+   margin-right: 1rem;
+   padding: .6rem 0;
   div {
     vertical-align: top;
   }
@@ -300,22 +361,41 @@ div#yerika {
   .row:last-of-type {
     border-bottom: none;
   }
+  .row:nth-child(3) {
+    padding-top:2rem;
+  }
 
   //row heights
-  .row:nth-child(3), 
+  .row:nth-child(3) {
+      height: 17.5vw;
+  }
   .row:nth-child(4) {
-      height: 20.7vw;
+    height:19vw;
+    .col-4:nth-child(1) {
+      width:23%;
+    }
+    .col-4:nth-child(2),
+    .col-4:nth-child(3) {
+      width:25%;
+    }
   }
   .row:nth-child(5), 
   .row:nth-child(6) {
-      height: 14.25vw;
+      height: 12.25vw;
+      .col-4:nth-child(1) {
+      width:23%;
+    }
+    .col-4:nth-child(2),
+    .col-4:nth-child(3) {
+      width:25%;
+    }
   }
-  //col divs
+  //col span
   .col-2 {
-    position:relative;
     display: inline-block;
+    position:relative;
     height:100%;
-    width: 50%;
+    width: 48%;
   }
   .col-2:nth-child(2) {
     position: relative;
@@ -331,7 +411,7 @@ div#yerika {
     border-right: 1px solid #979797;
     display: inline-block;
     height:100%;
-    width:25%;
+    width:24%;
   }
   .col-4:last-of-type {
     border-right: none;
@@ -350,63 +430,63 @@ div#yerika {
   }
 }
 
-[id^=n] {
+[id^=no], [class^=no] {
   font-family: @numeric-font;
   line-height: 0;
   margin:0;
   position: absolute;
 }
-#n2361 {
+#no2361 {
   font-size: 16vw;
   margin-bottom: 4.9vw;
-  bottom:9vw;
+  bottom:5.7vw;
 }
-#n302 {
+#no302 {
   font-size: 9.9vw;
   margin-bottom: 3.1vw;
-  bottom:9vw;
+  bottom:5.7vw;
 }
-#n114 {
+#no114 {
   font-size: 7.8vw;
   margin-bottom:2.3vw;
   margin-left:-.4rem;
-  bottom:9vw;
+  bottom:8.3vw;
   }
-#n103 {
+#no103 {
   font-size: 6.9vw;
   margin-bottom:2vw;
   margin-left:-.4rem;
-  bottom:9vw;
+  bottom:8.3vw;
   }
-#n70 {
+#no70 {
   font-size: 5.5vw;
   margin-bottom:1.7vw;
-  bottom:9vw;
+  bottom:8.3vw;
   }
-#n69 {
+#no69 {
   font-size: 5.5vw;
   margin-bottom:1.7vw;
-  bottom:6vw;
+  bottom:5vw;
   }
-#n60 {
+#no60 {
   font-size: 5.5vw;
   margin-bottom:1.7vw;
-  bottom:6vw;
+  bottom:5vw;
   }
-#n28 {
+#no28 {
   font-size: 3vw;
   margin-bottom:.8vw;
-  bottom:6vw;
+  bottom:5vw;
   }
-#n5 {
+#no5 {
   font-size: 2.2vw;
   margin-bottom:.7vw;
-  bottom:9vw;
+  bottom:7vw;
   }
-#n1 {
+#no1 {
   font-size: 2.2vw;
   margin-bottom:.7vw;
-  bottom:9vw;
+  bottom:7vw;
   }
 .col-4 div p:last-child,
 .col-2 div p:last-child {
@@ -418,32 +498,80 @@ div#yerika {
   top:13vw;
 }
 .row2 {
-  top:13vw;
+  top:12vw;
 }
 .row3 {
-  top:9vw;
+  top:7.8vw;
 }
 .row4 {
   top:6vw;
 }
+
+#updates .floated-pair img {
+  position: absolute;
+}
+img.strategic-planning {
+  margin: -4rem 0 0 -4rem;
+}
+img.the-code {
+  margin: -1rem 0 0 -7rem;
+}
+img.diversity {
+  margin:-4rem 0 0 -4rem;
+}
+img.design-cohort {
+  margin:-4rem 0 0 -7rem;
+}
+.pair-right.text-column {
+  margin-right: -2rem;
+}
+div.design-cohort {
+  margin-top:-2rem;
+}
+
 .box {
   background-color: @light-blue;
   position: absolute;
-  padding:2vw;
-  right: 10vw;
+  padding:2vw 0 0 2vw;
+  right: 16vw;
   * {color: @dark-grey}
 }
 #core-programs .box {
   margin-top: -3vw;
-  height: 18vw;
-  width: 22.8vw;
+  height: 16vw;
+  width: 21vw;
+  p {
+    max-width: 21em;
+  }
+}
+#core-programs img {
+  margin-top: 1rem;
+}
+#volunteers {
+  margin-bottom: 12rem;
+}
+#volunteers img {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 }
 #volunteers .box{
-  margin-top:-18vw;
+  margin-top:-22vw;
+  padding-left: 1vw;
   height:16vw;
-  width:43vw;
+  width:44vw;
+  blockquote, cite {font-weight: bold;}
+  blockquote {
+    padding:0;
+    margin-left: .6rem;
+  }
+  cite {
+    padding-left: .8rem;
+  }
+  p {
+    padding:0;
+  }
 }
-#n97 {
+#no97 {
   font-size: 7.8vw;
   line-height: 6.6vw;
   position: static;
@@ -452,9 +580,20 @@ div#yerika {
 
 #quotes-div {
   border-top: 1px solid #979797;
-  padding-top: 1rem;
-  width:100%;
-  height:16.9vw;
+  margin: 2rem 0 0 0;
+  padding-top: .6rem;
+  width:96%;
+  height:15vw;
+  cite {
+    padding-left: .7rem;
+    span {
+      padding-left:1rem;
+    }
+  }
+  p.h2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .column {
     display: inline-block;
@@ -467,9 +606,95 @@ div#yerika {
 }
 .column:last-of-type {
   border: none;
+  padding-left: .8rem;
+  width:47%;
+}
+#core-programs blockquote {
+  padding-left: 0;
+  padding-top: .8rem;
+  margin-left: .6rem;
+  max-width: 15rem;
+}
+#expenses-wrap,
+#income-wrap {
+  position: relative;
 }
 #expenses-wrap {
   float: right;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+.no  {
+  font-size: 1.4rem;
+  margin-top: .2rem;
+}
+.pie-data {
+  position: absolute;
+}
+.pie-data#direct-giving {
+  top: 10.2rem;
+  left: 3rem;
+}
+.pie-data#special-events {
+  top:9rem;
+  left:13.5rem;
+}
+.pie-data#in-kind {
+  top:18.2rem;
+  left:9.8rem;
+}
+#income-wrap .pie-data.total {
+  top:24rem;
+  * {
+    color: @light-blue;
+  }
+}
+#expenses-wrap .pie-data.total {
+  top:25rem;
+  * {
+    color: @light-blue;
+  }
+}
+.pie-data#programming {
+  top:12.2rem;
+  left: 3rem;
+}
+.pie-data#fundraising {
+  top: 10rem;
+  left: 13.5rem;
+}
+.pie-data#administrative {
+  top: 19.5rem;
+  left: 12rem;
+}
+#team .section-title {
+  max-width: 31rem;
+}
+#team ul {
+  margin-top: 0;
+}
+#team .smallcaps {
+  opacity: .6;
+}
+#board-of-directors ul,
+#interns ul,
+#associate-board ul,
+#design-cohort-members ul,
+#volunteers2 ul {
+    -moz-column-count: 3;
+    -moz-column-gap: 3rem;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 3rem;
+    column-count: 3;
+    column-gap: 3rem;
+    p {
+      margin: 0;
+    }
+    .smallcaps {
+      margin-top: -5px;
+      margin-bottom: .31rem;
+      opacity: .6;
+    }
 }
 /*
  * Footer
