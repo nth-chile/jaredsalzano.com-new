@@ -1,3 +1,5 @@
+@dark-blue-grey-two: #223946;
+@dark-border: solid 1.5px @dark-blue-grey-two;
 @headline-font: 'BebasNeue Light', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
 @numeric-font: 'BebasNeue Bold', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
 @copy-font: 'Courier Prime', 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
@@ -5,10 +7,12 @@
 @dark-grey: #2e3944;
 @light-blue: #39d8ff;
 @morse-code-color: #dc3e38;
+@pale-red: #dc3e38;
+@slate: #3f6171;
 
 @font-face {
   font-family: 'BebasNeue Bold';
-  src: url('../fonts/BebasNeue_Bold.otf')  format('opentype'),    
+  src: url('../fonts/BebasNeue_Bold.otf')  format('opentype'),
 }
 @font-face {
   font-family: 'BebasNeue Light';
@@ -41,6 +45,9 @@ cite {
     display: inline-block;
   }
 }
+#container {
+  overflow-x: hidden;
+}
 h1, h2, .h2, h3 {
   margin-top: 0;
   font-family: @headline-font;
@@ -49,19 +56,19 @@ h1, h2, .h2, h3 {
   color: #ffffff;
 }
 h1 {
-  font-size:8vw;
+  font-size:8.6vw;
   letter-spacing: .6vw;
   margin-bottom: 3rem;
 }
 h2, .h2 {
-  font-size: 1.15rem;
-  letter-spacing: .34vw;
-  line-height: 1.35rem;
+  font-size: 1.25rem;
+  letter-spacing: 4.5px;
+  line-height: 1.7rem;
   margin-bottom: 1.5rem;
 }
 h3  {
   font-size: 1.2rem;
-  letter-spacing: .34vw;
+  letter-spacing: .35vw;
   line-height: .3rem;
   margin-bottom: 0;
 }
@@ -76,7 +83,7 @@ p, cite {
   color: #ffffff;
 }
 .smallcaps {
-  line-height: 23px;
+  line-height: 19px;
   letter-spacing: 2px;
   font-size: .8rem;
 }
@@ -86,12 +93,20 @@ ul {
   width:100%;
 }
 .navbar {
-  height:65px;
+  background-color: @background-color;
+  border-bottom: @dark-border;
+  height: 63px;
   width:100%;
   white-space: nowrap;
-  display: table;
+  display: block;
+  padding: 7px 0px 0 6px;
+  position: fixed;
+  vertical-align: middle;
+  z-index: 999;
   * {
-    color: rgba(255, 255, 255, 0.6);
+    color: #fff;
+    display:inline-block;
+    text-align: left;
   }
   #binoculars {
     position:relative;
@@ -100,53 +115,203 @@ ul {
   }
   #chevron {
     position: absolute;
-    left:120px;
-    top:28px;
+    right: 20px;
+    top:26px;
   }
-  h2, span  {
-    display:table-cell;
-    vertical-align: middle;
-    text-align: left;
+  h2  {
+      overflow: hidden; 
   }
-  h2:first-of-type {
-    padding-left: 1.7rem;
+  #nav-main {
+    border-left: @dark-border;
+    border-right: @dark-border;
+    margin: 8px 2px 8px 84px;
+    height: 42px;
+    vertical-align: top;
+    width: 73vw;
+    a {
+      background-color: @background-color;
+      border: none;
+      height: 100%;
+      padding: 0 1.7rem;
+      h2 {
+        padding-top: 10px;
+      }
+    }
   }
   #logo {
-  width: 73px;
-  border-right: solid 1px rgba(255, 255, 255, 0.3);
+    background-color: @dark-blue-grey-two;
+    position: absolute;
+    height: 56px;
+    width: 76px;
+    h2 {
+      display:none;
+      position: relative;
+      text-decoration: none;
+      left: 33px;
+      top: 15px;
+    }
+    img {
+      display: inline-block;
+      margin: 11px 0 11px -2px;
+      width: 42px;
+    }
   }
-  span:last-of-type {
+  #logo:hover {
+    background-color: @slate;
+    -webkit-transition: .1s all ease-out;
+    transition: .1s all ease-out;
+    width: 250px;
+    h2 {
+      display: inline-block;
+    }
+  }
+  button#menu {
+    background-color: @dark-blue-grey-two;
+    border: none;
     position:relative;
-    width: 175px;
-    border-left: solid 1px rgba(255, 255, 255, 0.3);
-    padding-left: 10px;
+    height: 53px;
+    width: 225px;
+    padding-left: 20px;
+    h2 {
+      margin-top: 13px;
+      margin-bottom:  0;
+    }
   }
 }
+
+.headroom {
+    will-change: transform;
+    -webkit-transition: transform 200ms linear;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.menu-list {
+  min-height:64px;
+}
+.menu-list:hover {
+  #menu {
+    background-color: @slate;
+  }
+  #chevron {
+      top: 23px;
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+    }
+  ol {
+  display: block;
+  }
+}
+.menu-list ol {
+  background-color: @slate;
+  display: none;
+  list-style: none;
+  margin: 9px 0;
+  padding: 0 5px 10px 1px;
+  position: absolute;
+  right: 0;
+  width: 236px;
+  overflow: hidden;
+  a {
+    border-left: 4px solid @slate;
+    right: 31px;
+    padding-left: 14px;
+    position: relative;
+    text-decoration: none;
+    -webkit-transition: .5s all ease-out;
+    transition: .5s all ease-out;
+  }
+  h2 {
+    margin: 5px 0;
+  }
+  div {
+    border-bottom: 1px solid @background-color;
+    display:  block;  
+    margin: 0 25px;
+    padding: 7px 13px;
+    -webkit-transition: .3s all ease-out;
+    transition: .3s all ease-out;
+  }
+  li {
+    display: block;
+    -webkit-transition: .5s all ease-out;
+    transition: .5s all ease-out;
+  }
+  li:hover {
+  background-color: #537f93;
+    a {
+    border-left: 4px solid #537f93;
+    }
+    div {
+      border-bottom: 1px solid #537f93;
+    }
+  }
+  li:last-of-type div {
+    border-bottom: none;
+  }
+  li.active {
+    a {
+      border-left: 4px solid #39d8ff;
+    }
+  }
+}
+
 #header-wrap {
   width:100%;
   margin-bottom: -5rem;
+  padding-top: 71px;
   #map {
     width:100%;
   }
   .page-header {
+    display: inline-block;
     position: relative;
-    left:17vw;
-    bottom: 15.5vw;
+    left:18vw;
+    bottom: 20.5vw;
     min-height:17.4vw;
-    width:51.5vw;
-    background-color: @morse-code-color;
+    width:50vw;
+    background-color: @slate;
     * {
-      margin-left: 3.5vw
+      margin-left: 3vw;
       }
+    h2 {
+      line-height: 1.3vw;
+      margin-left: 3.3vw;
+    }
     img {
-      margin-top:2.5vw;
-      margin-left:4vw;
+      margin-top:3vw;
+      margin-left:2.5vw;
+      width:6.8vw;
       }
   }
   .page-title {
-    margin-left: 3.2vw;
-    margin-bottom: .8vw;
+    font-size: 7.5vw;
+    margin-left: 3vw;
+    margin-bottom: 0;
   }
+  #map-key {
+    background-color: @background-color;
+    display: inline-block;
+    position: relative;
+    left:33vw;
+    bottom: 18.2vw;
+    p {
+      display: inline;
+      margin: 0;
+      padding-right: 5px;
+    }
+    }
+    img {
+      display: inline-block;
+      padding: 0 8px;
+      width: 8px;
+    }
 }
 main {
   display: block;
@@ -157,17 +322,15 @@ section {
   clear: both;
   margin-bottom: 26rem;
 }
-
-section#current-staff::after,
-section#updates::after,
+section::after,
 #updates .floated-pair::after,
-section#mission-statement::after,
-section#financials-report::after,
-section#team::after,
 section#team ul::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
+}
+section#updates {
+  margin-bottom: 15rem;
 }
 section#core-programs {
   margin-bottom: 15rem;
@@ -222,6 +385,9 @@ section#government {
 #at-a-glance .section-title {
   color: @light-blue;
 }
+#at-a-glance h1 {
+  margin-bottom: 5rem;
+}
 #letter h1 {
   margin-bottom: 6rem;
 }
@@ -229,7 +395,7 @@ h1#staff {
   margin-bottom: -2rem;
 }
 #updates h1 {
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 #financials-report .section-title{
   margin-bottom: 2rem;
@@ -265,7 +431,7 @@ div.floated-pair {
 }
 .blockquote {
   blockquote {
-    margin-bottom: .2rem;
+    margin-bottom: .5rem;
     padding:1rem 2rem 0 1.6rem;
   }
   cite {
@@ -273,32 +439,39 @@ div.floated-pair {
   }
   p {
     float:left;
-    font-size:1.5rem;
-    padding:1rem 0 0 1rem;
-    width:auto;
+    padding: 0;
+    margin: 0;
+    max-width: 17rem;
   }
 }
 div#yerika {
-  background-color: @dark-grey;
+  background-color: @slate;
   display: inline-block;
   float:right;
   min-height:19vw;
   width:32vw;
   margin: 1.5rem 1.5rem 0 0;
-  padding: .5rem 0 0 .75rem;
+  padding: .5rem 0 .5rem .75rem;
   blockquote {
-    max-width: 21.5rem;
+    max-width: 21.7rem;
   }
-  .h2 {
-    line-height: 1.6rem;
+  p {
+    margin-left: 1rem;
+    margin-top: 1rem;
   }
 }
-#updates .floated-pair {
-  margin-bottom: 14vw;
+#updates {
+  .floated-pair {
+    margin-bottom: 14vw;
+  }
+  .floated-pair:nth-child(4) {
+    margin-bottom: 8vw;
+  }
+  .floated-pair:last-of-type {
+    margin-bottom: 0;
+  }
 }
-#updates .floated-pair:last-of-type {
-  margin-bottom: 0;
-}
+
 #signature {
   background-image: url('../images/Kendra%27sSignature.png');
   background-size: contain;
@@ -315,67 +488,72 @@ div#yerika {
 #mission-statement {
   height: 784px;
   margin-top: -10rem;
-  margin-bottom: 20rem;
+  margin-bottom: 37rem;
   position: relative;
   >* {position: absolute;}
   img:nth-child(1) {
-    height: 21.5vw;
-    width: 23.4vw;
-    left:-160px;
+    //height: 21.5vw;
+    width: 23vw;
+    left:-170px;
     top:115px;
   }
   img:nth-child(2) {
-    height: 25.77vw;
-    width: 15.26vw;
-    left:180px;
-    top:0;
+    //height: 25.77vw;
+    width: 20vw;
+    left:160px;
+    top:30px;
   }
   img:nth-child(3) {
-    height: 40.1vw;
-    width: 37.92vw;
-    left:410px;
-    top:40px;
+    //height: 40.1vw;
+    width: 31.92vw;
+    left:460px;
+    top:100px;
   }
   img:nth-child(4) {
-    height: 26.71vw;
-    width: 29.28vw;
-    left:-16px;
-    top:565px;
+    //height: 26.71vw;
+    width: 44vw;
+    left:-180px;
+    top:680px;
   }
   img:nth-child(5) {
-    height: 32.48vw;
+    //height: 32.48vw;
     width: 37.93vw;
     left:520px;
     top:565px;
   }
-  div{
+  .big-box {
     background-color: @dark-grey;
-    border: 2px solid @background-color;
-    left:-55px;
+    left:-65px;
     top:320px;
-    min-height: 32vw;
-    padding: .5rem .75rem 3rem 1rem;
+    min-height: 31vw;
+    padding-bottom: 3rem;
+    padding-left: .7rem;
+  }
+}
+.big-box {
+    border: 2px solid @background-color;
+    padding: .5rem .75rem 1rem 1rem;
     width:58vw;
-    * {
+    h3, p {
       padding: 0 55px 0 55px;
     }
     h2 {
+      padding-left: 55px;
       padding-top: 3rem;
     }
-  }
 }
 section#at-a-glance {
-  margin-bottom: 11rem;
+  margin-bottom: 13rem;
   p[class^=row] {
     width: 10em;
   }
   .row {
-   border-bottom: 1px solid #979797;
-   margin-right: 1rem;
-   padding: .6rem 0;
-  div {
-    vertical-align: top;
-  }
+    border-bottom: 1px solid #979797;
+    margin-right: 1rem;
+    padding: .6rem 0;
+    div {
+      vertical-align: top;
+    }
   }
   .row:last-of-type {
     border-bottom: none;
@@ -449,7 +627,7 @@ section#at-a-glance {
   }
 }
 
-[id^=no], [class^=no] {
+[id^=no], [class^=no], .percent-sign {
   font-family: @numeric-font;
   line-height: 0;
   margin:0;
@@ -528,8 +706,9 @@ section#at-a-glance {
 
 #updates .floated-pair img {
   position: absolute;
-  height: 35vw;
+  //height: 35vw;
   width: 35vw;
+  z-index: -999;
 }
 img.strategic-planning {
   margin: -4.5rem 0 0 -5rem;
@@ -556,7 +735,6 @@ div.design-cohort {
 }
 
 .box {
-  background-color: @light-blue;
   position: absolute;
   padding:2vw 0 0 2vw;
   right: 16vw;
@@ -564,22 +742,101 @@ div.design-cohort {
   blockquote {
     line-height: 1.7rem;
   }
-}
-#core-programs .box {
-  margin-top: 0vw;
-  height: 16vw;
-  width: 21vw;
-  p {
-    max-width: 21em;
+  p.smallcaps {
+    line-height: 22px;
   }
 }
-#core-programs img {
+#core-programs .box, #field-trips .box {
+  background-color: @pale-red;
+  margin-top: 0vw;
+  min-height: 15vw;
+  padding-bottom: .5vw;
+  width: 20.5vw;
+  p {
+    color: #fff;
+    max-width: 19em;
+  }
+}
+#field-trips .box {
+  margin-top: 10px;
+  min-height: 0;
+  .smallcaps {
+    line-height: 18px;
+    margin: 10px 0 20px 0;
+  }
+}
+#workshops .box {
+  min-height: 0;
+  .smallcaps {
+    line-height: 18px;
+    margin: 10px 0 20px 0;
+  }
+}
+#core-programs img, #field-trips img, #in-schools img {
   margin-top: 3.7rem;
   height: 34.7vw;
   width: 57.7vw;
 }
+#core-programs {
+  .big-box {
+      background-color: @slate;
+      margin-top: 2rem;
+      padding-top: 2rem;
+      width: 55vw;
+      h3, p {
+        padding-left: 1rem;
+        padding-top: 1rem;
+      }
+    }
+  h1 {
+    margin-bottom: 5rem;
+  }
+  h3 {
+    margin-bottom: -1rem;
+  }
+  div#field-trips {
+    margin-top: 8rem;
+    .quotes-div {
+      height: 25rem;
+    }
+  }
+  #in-schools {
+    margin-top: 8rem;
+    .quotes-div {
+      height: 35vw;
+    }
+  }
+}
+#workshops {
+  margin-top: 11.5rem;
+  .big-box {
+    margin-top: 1.5rem;
+  }
+  .big-box:nth-last-of-type(2) {
+    margin-top: -.7em;
+  }
+  .column {
+    width: 100%;
+    blockquote {
+      max-width: 30rem;
+    }
+    p {
+        max-width: 20rem;
+      }
+  }
+}
+#publishing{
+  margin-top: 10.5rem;
+  .column {
+    width: 100%;
+    blockquote {
+      max-width: 40rem;
+    }
+  }
+}
 #volunteers {
   margin-bottom: 12rem;
+  margin-top: 8.4rem;
 }
 #volunteers img {
   margin-top: 1rem;
@@ -588,13 +845,16 @@ div.design-cohort {
   width: 57.5vw;
 }
 #volunteers .box{
+  background-color: #fff;
+  color: @slate;
   margin-top:-20vw;
+  padding-bottom: 1.2vw;
   padding-left: 1.5vw;
   min-height:17vw;
   width:43.5vw;
   blockquote, cite {font-weight: bold;}
   blockquote {
-    padding:0 2rem 1rem 0;
+    padding:0 1rem .3rem 0;
     margin-left: .6rem;
   }
   cite {
@@ -605,111 +865,189 @@ div.design-cohort {
   }
 }
 #no97 {
+  display: inline-block;
   font-size: 7.8vw;
   line-height: 6.6vw;
   position: static;
-  //margin: 3.2vw 0 2.3vw 0;
+}
+.percent-sign {
+  display: inline-block;
+  font-size: 4.9vw;
+  line-height: 4vw;
+  padding-left: 5px;
 }
 
-#quotes-div {
-  border-top: 1px solid #979797;
+.quotes-div {
+  border-top: @dark-border;
   margin: 2rem 0 0 0;
   padding-top: .6rem;
   width:96%;
   height:15vw;
+  blockquote {
+    padding-left: 0;
+    padding-top: .8rem;
+    margin-left: .6rem;
+    max-width: 19rem;
+  }
   cite {
     padding-left: .7rem;
-    span {
-      padding-left:2rem;
+    p {
+      padding-left:1.9rem;
     }
   }
   p.h2 {
     padding-left: 0;
     padding-right: 0;
+    padding-top: .8rem;
   }
 }
 .column {
-    display: inline-block;
-    height:100%;
-    width:49%;
-    vertical-align: top;
-}
-.column {
-  border-right: 1px solid #979797;
+  display: inline-block;
+  height:100%;
+  width:49%;
+  vertical-align: top;
+  border-right: @dark-border;
 }
 .column:last-of-type {
   border: none;
   padding-left: .8rem;
   width:47%;
 }
-#core-programs blockquote {
-  padding-left: 0;
-  padding-top: .8rem;
-  margin-left: .6rem;
-  max-width: 15rem;
-}
 #expenses-wrap,
 #income-wrap {
   position: relative;
 }
+#income-wrap {
+  .pie-chart {
+    margin-top: .7rem;
+  }
+}
 #expenses-wrap {
   float: right;
-  margin-right: 2rem;
-  margin-top: 1rem;
+  margin-right: -10.8rem;
+  margin-top: 12.2rem;
+  .pie-chart {
+    margin-top: 3.8rem;
+    margin-right: .3rem
+  }
 }
 .pie-chart {
   margin-top: 2rem;
 }
 .no  {
-  font-size: 1.9rem;
-  margin-top: .2rem;
+  font-size: 1.7rem;
+  margin-top: .1rem;
 }
 .pie-data {
   position: absolute;
 }
-.pie-data#direct-giving {
-  top: 13rem;
-  left: 3.7rem;
-}
-.pie-data#special-events {
-  top:11.1rem;
-  left:16.5rem;
-}
-.pie-data#in-kind {
-  top:22.8rem;
-  left:12.2rem;
+#financials-report {
+  #earned-income {
+    * { 
+      color: #FFFFFF;
+    }
+    left:8.3rem;
+    top:15.2rem;
+  }
+  #individuals {
+    * { 
+      color: rgba(56, 216, 255, 0.5);
+    }
+    left:25.4rem;
+    top:14.6rem;
+  }
+  #foundations {
+    * { 
+      color: rgba(56, 216, 255, 0.5);
+    }
+    left:29rem;
+    top:28rem;
+  }
+  #government {
+    * { 
+      color: #39D8FF;
+    }
+    left:35rem;
+    top:40.3rem;
+  }
+  #corporate {
+    * { 
+      color: #69E2FF;
+    }
+    left:27.7rem;
+    top:44.3.rem;
+  }
+  #national-contributions {
+    * { 
+      color: #BCF2FF;
+      max-width: 14rem;
+    }
+    left:15.4rem;
+    top:45.1rem;
+  }
+  #fundraising-events {
+    * { 
+      color: #C3F4FF;
+      max-width: 9rem;
+    }
+    left:8.2rem;
+    top:29.9rem;
+  }
+
+  #administrative {
+    * { 
+      color: rgba(56, 216, 255, 0.6);
+    }
+    left:9.6rem;
+    top:2.6rem;
+  }
+  #fundraising {
+    * { 
+      color: #39D8FF;
+    }
+    left:4.2rem;
+    top:12.7rem;
+  }
+  #programming {
+    * { 
+      color: #FFFFFF;
+    }
+    left:12.2rem;
+    top:24.9rem;
+  }
 }
 #income-wrap .pie-data.total {
-  top:30.2rem;
+  border-top: 1px solid white;
+  padding-top: 0;
+  left:.3rem;
+  top:46.5rem;
+  width: 5.2rem;
   * {
-    color: @light-blue;
+    color: #FFFFFF;
   }
 }
 #expenses-wrap .pie-data.total {
-  top:31.4rem;
-  left: .6rem;
+  border-top: 1px solid white;
+  padding-top: 0;
+  top:37.2rem;
+  left: .4rem;
+  width: 5.2rem;
   * {
-    color: @light-blue;
+    color: #FFFFFF;
   }
 }
-.pie-data#programming {
-  top:15.4rem;
-  left: 4.4rem;
-}
-.pie-data#fundraising {
-  top: 12.85rem;
-  left: 17.75rem;
-}
-.pie-data#administrative {
-  top: 24.4rem;
-  left: 16rem;
-}
 #team .section-title {
-  max-width: 38rem;
+  max-width: 40rem;
 }
 #team ul {
   margin-bottom: 5rem;
   margin-top: -3rem;
+  h2 {
+    line-height: 1.7rem;
+    margin: .75rem 0;
+    max-width: 11rem;
+    padding-bottom: .25rem;
+  }
 }
 #team .smallcaps {
   opacity: .6;
@@ -732,7 +1070,7 @@ div.design-cohort {
       margin: 0;
     }
     .smallcaps {
-      margin-top: -5px;
+      margin-top: -3px;
       margin-bottom: .31rem;
       opacity: .6;
     }
@@ -740,15 +1078,17 @@ div.design-cohort {
 #funders {
   img {
   margin-top: -1rem;
-  margin-bottom: 5rem;
+  margin-bottom: 11rem;
   height: 41vw;
   width: 57.5vw;
   }
   .box {
-    height: 24vw;
+    background-color: #fff;
+    color: @slate;
+    min-height: 26vw;
     width: 43vw;
-    margin: -23rem 0 0 0;
-    padding:1.9vw .5vw 1.2vw 1.2vw;
+    margin: -26rem 0 0 0;
+    padding:1.9vw .5vw 1.2vw 1.7vw;
   }
   blockquote, cite {font-weight: bold;}
   blockquote {
@@ -798,6 +1138,7 @@ footer {
     margin-left: 26px;
   }
   .smallcaps {
+    color: #fff;
     margin-top: 0;
   }
 }
