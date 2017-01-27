@@ -15,7 +15,7 @@
   </head>
   <body>
 
-    <div id='container' class="container">
+  <div id='container' class="container">
     <nav class='navbar'>
       <a href='http://www.826chi.org/' id='logo'><img id='binoculars' src='images/826-symbol.svg'><h2>VISIT 826CHI.ORG</h2></a>
       <span id='nav-main'>
@@ -26,7 +26,7 @@
       <div class='menu-list'>
         <button id='menu'><h2>CONTENTS</h2><img id='chevron' src='images/chevron.svg'></button>
         <ol id='menu-items'>
-         <!--  <li><a href="#current-staff"><h2>Current Staff</h2></a></li> -->
+          <li><a href="#current-staff"><h2>Current Staff</h2></a></li>
           <li><div><a href="#execletter"><h2>Letter by Director</h2></a></div></li>
           <li><div><a href="#mission"><h2>Mission Statement</h2></a></div></li>
           <li><div><a href="#at-a-glance"><h2>At A Glance</h2></a></div></li>
@@ -40,408 +40,511 @@
       </div>
     </nav>
     <div id='header-wrap'>
-      <img id='map' src="https://maps.googleapis.com/maps/api/staticmap?size=640x360&zoom=9&scale=2&visible=41.500566,-86.534740&markers=icon:https://cl.ly/342l1q0X1w2b/mappin.png%7C41.881661,-87.692626%7C41.800392,-87.603826%7C41.921542,-87.702482%7C41.946428,-87.707409%7C41.992084,-87.761573%7C41.90071,-87.65318%7C41.87337,-87.650714%7C42.010529,-87.692626%7C41.971107,-87.702482%7C41.677378,-87.653802%7C41.99092,-87.702482%7C41.693154,-87.712335%7C41.901309,-87.682768%7C41.881928,-87.644547%7C41.957776,-87.655647%7C41.90031,-87.633387%7C41.807469,-87.707409%7C41.922514,-87.75173%7C41.849212,-87.67132%7C41.820267,-87.603826%7C41.975552,-87.803382%7C41.870331,-87.623574%7C41.772771,-87.712335%7C41.920347,-87.643314%7C41.947969,-87.786171%7C41.993029,-87.810756%7C41.883473,-87.629127%7C41.806277,-87.648247%7C41.771982,-87.672907%7C41.747014,-87.667977%7C41.94038,-87.65318%7C41.742928,-87.712335%7C41.847598,-87.727112%7C41.947206,-87.746807%7C41.745801,-87.608764%7C41.882249,-87.722187%7C41.724654,-87.549474%7C41.990126,-87.663045%7C41.686481,-87.62851&key=AIzaSyCURp__KIWL1R6rBYSnyuLRVV9PJIcyL50&style=feature:all|element:labels.text.fill|saturation:36|color:0x252525|lightness:40&style=feature:all|element:labels.text.stroke|visibility:on|color:0x0a1724|lightness:16&style=feature:all|element:labels.icon|visibility:off&style=feature:administrative|element:geometry.fill|color:0x000000|lightness:20&style=feature:administrative|element:geometry.stroke|color:0x000000|lightness:17|weight:1.2&style=feature:administrative|element:labels.text.fill|color:0x91989d&style=feature:administrative|element:labels.text.stroke|visibility:off&style=feature:landscape|element:geometry|color:0x000000|lightness:20&style=feature:landscape|element:labels.text.fill|color:0x91989d&style=feature:landscape|element:labels.text.stroke|visibility:off&style=feature:landscape.man_made|element:all|color:0x2e3944&style=feature:landscape.natural|element:all|color:0x2e3944&style=feature:poi|element:geometry|color:0x2e3944|visibility:on|lightness:6&style=feature:poi|element:labels.text.fill|color:0x91989d&style=feature:poi|element:labels.text.stroke|visibility:off&style=feature:road|element:all|visibility:on&style=feature:road|element:geometry.fill|color:0x0a1724|visibility:off|saturation:-100|lightness:0|gamma:0.00&style=feature:road|element:geometry.stroke|color:0x0a1724|visibility:on|gamma:0.00|weight:0.01|lightness:0&style=feature:road|element:labels|visibility:off&style=feature:road.highway|element:geometry.stroke|weight:0.2|lightness:0|visibility:on&style=feature:road.highway|element:labels|visibility:off&style=feature:road.highway|element:labels.text|visibility:on&style=feature:road.highway|element:labels.icon|visibility:off&style=feature:road.arterial|element:all|visibility:on&style=feature:road.arterial|element:geometry|lightness:0|visibility:on|weight:1&style=feature:road.arterial|element:labels.text|visibility:off&style=feature:road.arterial|element:labels.icon|visibility:off|lightness:-3&style=feature:road.local|element:all|visibility:on&style=feature:road.local|element:geometry|lightness:0|visibility:on&style=feature:road.local|element:labels|visibility:off&style=feature:road.local|element:labels.text|visibility:off&style=feature:transit|element:geometry|color:0x0a1724|lightness:0&style=feature:transit|element:labels|visibility:off&style=feature:water|element:geometry|lightness:17|color:0x0a1724&style=feature:water|element:labels.text|color:0x5b646d">
+      <img id='map' src='images/map.png'>
+      <!-- <img id='map' src="https://maps.googleapis.com/maps/api/staticmap?size=640x360&zoom=9&scale=2&visible=41.500566,-86.534740&markers=icon:https://cl.ly/342l1q0X1w2b/mappin.png%7C41.881661,-87.692626%7C41.800392,-87.603826%7C41.921542,-87.702482%7C41.946428,-87.707409%7C41.992084,-87.761573%7C41.90071,-87.65318%7C41.87337,-87.650714%7C42.010529,-87.692626%7C41.971107,-87.702482%7C41.677378,-87.653802%7C41.99092,-87.702482%7C41.693154,-87.712335%7C41.901309,-87.682768%7C41.881928,-87.644547%7C41.957776,-87.655647%7C41.90031,-87.633387%7C41.807469,-87.707409%7C41.922514,-87.75173%7C41.849212,-87.67132%7C41.820267,-87.603826%7C41.975552,-87.803382%7C41.870331,-87.623574%7C41.772771,-87.712335%7C41.920347,-87.643314%7C41.947969,-87.786171%7C41.993029,-87.810756%7C41.883473,-87.629127%7C41.806277,-87.648247%7C41.771982,-87.672907%7C41.747014,-87.667977%7C41.94038,-87.65318%7C41.742928,-87.712335%7C41.847598,-87.727112%7C41.947206,-87.746807%7C41.745801,-87.608764%7C41.882249,-87.722187%7C41.724654,-87.549474%7C41.990126,-87.663045%7C41.686481,-87.62851&key=AIzaSyCURp__KIWL1R6rBYSnyuLRVV9PJIcyL50&style=feature:all|element:labels.text.fill|saturation:36|color:0x252525|lightness:40&style=feature:all|element:labels.text.stroke|visibility:on|color:0x0a1724|lightness:16&style=feature:all|element:labels.icon|visibility:off&style=feature:administrative|element:geometry.fill|color:0x000000|lightness:20&style=feature:administrative|element:geometry.stroke|color:0x000000|lightness:17|weight:1.2&style=feature:administrative|element:labels.text.fill|color:0x91989d&style=feature:administrative|element:labels.text.stroke|visibility:off&style=feature:landscape|element:geometry|color:0x000000|lightness:20&style=feature:landscape|element:labels.text.fill|color:0x91989d&style=feature:landscape|element:labels.text.stroke|visibility:off&style=feature:landscape.man_made|element:all|color:0x2e3944&style=feature:landscape.natural|element:all|color:0x2e3944&style=feature:poi|element:geometry|color:0x2e3944|visibility:on|lightness:6&style=feature:poi|element:labels.text.fill|color:0x91989d&style=feature:poi|element:labels.text.stroke|visibility:off&style=feature:road|element:all|visibility:on&style=feature:road|element:geometry.fill|color:0x0a1724|visibility:off|saturation:-100|lightness:0|gamma:0.00&style=feature:road|element:geometry.stroke|color:0x0a1724|visibility:on|gamma:0.00|weight:0.01|lightness:0&style=feature:road|element:labels|visibility:off&style=feature:road.highway|element:geometry.stroke|weight:0.2|lightness:0|visibility:on&style=feature:road.highway|element:labels|visibility:off&style=feature:road.highway|element:labels.text|visibility:on&style=feature:road.highway|element:labels.icon|visibility:off&style=feature:road.arterial|element:all|visibility:on&style=feature:road.arterial|element:geometry|lightness:0|visibility:on|weight:1&style=feature:road.arterial|element:labels.text|visibility:off&style=feature:road.arterial|element:labels.icon|visibility:off|lightness:-3&style=feature:road.local|element:all|visibility:on&style=feature:road.local|element:geometry|lightness:0|visibility:on&style=feature:road.local|element:labels|visibility:off&style=feature:road.local|element:labels.text|visibility:off&style=feature:transit|element:geometry|color:0x0a1724|lightness:0&style=feature:transit|element:labels|visibility:off&style=feature:water|element:geometry|lightness:17|color:0x0a1724&style=feature:water|element:labels.text|color:0x5b646d"> -->
       <div class="page-header">
         <img src='images/826-logo.svg'>
         <h1 class="page-title">Annual Report</h1>
         <h2>FOR YEAR 2016</h2>
       </div>
-      <div id='map-key'><img src='https://cl.ly/342l1q0X1w2b/mappin.png'></img><p class='smallcaps'>AN 826 SCHOOL</p></div>
+      <div id='map-key'><img src='https://cl.ly/342l1q0X1w2b/mappin.png'><p class='smallcaps'>AN 826 SCHOOL</p></div>
     </div>
 
-      	<!-- 
-          <div class="sidebar-module">
-            <ol class="list-unstyled">
-              <li><a href="#current-staff">Current Staff</a></li>
-              <li><a href="#letter">Letter by Executive Director</a></li>
-              <li><a href="#mission-statement">Mission Statement</a></li>
-              <li><a href="#at-a-glance">2015-16 At A Glance</a></li>
-              <li><a href="#updates">Updates</a></li>
-              	<ol class="list-unstyled">
-              		<li><a href="#strategic-planning">Strategic Planning</a></li>
-		            <li><a href="#the-code">The Code</a></li>
-		            <li><a href="#diversity">Diversity, Equity, and Inclusion</a></li>
-		            <li><a href="#design-cohort">Design Cohort</a></li>
-              	</ol>
-              <li><a href="#core-programs">Core Programs</a></li>
-              	<ol class="list-unstyled">
-              		<li><a href="#after-school">After-School Tutoring and Writing</a></li>
-             		<li><a href="#field-trips">Field Trips</a></li>
-             		<li><a href="#in-schools">In-Schools</a></li>
-		              	<ol class="list-unstyled">
-		              		<li><a href="#digital-tutoring">Next level: Digital Tutoring</a></li>
-		              	</ol>
-              		<li><a href="#workshops">Workshops</a></li>
-		              	<ol class="list-unstyled">
-		              		<li><a href="#college-essay-writing">Next level: College Essay Writing</a></li>
-		              			<ol class="list-unstyled">
-		              				<li><a href="#youth-advisory-board">Next level: Youth Advisory Board</a></li>
-		              			</ol>
-		              	</ol>
-              		<li><a href="#publishing">Publishing</a></li>
-              	</ol>
-              <li><a href="#volunteers">Volunteers</a></li>
-              <li><a href="#financials-report">Financials Report (Stien)</a></li>
-              <li><a href="#team">2015-2016 Team</a></li>
-              <li><a href="#staff">Staff</a></li>
-              <li><a href="#board-of-directors">Board of Directors</a></li>
-              <li><a href="#interns">Interns</a></li>
-              <li><a href="#associate-board">Associate Board</a></li>
-              <li><a href="#design-cohort-members">Design Cohort Members</a></li>
-              <li><a href="#volunteers2">Volunteers (Again?)</a></li>
-              <li><a href="#funders">Funders</a></li>
-              	<ol class="list-unstyled">
-              		<li><a href="#individuals">Individuals</a></li>
-		            <li><a href="#foundations">Foundations</a></li>
-		            <li><a href="#organizations">Organizations</a></li>
-		            <li><a href="#government">Government</a></li>
-              	</ol>
-              <li><a href="#contact">Contact Us</a></li>
-            </ol>
-          </div>
+    <main>
+
+    <section id="letter">
+      
+      <div class='text-column'>
+        <h2 id='execletter' class="section-title">Letter by Executive Director</h2>
+        <h1>Friends, advocates, believers:</h1>
+        <img class='morse' src='images/morsecode/friends.png'>
+   			<p>In 2016, our students reminded us, time and time again, that writing is a tool from which we understand one another. A tool for untangling the world.</p>
+   			<p>The accomplishments of this year mark 826CHI’s passage into our second decade. The student pipeline grew. Once young published authors, student alumni returned as volunteers. College essay support expanded, teen programs deepened, and, in 2016, a dream came true: 826CHI hired our first alumni to join staff.</p>
+   			<p>With an extraordinary team actualizing the mission, our new space feels even more welcoming.</p>
+      </div>
+
+      <div class='floated-pair'>
+   			<p class='pair-left'>And while 826CHI was maturing, the city and country around us was thrust into crisis - from the Illinois state budget impasse and teacher layoffs to tragedies in Charleston, Orlando, and San Bernadino. With the loss of Laquan McDonald just blocks from long-time partner school Curie Metropolitan, our community reinforced the role of 826CHI’s mission at moments of adversity.</p>
+        <div id='yerika' class='blockquote'>
+          <p class='h2'>"</p><blockquote class='h2'>I want allies to listen. I want marginalized students of color to see themselves in all creative arts. [&hellip;] Sharing is scary, but it also connects you with others. Don’t be afraid to erase and start over."</blockquote>
+          <cite class='smallcaps'>– YERIKA, STUDENT</cite>
+        </div>
+      </div>
+      <div class='text-column'>
+   			<p>Elevating young voices through writing and publishing helped 826CHI’s community persist with clarity. We began our first comprehensive strategic planning process, imagining our future through a racial justice lens. During In-Schools and Workshops, Field Trips and Tutoring, students traversed the intersections of their hopes and fears. Volunteers listened and teachers opened their classrooms to partnership. Together, we found common ground in story.</p>
+   			<p>These are the things that sustained - and will continue to strengthen - 826CHI. Thank you for standing with our students.</p>
+   			<p>Warmly,</p>
+        <div id='signature'><p>Kendra Curry-Khanna</p></div>
+      </div>          
+    </section>
+
+    <section id="current-staff">
+      <h1 id='staff' class="section-title">Current Staff</h1>
+      <img class='morse' src='images/morsecode/team.png'>
+      <h3>—<br>Staff</h3>
+      <ul>
+        <li>
+          <div class='thumbnail-wrap'><img height='98.8' width='98.8' src='images/staff/staff-1.png'></div><h2>Kendra Curry-Khanna</h2><p class='smallcaps'>EXECUTIVE DIRECTOR</p></li>
+        <li>
+          <div class='thumbnail-wrap'><img height='98.8' width='98.8' src='images/staff/staff-2.png'></div><h2>Kate Gonzalez</h2><p class='smallcaps'>STORE ASSOCIATE</p></li>
+        <li>
+          <div class='thumbnail-wrap'><img height='92.3' width='98.8' src='images/staff/staff-3.png'></div><h2>Mike Hernandez</h2><p class='smallcaps'>COMMUNICATIONS COORDINATOR</p></li>
+        <li>
+          <div class='thumbnail-wrap'><img height='92.3' width='111.8' src='images/staff/staff-4.png'></div><h2>Abi Humber</h2><p class='smallcaps'>PUBLICATIONS MANAGER</p></li>
+        <li>
+          <div class='thumbnail-wrap'><img height='113.1' width='111.8' src='images/staff/staff-5.png'></div><h2>Marty Kezon</h2><p class='smallcaps'>VOLUNTEER COORDINATOR</p></li>
+        <li>
+          <div class='thumbnail-wrap'><img height='117' width='124.8' src='images/staff/staff-6.png'></div><h2>Sarah Kokernot</h2><p class='smallcaps'>PROGRAMS MANAGER</p></li>
+        <li>
+          <div class='thumbnail-wrap'><img height='124.8' width='124.8' src='images/staff/staff-7.png'></div><h2>Esther Lee</h2><p class='smallcaps'>DEVELOPMENT ASSOCIATE</p></li>
+        <li>
+          <div class='thumbnail-wrap'><img height='' width='' src='images/staff/staff-.png'></div><h2>Dabney Lyles</h2><p class='smallcaps'>STUDENT IMPACT AND DATA COORDINATOR</p></li>
+        <li>
+          <div class='thumbnail-wrap'><img height='122.2' width='111.8' src='images/staff/staff-8.png'></div><h2>Tyler Stoltenberg</h2><p class='smallcaps'>OPERATIONS MANAGER</p></li>
+        <li>
+          <div class='thumbnail-wrap'><img height='111.8' width='111.8' src='images/staff/staff-9.png'></div><h2>Stien van der Ploeg</h2><p class='smallcaps'>DIRECTOR OF DEVELOPMENT</p></li>
+        <li>
+          <div class='thumbnail-wrap'><img height='109.2' width='111.8' src='images/staff/staff-10.png'></div><h2>Maria Villarreal</h2><p class='smallcaps'>DIRECTOR OF PROGRAMS</p></li>
+        <li>
+          <div class='thumbnail-wrap'><img height='111.8' width='111.8' src='images/staff/staff-11.png'></div><h2>Tracy Woodley</h2><p class='smallcaps'>DEVELOPMENT COORDINATOR</p></li>
+      </ul>
+    </section>
+
+    <section id="mission-statement">
+      <img src='images/mission-1.png'>
+      <img src='images/mission-2.png'>
+      <img src='images/mission-3.png'>
+      <img src='images/mission-4.png'>
+      <img src='images/mission-5.png'>
+           
+      <div id='mission' class='big-box'>
+       	<h2 class="section-title">Mission Statement</h2>
+       	<p>826CHI is a nonprofit organization dedicated to supporting students ages 6 to 18 with their creative and expository writing skills, and to helping teachers inspire their students to write. Our services are structured around the understanding that great leaps in learning can happen with one-on-one attention, and that strong writing skills are fundamental to future success. All of our programs are challenging and enjoyable, and ultimately strengthen each student’s power to express ideas effectively, creatively, confidently, and in their individual voice.</p>
+      </div>
+    </section>
+
+    <section id="at-a-glance">
+     	<h2 class="section-title">2015-16</h2>
+      <h1>At A Glance</h1>
+      <img class='morse' src='images/morsecode/ataglance.png'>
+      <!--
+        col-x: width = 100% / x.
+        no-x: lower number means bigger font.
         -->
-        <main>
+      <div class='row'>
+        <span class='col-2'><img id='icon-students-served' src='images/icons/students.svg'><p class='no-2'>2364</p><p>Students Served</p>
+        </span><span class='col-2'><img id='icon-hours' src='images/icons/hours.svg'><p class='no-2'>844</p><p>Programming Hours</p>
+        </span>
+      </div>
+      <div class='row'>
+        <span class='col-2'><img id='icon-active-volunteers' src='images/icons/icon-volunteers.svg'><p class='no-3'>302</p><p>Active Volunteers</p>
+        </span><span class='col-4'><p class='no-4'>114</p><p>After-School Tutoring Sessions</p>
+        </span><span class='col-4'><p class='no-5'>103</p><p>Schools Represented</p>
+        </span>
+      </div>
+      <div class='row'>
+        <span class='col-4'><p class='no-5'>76</p><p>Teachers Served</p>
+        </span><span class='col-4'><p class='no-5'>70</p><p>Student Publications</p>
+        </span><span class='col-2'><img id='icon-field-trips' src='images/icons/fieldtrips.svg'><p class='no-5'>69</p><p>Field Trips</p></span>
+      </div>
+      <div class='row'>
+        <span class='col-2'><img id='icon-workshops' src='images/icons/workshops.svg'><p class='no-5'>28</p><p>Workshops</p>
+        </span><span class='col-4'><p class='no-5'>5</p><p>In-School Projects</p>
+        </span><span class='col-4'><p class='no-5'>1</p><p>School Served Virtually</p>
+        </span>
+      </div>
+      <!-- <div class='row'>
+        <span class='col-2'>
+          <div><p id='no2361'>2361</p><p class='row1'>Students Served</p></div>
+        </span><span class='col-2'>
+          <div><p id='no302'>302</p><p class='row1'>Active Volunteers</p></div>
+        </span>
+      </div>
+      <div class='row'>
+        <span class='col-4'></span><span class='col-4'>
+          <div><p id='no114'>114</p><p class='row2'>After-school tutoring sessions</p></div>
+        </span><span class='col-4'><div><p id='no103'>103</p><p class='row2'>Schools Represented</p></div>
+        </span><span class='col-4'>
+          <div><p id='no70'>70</p><p class='row2'>Student Publications</p></div>
+        </span>
+      </div>
+      <div class='row'>
+        <span class='col-4'>
+          <div><p id='no69'>69</p><p class='row3'>Field Trips</p></div>
+        </span><span class='col-4'>
+          <div><p id='no60'>60</p><p class='row3'>Teachers Served</p></div>
+        </span><span class='col-2'>
+          <div><p id='no28'>28</p><p class='row3'>Writing Workshops</p></div>
+        </span>
+      </div>
+      <div class='row'>
+        <span class='col-4'></span><span class='col-4'>
+          <div><p id='no5'>5</p><p class='row4'>In-School Projects</p></div>
+        </span><span class='col-4'></span><span class='col-4'>
+          <div><p id='no1'>1</p><p class='row4'>School Served Virtually</p></div>
+        </span>
+      </div> -->
+    </section>
 
-          <!-- <section id="current-staff">
-            <h1 id='staff' class="section-title">Staff</h1>
-            <ul>
-              <li><img src='http://placehold.it/135x135'><p>Kendra Curry-Khanna</p><p class='smallcaps'>EXECUTIVE DIRECTOR</p></li>
-              <li><img src='http://placehold.it/135x135'><p>Kate Gonzalez</p><p class='smallcaps'>STORE ASSOCIATE</p></li>
-              <li><img src='http://placehold.it/135x135'><p>Mike Hernandez</p><p class='smallcaps'>COMMUNICATIONS COORDINATOR</p></li>
-              <li><img src='http://placehold.it/135x135'><p>Abi Humber</p><p class='smallcaps'>PUBLICATIONS MANAGER</p></li>
-              <li><img src='http://placehold.it/135x135'><p>Marty Kezon</p><p class='smallcaps'>VOLUNTEER COORDINATOR</p></li>
-              <li><img src='http://placehold.it/135x135'><p>Sarah Kokernot</p><p class='smallcaps'>PROGRAMS MANAGER</p></li>
-              <li><img src='http://placehold.it/135x135'><p>Esther Lee</p><p class='smallcaps'>DEVELOPMENT ASSOCIATE</p></li>
-              <li><img src='http://placehold.it/135x135'><p>Dabney Lyles</p><p class='smallcaps'>STUDENT IMPACT AND DATA COORDINATOR</p></li>
-              <li><img src='http://placehold.it/135x135'><p>Tyler Stoltenberg</p><p class='smallcaps'>OPERATIONS MANAGER</p></li>
-              <li><img src='http://placehold.it/135x135'><p>Stien van der Ploeg</p><p class='smallcaps'>DIRECTOR OF DEVELOPMENT</p></li>
-              <li><img src='http://placehold.it/135x135'><p>Maria Villarreal</p><p class='smallcaps'>DIRECTOR OF PROGRAMS</p></li>
-              <li><img src='http://placehold.it/135x135'><p>Tracy Woodley</p><p class='smallcaps'>DEVELOPMENT COORDINATOR</p></li>
-            </ul>
-          </section> -->
+    <section id="updates">
+    	<h1 class="section-title">Updates</h1>
+      <img class='morse' src='images/morsecode/updates.png'>
+      <div class='floated-pair'>
+        <div class='pair-left text-column'>
+          <h3>—<br>Strategic Planning</h3>
+          <p>Throughout the past year, 826CHI has done a lot to define its values. In order to deepen our impact and understand our role in Chicago's creative and literary education landscape, we embarked on the creation of a three-year plan. The final strategic plan will function as a roadmap for the growth of our impact on the quality of and access to literary arts education in Chicago.</p>
+        </div>
+        <img class='pair-right strategic-planning' src='images/strategic-planning.png'>
+      </div>
 
-          <section id="letter">
-            <div class='text-column'>
-              <h2 id='execletter' class="section-title">Letter by Executive Director</h2>
-              <h1>Friends, advocates, believers:</h1>
-        			<p>In 2016, our students reminded us, time and time again, that writing is a tool from which we understand one another. A tool for untangling the world.</p>
-        			<p>The accomplishments of this year mark 826CHI’s passage into our second decade. The student pipeline grew. Once young published authors, student alumni returned as volunteers. College essay support expanded, teen programs deepened, and, in 2016, a dream came true: 826CHI hired our first alumni to join staff.</p>
-        			<p>With an extraordinary team actualizing the mission, our new space feels even more welcoming.</p>
-            </div>
-            <div class='floated-pair'>
-        			<p class='pair-left'>And while 826CHI was maturing, the city and country around us was thrust into crisis - from the Illinois state budget impasse and teacher layoffs to tragedies in Charleston, Orlando, and San Bernadino. With the loss of Laquan McDonald just blocks from long-time partner school Curie Metropolitan, our community reinforced the role of 826CHI’s mission at moments of adversity.</p>
-              <div id='yerika' class='blockquote'>
-                <p class='h2'>"</p><blockquote class='h2'>I want allies to listen. I want marginalized students of color to see themselves in all creative arts. [...] Sharing is scary, but it also connects you with others. Don’t be afraid to erase and start over."</blockquote>
-                <cite class='smallcaps'>– YERIKA, STUDENT</cite>
-              </div>
-            </div>
-            <div class='text-column'>
-        			<p>Elevating young voices through writing and publishing helped 826CHI’s community persist with clarity. We began our first comprehensive strategic planning process, imagining our future through a racial justice lens. During In-Schools and Workshops, Field Trips and Tutoring, students traversed the intersections of their hopes and fears. Volunteers listened and teachers opened their classrooms to partnership. Together, we found common ground in story.</p>
-        			<p>These are the things that sustained - and will continue to strengthen - 826CHI. Thank you for standing with our students.</p>
-        			<p>Warmly,</p>
-              <div id='signature'><p>Kendra Curry-Khanna</p></div>
-            </div>          
-          </section>
-
-          <section id="mission-statement">
-            <img src='images/mission-1.png'>
-            <img src='images/mission-2.png'>
-            <img src='images/mission-3.png'>
-            <img src='images/mission-4.png'>
-            <img src='images/mission-5.png'>
-            
-            <div id='mission' class='big-box'>
-            	<h2 class="section-title">Mission Statement</h2>
-            	<p>826CHI is a nonprofit organization dedicated to supporting students ages 6 to 18 with their creative and expository writing skills, and to helping teachers inspire their students to write. Our services are structured around the understanding that great leaps in learning can happen with one-on-one attention, and that strong writing skills are fundamental to future success. All of our programs are challenging and enjoyable, and ultimately strengthen each student’s power to express ideas effectively, creatively, confidently, and in their individual voice.</p>
-            </div>
-          </section>
-
-          <section id="at-a-glance">
-          	<h2 class="section-title">2015-16</h2>
-            <h1>At A Glance</h1>
-            <div class='row'>
-              <span class='col-2'>
-              <div><p id='no2361'>2361</p><p class='row1'>Students Served</p></div>
-              </span><span class='col-2'>
-              <div><p id='no302'>302</p><p class='row1'>Active Volunteers</p></div>
-              </span>
-            </div>
-            <div class='row'>
-              <span class='col-4'></span><span class='col-4'>
-              <div><p id='no114'>114</p><p class='row2'>After-school tutoring sessions</p></div>
-              </span><span class='col-4'><div><p id='no103'>103</p><p class='row2'>Schools Represented</p></div>
-              </span><span class='col-4'>
-              <div><p id='no70'>70</p><p class='row2'>Student Publications</p></div>
-              </span>
-            </div>
-            <div class='row'>
-              <span class='col-4'>
-              <div><p id='no69'>69</p><p class='row3'>Field Trips</p></div>
-              </span><span class='col-4'>
-              <div><p id='no60'>60</p><p class='row3'>Teachers Served</p></div>
-              </span><span class='col-2'>
-              <div><p id='no28'>28</p><p class='row3'>Writing Workshops</p></div>
-              </span>
-            </div>
-            <div class='row'>
-              <span class='col-4'></span><span class='col-4'>
-              <div><p id='no5'>5</p><p class='row4'>In-School Projects</p></div>
-              </span><span class='col-4'></span><span class='col-4'>
-              <div><p id='no1'>1</p><p class='row4'>School Served Virtually</p></div>
-              </span>
-            </div>
-          </section>
-
-          <section id="updates">
-          	<h1 class="section-title">Updates</h1>
-
-            <div class='floated-pair'>
-              <div class='pair-left text-column'>
-                <h3><p>—</p>Strategic Planning</h3>
-                <p>Throughout the past year, 826CHI has done a lot to define its values. In order to deepen our impact and understand our role in Chicago's creative and literary education landscape, we embarked on the creation of a three-year plan. The final strategic plan will function as a roadmap for the growth of our impact on the quality of and access to literary arts education in Chicago.</p>
-              </div>
-              <img class='pair-right strategic-planning' src='images/strategic-planning.png'>
-            </div>
-
-            <div class='floated-pair'>
-              <img class='pair-left the-code' id='' src='images/thecode.png'>
-              <div class='pair-right text-column'>
-                <h3><p>—</p>The Code</h3>
-                <p>What are the top ten qualities and values that run through all 826CHI programs? If a stranger walked into any of 826CHI’s programs, what are the actions and approaches they would be likely to observe? These questions guided the creation of 'The Code', 826CHI's signature pedagogy that embodies our approach to learning. It includes the ten tenets of being an 826CHI writing coach, our take on the five-stage writing process, and our version of the story arc. This document binds all of our core programs and responds directly to qualities missing within traditional writing instruction. We use 'The Code' to design, plan, and implement our programs.</p>
-              </div>
-            </div>
+      <div class='floated-pair'>
+        <img class='pair-left the-code' src='images/thecode.png'>
+        <div class='pair-right text-column'>
+          <h3>—<br>The Code</h3>
+          <p>What are the top ten qualities and values that run through all 826CHI programs? If a stranger walked into any of 826CHI’s programs, what are the actions and approaches they would be likely to observe? These questions guided the creation of 'The Code', 826CHI's signature pedagogy that embodies our approach to learning. It includes the ten tenets of being an 826CHI writing coach, our take on the five-stage writing process, and our version of the story arc. This document binds all of our core programs and responds directly to qualities missing within traditional writing instruction. We use 'The Code' to design, plan, and implement our programs.</p>
+        </div>
+      </div>
           	
-            <div class='floated-pair'>
-              <div class='pair-left text-column'>
-                <h3><p>—</p>Diversity, Equity, and Inclusion</h3>
-                <p>826CHI took part in ongoing conversations with 826 National and Bellwether Education Partners to advance diversity, equity, and inclusion initiatives network-wide, which has resulted in the development of policies centered around recruitment, hiring, and leadership development, the creation of affinity groups across the network, and the launch of a comprehensive language audit at our chapter. In addition, 826CHI kicked off a monthly Diversity Series; staff set aside time every month to discuss inequality and equity and their effect on  our students and us as educators. Each staff-led session was organized around a question, article, or excerpt that pertains to Chicago students. These discussions have helped affirm our commitment to building diverse and inclusive environments for our students, our volunteers, and our staff.</p>
-              </div>
+      <div class='floated-pair'>
+        <div class='pair-left text-column'>
+          <h3>—<br>Diversity, Equity, and Inclusion</h3>
+          <p>826CHI took part in ongoing conversations with 826 National and Bellwether Education Partners to advance diversity, equity, and inclusion initiatives network-wide, which has resulted in the development of policies centered around recruitment, hiring, and leadership development, the creation of affinity groups across the network, and the launch of a comprehensive language audit at our chapter. In addition, 826CHI kicked off a monthly Diversity Series; staff set aside time every month to discuss inequality and equity and their effect on  our students and us as educators. Each staff-led session was organized around a question, article, or excerpt that pertains to Chicago students. These discussions have helped affirm our commitment to building diverse and inclusive environments for our students, our volunteers, and our staff.</p>
+        </div>
 
-              <img class='pair-right diversity' id='' src='images/diversity.png'>
+        <img class='pair-right diversity' src='images/diversity.png'>
+      </div>
+
+     	<div class='floated-pair'>
+        <img class='pair-left design-cohort' src='images/cohort.png'>
+
+        <div class='pair-right text-column design-cohort'>
+          <h3>—<br>Design Cohort</h3>
+          <p>We routinely engage with local professional artists and authors to support our work. One of the significant advancements during the 2015-2016 school year was the establishment of the 826CHI Design Cohort. The Design Cohort is made up of over 30 local illustrators and graphic designers who offer pro-bono support to a myriad of projects, including 826CHI publications and this very Annual Report. Thanks to the Design Cohort, 826CHI has become more efficient and increased the quality of our publications. High quality design shows our students their stories deserve attention.</p>
+        </div>
+      </div>      	
+    </section>
+
+    <section id="core-programs">
+     	<h1 class="section-title">Core Programs</h1>
+      <img class='morse' src='images/morsecode/coreprograms.png'>
+      <div id='after-school'>
+       	<h3>—<br>After-School Tutoring and Writing</h3>
+        <div class='box'>
+          <p id='no97'>97</p><p class='percent-sign'>%</p>
+          <p class='smallcaps'>OF STUDENTS FEEL CONFIDENT ABOUT FINISHING THEIR HOMEWORK ASSIGNMENTS AT 826CHI</p>
+        </div>
+        <img class='section-header-img' src='images/afterschool.png'>
+        <p>From 3:00pm to 6:00pm on Monday through Thursday, 50 students in grades 1-8 arrive to the 826CHI writing laboratory for homework and writing support. Volunteer tutors worked with students to set daily learning goals, respond to writing prompts, and answer homework questions. At the end of each semester, students select a single story from their writing portfolio, prepare it for publication, and share their writing from our stage at public readings. We also launched the Speakers and Snacks Series. Each semester, we invite four guests to participate in a 45-minute Q&amp;A session with questions developed by our students. The aim of this series is to expose students to a variety of professions in the arts and sciences, held by a diversity of people, to enable them to better visualize opportunities for their own futures.</p>
+        
+        <div class='row'>
+          <span class='col-2'>
+            <img id='icon-after-school' src='images/icons/afterschool.svg'><p class='no-3'>144</p><p>After-School Sessions</p>
+          </span><span class='col-4'>
+            <p class='no-3'>53</p><p>Students</p>
+          </span><span class='col-4'>
+            <p class='no-3'>17</p><p>Schools</p>  
+          </span>
+        </div>
+        <div class='row'>
+          <span class='col-2'>
+            <p class='h2'>"</p><blockquote class='h2'>The tutor helped me become a better writer and it made me want to write books when I get older."</blockquote>
+            <cite class='smallcaps'>– STUDENT<br><p class='smallcaps'>HARVARD SCHOOL OF EXCELLENCE</p></cite>
+          </span><span class='col-2'>
+            <p class='h2'>"</p><blockquote class='h2'>I love that she has the practice to read and write here because she would be very reluctant to do it at home with me."</blockquote>
+            <cite  class='smallcaps'>– TERESA O., PARENT</cite>
+          </span>
+        </div>
+
+        <!-- <div class='quotes-div'>
+          <div class='column'>
+            <div class='blockquote'>
+              <p class='h2'>"</p><blockquote class='h2'>The tutor helped me become a better writer and it made me want to write books when I get older."</blockquote>
+              <cite class='smallcaps'>– STUDENT<br><p class='smallcaps'>HARVARD SCHOOL OF EXCELLENCE</p></cite>
             </div>
-
-          	<div class='floated-pair'>
-              <img class='pair-left design-cohort' src='images/cohort.png'>
-
-              <div class='pair-right text-column design-cohort'>
-                <h3><p>—</p>Design Cohort</h3>
-                <p>We routinely engage with local professional artists and authors to support our work. One of the significant advancements during the 2015-2016 school year was the establishment of the 826CHI Design Cohort. The Design Cohort is made up of over 30 local illustrators and graphic designers who offer pro-bono support to a myriad of projects, including 826CHI publications and this very Annual Report. Thanks to the Design Cohort, 826CHI has become more efficient and increased the quality of our publications. High quality design shows our students their stories deserve attention.</p>
-              </div>
+          </div>
+               
+          <div class='column'>
+            <div class='blockquote'>
+              <p class='h2'>"</p><blockquote class='h2'>I love that she has the practice to read and write here because she would be very reluctant to do it at home with me."</blockquote>
+              <cite  class='smallcaps'>– TERESA O., PARENT</cite>
             </div>
-
-          	
-         </section>
-
-         <section id="core-programs">
-           	<h1 class="section-title">Core Programs</h1>
-          <div id='after-school'>
-           	<h3><p>—</p>After-School Tutoring and Writing</h3>
-            <div class='box'>
-              <p id='no97'>97</p><p class='percent-sign'>%</p>
-              <p class='smallcaps'>OF STUDENTS FEEL CONFIDENT ABOUT FINISHING THEIR HOMEWORK ASSIGNMENTS AT 826CHI</p>
-            </div>
-            <img src='images/afterschool.png'>
-
-           	<p>From 3:00pm to 6:00pm on Monday through Thursday, 50 students in grades 1-8 arrive to the 826CHI writing laboratory for homework and writing support. Volunteer tutors worked with students to set daily learning goals, respond to writing prompts, and answer homework questions. At the end of each semester, students select a single story from their writing portfolio, prepare it for publication, and share their writing from our stage at public readings. We also launched the Speakers and Snacks Series. Each semester, we invite four guests to participate in a 45-minute Q&amp;A session with questions developed by our students. The aim of this series is to expose students to a variety of professions in the arts and sciences, held by a diversity of people, to enable them to better visualize opportunities for their own futures.</p>
-            
-            <div class='quotes-div'>
-
-              <div class='column'>
-                <div class='blockquote'>
-                  <p class='h2'>"</p><blockquote class='h2'>The tutor helped me become a better writer and it made me want to write books when I get older."</blockquote>
-                  <cite class='smallcaps'>– STUDENT<br><p class='smallcaps'>HARVARD SCHOOL OF EXCELLENCE</p></cite>
-                </div>
-              </div>
-              
-              <div class='column'>
-                <div class='blockquote'>
-                  <p class='h2'>"</p><blockquote class='h2'>I love that she has the practice to read and write here because she would be very reluctant to do it at home with me."</blockquote>
-                  <cite  class='smallcaps'>– TERESA O., PARENT</cite>
-                </div>
-              </div>
-            </div>
-
-          </div> <!-- after-school -->
+          </div>
+        </div> -->
+      </div> <!-- after-school -->
           
-          <div id='field-trips'>	
-            <h3><p>—</p>Field Trips</h3>
-            <div class='box'>
-              <p id='no97'>97</p><p class="percent-sign">%</p>
-              <p class='smallcaps'>OF TEACHERS SAID THAT THEIR STUDENTS WERE CHALLENGED BY THE PROGRAM</p>
+      <div id='field-trips'>	
+        <h3>—<br>Field Trips</h3>
+        <div class='box'>
+          <p id='no97'>97</p><p class="percent-sign">%</p>
+          <p class='smallcaps'>OF TEACHERS SAID THAT THEIR STUDENTS WERE CHALLENGED BY THE PROGRAM</p>
+        </div>
+        <img class='section-header-img' src='images/fieldtrips.png'>
+       	<p>During 2015-2016 school year, 69 classrooms visited our writing studio on weekday mornings last year for lively Field Trips. Teachers can choose from several Field Trip themes, each one focusing on developing plot, crafting strong characters, and adding detailed description. Storytelling and Bookmaking was by far the most popular choice this year. This particular Field Trip ends with students proudly taking home their written pieces, bound and illustrated. 826CHI also published seven compilations of student writing from Field Trips during 2015-2016.</p>
+        
+        <div class='row'>
+          <span class='col-4'>
+            <p class='no-3'>69</p><p>Total Field Trips</p>
+          </span><span class='col-2'>
+            <img id='icon-authors' src='images/icons/authors.svg'>
+            <p class='no-3'>1,829</p><p>Published Authors</p>
+          </span><span class='col-4'>
+            <p class='no-3'>40</p><p>Schools Served</p>  
+          </span>
+        </div>
+        <div class='row'>
+          <span class='col-2'>
+            <p class='h2'>"</p><blockquote class='h2'>I'm very excited that I learned something new. I can write in new ways and think in new ways."</blockquote>
+            <cite class='smallcaps'>– ARLENE S., STUDENT</cite>
+          </span><span class='col-2'>
+            <p class='h2'>"</p><blockquote class='h2'>I just got the books in the mail!!!  Thank you!!  They turned out awesome! :) The kids love them and one told me how happy their parents were. Can't thank you enough.  I was just getting worked up in a meeting that we needed the kids to love, even like!, writing more by showing them things like your methods!!"</blockquote>
+            <cite  class='smallcaps'>– JENNY R., TEACHER<br><p class='smallcaps'>HIRSCH METROPOLITAN HIGH SCHOOL</cite>
+          </span>
+        </div>
+
+        <!-- <div class='quotes-div'>
+          <div class='column'>
+            <div class='blockquote'>
+              <p class='h2'>"</p><blockquote class='h2'>I'm very excited that I learned something new. I can write in new ways and think in new ways."</blockquote>
+              <cite class='smallcaps'>– ARLENE S., STUDENT</cite>
             </div>
-            <img src='images/fieldtrips.png'></img>
-           	<p>During 2015-2016 school year, 69 classrooms visited our writing studio on weekday mornings last year for lively Field Trips. Teachers can choose from several Field Trip themes, each one focusing on developing plot, crafting strong characters, and adding detailed description. Storytelling and Bookmaking was by far the most popular choice this year. This particular Field Trip ends with students proudly taking home their written pieces, bound and illustrated. 826CHI also published seven compilations of student writing from Field Trips during 2015-2016.</p>
-            <div class='quotes-div'>
-              <div class='column'>
-                <div class='blockquote'>
-                  <p class='h2'>"</p><blockquote class='h2'>I'm very excited that I learned something new. I can write in new ways and think in new ways."</blockquote>
-                  <cite class='smallcaps'>– ARLENE S., STUDENT</cite>
-                </div>
-              </div>
+          </div>
               
-              <div class='column'>
-                <div class='blockquote'>
-                  <p class='h2'>"</p><blockquote class='h2'>I just got the books in the mail!!!  Thank you!!  They turned out awesome! :) The kids love them and one told me how happy their parents were. Can't thank you enough.  I was just getting worked up in a meeting that we needed the kids to love, even like!, writing more by showing them things like your methods!!"</blockquote>
-                  <cite  class='smallcaps'>– JENNY R., TEACHER<br><p class='smallcaps'>HIRSCH METROPOLITAN HIGH SCHOOL</p></p>
-                </div>
-              </div>
-            </div> <!-- quotes -->
-          </div> <!-- field trips -->
+          <div class='column'>
+            <div class='blockquote'>
+              <p class='h2'>"</p><blockquote class='h2'>I just got the books in the mail!!!  Thank you!!  They turned out awesome! :) The kids love them and one told me how happy their parents were. Can't thank you enough.  I was just getting worked up in a meeting that we needed the kids to love, even like!, writing more by showing them things like your methods!!"</blockquote>
+              <cite  class='smallcaps'>– JENNY R., TEACHER<br><p class='smallcaps'>HIRSCH METROPOLITAN HIGH SCHOOL</p></cite>
+            </div>
+          </div>
+        </div> --> <!-- quotes -->
+      </div> <!-- field trips -->
 
-          <div id='in-schools'>
-            <h3><p>—</p>In-Schools</h3>
-            <img src='images/inschools.png'></img>
-           	<p>Every school year, 826CHI partners with teachers in local high-need schools around Chicago to provide individualized assistance to students as they tackle various writing projects. During the 2015-2016 school year, we sent 254 volunteers to seven Chicago Public Schools for a total of 71 in-school sessions.  Projects ranged from revising AP World History essays to writing stories about power and place.  Four schools—Curie Metropolitan High School, Bowen High School, Wells Community Academy High School, and Brentano Elementary Math &amp; Science Academy—created publications during in-schools.  Our annual Young Authors Book Project, <i>The Monster Gasped, OMG!</i>, with Brentano Elementary culminated with a public reading at Printers Row Lit Fest.</p>
-            <div class='quotes-div'>
-              <div class='column'>
-                <div class='blockquote'>
-                  <p class='h2'>"</p><blockquote class='h2'>What was the most memorable moment with 826CHI is that I get to publish a book with my own words, not with any other people’s words. I had never published a book before, and it’s very exciting."</blockquote>
-                  <cite class='smallcaps'>– BETHSAIDA C., AGE 10<br><p class='smallcaps'>BRENTANO ELEMENTARY SCHOOL</p></cite>
-                </div>
-              </div>
-              <div class='column'>
-                <div class='blockquote'>
-                  <p class='h2'>"</p><blockquote class='h2'>There is no way that I, alone, would have been able to provide such in-depth feedback for all of my students.  The process also helped students with goal setting and process monitoring.  One of the most important benefits is how the process of working with 826 helped students become more comfortable sharing their work and receiving constructive criticism."</blockquote>
-                  <cite  class='smallcaps'>– JENI C., TEACHER<br><p class='smallcaps'>KELVYN PARK HIGH SCHOOL</p></cite>
-                </div>
-              </div>
-            </div> <!-- quotes -->
-            <div class='big-box'>
-             	<h3 id="digital-tutoring">Next level: Digital Tutoring</h3>
-             	<p>Nested under our In-Schools program, 826CHI partnered up with teachers at Pritzker College Prep to provide AP U.S. History and World History writing support throughout the full academic year. Online volunteers were matched with up to 1- 2 students and committed approximately one hour for each student, providing essay edits and feedback every two weeks during the year.</p>
-            </div>
-          </div> <!-- in-schools -->
+      <div id='in-schools'>
+        <h3>—<br>In-Schools</h3>
+        <div class='box'>
+          <p id='no97'>96</p><p class="percent-sign">%</p>
+          <p class='smallcaps'>OF STUDENTS REPORTED FEELING PROUD OF THEIR WRITING AT THE END OF THE PROJECT</p>
+        </div>
+        <img class='section-header-img' src='images/inschools.png'>
+       	<p>Every school year, 826CHI partners with teachers in local high-need schools around Chicago to provide individualized assistance to students as they tackle various writing projects. During the 2015-2016 school year, we sent 254 volunteers to seven Chicago Public Schools for a total of 71 in-school sessions.  Projects ranged from revising AP World History essays to writing stories about power and place.  Four schools—Curie Metropolitan High School, Bowen High School, Wells Community Academy High School, and Brentano Elementary Math &amp; Science Academy—created publications during in-schools.  Our annual Young Authors Book Project, <i>The Monster Gasped, OMG!</i>, with Brentano Elementary culminated with a public reading at Printers Row Lit Fest.</p>
+       
+        <div class='row'>
+          <span class='col-4'>
+            <p class='no-3'>294</p><p>Students Served</p>
+          </span><span class='col-4'>
+            <p class='no-3'>9</p><p>Teachers Supported</p>
+          </span><span class='col-2'>
+            <img id='icon-publications' src='images/icons/publications.svg'>
+            <p class='no-3'>4</p><p>In-House Publications</p>  
+          </span>
+        </div>
+        <div class='row'>
+          <span class='col-2'>
+            <p class='h2'>"</p><blockquote class='h2'>I'm very excited that I learned something new. I can write in new ways and think in new ways."</blockquote>
+            <cite class='smallcaps'>– ARLENE S., STUDENT</cite>
+          </span><span class='col-2'>
+            <p class='h2'>"</p><blockquote class='h2'>I just got the books in the mail!!!  Thank you!!  They turned out awesome! :) The kids love them and one told me how happy their parents were. Can't thank you enough.  I was just getting worked up in a meeting that we needed the kids to love, even like!, writing more by showing them things like your methods!!"</blockquote>
+            <cite  class='smallcaps'>– JENNY R., TEACHER<br><p class='smallcaps'>HIRSCH METROPOLITAN HIGH SCHOOL</cite>
+          </span>
+        </div>
 
-          <div id='workshops'>
-           	<h3 id="workshops"><p>—</p>Workshops</h3>
-            <div class='box'>
-              <p id='no97'>97</p><p class="percent-sign">%</p>
-              <p class='smallcaps'>OF STUDENTS SAID THEY LIKED WORKING WITH WORKSHOP TUTORS</p>
+       <!--  <div class='quotes-div'>
+          <div class='column'>
+            <div class='blockquote'>
+              <p class='h2'>"</p><blockquote class='h2'>What was the most memorable moment with 826CHI is that I get to publish a book with my own words, not with any other people’s words. I had never published a book before, and it’s very exciting."</blockquote>
+              <cite class='smallcaps'>– BETHSAIDA C., AGE 10<br><p class='smallcaps'>BRENTANO ELEMENTARY SCHOOL</p></cite>
             </div>
-            <img src='images/workshops.png'>
-           	<p>826CHI offers free workshops that provide in-depth and interdisciplinary writing instruction in areas such as poetry, creative fiction, screenwriting/playwriting and journalism. Twenty-eight workshops were instructed by 826CHI volunteers and staff in 2015-2016. Connecting Chicago students with these creative and generous mentors allows students to dream and achieve on a deeper scale. Workshops published five titles during 2015-2016, including: <i>Not Minding How Gloomy It Is Outside,  And the Rest is Noise: Pitchfork Music Writing,</i> and <i>The Time Was 11:24</i>.</p>
-           	
-            <div class='quotes-div'>
-              <div class='column'>
-                <div class='blockquote'>
-                  <p class='h2'>"</p><blockquote class='h2'>I loved the diverse environment and the instructors were so encouraging, inspiring, patient, and amazing in every way."</blockquote>
-                  <cite class='smallcaps'>– LAUREN E., STUDENT<br><p class='smallcaps'>WHITNEY YOUNG MAGNET HIGH SCHOOL</p></cite>
-                </div>
-              </div>
+          </div>
+          <div class='column'>
+            <div class='blockquote'>
+              <p class='h2'>"</p><blockquote class='h2'>There is no way that I, alone, would have been able to provide such in-depth feedback for all of my students.  The process also helped students with goal setting and process monitoring.  One of the most important benefits is how the process of working with 826 helped students become more comfortable sharing their work and receiving constructive criticism."</blockquote>
+              <cite  class='smallcaps'>– JENI C., TEACHER<br><p class='smallcaps'>KELVYN PARK HIGH SCHOOL</p></cite>
             </div>
-            <div class='big-box'>
-             	<h3 id="college-essay-writing">Next level: College Essay Writing</h3>
-             	<p>To help keep high school seniors (and a few ambitious juniors) motivated and prepared to write the college entrance essay of their dreams, 826CHI partnered with the East Village Youth Program for College Essay Writing Days. 826CHI staff and volunteers led five workshop sessions, providing students the time and space to discuss personal statements, read some examples, and have 1-to-1 volunteer support to perfect their essays.</p>
-            </div>
-            <div class='big-box'>
-             	<h3 id="youth-advisory-board">Next level: Youth Advisory Board</h3>
-             	<p>The Youth Advisory Board, 826CHI’s signature high school program, is a yearlong creative writing workshop that offers rising writers and leaders a collaborative space to meet, write, and discuss. The 16 students selected for the program represent a multitude of neighborhoods and school districts, and they attended biweekly meetings at our writing center in which they explored fiction, poetry, journalism, and spoken word, culminating in June with the publication, <i>A Record in Space</i>, featuring the students’ original work produced in the workshop. Teaching artists visit the students during the year to lead guest workshops sessions and answer students’ questions about careers in publishing. Youth Advisory Board members also complete a 20-hour service requirement over the course of the school year by volunteering in 826CHI's After-School Tutoring and Writing program and/or Weekend Workshops program, serving as mentors to 826CHI’s younger students.</p>
-            </div>
-          </div> <!-- workshops -->
-          <div id='publishing'>
-           	<h3 id="publishing"><p>—</p>Publishing</h3>
-            <img src='images/publishing.png'>
-           	<p>There is no other organization in Chicago publishing 6 to 18 year-olds’ creative work at the rate that 826CHI is publishing. Last year alone we published 70 books; printing over one-thousand copies so that every student had the chance to take ownership over their hard work. By publishing students’ stories, our young authors become an important part of an artistic dialogue. We work hard to promote the value and impact of our writers’ work. The Chicago Public Library now carries a variety of 826CHI publications in 80 locations across the city. We sell copies of student publications in our revenue-generating storefront, <cite>The Wicker Park Secret Agent Supply</cite>. Our major publications receive public launch events; solidifying our student voices as an essential part of Chicago’s literary canon. Our most recent YABP publication received extensive press coverage in local news from the Chicago Tribune to the Chicago Reader.</p>
-           	
-            <div class='quotes-div'>
-              <div class='column'>
-                <div class='blockquote'>
-                  <p class='h2'>"</p><blockquote class='h2'>A riveting theme, plus enthusiasm, teamwork and a unique approach to teaching writing combined to make this an experience our students will remember all their lives."</blockquote>
-                  <cite class='smallcaps'>– SETH LAVIN, PRINCIPAL<br><p class='smallcaps'>BRENTANO ELEMENTARY SCHOOL</p></cite>
-                </div>
-              </div>
-            </div>
-         </div> <!-- publishing -->
-         </section>
-         <section id="volunteers">
-           	<h1 class="section-title">Volunteers</h1>
-            <img src='images/volunteers-3.png'>
-            <div class='box'>
-              <div class='blockquote'>
-                  <p class='h2'>"</p><blockquote class='h2'>Much of life for children is being told no. 826CHI is a small space where students are told yes—yes, you can write, yes, you are smart, yes, you can be silly and strange, yes, you can follow your art, yes, you can accomplish anything. That is a space I want to be a part of."</blockquote>
-                  <cite  class='smallcaps'>– BRYCE P., VOLUNTEER VISUAL ARTS COORDINATOR</cite>
-               </div>
-            </div>
-           	<p class='text-column'>Our work is only possible through the dedication of our highly skilled volunteers. During 2015-2016, we enlisted the services of 302 active volunteers to deliver small group support across all of our programs.  Volunteers include everyone from educators and authors to lawyers and accountants, and range in life experiences from recent college graduates to retirees. They are the people who truly activate our mission on an individual basis, serving as both writing coaches and social-emotional mentors. It is only because of these committed, enthusiastic, generous individuals that 826CHI could provide free one-on-one and small-group tutoring to 2,361 Chicago students this school year.</p>
-         </section> <!-- volunteers -->
-         <section id="financials-report">
-           	<h1 class="section-title">Financial Report</h1>
-           	<div id='income-wrap'>
-              <h3><p>—</p>Revenue</h3>
-              <div class='pie-data' id='earned-income'>
-                <p class='smallcaps'>EARNED INCOME</p>
-                <p class='no'>$203,152</p>
-              </div>
-              <div class='pie-data' id='individuals'>
-                <p class='smallcaps'>INDIVIDUALS</p>
-                <p class='no'>$190,826</p>
-              </div>
-              <div class='pie-data' id='foundations'>
-                <p class='smallcaps'>FOUNDATIONS</p>
-                <p class='no'>$78,845</p>
-              </div>
-              <div class='pie-data' id='government'>
-                <p class='smallcaps'>GOVERNMENT</p>
-                <p class='no'>$31,067</p>
-              </div>
-              <div class='pie-data' id='corporate'>
-                <p class='smallcaps'>CORPORATE</p>
-                <p class='no'>$8,577</p>
-              </div>
-              <div class='pie-data' id='national-contributions'>
-                <p class='smallcaps'>826NATIONAL CONTRIBUTIONS</p>
-                <p class='no'>$50,211</p>
-              </div>
-              <div class='pie-data' id='fundraising-events'>
-                <p class='smallcaps'>FUNDRAISING EVENTS</p>
-                <p class='no'>$113,297</p>
-              </div>
-              <div class='pie-chart'>
-                <canvas id='income' width='670' height='700'></canvas>
-              </div>
-              <div class='pie-data total'>
-                <p class='smallcaps'>TOTAL</p>
-                <p class='no'>$534,263</p>
-              </div>
-            </div>
-            <div id='expenses-wrap'>
-              <h3><p>—</p>Expenses</h3>
-              <div class='pie-data' id='administrative'>
-                <p class='smallcaps'>ADMINISTRATIVE</p>
-                <p class='no'>$28,002</p>
-              </div>
-              <div class='pie-data' id='fundraising'>
-                <p class='smallcaps'>FUNDRAISING</p>
-                <p class='no'>$51,676</p>
-              </div>
-              <div class='pie-data' id='programming'>
-                <p class='smallcaps'>PROGRAMMING</p>
-                <p class='no'>$400,409</p>
-              </div>
-              <div class='pie-chart'><canvas id='expenses' width='468' height='520'></canvas></div>
-              <div class='pie-data total'>
-                <p class='smallcaps'>TOTAL</p>
-                <p class='no'>$480,087</p>
-              </div>
-            </div>
-            <script>
-            //revenue
-            var revenueResults = [
-              {name: "INDIVIDUALS", count: 190826, color: "rgba(56, 216, 255, 0.5)"},
-              {name: "FOUNTATIONS", count: 78845, color: "rgba(56, 216, 255, 0.5)"},
-              {name: "GOVERNMENT", count: 31067, color: "#39D8FF"},
-              {name: "CORPORATE", count: 8577, color: "#69E2FF"},
-              {name: "826NATIONAL CONTRIBUTIONS", count: 50211, color: "#BCF2FF"},
-              {name: "FUNDRAISING EVENTS", count: 113297, color: "#C3F4FF"},
-              {name: "EARNED INCOME", count: 203152, color: "#FFFFFF"},
-            ];
-            var cx = document.querySelector('#income').getContext("2d");
-            var total = revenueResults.reduce(function(sum, choice) {
-                                        return sum + choice.count;
-                                      }, 0);
-            // Start at the top
-            var currentAngle = -0.5 * Math.PI;
-            revenueResults.forEach(function(result) {
+          </div>
+        </div>  --><!-- quotes -->
+        <div class='big-box'>
+         	<h3 id="digital-tutoring">Next level: Digital Tutoring</h3>
+         	<p>Nested under our In-Schools program, 826CHI partnered up with teachers at Pritzker College Prep to provide AP U.S. History and World History writing support throughout the full academic year. Online volunteers were matched with up to 1- 2 students and committed approximately one hour for each student, providing essay edits and feedback every two weeks during the year.</p>
+        </div>
+      </div> <!-- in-schools -->
+
+      <div id='workshops'>
+       	<h3>—<br>Workshops</h3>
+        <div class='box'>
+          <p id='no97'>97</p><p class="percent-sign">%</p>
+          <p class='smallcaps'>OF STUDENTS SAID THEY LIKED WORKING WITH THE VOLUNTEERS AT 826 WORKSHOPS</p>
+        </div>
+        <img class='section-header-img' src='images/workshops.png'>
+        <p>826CHI offers free workshops that provide in-depth and interdisciplinary writing instruction in areas such as poetry, creative fiction, screenwriting/playwriting and journalism. Twenty-eight workshops were instructed by 826CHI volunteers and staff in 2015-2016. Connecting Chicago students with these creative and generous mentors allows students to dream and achieve on a deeper scale. Workshops published five titles during 2015-2016, including: <i>Not Minding How Gloomy It Is Outside,  And the Rest is Noise: Pitchfork Music Writing,</i> and <i>The Time Was 11:24</i>.</p>
+        
+        <div class='row'>
+          <span class='col-4'>
+            <p class='no-3'>188</p><p>Students Served</p>
+          </span><span class='col-2'>
+            <img id='icon-workshops-2' src='images/icons/workshops2.svg'>
+            <p class='no-3'>28</p><p>Writing Workshops</p>
+          </span><span class='col-4'>
+            <p class='no-3'>6</p><p>In-House Publications</p>  
+          </span>
+        </div>
+
+        <div class='row'>
+          <span class='col-2'>
+            <p class='h2'>"</p><blockquote class='h2'>I loved the diverse environment and the instructors were so encouraging, inspiring, patient, and amazing in every way."</blockquote>
+            <cite  class='smallcaps'>– LAUREN E., STUDENT<br><p class='smallcaps'>WHITNEY YOUNG MAGNET HIGH SCHOOL</p></cite>
+          </span><span class='col-2'>
+            <p class='h2'>"</p><blockquote class='h2'>I liked that this workshop was very open to ideas and opinions. You were safe to say anything and express any emotions."</blockquote>
+            <cite class='smallcaps'>– ISABELLA S., STUDENT<br><p class='smallcaps'>OGDEN INTERNATIONAL SCHOOL OF CHICAGO</p></cite>
+          </span>
+        </div>  
+
+        <div class='big-box'>
+         	<h3 id="college-essay-writing">Next level: College Essay Writing</h3>
+         	<p>To help keep high school seniors (and a few ambitious juniors) motivated and prepared to write the college entrance essay of their dreams, 826CHI partnered with the East Village Youth Program for College Essay Writing Days. 826CHI staff and volunteers led five workshop sessions, providing students the time and space to discuss personal statements, read some examples, and have 1-to-1 volunteer support to perfect their essays.</p>
+        </div>
+        <div class='big-box'>
+         	<h3 id="youth-advisory-board">Next level: Youth Advisory Board</h3>
+         	<p>The Youth Advisory Board, 826CHI’s signature high school program, is a yearlong creative writing workshop that offers rising writers and leaders a collaborative space to meet, write, and discuss. The 16 students selected for the program represent a multitude of neighborhoods and school districts, and they attended biweekly meetings at our writing center in which they explored fiction, poetry, journalism, and spoken word, culminating in June with the publication, <i>A Record in Space</i>, featuring the students’ original work produced in the workshop. Teaching artists visit the students during the year to lead guest workshops sessions and answer students’ questions about careers in publishing. Youth Advisory Board members also complete a 20-hour service requirement over the course of the school year by volunteering in 826CHI's After-School Tutoring and Writing program and/or Weekend Workshops program, serving as mentors to 826CHI’s younger students.</p>
+        </div>
+      </div> <!-- workshops -->
+      
+      <div id='publishing'>
+       	<h3>—<br>Publishing</h3>
+        <img class='section-header-img' src='images/publishing.png'>
+       	<p>There is no other organization in Chicago publishing 6 to 18 year-olds’ creative work at the rate that 826CHI is publishing. Last year alone we published 70 books; printing over one-thousand copies so that every student had the chance to take ownership over their hard work. By publishing students’ stories, our young authors become an important part of an artistic dialogue. We work hard to promote the value and impact of our writers’ work. The Chicago Public Library now carries a variety of 826CHI publications in 80 locations across the city. We sell copies of student publications in our revenue-generating storefront, <cite>The Wicker Park Secret Agent Supply</cite>. Our major publications receive public launch events; solidifying our student voices as an essential part of Chicago’s literary canon. Our most recent YABP publication received extensive press coverage in local news from the Chicago Tribune to the Chicago Reader.</p>
+      </div> <!-- publishing -->
+
+      <div id='publications'>
+      <h3>—<br>Publishing</h3>
+
+      <div class='books-column'>
+
+      </div>
+
+      <div class='books-column'>
+        
+      </div>
+
+      <div class='books-column'>
+        
+      </div>
+
+      <div class='books-column'>
+        
+      </div>
+
+      <div class='books-column'>
+        
+      </div>
+
+      <div class='books-column'>
+        
+      </div>
+
+      <div class='quotes-div'>
+        <div class='column'>
+          <div class='blockquote'>
+            <p class='h2'>"</p><blockquote class='h2'>A riveting theme, plus enthusiasm, teamwork and a unique approach to teaching writing combined to make this an experience our students will remember all their lives."</blockquote>
+            <cite class='smallcaps'>– SETH LAVIN, PRINCIPAL<br><p class='smallcaps'>BRENTANO ELEMENTARY SCHOOL</p></cite>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- publications -->
+
+    </section> <!--core programs -->
+
+    <section id="volunteers">
+     	<h1 class="section-title">Volunteers</h1>
+      <img class='morse' src='images/morsecode/volunteers.png'>
+      <img class='section-header-img' src='images/volunteers-3.png'>
+      <div class='box'>
+        <div class='blockquote'>
+          <p class='h2'>"</p><blockquote class='h2'>Much of life for children is being told no. 826CHI is a small space where students are told yes—yes, you can write, yes, you are smart, yes, you can be silly and strange, yes, you can follow your art, yes, you can accomplish anything. That is a space I want to be a part of."</blockquote>
+          <cite  class='smallcaps'>– BRYCE P., VOLUNTEER VISUAL ARTS COORDINATOR</cite>
+        </div>
+      </div>
+     	<p class='text-column'>Our work is only possible through the dedication of our highly skilled volunteers. During 2015-2016, we enlisted the services of 302 active volunteers to deliver small group support across all of our programs.  Volunteers include everyone from educators and authors to lawyers and accountants, and range in life experiences from recent college graduates to retirees. They are the people who truly activate our mission on an individual basis, serving as both writing coaches and social-emotional mentors. It is only because of these committed, enthusiastic, generous individuals that 826CHI could provide free one-on-one and small-group tutoring to 2,361 Chicago students this school year.</p>
+    </section> <!-- volunteers -->
+    
+    <section id="financials-report">
+     	<h1 class="section-title">Financial Report</h1>
+      <img class='morse' src='images/morsecode/financialreport.png'>
+     	<div id='income-wrap'>
+        <h3>—<br>Revenue</h3>
+        <div class='pie-data' id='earned-income'>
+          <p class='smallcaps'>EARNED INCOME</p>
+          <p class='no'>$203,152</p>
+        </div>
+        <div class='pie-data' id='individuals'>
+          <p class='smallcaps'>INDIVIDUALS</p>
+          <p class='no'>$190,826</p>
+        </div>
+        <div class='pie-data' id='foundations'>
+          <p class='smallcaps'>FOUNDATIONS</p>
+          <p class='no'>$78,845</p>
+        </div>
+        <div class='pie-data' id='government'>
+          <p class='smallcaps'>GOVERNMENT</p>
+          <p class='no'>$31,067</p>
+        </div>
+        <div class='pie-data' id='corporate'>
+          <p class='smallcaps'>CORPORATE</p>
+          <p class='no'>$8,577</p>
+        </div>
+        <div class='pie-data' id='national-contributions'>
+          <p class='smallcaps'>826NATIONAL CONTRIBUTIONS</p>
+          <p class='no'>$50,211</p>
+        </div>
+        <div class='pie-data' id='fundraising-events'>
+          <p class='smallcaps'>FUNDRAISING EVENTS</p>
+          <p class='no'>$113,297</p>
+        </div>
+        <div class='pie-chart'>
+          <canvas id='income' width='670' height='700'></canvas>
+        </div>
+        <div class='pie-data total'>
+          <p class='smallcaps'>TOTAL</p>
+          <p class='no'>$534,263</p>
+        </div>
+      </div>
+      <div id='expenses-wrap'>
+        <h3>—<br>Expenses</h3>
+        <div class='pie-data' id='administrative'>
+          <p class='smallcaps'>ADMINISTRATIVE</p>
+          <p class='no'>$28,002</p>
+        </div>
+        <div class='pie-data' id='fundraising'>
+          <p class='smallcaps'>FUNDRAISING</p>
+          <p class='no'>$51,676</p>
+        </div>
+        <div class='pie-data' id='programming'>
+          <p class='smallcaps'>PROGRAMMING</p>
+          <p class='no'>$400,409</p>
+        </div>
+        <div class='pie-chart'><canvas id='expenses' width='468' height='520'></canvas></div>
+          <div class='pie-data total'>
+            <p class='smallcaps'>TOTAL</p>
+            <p class='no'>$480,087</p>
+          </div>
+        </div>
+        <script>
+          //revenue
+          var revenueResults = [
+           {name: "INDIVIDUALS", count: 190826, color: "rgba(56, 216, 255, 0.5)"},
+           {name: "FOUNTATIONS", count: 78845, color: "rgba(56, 216, 255, 0.5)"},
+           {name: "GOVERNMENT", count: 31067, color: "#39D8FF"},
+           {name: "CORPORATE", count: 8577, color: "#69E2FF"},
+           {name: "826NATIONAL CONTRIBUTIONS", count: 50211, color: "#BCF2FF"},
+           {name: "FUNDRAISING EVENTS", count: 113297, color: "#C3F4FF"},
+           {name: "EARNED INCOME", count: 203152, color: "#FFFFFF"},
+          ];
+          var cx = document.querySelector('#income').getContext("2d");
+          var total = revenueResults.reduce(function(sum, choice) {
+                                      return sum + choice.count;
+                                    }, 0);
+          // Start at the top
+          var currentAngle = -0.5 * Math.PI;
+          revenueResults.forEach(function(result) {
             var sliceAngle = (result.count / total) * 2 * Math.PI;
             cx.beginPath();
             cx.arc(320, 335, 319,
@@ -450,902 +553,977 @@
             cx.lineTo(320, 335);
             cx.strokeStyle = result.color;
             cx.stroke();
-            });
+          });
 
-            cx.beginPath();
-            cx.moveTo(306, 670);
-            cx.lineTo(303, 686);
-            cx.strokeStyle = revenueResults[4]['color'];
-            cx.stroke();
+          cx.beginPath();
+          cx.moveTo(306, 670);
+          cx.lineTo(303, 686);
+          cx.strokeStyle = revenueResults[4]['color'];
+          cx.stroke();
 
-            cx.beginPath();
-            cx.moveTo(428, 653);
-            cx.lineTo(435, 670);
-            cx.strokeStyle = revenueResults[3]['color'];
-            cx.stroke();
+          cx.beginPath();
+          cx.moveTo(428, 653);
+          cx.lineTo(435, 670);
+          cx.strokeStyle = revenueResults[3]['color'];
+          cx.stroke();
 
-            cx.beginPath();
-            cx.moveTo(488, 623);
-            cx.lineTo(495, 634);
-            cx.lineTo(548, 634);
-            cx.strokeStyle = revenueResults[2]['color'];
-            cx.stroke();
+          cx.beginPath();
+          cx.moveTo(488, 623);
+          cx.lineTo(495, 634);
+          cx.lineTo(548, 634);
+          cx.strokeStyle = revenueResults[2]['color'];
+          cx.stroke();
+          //expenses
+          var expensesResults = [
+            {name: "PROGRAMMIN", count: 400409, color: "#FFFFFF"},
+            {name: "FUNDRAISING", count: 51676, color: "#39D8FF"},
+            {name: "ADMINISTRATIVE", count: 28002, color: "rgba(56, 216, 255, 0.6)"},
+          ];
+          var cx = document.querySelector('#expenses').getContext("2d");
+          var total = expensesResults.reduce(function(sum, choice) {
+                                      return sum + choice.count;
+                                    }, 0);
+          // Start at the top
+          var currentAngle = -0.5 * Math.PI;
+          expensesResults.forEach(function(result) {
+          var sliceAngle = (result.count / total) * 2 * Math.PI;
+          cx.beginPath();
+          cx.arc(234, 260, 232,
+                 currentAngle, currentAngle + sliceAngle);
+          currentAngle += sliceAngle;
+          cx.lineTo(234, 260);
+          cx.strokeStyle = result.color;
+          cx.stroke();
+          });
+          cx.beginPath();
+          cx.moveTo(182, 1);
+          cx.lineTo(186, 19);
+          cx.strokeStyle = expensesResults[2]['color'];
+          cx.stroke();    
+        </script>
+    </section>
 
-            //expenses
-            var expensesResults = [
-              {name: "PROGRAMMIN", count: 400409, color: "#FFFFFF"},
-              {name: "FUNDRAISING", count: 51676, color: "#39D8FF"},
-              {name: "ADMINISTRATIVE", count: 28002, color: "rgba(56, 216, 255, 0.6)"},
-            ];
-            var cx = document.querySelector('#expenses').getContext("2d");
-            var total = expensesResults.reduce(function(sum, choice) {
-                                        return sum + choice.count;
-                                      }, 0);
-            // Start at the top
-            var currentAngle = -0.5 * Math.PI;
-            expensesResults.forEach(function(result) {
-            var sliceAngle = (result.count / total) * 2 * Math.PI;
-            cx.beginPath();
-            cx.arc(234, 260, 232,
-                   currentAngle, currentAngle + sliceAngle);
-            currentAngle += sliceAngle;
-            cx.lineTo(234, 260);
-            cx.strokeStyle = result.color;
-            cx.stroke();
-            });
+    <section id="team">
+     	<h1 class="section-title">2015-2016 Team</h1>
+      <img class='morse' src='images/morsecode/team2.png'>
+      <h2 class="section-title">—<br>Staff</h2>
+      <ul>
+        <li><h2>Tammy Beard</h2><p class='smallcaps'>Director of Development</p></li>
+        <li><h2>Kendra Curry-Khanna</h2><p class='smallcaps'>EXECUTIVE DIRECTOR</p></li>
+        <li><h2>Abi Humber</h2><p class='smallcaps'>Communications and Programs Manager</p></li>
+        <li><h2>Elif Karatas</h2><p class='smallcaps'>Volunteer Coordinator</p></li>
+        <li><h2>Sarah Kokernot</h2><p class='smallcaps'>Programs Manager</p></li>
+        <li><h2>Esther Lee</h2><p class='smallcaps'>Development Associate</p></li>
+        <li><h2>Amanda Lichthenstein</h2><p class='smallcaps'>Director of Education</p></li>
+        <li><h2>Kortney Morrow</h2><p class='smallcaps'>Development Coordinator</p></li>
+        <li><h2>Tyler Stoltenberg</h2><p class='smallcaps'>Operations Manager</p></li>
+        <li><h2>Stien van der Ploeg</h2><p class='smallcaps'>Director of Development</p></li>
+        <li><h2>Tracy Woodley</h2><p class='smallcaps'>Volunteer Coordinator</p></li>
+      </ul>
+    </section>
+    <section id="board-of-directors">
+     	<h2 class="section-title">—<br>Board of Directors</h2>
+     	<ul>
+     		<li><p>Jennifer Bell</p></li>
+     		<li><p>John Conneely</p></li>
+    		<li><p>D.R. Edwards</p></li>
+    		<li><p>Alexia Elejalde-Ruiz</p></li>
+     		<li><p>Victor Giron<p class='smallcaps'>TREASURER</p></p></li>
+        <li><p>Hilary Hodge<!-- President --></p></li>
+     		<li><p>Ryan Hubbard</p></li>
+    		<li><p>Daniel Kuruna</p></li>
+    		<li><p>Tony Malcoun<p class='smallcaps'>VICE-PRESIDENT</p></p></li>
+     		<li><p>Amy McKnight</p></li>
+     		<li><p>Sheila Patel</p></li>
+    		<li><p>Jennifer Statler</p></li>
+     		<li><p>Christine Quinn<p class='smallcaps'>SECRETARY</p></p></li>
+    		<li><p>Gerald Richards</p></li>
+     		<li><p>Bailey Vance</p></li>
+     		<li><p>Jan Zasowski</p></li>
+     	</ul>
+    </section>
 
-            cx.beginPath();
-            cx.moveTo(182, 1);
-            cx.lineTo(186, 19);
-            cx.strokeStyle = expensesResults[2]['color'];
-            cx.stroke();    
-            </script>
-         </section>
+    <section id="interns">
+     	<h2 class="section-title">—<br>Interns</h2>
+     	<ul>
+     		<li><p>Alex Borkowski</p></li>
+     		<li><p>Bea Cabrera</p></li>
+     		<li><p>Gianna Canning</p></li>
+     		<li><p>Daniel Gonzalez</p></li>
+		    <li><p>Katie Gonzalez</p></li>
+     		<li><p>Jacob Hall</p></li>
+     		<li><p>Stephanie Jurusz</p></li>
+     		<li><p>Kimberly Keating</p></li>
+     		<li><p>Hajrije Kolimja</p></li>
+     		<li><p>Kinsley Koons</p></li>
+     		<li><p>Jac Kuntz</p></li>
+     		<li><p>Esther Lee</p></li>
+     		<li><p>Everett Mulroe</p></li>
+     		<li><p>Reed Redmond</p></li>
+     		<li><p>Gargi Saripalli</p></li>
+     		<li><p>Neeka Stewart</p></li>
+     		<li><p>Ashlyn Wheeler</p></li>
+     		<li><p>Kelsey Zigmund</p></li>
+     	</ul>
+    </section>
 
-         <section id="team">
-         	<h1 class="section-title">2015-2016 Team</h1>
-          <h2 class="section-title"><p>—</p>Staff</h2>
-          <ul>
-            <li><img src='http://placehold.it/135x135'><h2>Tammy Beard</h3><p class='smallcaps'>Director of Development</p></li>
-            <li><img src='http://placehold.it/135x135'><h2>Kendra Curry-Khanna</h2><p class='smallcaps'>EXECUTIVE DIRECTOR</p></li>
-            <li><img src='http://placehold.it/135x135'><h2>Abi Humber</h2><p class='smallcaps'>Communications and Programs Manager</p></li>
-            <li><img src='http://placehold.it/135x135'><h2>Elif Karatas</h2><p class='smallcaps'>Volunteer Coordinator</p></li>
-            <li><img src='http://placehold.it/135x135'><h2>Sarah Kokernot</h2><p class='smallcaps'>Programs Manager</p></li>
-            <li><img src='http://placehold.it/135x135'><h2>Esther Lee</h2><p class='smallcaps'>Development Associate</p></li>
-            <li><img src='http://placehold.it/135x135'><h2>Amanda Lichthenstein</h2><p class='smallcaps'>Director of Education</p></li>
-            <li><img src='http://placehold.it/135x135'><h2>Kortney Morrow</h2><p class='smallcaps'>Development Coordinator</p></li>
-            <li><img src='http://placehold.it/135x135'><h2>Tyler Stoltenberg</h2><p class='smallcaps'>Operations Manager</p></li>
-            <li><img src='http://placehold.it/135x135'><h2>Stien van der Ploeg</h2><p class='smallcaps'>Director of Development</p></li>
-            <li><img src='http://placehold.it/135x135'><h2>Tracy Woodley</h2><p class='smallcaps'>Volunteer Coordinator</p></li>
-          </ul>
-        </section>
+    <section id="associate-board">
+     	<h2 class="section-title">—<br>Associate Board</h2>
+     	<ul>
+     		<li><p>Kevin Adamick</p></li>
+        <li><p>Kris Adamik</p></li>
+        <li><p>Matthew Adelman</p></li>
+        <li><p>Rowan Beaird</p></li>
+        <li><p>Nina Coppo</p></li>
+        <li><p>Brendan M. Dineen</p></li>
+        <li><p>Alexandra Galante</p></li>
+        <li><p>Adel Johnson</p></li>
+        <li><p>Rita Kapadia</p></li>
+        <li><p>Kristopher Knabe</p></li>
+        <li><p>Melanie Krakauer</p></li>
+        <li><p>Alison Kuczwara</p></li>
+        <li><p>Josh Kurlander</p></li>
+        <li><p>Rosemary Lane</p></li>
+        <li><p>Ian Law</p></li>
+        <li><p>Josh Lesser</p></li>
+        <li><p>Jeffrey Levine</p></li>
+        <li><p>Samuel Mock</p></li>
+        <li><p>Liz McKeon</p></li>
+        <li><p>Jessica Mlinaric</p></li>
+        <li><p>Paolo Palazzi-Xirinachs</p></li>
+        <li><p>Sara Radin</p></li>
+        <li><p>Jolene Saul</p></li>
+        <li><p>Matt Sudman</p></li>
+        <li><p>Heidi Schmid Whiting</p></li>
+        <li><p>Warren Yates</p></li>
+      </ul>
+    </section>
 
-          <section id="board-of-directors">
-          	<h2 class="section-title"><p>—</p>Board of Directors</h2>
-          	<ul>
-          		<li><p>Jennifer Bell</p></li>
-          		<li><p>John Conneely</p></li>
-          		<li><p>D.R. Edwards</p></li>
-          		<li><p>Alexia Elejalde-Ruiz</p></li>
-          		<li><p>Victor Giron<p class='smallcaps'>TREASURER</p></p></li>
-              <li><p>Hilary Hodge<!-- President --></p></li>
-          		<li><p>Ryan Hubbard</p></li>
-          		<li><p>Daniel Kuruna</p></li>
-          		<li><p>Tony Malcoun<p class='smallcaps'>VICE-PRESIDENT</p></p></li>
-          		<li><p>Amy McKnight</p></li>
-          		<li><p>Sheila Patel</p></li>
-          		<li><p>Jennifer Statler</p></li>
-          		<li><p>Christine Quinn<p class='smallcaps'>SECRETARY</p></p></li>
-          		<li><p>Gerald Richards</p></li>
-          		<li><p>Bailey Vance</p></li>
-          		<li><p>Jan Zasowski</p></li>
-          	</ul>
-          </section>
+    <section id="design-cohort-members">
+     	<h2 class="section-title">—<br>Design Cohort Members</h2>
+      <ul>
+        <li><p>Andy Berlin</p></li>
+        <li><p>Helen Boggess</p></li>
+        <li><p>Greg Browe</p></li>
+        <li><p>Pierra Brown</p></li>
+        <li><p>Alyssa Cieslak</p></li>
+        <li><p>Tyler Deal</p></li>
+        <li><p>Ryan Ford</p></li>
+        <li><p>Cooper Fosczc</p></li>
+        <li><p>Lane Fujita</p></li>
+        <li><p>Marnie Galloway</p></li>
+        <li><p>Patrick Girouard</p></li>
+        <li><p>Audrey Green</p></li>
+        <li><p>Theo Hahn</p></li>
+        <li><p>Margaret Hitch</p></li>
+        <li><p>Ambrose Holiday</p></li>
+        <li><p>Courtney Hoover</p></li>
+        <li><p>Wil Hughes</p></li>
+        <li><p>Delia Jean</p></li>
+        <li><p>Debbie Labedz</p></li>
+        <li><p>Richard LaRue</p></li>
+        <li><p>Maggie Marlin</p></li>
+        <li><p>Anna Mielniczuk</p></li>
+        <li><p>Grace Molteni</p></li>
+        <li><p>Bryce Parsons-Twesten</p></li>
+        <li><p>Megan Pelto</p></li>
+        <li><p>Christina Pfeffer</p></li>
+        <li><p>Tommy Quinn</p></li>
+        <li><p>Kyle Raum</p></li>
+        <li><p>Bobby Reichle</p></li>
+        <li><p>Kyrstin Rodriguez</p></li>
+        <li><p>Gage Salzano</p></li>
+        <li><p>Alison Sustarich</p></li>
+        <li><p>Kelsey Zigmund</p></li>
+      </ul>
+    </section>
 
-          <section id="interns">
-          	<h2 class="section-title"><p>—</p>Interns</h2>
-          	<ul>
-          		<li><p>Alex Borkowski</p></li>
-          		<li><p>Bea Cabrera</p></li>
-          		<li><p>Gianna Canning</p></li>
-          		<li><p>Daniel Gonzalez</p></li>
-          		<li><p>Katie Gonzalez</p></li>
-          		<li><p>Jacob Hall</p></li>
-          		<li><p>Stephanie Jurusz</p></li>
-          		<li><p>Kimberly Keating</p></li>
-          		<li><p>Hajrije Kolimja</p></li>
-          		<li><p>Kinsley Koons</p></li>
-          		<li><p>Jac Kuntz</p></li>
-          		<li><p>Esther Lee</p></li>
-          		<li><p>Everett Mulroe</p></li>
-          		<li><p>Reed Redmond</p></li>
-          		<li><p>Gargi Saripalli</p></li>
-          		<li><p>Neeka Stewart</p></li>
-          		<li><p>Ashlyn Wheeler</p></li>
-          		<li><p>Kelsey Zigmund</p></li>
-          	</ul>
-          </section>
+    <section id="volunteers2">
+     	<h2 class="section-title">—<br>Volunteers</h2>
+      <p id='volunteers-desc'>(Including volunteers who logged 100 hours, members of Volunteer Engagement and Support Team, and Spies of the Month)</p>
+      <ul>
+        <li><p>Leah Allen</p></li>
+        <li><p>Elizabeth Bagby</p></li>
+        <li><p>Catalina Bode</p></li>
+        <li><p>Alex Borkowski</p></li>
+        <li><p>Alexandra Bragorgos</p></li>
+        <li><p>Sarah Broughton</p></li>
+        <li><p>Bea Cabrera</p></li>
+        <li><p>Daniel Carlyon</p></li>
+        <li><p>Andres Carrasquillo</p></li>
+        <li><p>Carissa Carroll</p></li>
+        <li><p>Christina Cass</p></li>
+        <li><p>Kristin Cass</p></li>
+        <li><p>Meagan Cassidy</p></li>
+        <li><p>Tina Chiu</p></li>
+        <li><p>Sydnye Cohen</p></li>
+        <li><p>Jaxson Cole</p></li>
+        <li><p>Elizabeth Cordes</p></li>
+        <li><p>Mike Croce</p></li>
+        <li><p>Jeni Crone</p></li>
+        <li><p>Nicole D'Aureli</p></li>
+        <li><p>Tyler Deal</p></li>
+        <li><p>Lyndsay Deckert</p></li>
+        <li><p>Emma Demain</p></li>
+        <li><p>Wiliam DeRonne</p></li>
+        <li><p>Brendan Dineen</p></li>
+        <li><p>Margaret Embick</p></li>
+        <li><p>Mychal Estalilla</p></li>
+        <li><p>Ola Faleti</p></li>
+        <li><p>Chelsea Fiddyment</p></li>
+        <li><p>Willie Filokowski</p></li>
+        <li><p>Ryan Ford</p></li>
+        <li><p>Cooper Fosczc</p></li>
+        <li><p>Laura Frank</p></li>
+        <li><p>Leor Galil</p></li>
+        <li><p>Maureen Gallagher</p></li>
+        <li><p>Ellen Gardner</p></li>
+        <li><p>Katelyn Gonzalez</p></li>
+        <li><p>Daniel Gonzalez</p></li>
+        <li><p>Audrey Green</p></li>
+        <li><p>Theo Hahn</p></li>
+        <li><p>Jacob Hall</p></li>
+        <li><p>Rajiv Haque</p></li>
+        <li><p>John Hawkins</p></li>
+        <li><p>Michael Hernandez</p></li>
+        <li><p>Mary Beth Higgins</p></li>
+        <li><p>Ambrose Holiday</p></li>
+        <li><p>Delia Jean Hickey</p></li>
+        <li><p>Stephanie Jurusz</p></li>
+        <li><p>Hajrije Kolimja</p></li>
+        <li><p>Ashley Kolpak</p></li>
+        <li><p>Kinsley Koons</p></li>
+        <li><p>Jac Kuntz</p></li>
+        <li><p>Rosemary Lane</p></li>
+        <li><p>Marlene Lassman</p></li>
+        <li><p>Lindsey Laufersweiler</p></li>
+        <li><p>Jeff Levine</p></li>
+        <li><p>Eileen Libby</p></li>
+        <li><p>Winshen Liu</p></li>
+        <li><p>Chelsea McDonald</p></li>
+        <li><p>Anna Mielniczuk</p></li>
+        <li><p>Robert Minelli</p></li>
+        <li><p>Jessica Mlinaric</p></li>
+        <li><p>Sam Mock</p></li>
+        <li><p>Grace Molteni</p></li>
+        <li><p>Everett Mulroe</p></li>
+        <li><p>Amanda Nyren</p></li>
+        <li><p>Bryce Parsons-Twesten</p></li>
+        <li><p>Erin Paulini</p></li>
+        <li><p>Connor Pickett</p></li>
+        <li><p>Jill Quarles</p></li>
+        <li><p>Tommy Quinn</p></li>
+        <li><p>Reed Redmond</p></li>
+        <li><p>Daniel Resner</p></li>
+        <li><p>Perry Romanowski</p></li>
+        <li><p>Joshua Ruddy</p></li>
+        <li><p>Thad Rueter</p></li>
+        <li><p>Gage Salzano</p></li>
+        <li><p>Janet Sanchez</p></li>
+        <li><p>Gargi Saripalli</p></li>
+        <li><p>Doug Seay</p></li>
+        <li><p>Sloane Smith</p></li>
+        <li><p>Dana Stewert</p></li>
+        <li><p>Neeka Stewart</p></li>
+        <li><p>Alison Sustarich</p></li>
+        <li><p>Eric Van Orman</p></li>
+        <li><p>Doloria Ware</p></li>
+        <li><p>David Welch</p></li>
+        <li><p>Kelsey Zigmund</p></li>
+      </ul>
+    </section>
 
-          <section id="associate-board">
-          	<h2 class="section-title"><p>—</p>Associate Board</h2>
-          	<ul>
-          		<li><p>Kevin Adamick</p></li>
-          		<li><p>Kris Adamik</p></li>
-          		<li><p>Matthew Adelman</p></li>
-          		<li><p>Rowan Beaird</p></li>
-          		<li><p>Nina Coppo</p></li>
-          		<li><p>Brendan M. Dineen</p></li>
-          		<li><p>Alexandra Galante</p></li>
-          		<li><p>Adel Johnson</p></li>
-          		<li><p>Rita Kapadia</p></li>
-          		<li><p>Kristopher Knabe</p></li>
-          		<li><p>Melanie Krakauer</p></li>
-          		<li><p>Alison Kuczwara</p></li>
-          		<li><p>Josh Kurlander</p></li>
-          		<li><p>Rosemary Lane</p></li>
-          		<li><p>Ian Law</p></li>
-          		<li><p>Josh Lesser</p></li>
-          		<li><p>Jeffrey Levine</p></li>
-          		<li><p>Samuel Mock</p></li>
-          		<li><p>Liz McKeon</p></li>
-          		<li><p>Jessica Mlinaric</p></li>
-          		<li><p>Paolo Palazzi-Xirinachs</p></li>
-          		<li><p>Sara Radin</p></li>
-          		<li><p>Jolene Saul</p></li>
-          		<li><p>Matt Sudman</p></li>
-          		<li><p>Heidi Schmid Whiting</p></li>
-          		<li><p>Warren Yates</p></li>
-          	</ul>
-          </section>
+    <section id="funders">
+     	<h1 class="section-title">Funders</h1>
+      <img class='morse' src='images/morsecode/funders.png'>
+      <img src='images/funders.png'>
+      <div class='box'>
+        <div class='blockquote'>
+          <p class='h2'>"</p><blockquote class='h2'>Creative writing education is more than just teaching composition and storytelling, it's inspiring a student to find their voice. The internal reflection required to develop a personal story, and the self confidence needed to put it into the world, have a transformative impact on a student's development. The skills and experiences 826CHI is giving to their students, is equipping them for success both inside and outside of the classroom."</blockquote>
+          <cite  class='smallcaps'>– NATE, DONOR</cite>
+        </div>
+      </div>
+     	<p class='text-column'>We are grateful for the partnerships and generosity of the following individuals and institutions. Your support helps 826CHI provide a platform for thousands of young writers and stories in Chicago to tell their stories in their own voices.</p>
+    </section>
 
-          <section id="design-cohort-members">
-          	<h2 class="section-title"><p>—</p>Design Cohort Members</h2>
-            <ul>
-              <li><p>Curabitor Lobortis</p></li>
-              <li><p>Id Lorem</p></li>
-              <li><p>Bibendum Ut</p></li>
-              <li><p>Consectetur Magna</p></li>
-              <li><p>Quisque Volutpat</p></li>
-              <li><p>Augue Enim</p></li>
-              <li><p>Pulvinar Lobortis</p></li>
-              <li><p>Nibh Lacinia</p></li>
-              <li><p>At Vestibulum</p></li>
-              <li><p>Curabitor Lobortis</p></li>
-              <li><p>Id Lorem</p></li>
-              <li><p>Bibendum Ut</p></li>
-              <li><p>Consectetur Magna</p></li>
-              <li><p>Quisque Volutpat</p></li>
-              <li><p>Augue Enim</p></li>
-              <li><p>Pulvinar Lobortis</p></li>
-              <li><p>Nibh Lacinia</p></li>
-              <li><p>At Vestibulum</p></li>
-              <li><p>Curabitor Lobortis</p></li>
-              <li><p>Id Lorem</p></li>
-              <li><p>Bibendum Ut</p></li>
-              <li><p>Consectetur Magna</p></li>
-              <li><p>Quisque Volutpat</p></li>
-              <li><p>Augue Enim</p></li>
-              <li><p>Pulvinar Lobortis</p></li>
-              <li><p>Nibh Lacinia</p></li>
-              <li><p>At Vestibulum</p></li>
-            </ul>
-          </section>
-
-          <section id="volunteers2">
-          	<h2 class="section-title"><p>—</p>Volunteers</h2>
-            <ul>
-              <li><p>Curabitor Lobortis</p></li>
-              <li><p>Id Lorem</p></li>
-              <li><p>Bibendum Ut</p></li>
-              <li><p>Consectetur Magna</p></li>
-              <li><p>Quisque Volutpat</p></li>
-              <li><p>Augue Enim</p></li>
-              <li><p>Pulvinar Lobortis</p></li>
-              <li><p>Nibh Lacinia</p></li>
-              <li><p>At Vestibulum</p></li>
-              <li><p>Curabitor Lobortis</p></li>
-              <li><p>Id Lorem</p></li>
-              <li><p>Bibendum Ut</p></li>
-              <li><p>Consectetur Magna</p></li>
-              <li><p>Quisque Volutpat</p></li>
-              <li><p>Augue Enim</p></li>
-              <li><p>Pulvinar Lobortis</p></li>
-              <li><p>Nibh Lacinia</p></li>
-              <li><p>At Vestibulum</p></li>
-              <li><p>Curabitor Lobortis</p></li>
-              <li><p>Id Lorem</p></li>
-              <li><p>Bibendum Ut</p></li>
-              <li><p>Consectetur Magna</p></li>
-              <li><p>Quisque Volutpat</p></li>
-              <li><p>Augue Enim</p></li>
-              <li><p>Pulvinar Lobortis</p></li>
-              <li><p>Nibh Lacinia</p></li>
-              <li><p>At Vestibulum</p></li>
-            </ul>
-          </section>
-
-          <section id="funders">
-          	<h1 class="section-title">Funders</h1>
-            <img src='images/funders.png'>
-            <div class='box'>
-              <div class='blockquote'>
-                  <p class='h2'>"</p><blockquote class='h2'>Creative writing education is more than just teaching composition and storytelling, it's inspiring a student to find their voice. The internal reflection required to develop a personal story, and the self confidence needed to put it into the world, have a transformative impact on a student's development. The skills and experiences 826CHI is giving to their students, is equipping them for success both inside and outside of the classroom."</blockquote>
-                  <cite  class='smallcaps'>– NATE, DONOR</cite>
-               </div>
-            </div>
-          	<p class='text-column'>We are grateful for the partnerships and generosity of the following individuals and institutions. Your support helps 826CHI provide a platform for thousands of young writers and stories in Chicago to tell their stories in their own voices.</p>
-            </section>
-            <section id='individuals'>
-          	<h2 id="individuals"><p>—</p>Individuals</h2>
-          	<ul>
-      				<li><p>Anonymous</p></li>
-      				<li><p>Kevin Adamick</p></li>
-      				<li><p>Matthew Adelman</p></li>
-      				<li><p>Sachin Agarwal</p></li>
-      				<li><p>Michael Aguhar</p></li>
-      				<li><p>Amy Ahearn</p></li>
-      				<li><p>Hassan Ali</p></li>
-      				<li><p>Jeff Altman</p></li>
-      				<li><p>Alec and DeAnn Rubenstein</p></li>
-      				<li><p>Dana and Doron Zulikan</p></li>
-      				<li><p>Nancy and Scott Nelson</p></li>
-      				<li><p>Les and Sue Blythe</p></li>
-      				<li><p>Julie Anderson</p></li>
-      				<li><p>Michael Anderson</p></li>
-      				<li><p>Christina Apelgren</p></li>
-      				<li><p>Jacklyn Apostolik</p></li>
-      				<li><p>Seth Arkin</p></li>
-      				<li><p>Nathan Arnold</p></li>
-      				<li><p>Mark Atkins</p></li>
-      				<li><p>Annie Atzeff</p></li>
-      				<li><p>Jenny Baker</p></li>
-      				<li><p>Frederick Baker</p></li>
-      				<li><p>Brian Bannon</p></li>
-      				<li><p>Robert Barba</p></li>
-      				<li><p>Carmelo Barbaro</p></li>
-      				<li><p>Don Barnes</p></li>
-      				<li><p>Evelyn Baumann</p></li>
-      				<li><p>Rebecca Baumann</p></li>
-      				<li><p>Rowan Beaird</p></li>
-      				<li><p>Mark Beanblossom</p></li>
-      				<li><p>Tammy Beard</p></li>
-      				<li><p>Emily Beaufort</p></li>
-      				<li><p>Galen Beebe</p></li>
-      				<li><p>Bradley Beigle</p></li>
-      				<li><p>Jeni Beirne</p></li>
-      				<li><p>Claire Belisle</p></li>
-      				<li><p>Zach Benkowski</p></li>
-      				<li><p>Susan Bennett</p></li>
-      				<li><p>Donn Bischel</p></li>
-      				<li><p>Eric Bjorlin</p></li>
-      				<li><p>Thomas Blaser</p></li>
-      				<li><p>Christy Bloom</p></li>
-      				<li><p>Kevin Boehm</p></li>
-      				<li><p>Ann Bowen</p></li>
-      				<li><p>Ed Bowen</p></li>
-      				<li><p>Karen Bowen</p></li>
-      				<li><p>Kari Bowen</p></li>
-      				<li><p>Joshua Bradish</p></li>
-      				<li><p>J. Bradley Keck</p></li>
-      				<li><p>Darla Breckenridge</p></li>
-      				<li><p>Zak Breckenridge</p></li>
-      				<li><p>Ann Bregman</p></li>
-      				<li><p>Sean Bresnahan</p></li>
-      				<li><p>Jonathan Bresolin</p></li>
-      				<li><p>Christopher Brodt</p></li>
-      				<li><p>Meredith Brooks</p></li>
-      				<li><p>Mackenzie Brooks</p></li>
-      				<li><p>Jeffrey Brown</p></li>
-      				<li><p>Bonnie Brown</p></li>
-      				<li><p>Jordan Brown</p></li>
-      				<li><p>James Bruce Campbell</p></li>
-      				<li><p>Kyle Bruck</p></li>
-      				<li><p>Diane Bruns</p></li>
-      				<li><p>Tina Bubala</p></li>
-      				<li><p>Lindsey Buis</p></li>
-      				<li><p>Krystal Burlingame</p></li>
-      				<li><p>Tom Burr</p></li>
-      				<li><p>Andrew Burr</p></li>
-      				<li><p>Robert Burton</p></li>
-      				<li><p>Micki Burton</p></li>
-      				<li><p>Gayla Cahan</p></li>
-      				<li><p>Kathleen Caliento</p></li>
-      				<li><p>Hannah Callas</p></li>
-      				<li><p>Lynn Callister</p></li>
-      				<li><p>Julie Campbell</p></li>
-      				<li><p>Martha Campbell</p></li>
-      				<li><p>Julian Caracotsios</p></li>
-      				<li><p>Sarah Carson</p></li>
-      				<li><p>Kristin Cass</p></li>
-      				<li><p>Kaellagh Cassidy</p></li>
-      				<li><p>David Caulk</p></li>
-      				<li><p>Adrienne Chambers</p></li>
-      				<li><p>Corey Chan</p></li>
-      				<li><p>Crystal Chan</p></li>
-      				<li><p>Susan Cherbuliez</p></li>
-      				<li><p>Lyndsay Christensen</p></li>
-      				<li><p>Garrett Clark</p></li>
-      				<li><p>Shawn Clark</p></li>
-      				<li><p>Bob Clark</p></li>
-      				<li><p>Josh Cleveland</p></li>
-      				<li><p>Julie Coddell</p></li>
-      				<li><p>Sydnye Cohen</p></li>
-      				<li><p>Julia Collins</p></li>
-      				<li><p>Christine Collman</p></li>
-      				<li><p>Cody Cook</p></li>
-      				<li><p>Nina Coppo</p></li>
-      				<li><p>James Cordes</p></li>
-      				<li><p>Michael Cramer</p></li>
-      				<li><p>Stephany Creamer</p></li>
-      				<li><p>Philip Culcasi</p></li>
-      				<li><p>Merilee Curry</p></li>
-      				<li><p>Bev Curry</p></li>
-      				<li><p>Mark Curry</p></li>
-      				<li><p>Rose Curry</p></li>
-      				<li><p>Kendra Curry-Khanna</p></li>
-      				<li><p>David Curtin</p></li>
-      				<li><p>Annette Curtin</p></li>
-      				<li><p>Michelle Czarnecki</p></li>
-      				<li><p>Rita Dalia</p></li>
-      				<li><p>Richard Dandrea</p></li>
-      				<li><p>Kristen Darst</p></li>
-      				<li><p>Brooke Davis</p></li>
-      				<li><p>Shelton Davis</p></li>
-      				<li><p>Keith Davison</p></li>
-      				<li><p>Travis Davison</p></li>
-      				<li><p>Tom DeChant</p></li>
-      				<li><p>Sandy Dechant</p></li>
-      				<li><p>Monique Demery</p></li>
-      				<li><p>Josh Deth</p></li>
-      				<li><p>Bruce and Mary Diamond</p></li>
-      				<li><p>Thomas Dickson</p></li>
-      				<li><p>Christen Dilly</p></li>
-      				<li><p>Brendan Dineen</p></li>
-      				<li><p>Kevin Dineen</p></li>
-      				<li><p>Christine Dlugosz</p></li>
-      				<li><p>Daniel Domino</p></li>
-      				<li><p>CrowdRise Donation</p></li>
-      				<li><p>Kathleen Donenberg</p></li>
-      				<li><p>Unknown Donor</p></li>
-      				<li><p>Maria Doyle</p></li>
-      				<li><p>Adele Duba-Nagel</p></li>
-      				<li><p>Tom Duca</p></li>
-      				<li><p>Zach Duffy</p></li>
-      				<li><p>Shawn Duffy</p></li>
-      				<li><p>Laurie Duffy</p></li>
-      				<li><p>Robin Duffy</p></li>
-      				<li><p>Ryan Duffy</p></li>
-      				<li><p>Seoda Duffy</p></li>
-      				<li><p>Hannah Duncan</p></li>
-      				<li><p>Kathleen Dunne</p></li>
-      				<li><p>Laurie Dunphey</p></li>
-      				<li><p>Jim Ebel</p></li>
-      				<li><p>Chase Eck</p></li>
-      				<li><p>Elias Einhorn</p></li>
-      				<li><p>Shannon Elarton</p></li>
-      				<li><p>Alexia Elejalde-Ruiz</p></li>
-      				<li><p>Katie Elfering</p></li>
-      				<li><p>Hadi Elzayn</p></li>
-      				<li><p>Monica Eng</p></li>
-      				<li><p>Barbara Engel</p></li>
-      				<li><p>Paul Etter</p></li>
-      				<li><p>Patricia Fahy</p></li>
-      				<li><p>Michael Fair</p></li>
-      				<li><p>Nancy Farnum</p></li>
-      				<li><p>Carolyn Ferry</p></li>
-      				<li><p>Peter Ferry</p></li>
-      				<li><p>Christopher Fezza</p></li>
-      				<li><p>Tammy Fickel</p></li>
-      				<li><p>Alissa Fields</p></li>
-      				<li><p>Willie Filkowski</p></li>
-      				<li><p>Sandie Ford</p></li>
-      				<li><p>Alice Foreman</p></li>
-      				<li><p>Romaine Forsythe</p></li>
-      				<li><p>Adrian Foster</p></li>
-      				<li><p>Allyson Fox</p></li>
-      				<li><p>Adam Frederico</p></li>
-      				<li><p>Carey Freimuth</p></li>
-      				<li><p>Jennifer Friedland</p></li>
-      				<li><p>Claire Friedman</p></li>
-      				<li><p>Harold G Woodley</p></li>
-      				<li><p>Mary Gaertner</p></li>
-      				<li><p>Alexandra Galante</p></li>
-      				<li><p>Linnea Gandhi</p></li>
-      				<li><p>Girish Gehani</p></li>
-      				<li><p>Doug Gerald</p></li>
-      				<li><p>Claire Gibbons</p></li>
-      				<li><p>Christopher Gioiella</p></li>
-      				<li><p>Victor Giron</p></li>
-      				<li><p>Allison Glaubke</p></li>
-      				<li><p>Kiernan Glenn</p></li>
-      				<li><p>Lara Gonzalez</p></li>
-      				<li><p>Margot Gotterer</p></li>
-      				<li><p>Alex Gough</p></li>
-      				<li><p>Aaron Grant</p></li>
-      				<li><p>Kent Green</p></li>
-      				<li><p>Jamie Greenberg</p></li>
-      				<li><p>Patrick Greene</p></li>
-      				<li><p>Marlin Greenfield</p></li>
-      				<li><p>Lawrence Griffin</p></li>
-      				<li><p>James Griffiths</p></li>
-      				<li><p>Justin Grimmer</p></li>
-      				<li><p>Frances Guinta</p></li>
-      				<li><p>Ellen Guirl</p></li>
-      				<li><p>Debra Gumm</p></li>
-      				<li><p>Amanda Gustafson</p></li>
-      				<li><p>Oscar Guy Bargnes</p></li>
-      				<li><p>Jane Hackett</p></li>
-      				<li><p>Susan Hackney</p></li>
-      				<li><p>Amy Hahn</p></li>
-      				<li><p>Theodore Hahn</p></li>
-      				<li><p>Ingrid Hall</p></li>
-      				<li><p>Carol Hamburger</p></li>
-      				<li><p>Rajiv Haque</p></li>
-      				<li><p>Michael Harger</p></li>
-      				<li><p>Wright Hartsell</p></li>
-      				<li><p>Stephanie Hartselle</p></li>
-      				<li><p>Cassandra Hatto</p></li>
-      				<li><p>Margaret Heller</p></li>
-      				<li><p>Kevin Hemmer</p></li>
-      				<li><p>Robert Hemmer</p></li>
-      				<li><p>Tom Hemmer</p></li>
-      				<li><p>Jon Hemmer</p></li>
-      				<li><p>Michael Hemmer</p></li>
-      				<li><p>Adolfo Hernandez</p></li>
-      				<li><p>Elizabeth Hernandez</p></li>
-      				<li><p>Gabriela Hernandez</p></li>
-      				<li><p>Lizbeth Herrera</p></li>
-      				<li><p>Drew Hester</p></li>
-      				<li><p>Aletta Hicks</p></li>
-      				<li><p>Deborah Himelhoch</p></li>
-      				<li><p>Peter Hlawitschka</p></li>
-      				<li><p>Hilary Hodge</p></li>
-      				<li><p>Adam Hoit</p></li>
-      				<li><p>Gina Holder</p></li>
-      				<li><p>Matthew Hooker</p></li>
-      				<li><p>Robert Horrell</p></li>
-      				<li><p>Kelsey Horton</p></li>
-      				<li><p>Dani Hoyler</p></li>
-      				<li><p>Ryan Hubbard</p></li>
-      				<li><p>Evan Hughes</p></li>
-      				<li><p>Mary K. Humber</p></li>
-      				<li><p>Abi Humber</p></li>
-      				<li><p>Lauren Humphrey</p></li>
-      				<li><p>Rita Hyland</p></li>
-      				<li><p>Mary Ann Iemmola</p></li>
-      				<li><p>Adrienne Irmer</p></li>
-      				<li><p>Kevin Iverson</p></li>
-      				<li><p>Evan Jahn</p></li>
-      				<li><p>Janelle James</p></li>
-      				<li><p>Sujay Javdekar</p></li>
-      				<li><p>Tara Jayakar</p></li>
-      				<li><p>Justine Jentes</p></li>
-      				<li><p>Vishnu Jindal</p></li>
-      				<li><p>Jean Johnson</p></li>
-      				<li><p>Adel Johnson</p></li>
-      				<li><p>Brooke Johnson</p></li>
-      				<li><p>Michael Johnson</p></li>
-      				<li><p>Mick Johnson</p></li>
-      				<li><p>Madison Jone Lyleroehr</p></li>
-      				<li><p>Holly Jones</p></li>
-      				<li><p>Thomas Joyner</p></li>
-      				<li><p>Suzanne Jurusz</p></li>
-      				<li><p>Alice Kao</p></li>
-      				<li><p>Rita Kapadia</p></li>
-      				<li><p>David Kaplan</p></li>
-      				<li><p>Amit Kapoor</p></li>
-      				<li><p>Elif Karatas</p></li>
-      				<li><p>Richard Kerns</p></li>
-      				<li><p>Joseph Kesner</p></li>
-      				<li><p>Kapil Khanna</p></li>
-      				<li><p>Kirk Kicklighter</p></li>
-      				<li><p>Alison Kim</p></li>
-      				<li><p>Rachel Kimura</p></li>
-      				<li><p>Judd King</p></li>
-      				<li><p>Perry Kirk Warden</p></li>
-      				<li><p>Joleen Kleckauskas</p></li>
-      				<li><p>Frederic Klein</p></li>
-      				<li><p>Nell Klugman</p></li>
-      				<li><p>Kristopher Knabe</p></li>
-      				<li><p>Jamie Knight</p></li>
-      				<li><p>Richard Knipper</p></li>
-      				<li><p>Theresa Koebel</p></li>
-      				<li><p>Ashley Kolpak</p></li>
-      				<li><p>Josh Koo</p></li>
-      				<li><p>Zachary Kooms</p></li>
-      				<li><p>Anna Koons</p></li>
-      				<li><p>Kelly Koons</p></li>
-      				<li><p>Jordan Koss</p></li>
-      				<li><p>Melanie Krakauer</p></li>
-      				<li><p>Debbie Krupp</p></li>
-      				<li><p>Amy Krynak</p></li>
-      				<li><p>Josh Kurlander</p></li>
-      				<li><p>Daniel Kuruna</p></li>
-      				<li><p>Elizabeth Kwok</p></li>
-      				<li><p>Valerie Lambe</p></li>
-      				<li><p>Patrick Lambe</p></li>
-      				<li><p>Rosemary Lane</p></li>
-      				<li><p>Matt Lang</p></li>
-      				<li><p>Nicholas Lang</p></li>
-      				<li><p>Ramona Lapadus</p></li>
-      				<li><p>Thomas Larrison</p></li>
-      				<li><p>Richard LaRue</p></li>
-      				<li><p>Bradford Lasky</p></li>
-      				<li><p>Cari Lassman</p></li>
-      				<li><p>Michael Latiner</p></li>
-      				<li><p>Sean Laude</p></li>
-      				<li><p>Ian Law</p></li>
-      				<li><p>Katie Law</p></li>
-      				<li><p>Robert Lawrence</p></li>
-      				<li><p>Rachel Lazar</p></li>
-      				<li><p>Laura Lazzara</p></li>
-      				<li><p>Teresa Leach</p></li>
-      				<li><p>Karen Lebergott</p></li>
-      				<li><p>Gregory Ledger</p></li>
-      				<li><p>Esther Lee</p></li>
-      				<li><p>Medora Lee</p></li>
-      				<li><p>Josh Lesser</p></li>
-      				<li><p>Jason Leung</p></li>
-      				<li><p>Jill Levi</p></li>
-      				<li><p>Justin Levine</p></li>
-      				<li><p>Jeffrey Levine</p></li>
-      				<li><p>Tanya Levshina</p></li>
-      				<li><p>Gerrit Lewis</p></li>
-      				<li><p>Eileen Libby</p></li>
-      				<li><p>Mark Light</p></li>
-      				<li><p>Kari Lindquist</p></li>
-      				<li><p>Kathryn Linville</p></li>
-      				<li><p>Sam Lippman</p></li>
-      				<li><p>Dominic Lomoro</p></li>
-      				<li><p>Lora Longo</p></li>
-      				<li><p>Carmen Lonstein</p></li>
-      				<li><p>Joseph Loscudo</p></li>
-      				<li><p>Claudia Lovelette</p></li>
-      				<li><p>Andrew Lowenthal</p></li>
-      				<li><p>Nancy Lowery-Bregar</p></li>
-      				<li><p>Janet Lubetkin</p></li>
-      				<li><p>Stephen Lunt</p></li>
-      				<li><p>Pamela MacDonald</p></li>
-      				<li><p>Mary Mackay</p></li>
-      				<li><p>Andrea MacKay</p></li>
-      				<li><p>Brian MacKay</p></li>
-      				<li><p>William Maher</p></li>
-      				<li><p>Joe Malcoun</p></li>
-      				<li><p>Anthony Malcoun</p></li>
-      				<li><p>Courtney Marie</p></li>
-      				<li><p>Jordan Marzouk</p></li>
-      				<li><p>Erika Maschmeyer</p></li>
-      				<li><p>Michelle Masoncup</p></li>
-      				<li><p>Michael Mastrangelo</p></li>
-      				<li><p>Jacki Maxwell</p></li>
-      				<li><p>Kelly May</p></li>
-      				<li><p>David Mayer</p></li>
-      				<li><p>Jeffrey Maza</p></li>
-      				<li><p>Ramona Maza</p></li>
-      				<li><p>casey mcclure</p></li>
-      				<li><p>Mia Mcelroy</p></li>
-      				<li><p>Dana McKenna</p></li>
-      				<li><p>Elizabeth McKeon</p></li>
-      				<li><p>Neal McKnight</p></li>
-      				<li><p>Steven McLellan</p></li>
-      				<li><p>Heather McShane</p></li>
-      				<li><p>Moises Medina</p></li>
-      				<li><p>Supriya Mehta</p></li>
-      				<li><p>Cody Melcher</p></li>
-      				<li><p>Andrea Melendez</p></li>
-      				<li><p>George Menninger</p></li>
-      				<li><p>Adelheid Mers</p></li>
-      				<li><p>Kristen Metcalfe</p></li>
-      				<li><p>Kristen Metfcalf</p></li>
-      				<li><p>Peter Mierwinski</p></li>
-      				<li><p>Jessica Miley</p></li>
-      				<li><p>Josh Miller</p></li>
-      				<li><p>Zach Miller</p></li>
-      				<li><p>Robert Minelli</p></li>
-      				<li><p>Jessica Mlinaric</p></li>
-      				<li><p>Samuel Mock</p></li>
-      				<li><p>Pat Mohr</p></li>
-      				<li><p>Greg Monigold</p></li>
-      				<li><p>Edward Monrad</p></li>
-      				<li><p>Dave Montalbano</p></li>
-      				<li><p>Ted Moore</p></li>
-      				<li><p>Marc Moore</p></li>
-      				<li><p>Liza Moore</p></li>
-      				<li><p>Scott Moosey</p></li>
-      				<li><p>Michele Morano</p></li>
-      				<li><p>Brooke Morris</p></li>
-      				<li><p>Christy Mueller</p></li>
-      				<li><p>Kathy Mueller</p></li>
-      				<li><p>Mamta Mujumdar</p></li>
-      				<li><p>Leah Muller</p></li>
-      				<li><p>Jennifer Mumford</p></li>
-      				<li><p>Charles Na</p></li>
-      				<li><p>Lauren Nelson</p></li>
-      				<li><p>Jessica Nepomiachi</p></li>
-      				<li><p>Karen Nickerson</p></li>
-      				<li><p>Jessica Nielsen</p></li>
-      				<li><p>Susan Noel</p></li>
-      				<li><p>Michael Noes</p></li>
-      				<li><p>Brett Nolan</p></li>
-      				<li><p>Bridget Noobler</p></li>
-      				<li><p>Kelly Norland</p></li>
-      				<li><p>Ifeoma Nwaneri</p></li>
-      				<li><p>Brendan O'Brien</p></li>
-      				<li><p>Kelly O'Regan</p></li>
-      				<li><p>Emily Oehlsen</p></li>
-      				<li><p>Kimberly Oliver</p></li>
-      				<li><p>Lucas Osterbur</p></li>
-      				<li><p>Nicole Ozminkowski</p></li>
-      				<li><p>Emma Paladino</p></li>
-      				<li><p>Paolo Palazzi-Xirinachs</p></li>
-      				<li><p>Becca Palmer</p></li>
-      				<li><p>Haley Pardo</p></li>
-      				<li><p>Neema Parikh</p></li>
-      				<li><p>Steve Parkin</p></li>
-      				<li><p>Lauryn Parks</p></li>
-      				<li><p>Rahul Pasarnikar</p></li>
-      				<li><p>Maria Pascarella</p></li>
-      				<li><p>Mary Pat Kerns</p></li>
-      				<li><p>Hinesh Patel</p></li>
-      				<li><p>Neha Patel</p></li>
-      				<li><p>Scott Pauga</p></li>
-      				<li><p>Diane Paulini</p></li>
-      				<li><p>Erin Paulini</p></li>
-      				<li><p>Bryan Pennington</p></li>
-      				<li><p>Laura Perelman</p></li>
-      				<li><p>Thomas Pickerill</p></li>
-      				<li><p>Craig Pierson</p></li>
-      				<li><p>Victoria Pilato</p></li>
-      				<li><p>Steven Pincus</p></li>
-      				<li><p>Andrew Pires</p></li>
-      				<li><p>Nicholas Podesta</p></li>
-      				<li><p>Gene Podulka</p></li>
-      				<li><p>Dan Porter</p></li>
-      				<li><p>Michael Potratz</p></li>
-      				<li><p>Mike Powell</p></li>
-      				<li><p>Thomas Powers</p></li>
-      				<li><p>Corrine Pratt</p></li>
-      				<li><p>Billie Pritzker</p></li>
-      				<li><p>Jessica Pritzker</p></li>
-      				<li><p>Kalidas Puppala</p></li>
-      				<li><p>Aparna Puppala</p></li>
-      				<li><p>Anupama Puppala</p></li>
-      				<li><p>Kali Puppala</p></li>
-      				<li><p>Kiran Puppala</p></li>
-      				<li><p>Anne Pusey</p></li>
-      				<li><p>Sara Quaranta</p></li>
-      				<li><p>Tommy Quinn</p></li>
-      				<li><p>Diane Quinn</p></li>
-      				<li><p>Christine Quinn</p></li>
-      				<li><p>D R Edwards</p></li>
-      				<li><p>Gayle R Grobart Elbe</p></li>
-      				<li><p>Sara Radin</p></li>
-      				<li><p>Meera Raja</p></li>
-      				<li><p>Ravi Raja</p></li>
-      				<li><p>Ranjana Rajendran</p></li>
-      				<li><p>Hope Raymond</p></li>
-      				<li><p>Carol Redmond</p></li>
-      				<li><p>David Reis</p></li>
-      				<li><p>Sendhil Revuluri</p></li>
-      				<li><p>Edward Reynolds</p></li>
-      				<li><p>Irene Reynolds</p></li>
-      				<li><p>Gerald Richards</p></li>
-      				<li><p>Clara Rivera</p></li>
-      				<li><p>Angel Rivera</p></li>
-      				<li><p>Eric Roach</p></li>
-      				<li><p>Nicholas Rocchio</p></li>
-      				<li><p>Tim Roessler</p></li>
-      				<li><p>Mitch Rogatz</p></li>
-      				<li><p>Jessica Rogers</p></li>
-      				<li><p>Tiffany Rogers</p></li>
-      				<li><p>Perry Romanowski</p></li>
-      				<li><p>Ellen Rosen</p></li>
-      				<li><p>Rachel Rosenberg</p></li>
-      				<li><p>Adam Roubitchek</p></li>
-      				<li><p>John Ruark</p></li>
-      				<li><p>Emma Rubenstein</p></li>
-      				<li><p>Nancy Rueter</p></li>
-      				<li><p>Richard Russell</p></li>
-      				<li><p>William Ryan</p></li>
-      				<li><p>Karol Rybaltowski</p></li>
-      				<li><p>Carly Salczynski</p></li>
-      				<li><p>Cara Sample</p></li>
-      				<li><p>Brian Samuels</p></li>
-      				<li><p>Suzanne Samuels</p></li>
-      				<li><p>Lauren Sanchez</p></li>
-      				<li><p>Arlene Sanoy</p></li>
-      				<li><p>Sharon Sargent</p></li>
-      				<li><p>John Saucier</p></li>
-      				<li><p>Jolene Saul</p></li>
-      				<li><p>Reid Schar</p></li>
-      				<li><p>Kurt Scheuermann</p></li>
-      				<li><p>David Schink</p></li>
-      				<li><p>Gretchen Schlesinger</p></li>
-      				<li><p>Nancy Schmid</p></li>
-      				<li><p>Shirley Schmidt</p></li>
-      				<li><p>Daniel Schor</p></li>
-      				<li><p>Rebecca Schulz</p></li>
-      				<li><p>Grant Schwab</p></li>
-      				<li><p>John Schwan</p></li>
-      				<li><p>Lesley Scott</p></li>
-      				<li><p>Julie Shaffner</p></li>
-      				<li><p>Rahul Shah</p></li>
-      				<li><p>Aalok Shah</p></li>
-      				<li><p>Neela Shah</p></li>
-      				<li><p>Daniel Shapiro</p></li>
-      				<li><p>Andrew Shih</p></li>
-      				<li><p>Robert Siegel</p></li>
-      				<li><p>Sachin Singh</p></li>
-      				<li><p>Kevin Singleton</p></li>
-      				<li><p>Violet Sistovaris</p></li>
-      				<li><p>Jay Smith</p></li>
-      				<li><p>Carl Smith</p></li>
-      				<li><p>Sara Smith</p></li>
-      				<li><p>Barbara Smith</p></li>
-      				<li><p>Justin Smith</p></li>
-      				<li><p>Amy Sneddon McKnight</p></li>
-      				<li><p>Amy Soderquist</p></li>
-      				<li><p>Mark Soderquist</p></li>
-      				<li><p>Rene Soloman</p></li>
-      				<li><p>Alyssa Sorresso</p></li>
-      				<li><p>Ellen Sova</p></li>
-      				<li><p>Christine Stanish</p></li>
-      				<li><p>Erin Stanton</p></li>
-      				<li><p>Jennifer Statler</p></li>
-      				<li><p>Jessica Statz</p></li>
-      				<li><p>Kaitlin Steele</p></li>
-      				<li><p>Kait Steele</p></li>
-      				<li><p>Melissa Steger</p></li>
-      				<li><p>Sophie Stein</p></li>
-      				<li><p>Deborah Stein</p></li>
-      				<li><p>Rose Stenglein</p></li>
-      				<li><p>Joseph Stone</p></li>
-      				<li><p>Lindsay Stone</p></li>
-      				<li><p>Blake Stone</p></li>
-      				<li><p>Christy Storto</p></li>
-      				<li><p>Susan Streeter</p></li>
-      				<li><p>Daniel Streicher</p></li>
-      				<li><p>Matthew Sudman</p></li>
-      				<li><p>Ellie Sukerman</p></li>
-      				<li><p>John Sullivan</p></li>
-      				<li><p>Judy Sutton Taylor</p></li>
-      				<li><p>Kyle Sweeney</p></li>
-      				<li><p>Kathleen Sweet</p></li>
-      				<li><p>Lucas Sweitzrt</p></li>
-      				<li><p>Stephanie Taiber</p></li>
-      				<li><p>Deno Takles</p></li>
-      				<li><p>Yihan Tan</p></li>
-      				<li><p>Aditya Tata</p></li>
-      				<li><p>Nora Taylor</p></li>
-      				<li><p>Madison Thatcher</p></li>
-      				<li><p>Benjamin Thevathasan</p></li>
-      				<li><p>Shelby Thompson</p></li>
-      				<li><p>Jean Thomson</p></li>
-      				<li><p>Kara Thorstenson</p></li>
-      				<li><p>Lisa Thyer</p></li>
-      				<li><p>Wendy Togami</p></li>
-      				<li><p>Andrea Tolzmann</p></li>
-      				<li><p>Bob Trainor</p></li>
-      				<li><p>Nicole Trossen</p></li>
-      				<li><p>Joseph Trpik</p></li>
-      				<li><p>Andreas Tsironis</p></li>
-      				<li><p>Marino Tsirtsis</p></li>
-      				<li><p>John Tucker</p></li>
-      				<li><p>Derrick Tung</p></li>
-      				<li><p>Christy Uchida</p></li>
-      				<li><p>Amanda Uhle</p></li>
-      				<li><p>Elizabeth Uihlein</p></li>
-      				<li><p>Jason Unterbrunner</p></li>
-      				<li><p>Stien van der Ploeg</p></li>
-      				<li><p>Krizia Vance</p></li>
-      				<li><p>Bailey Vance Wells</p></li>
-      				<li><p>Joe Villinski</p></li>
-      				<li><p>Allison Villinski</p></li>
-      				<li><p>Collin Voigt</p></li>
-      				<li><p>Ilya Volvovski</p></li>
-      				<li><p>Walter Vonrosenberg</p></li>
-      				<li><p>Yusuke Wada</p></li>
-      				<li><p>Rose Wajda</p></li>
-      				<li><p>Frank Waldeck</p></li>
-      				<li><p>Kathleen Wales</p></li>
-      				<li><p>Annie Walker</p></li>
-      				<li><p>Alissa Walkner</p></li>
-      				<li><p>Jewell Walton</p></li>
-      				<li><p>Jacob Watson</p></li>
-      				<li><p>Sharon Weingarten`</p></li>
-      				<li><p>Gregory Welch</p></li>
-      				<li><p>David Welch</p></li>
-      				<li><p>Abigail Westra</p></li>
-      				<li><p>Ursula Wheeler</p></li>
-      				<li><p>Gregg Wheeler</p></li>
-      				<li><p>John Whitehurst</p></li>
-      				<li><p>Heidi Whiting</p></li>
-      				<li><p>Rosann Whiting</p></li>
-      				<li><p>Andrew Whiting</p></li>
-      				<li><p>Jodi Wickersheimer</p></li>
-      				<li><p>Blair Wieland</p></li>
-      				<li><p>Dash Wieland</p></li>
-      				<li><p>Alyna Williams</p></li>
-      				<li><p>Tracy Williams</p></li>
-      				<li><p>Katie Willse</p></li>
-      				<li><p>Joseph Wilson</p></li>
-      				<li><p>Anne Winebrenner</p></li>
-      				<li><p>Pamela Witmer</p></li>
-      				<li><p>Jeffrey Wolf</p></li>
-      				<li><p>Katherine Wolski</p></li>
-      				<li><p>John Wonk</p></li>
-      				<li><p>Dan Wonk</p></li>
-      				<li><p>Robert Woodley</p></li>
-      				<li><p>Judy Woodley</p></li>
-      				<li><p>Thomas Woodley</p></li>
-      				<li><p>Jennifer Woyan</p></li>
-      				<li><p>Cynthia Wright-Pratt</p></li>
-      				<li><p>Warren Yates</p></li>
-      				<li><p>Anne Yoder</p></li>
-      				<li><p>Rickie Yudin</p></li>
-      				<li><p>Ryan Zaffino</p></li>
-      				<li><p>Duke Zandstra</p></li>
-      				<li><p>Jan Zasowski</p></li>
-      				<li><p>Hans Zietlow</p></li>
-      				<li><p>Laura Zimmermann</p></li>
-      				<li><p>Nancy Zivitz Sussman</p></li>
-      				<li><p>Dana Zukanovich</p></li>
-          	</ul>
-            </section>
-            <section id='foundations'>
-          	<h2 id="foundations"><p>—</p>Foundations</h2>
-          	<ul>
-      				<li><p>Charter Oak</p></li>
-      				<li><p>Chauncey and Marion D. McCormick Family Foundation</p></li>
-      				<li><p>Field Foundation</p></li>
-      				<li><p>Illinois Humanities</p></li>
-      				<li><p>JCCC Foundation</p></li>
-      				<li><p>Margaret S. &amp; Philip D. Block Jr. Family Foundation</p></li>
-      				<li><p>Prince Charitable Trusts</p></li>
-      				<li><p>The Allstate Foundation</p></li>
-      				<li><p>The Comer Foundation Fund</p></li>
-      				<li><p>The Donley Foundation</p></li>
-      				<li><p>The Loflin Foundation</p></li>
-      				<li><p>The Reva and David Logan Foundation</p></li>
-      				<li><p>The Seabury Foundation</p></li>	
-          	</ul>
-            </section>
-            <section id='organizations'>
-          	<h2 id="organizations"><p>—</p>Organizations</h2>
-          	<ul>
-      				<li><p>88 Brand Partners</p></li>
-      				<li><p>AT&amp;T </p></li>
-      				<li><p>Chicago Tribune </p></li>
-      				<li><p>Cole Haan</p></li>
-      				<li><p>DeFiore and Company</p></li>
-      				<li><p>Dunkin' Donuts</p></li>
-      				<li><p>Independent Publishers Group</p></li>
-      				<li><p>Milliman, Inc</p></li>
-      				<li><p>Peet's Coffee</p></li>
-      				<li><p>Wingstop</p></li>	
-          	</ul>
-            </section>
-            <section id='government'>
-          	<h2 id="government"><p>—</p>Government</h2>
-          	<ul>
-      				<li><p>Department of Cultural Affairs and Special Events </p></li>
-      				<li><p>City of Chicago</p></li>
-      				<li><p>Illinois Arts Council Agency, James R. Thompson Center</p></li>
-      				<li><p>The Chicago Department of Family and Social Services</p></li>
-          	</ul>
-          </section>
-        </main>
-
-        <footer>
-          <div id='contact'>
-            <img src='http://placehold.it/21.5x14.1'>
-            <h2>CONTACT US</h2><br>
-            <p class='smallcaps'>QUESTIONS? EMAIL <a href="mailto:development@826chi.org">DEVELOPMENT@826CHI.ORG</a></p>
-          </div>
-        </footer>
+    <section id='individuals'>
+     	<h2 id="individuals">—<br>Individuals</h2>
+       	<ul>
+   				<li><p>Anonymous</p></li>
+      		<li><p>Kevin Adamick</p></li>
+      		<li><p>Matthew Adelman</p></li>
+      		<li><p>Sachin Agarwal</p></li>
+      		<li><p>Michael Aguhar</p></li>
+      		<li><p>Amy Ahearn</p></li>
+      		<li><p>Hassan Ali</p></li>
+      		<li><p>Jeff Altman</p></li>
+      		<li><p>Alec and DeAnn Rubenstein</p></li>
+      		<li><p>Dana and Doron Zulikan</p></li>
+      		<li><p>Nancy and Scott Nelson</p></li>
+      		<li><p>Les and Sue Blythe</p></li>
+      		<li><p>Julie Anderson</p></li>
+      		<li><p>Michael Anderson</p></li>
+      		<li><p>Christina Apelgren</p></li>
+      		<li><p>Jacklyn Apostolik</p></li>
+      		<li><p>Seth Arkin</p></li>
+      		<li><p>Nathan Arnold</p></li>
+      		<li><p>Mark Atkins</p></li>
+      		<li><p>Annie Atzeff</p></li>
+      		<li><p>Jenny Baker</p></li>
+      		<li><p>Frederick Baker</p></li>
+      		<li><p>Brian Bannon</p></li>
+      		<li><p>Robert Barba</p></li>
+      		<li><p>Carmelo Barbaro</p></li>
+      		<li><p>Don Barnes</p></li>
+      		<li><p>Evelyn Baumann</p></li>
+      		<li><p>Rebecca Baumann</p></li>
+      		<li><p>Rowan Beaird</p></li>
+      		<li><p>Mark Beanblossom</p></li>
+      		<li><p>Tammy Beard</p></li>
+      		<li><p>Emily Beaufort</p></li>
+      		<li><p>Galen Beebe</p></li>
+      		<li><p>Bradley Beigle</p></li>
+      		<li><p>Jeni Beirne</p></li>
+      		<li><p>Claire Belisle</p></li>
+      		<li><p>Zach Benkowski</p></li>
+      		<li><p>Susan Bennett</p></li>
+      		<li><p>Donn Bischel</p></li>
+      		<li><p>Eric Bjorlin</p></li>
+      		<li><p>Thomas Blaser</p></li>
+      		<li><p>Christy Bloom</p></li>
+      		<li><p>Kevin Boehm</p></li>
+      		<li><p>Ann Bowen</p></li>
+      		<li><p>Ed Bowen</p></li>
+      		<li><p>Karen Bowen</p></li>
+      		<li><p>Kari Bowen</p></li>
+      		<li><p>Joshua Bradish</p></li>
+      		<li><p>J. Bradley Keck</p></li>
+      		<li><p>Darla Breckenridge</p></li>
+      		<li><p>Zak Breckenridge</p></li>
+      		<li><p>Ann Bregman</p></li>
+      		<li><p>Sean Bresnahan</p></li>
+      		<li><p>Jonathan Bresolin</p></li>
+      		<li><p>Christopher Brodt</p></li>
+      		<li><p>Meredith Brooks</p></li>
+      		<li><p>Mackenzie Brooks</p></li>
+      		<li><p>Jeffrey Brown</p></li>
+      		<li><p>Bonnie Brown</p></li>
+      		<li><p>Jordan Brown</p></li>
+      		<li><p>James Bruce Campbell</p></li>
+      		<li><p>Kyle Bruck</p></li>
+      		<li><p>Diane Bruns</p></li>
+      		<li><p>Tina Bubala</p></li>
+      		<li><p>Lindsey Buis</p></li>
+      		<li><p>Krystal Burlingame</p></li>
+      		<li><p>Tom Burr</p></li>
+      		<li><p>Andrew Burr</p></li>
+      		<li><p>Robert Burton</p></li>
+      		<li><p>Micki Burton</p></li>
+      		<li><p>Gayla Cahan</p></li>
+      		<li><p>Kathleen Caliento</p></li>
+      		<li><p>Hannah Callas</p></li>
+      		<li><p>Lynn Callister</p></li>
+      		<li><p>Julie Campbell</p></li>
+      		<li><p>Martha Campbell</p></li>
+      		<li><p>Julian Caracotsios</p></li>
+      		<li><p>Sarah Carson</p></li>
+      		<li><p>Kristin Cass</p></li>
+      		<li><p>Kaellagh Cassidy</p></li>
+      		<li><p>David Caulk</p></li>
+      		<li><p>Adrienne Chambers</p></li>
+      		<li><p>Corey Chan</p></li>
+      		<li><p>Crystal Chan</p></li>
+      		<li><p>Susan Cherbuliez</p></li>
+      		<li><p>Lyndsay Christensen</p></li>
+      		<li><p>Garrett Clark</p></li>
+      		<li><p>Shawn Clark</p></li>
+      		<li><p>Bob Clark</p></li>
+      		<li><p>Josh Cleveland</p></li>
+      		<li><p>Julie Coddell</p></li>
+      		<li><p>Sydnye Cohen</p></li>
+      		<li><p>Julia Collins</p></li>
+      		<li><p>Christine Collman</p></li>
+      		<li><p>Cody Cook</p></li>
+      		<li><p>Nina Coppo</p></li>
+      		<li><p>James Cordes</p></li>
+      		<li><p>Michael Cramer</p></li>
+      		<li><p>Stephany Creamer</p></li>
+      		<li><p>Philip Culcasi</p></li>
+      		<li><p>Merilee Curry</p></li>
+      		<li><p>Bev Curry</p></li>
+      		<li><p>Mark Curry</p></li>
+      		<li><p>Rose Curry</p></li>
+      		<li><p>Kendra Curry-Khanna</p></li>
+      		<li><p>David Curtin</p></li>
+      		<li><p>Annette Curtin</p></li>
+      		<li><p>Michelle Czarnecki</p></li>
+      		<li><p>Rita Dalia</p></li>
+      		<li><p>Richard Dandrea</p></li>
+      		<li><p>Kristen Darst</p></li>
+      		<li><p>Brooke Davis</p></li>
+      		<li><p>Shelton Davis</p></li>
+      		<li><p>Keith Davison</p></li>
+      		<li><p>Travis Davison</p></li>
+      		<li><p>Tom DeChant</p></li>
+      		<li><p>Sandy Dechant</p></li>
+      		<li><p>Monique Demery</p></li>
+      		<li><p>Josh Deth</p></li>
+      		<li><p>Bruce and Mary Diamond</p></li>
+      		<li><p>Thomas Dickson</p></li>
+      		<li><p>Christen Dilly</p></li>
+      		<li><p>Brendan Dineen</p></li>
+      		<li><p>Kevin Dineen</p></li>
+      		<li><p>Christine Dlugosz</p></li>
+      		<li><p>Daniel Domino</p></li>
+      		<li><p>CrowdRise Donation</p></li>
+      		<li><p>Kathleen Donenberg</p></li>
+      		<li><p>Unknown Donor</p></li>
+      		<li><p>Maria Doyle</p></li>
+      		<li><p>Adele Duba-Nagel</p></li>
+      		<li><p>Tom Duca</p></li>
+      		<li><p>Zach Duffy</p></li>
+      		<li><p>Shawn Duffy</p></li>
+      		<li><p>Laurie Duffy</p></li>
+      		<li><p>Robin Duffy</p></li>
+      		<li><p>Ryan Duffy</p></li>
+      		<li><p>Seoda Duffy</p></li>
+      		<li><p>Hannah Duncan</p></li>
+      		<li><p>Kathleen Dunne</p></li>
+      		<li><p>Laurie Dunphey</p></li>
+      		<li><p>Jim Ebel</p></li>
+      		<li><p>Chase Eck</p></li>
+      		<li><p>Elias Einhorn</p></li>
+      		<li><p>Shannon Elarton</p></li>
+      		<li><p>Alexia Elejalde-Ruiz</p></li>
+      		<li><p>Katie Elfering</p></li>
+      		<li><p>Hadi Elzayn</p></li>
+      		<li><p>Monica Eng</p></li>
+      		<li><p>Barbara Engel</p></li>
+      		<li><p>Paul Etter</p></li>
+      		<li><p>Patricia Fahy</p></li>
+      		<li><p>Michael Fair</p></li>
+      		<li><p>Nancy Farnum</p></li>
+      		<li><p>Carolyn Ferry</p></li>
+      		<li><p>Peter Ferry</p></li>
+      		<li><p>Christopher Fezza</p></li>
+      		<li><p>Tammy Fickel</p></li>
+      		<li><p>Alissa Fields</p></li>
+      		<li><p>Willie Filkowski</p></li>
+      		<li><p>Sandie Ford</p></li>
+      		<li><p>Alice Foreman</p></li>
+      		<li><p>Romaine Forsythe</p></li>
+      		<li><p>Adrian Foster</p></li>
+      		<li><p>Allyson Fox</p></li>
+      		<li><p>Adam Frederico</p></li>
+      		<li><p>Carey Freimuth</p></li>
+      		<li><p>Jennifer Friedland</p></li>
+      		<li><p>Claire Friedman</p></li>
+      		<li><p>Harold G Woodley</p></li>
+      		<li><p>Mary Gaertner</p></li>
+      		<li><p>Alexandra Galante</p></li>
+      		<li><p>Linnea Gandhi</p></li>
+      		<li><p>Girish Gehani</p></li>
+      		<li><p>Doug Gerald</p></li>
+      		<li><p>Claire Gibbons</p></li>
+      		<li><p>Christopher Gioiella</p></li>
+      		<li><p>Victor Giron</p></li>
+      		<li><p>Allison Glaubke</p></li>
+      		<li><p>Kiernan Glenn</p></li>
+      		<li><p>Lara Gonzalez</p></li>
+      		<li><p>Margot Gotterer</p></li>
+      		<li><p>Alex Gough</p></li>
+      		<li><p>Aaron Grant</p></li>
+      		<li><p>Kent Green</p></li>
+      		<li><p>Jamie Greenberg</p></li>
+      		<li><p>Patrick Greene</p></li>
+      		<li><p>Marlin Greenfield</p></li>
+      		<li><p>Lawrence Griffin</p></li>
+      		<li><p>James Griffiths</p></li>
+      		<li><p>Justin Grimmer</p></li>
+      		<li><p>Frances Guinta</p></li>
+      		<li><p>Ellen Guirl</p></li>
+      		<li><p>Debra Gumm</p></li>
+      		<li><p>Amanda Gustafson</p></li>
+      		<li><p>Oscar Guy Bargnes</p></li>
+      		<li><p>Jane Hackett</p></li>
+      		<li><p>Susan Hackney</p></li>
+      		<li><p>Amy Hahn</p></li>
+      		<li><p>Theodore Hahn</p></li>
+      		<li><p>Ingrid Hall</p></li>
+      		<li><p>Carol Hamburger</p></li>
+      		<li><p>Rajiv Haque</p></li>
+      		<li><p>Michael Harger</p></li>
+      		<li><p>Wright Hartsell</p></li>
+      		<li><p>Stephanie Hartselle</p></li>
+      		<li><p>Cassandra Hatto</p></li>
+      		<li><p>Margaret Heller</p></li>
+      		<li><p>Kevin Hemmer</p></li>
+      		<li><p>Robert Hemmer</p></li>
+      		<li><p>Tom Hemmer</p></li>
+      		<li><p>Jon Hemmer</p></li>
+      		<li><p>Michael Hemmer</p></li>
+      		<li><p>Adolfo Hernandez</p></li>
+      		<li><p>Elizabeth Hernandez</p></li>
+      		<li><p>Gabriela Hernandez</p></li>
+      		<li><p>Lizbeth Herrera</p></li>
+      		<li><p>Drew Hester</p></li>
+      		<li><p>Aletta Hicks</p></li>
+      		<li><p>Deborah Himelhoch</p></li>
+      		<li><p>Peter Hlawitschka</p></li>
+      		<li><p>Hilary Hodge</p></li>
+      		<li><p>Adam Hoit</p></li>
+      		<li><p>Gina Holder</p></li>
+      		<li><p>Matthew Hooker</p></li>
+      		<li><p>Robert Horrell</p></li>
+      		<li><p>Kelsey Horton</p></li>
+      		<li><p>Dani Hoyler</p></li>
+      		<li><p>Ryan Hubbard</p></li>
+      		<li><p>Evan Hughes</p></li>
+      		<li><p>Mary K. Humber</p></li>
+      		<li><p>Abi Humber</p></li>
+      		<li><p>Lauren Humphrey</p></li>
+      		<li><p>Rita Hyland</p></li>
+      		<li><p>Mary Ann Iemmola</p></li>
+      		<li><p>Adrienne Irmer</p></li>
+      		<li><p>Kevin Iverson</p></li>
+      		<li><p>Evan Jahn</p></li>
+      		<li><p>Janelle James</p></li>
+      		<li><p>Sujay Javdekar</p></li>
+      		<li><p>Tara Jayakar</p></li>
+      		<li><p>Justine Jentes</p></li>
+      		<li><p>Vishnu Jindal</p></li>
+      		<li><p>Jean Johnson</p></li>
+      		<li><p>Adel Johnson</p></li>
+      		<li><p>Brooke Johnson</p></li>
+      		<li><p>Michael Johnson</p></li>
+      		<li><p>Mick Johnson</p></li>
+      		<li><p>Madison Jone Lyleroehr</p></li>
+      		<li><p>Holly Jones</p></li>
+      		<li><p>Thomas Joyner</p></li>
+      		<li><p>Suzanne Jurusz</p></li>
+      		<li><p>Alice Kao</p></li>
+      		<li><p>Rita Kapadia</p></li>
+      		<li><p>David Kaplan</p></li>
+      		<li><p>Amit Kapoor</p></li>
+      		<li><p>Elif Karatas</p></li>
+      		<li><p>Richard Kerns</p></li>
+      		<li><p>Joseph Kesner</p></li>
+      		<li><p>Kapil Khanna</p></li>
+      		<li><p>Kirk Kicklighter</p></li>
+      		<li><p>Alison Kim</p></li>
+      		<li><p>Rachel Kimura</p></li>
+      		<li><p>Judd King</p></li>
+      		<li><p>Perry Kirk Warden</p></li>
+      		<li><p>Joleen Kleckauskas</p></li>
+      		<li><p>Frederic Klein</p></li>
+      		<li><p>Nell Klugman</p></li>
+      		<li><p>Kristopher Knabe</p></li>
+      		<li><p>Jamie Knight</p></li>
+      		<li><p>Richard Knipper</p></li>
+      		<li><p>Theresa Koebel</p></li>
+      		<li><p>Ashley Kolpak</p></li>
+      		<li><p>Josh Koo</p></li>
+      		<li><p>Zachary Kooms</p></li>
+      		<li><p>Anna Koons</p></li>
+      		<li><p>Kelly Koons</p></li>
+      		<li><p>Jordan Koss</p></li>
+      		<li><p>Melanie Krakauer</p></li>
+      		<li><p>Debbie Krupp</p></li>
+      		<li><p>Amy Krynak</p></li>
+      		<li><p>Josh Kurlander</p></li>
+      		<li><p>Daniel Kuruna</p></li>
+      		<li><p>Elizabeth Kwok</p></li>
+      		<li><p>Valerie Lambe</p></li>
+      		<li><p>Patrick Lambe</p></li>
+      		<li><p>Rosemary Lane</p></li>
+      		<li><p>Matt Lang</p></li>
+      		<li><p>Nicholas Lang</p></li>
+      		<li><p>Ramona Lapadus</p></li>
+      		<li><p>Thomas Larrison</p></li>
+      		<li><p>Richard LaRue</p></li>
+      		<li><p>Bradford Lasky</p></li>
+      		<li><p>Cari Lassman</p></li>
+      		<li><p>Michael Latiner</p></li>
+      		<li><p>Sean Laude</p></li>
+      		<li><p>Ian Law</p></li>
+      		<li><p>Katie Law</p></li>
+      		<li><p>Robert Lawrence</p></li>
+      		<li><p>Rachel Lazar</p></li>
+      		<li><p>Laura Lazzara</p></li>
+      		<li><p>Teresa Leach</p></li>
+      		<li><p>Karen Lebergott</p></li>
+      		<li><p>Gregory Ledger</p></li>
+      		<li><p>Esther Lee</p></li>
+      		<li><p>Medora Lee</p></li>
+      		<li><p>Josh Lesser</p></li>
+      		<li><p>Jason Leung</p></li>
+      		<li><p>Jill Levi</p></li>
+      		<li><p>Justin Levine</p></li>
+      		<li><p>Jeffrey Levine</p></li>
+      		<li><p>Tanya Levshina</p></li>
+      		<li><p>Gerrit Lewis</p></li>
+      		<li><p>Eileen Libby</p></li>
+      		<li><p>Mark Light</p></li>
+      		<li><p>Kari Lindquist</p></li>
+      		<li><p>Kathryn Linville</p></li>
+      		<li><p>Sam Lippman</p></li>
+      		<li><p>Dominic Lomoro</p></li>
+      		<li><p>Lora Longo</p></li>
+      		<li><p>Carmen Lonstein</p></li>
+      		<li><p>Joseph Loscudo</p></li>
+      		<li><p>Claudia Lovelette</p></li>
+      		<li><p>Andrew Lowenthal</p></li>
+      		<li><p>Nancy Lowery-Bregar</p></li>
+      		<li><p>Janet Lubetkin</p></li>
+      		<li><p>Stephen Lunt</p></li>
+      		<li><p>Pamela MacDonald</p></li>
+      		<li><p>Mary Mackay</p></li>
+      		<li><p>Andrea MacKay</p></li>
+      		<li><p>Brian MacKay</p></li>
+      		<li><p>William Maher</p></li>
+      		<li><p>Joe Malcoun</p></li>
+      		<li><p>Anthony Malcoun</p></li>
+      		<li><p>Courtney Marie</p></li>
+      		<li><p>Jordan Marzouk</p></li>
+      		<li><p>Erika Maschmeyer</p></li>
+      		<li><p>Michelle Masoncup</p></li>
+      		<li><p>Michael Mastrangelo</p></li>
+      		<li><p>Jacki Maxwell</p></li>
+      		<li><p>Kelly May</p></li>
+      		<li><p>David Mayer</p></li>
+      		<li><p>Jeffrey Maza</p></li>
+      		<li><p>Ramona Maza</p></li>
+      		<li><p>casey mcclure</p></li>
+      		<li><p>Mia Mcelroy</p></li>
+      		<li><p>Dana McKenna</p></li>
+      		<li><p>Elizabeth McKeon</p></li>
+      		<li><p>Neal McKnight</p></li>
+      		<li><p>Steven McLellan</p></li>
+      		<li><p>Heather McShane</p></li>
+      		<li><p>Moises Medina</p></li>
+      		<li><p>Supriya Mehta</p></li>
+      		<li><p>Cody Melcher</p></li>
+      		<li><p>Andrea Melendez</p></li>
+      		<li><p>George Menninger</p></li>
+      		<li><p>Adelheid Mers</p></li>
+      		<li><p>Kristen Metcalfe</p></li>
+      		<li><p>Kristen Metfcalf</p></li>
+      		<li><p>Peter Mierwinski</p></li>
+      		<li><p>Jessica Miley</p></li>
+      		<li><p>Josh Miller</p></li>
+      		<li><p>Zach Miller</p></li>
+      		<li><p>Robert Minelli</p></li>
+      		<li><p>Jessica Mlinaric</p></li>
+      		<li><p>Samuel Mock</p></li>
+      		<li><p>Pat Mohr</p></li>
+      		<li><p>Greg Monigold</p></li>
+      		<li><p>Edward Monrad</p></li>
+      		<li><p>Dave Montalbano</p></li>
+      		<li><p>Ted Moore</p></li>
+      		<li><p>Marc Moore</p></li>
+      		<li><p>Liza Moore</p></li>
+      		<li><p>Scott Moosey</p></li>
+      		<li><p>Michele Morano</p></li>
+      		<li><p>Brooke Morris</p></li>
+      		<li><p>Christy Mueller</p></li>
+      		<li><p>Kathy Mueller</p></li>
+      		<li><p>Mamta Mujumdar</p></li>
+      		<li><p>Leah Muller</p></li>
+      		<li><p>Jennifer Mumford</p></li>
+      		<li><p>Charles Na</p></li>
+      		<li><p>Lauren Nelson</p></li>
+      		<li><p>Jessica Nepomiachi</p></li>
+      		<li><p>Karen Nickerson</p></li>
+      		<li><p>Jessica Nielsen</p></li>
+      		<li><p>Susan Noel</p></li>
+      		<li><p>Michael Noes</p></li>
+      		<li><p>Brett Nolan</p></li>
+      		<li><p>Bridget Noobler</p></li>
+      		<li><p>Kelly Norland</p></li>
+      		<li><p>Ifeoma Nwaneri</p></li>
+      		<li><p>Brendan O'Brien</p></li>
+      		<li><p>Kelly O'Regan</p></li>
+      		<li><p>Emily Oehlsen</p></li>
+      		<li><p>Kimberly Oliver</p></li>
+      		<li><p>Lucas Osterbur</p></li>
+      		<li><p>Nicole Ozminkowski</p></li>
+      		<li><p>Emma Paladino</p></li>
+      		<li><p>Paolo Palazzi-Xirinachs</p></li>
+      		<li><p>Becca Palmer</p></li>
+      		<li><p>Haley Pardo</p></li>
+      		<li><p>Neema Parikh</p></li>
+      		<li><p>Steve Parkin</p></li>
+      		<li><p>Lauryn Parks</p></li>
+      		<li><p>Rahul Pasarnikar</p></li>
+      		<li><p>Maria Pascarella</p></li>
+      		<li><p>Mary Pat Kerns</p></li>
+      		<li><p>Hinesh Patel</p></li>
+      		<li><p>Neha Patel</p></li>
+      		<li><p>Scott Pauga</p></li>
+      		<li><p>Diane Paulini</p></li>
+      		<li><p>Erin Paulini</p></li>
+      		<li><p>Bryan Pennington</p></li>
+      		<li><p>Laura Perelman</p></li>
+      		<li><p>Thomas Pickerill</p></li>
+      		<li><p>Craig Pierson</p></li>
+      		<li><p>Victoria Pilato</p></li>
+      		<li><p>Steven Pincus</p></li>
+      		<li><p>Andrew Pires</p></li>
+      		<li><p>Nicholas Podesta</p></li>
+      		<li><p>Gene Podulka</p></li>
+      		<li><p>Dan Porter</p></li>
+      		<li><p>Michael Potratz</p></li>
+      		<li><p>Mike Powell</p></li>
+      		<li><p>Thomas Powers</p></li>
+      		<li><p>Corrine Pratt</p></li>
+      		<li><p>Billie Pritzker</p></li>
+      		<li><p>Jessica Pritzker</p></li>
+      		<li><p>Kalidas Puppala</p></li>
+      		<li><p>Aparna Puppala</p></li>
+      		<li><p>Anupama Puppala</p></li>
+      		<li><p>Kali Puppala</p></li>
+      		<li><p>Kiran Puppala</p></li>
+      		<li><p>Anne Pusey</p></li>
+      		<li><p>Sara Quaranta</p></li>
+      		<li><p>Tommy Quinn</p></li>
+      		<li><p>Diane Quinn</p></li>
+      		<li><p>Christine Quinn</p></li>
+      		<li><p>D R Edwards</p></li>
+      		<li><p>Gayle R Grobart Elbe</p></li>
+      		<li><p>Sara Radin</p></li>
+      		<li><p>Meera Raja</p></li>
+      		<li><p>Ravi Raja</p></li>
+      		<li><p>Ranjana Rajendran</p></li>
+      		<li><p>Hope Raymond</p></li>
+      		<li><p>Carol Redmond</p></li>
+      		<li><p>David Reis</p></li>
+      		<li><p>Sendhil Revuluri</p></li>
+      		<li><p>Edward Reynolds</p></li>
+      		<li><p>Irene Reynolds</p></li>
+      		<li><p>Gerald Richards</p></li>
+      		<li><p>Clara Rivera</p></li>
+      		<li><p>Angel Rivera</p></li>
+      		<li><p>Eric Roach</p></li>
+      		<li><p>Nicholas Rocchio</p></li>
+      		<li><p>Tim Roessler</p></li>
+      		<li><p>Mitch Rogatz</p></li>
+      		<li><p>Jessica Rogers</p></li>
+      		<li><p>Tiffany Rogers</p></li>
+      		<li><p>Perry Romanowski</p></li>
+      		<li><p>Ellen Rosen</p></li>
+      		<li><p>Rachel Rosenberg</p></li>
+      		<li><p>Adam Roubitchek</p></li>
+      		<li><p>John Ruark</p></li>
+      		<li><p>Emma Rubenstein</p></li>
+      		<li><p>Nancy Rueter</p></li>
+      		<li><p>Richard Russell</p></li>
+      		<li><p>William Ryan</p></li>
+      		<li><p>Karol Rybaltowski</p></li>
+      		<li><p>Carly Salczynski</p></li>
+      		<li><p>Cara Sample</p></li>
+      		<li><p>Brian Samuels</p></li>
+      		<li><p>Suzanne Samuels</p></li>
+      		<li><p>Lauren Sanchez</p></li>
+      		<li><p>Arlene Sanoy</p></li>
+      		<li><p>Sharon Sargent</p></li>
+      		<li><p>John Saucier</p></li>
+      		<li><p>Jolene Saul</p></li>
+      		<li><p>Reid Schar</p></li>
+      		<li><p>Kurt Scheuermann</p></li>
+      		<li><p>David Schink</p></li>
+      		<li><p>Gretchen Schlesinger</p></li>
+      		<li><p>Nancy Schmid</p></li>
+      		<li><p>Shirley Schmidt</p></li>
+      		<li><p>Daniel Schor</p></li>
+      		<li><p>Rebecca Schulz</p></li>
+      		<li><p>Grant Schwab</p></li>
+      		<li><p>John Schwan</p></li>
+      		<li><p>Lesley Scott</p></li>
+      		<li><p>Julie Shaffner</p></li>
+      		<li><p>Rahul Shah</p></li>
+      		<li><p>Aalok Shah</p></li>
+      		<li><p>Neela Shah</p></li>
+      		<li><p>Daniel Shapiro</p></li>
+      		<li><p>Andrew Shih</p></li>
+      		<li><p>Robert Siegel</p></li>
+      		<li><p>Sachin Singh</p></li>
+      		<li><p>Kevin Singleton</p></li>
+      		<li><p>Violet Sistovaris</p></li>
+      		<li><p>Jay Smith</p></li>
+      		<li><p>Carl Smith</p></li>
+      		<li><p>Sara Smith</p></li>
+      		<li><p>Barbara Smith</p></li>
+      		<li><p>Justin Smith</p></li>
+      		<li><p>Amy Sneddon McKnight</p></li>
+      		<li><p>Amy Soderquist</p></li>
+      		<li><p>Mark Soderquist</p></li>
+      		<li><p>Rene Soloman</p></li>
+      		<li><p>Alyssa Sorresso</p></li>
+      		<li><p>Ellen Sova</p></li>
+      		<li><p>Christine Stanish</p></li>
+      		<li><p>Erin Stanton</p></li>
+      		<li><p>Jennifer Statler</p></li>
+      		<li><p>Jessica Statz</p></li>
+      		<li><p>Kaitlin Steele</p></li>
+      		<li><p>Kait Steele</p></li>
+      		<li><p>Melissa Steger</p></li>
+      		<li><p>Sophie Stein</p></li>
+      		<li><p>Deborah Stein</p></li>
+      		<li><p>Rose Stenglein</p></li>
+      		<li><p>Joseph Stone</p></li>
+      		<li><p>Lindsay Stone</p></li>
+      		<li><p>Blake Stone</p></li>
+      		<li><p>Christy Storto</p></li>
+      		<li><p>Susan Streeter</p></li>
+      		<li><p>Daniel Streicher</p></li>
+      		<li><p>Matthew Sudman</p></li>
+      		<li><p>Ellie Sukerman</p></li>
+      		<li><p>John Sullivan</p></li>
+      		<li><p>Judy Sutton Taylor</p></li>
+      		<li><p>Kyle Sweeney</p></li>
+      		<li><p>Kathleen Sweet</p></li>
+      		<li><p>Lucas Sweitzrt</p></li>
+      		<li><p>Stephanie Taiber</p></li>
+      		<li><p>Deno Takles</p></li>
+      		<li><p>Yihan Tan</p></li>
+      		<li><p>Aditya Tata</p></li>
+      		<li><p>Nora Taylor</p></li>
+      		<li><p>Madison Thatcher</p></li>
+      		<li><p>Benjamin Thevathasan</p></li>
+      		<li><p>Shelby Thompson</p></li>
+      		<li><p>Jean Thomson</p></li>
+      		<li><p>Kara Thorstenson</p></li>
+      		<li><p>Lisa Thyer</p></li>
+      		<li><p>Wendy Togami</p></li>
+      		<li><p>Andrea Tolzmann</p></li>
+      		<li><p>Bob Trainor</p></li>
+      		<li><p>Nicole Trossen</p></li>
+      		<li><p>Joseph Trpik</p></li>
+      		<li><p>Andreas Tsironis</p></li>
+      		<li><p>Marino Tsirtsis</p></li>
+      		<li><p>John Tucker</p></li>
+      		<li><p>Derrick Tung</p></li>
+      		<li><p>Christy Uchida</p></li>
+      		<li><p>Amanda Uhle</p></li>
+      		<li><p>Elizabeth Uihlein</p></li>
+      		<li><p>Jason Unterbrunner</p></li>
+      		<li><p>Stien van der Ploeg</p></li>
+      		<li><p>Krizia Vance</p></li>
+      		<li><p>Bailey Vance Wells</p></li>
+      		<li><p>Joe Villinski</p></li>
+      		<li><p>Allison Villinski</p></li>
+      		<li><p>Collin Voigt</p></li>
+      		<li><p>Ilya Volvovski</p></li>
+      		<li><p>Walter Vonrosenberg</p></li>
+      		<li><p>Yusuke Wada</p></li>
+      		<li><p>Rose Wajda</p></li>
+      		<li><p>Frank Waldeck</p></li>
+      		<li><p>Kathleen Wales</p></li>
+      		<li><p>Annie Walker</p></li>
+      		<li><p>Alissa Walkner</p></li>
+      		<li><p>Jewell Walton</p></li>
+      		<li><p>Jacob Watson</p></li>
+      		<li><p>Sharon Weingarten`</p></li>
+      		<li><p>Gregory Welch</p></li>
+      		<li><p>David Welch</p></li>
+      		<li><p>Abigail Westra</p></li>
+      		<li><p>Ursula Wheeler</p></li>
+      		<li><p>Gregg Wheeler</p></li>
+      		<li><p>John Whitehurst</p></li>
+      		<li><p>Heidi Whiting</p></li>
+      		<li><p>Rosann Whiting</p></li>
+      		<li><p>Andrew Whiting</p></li>
+      		<li><p>Jodi Wickersheimer</p></li>
+      		<li><p>Blair Wieland</p></li>
+      		<li><p>Dash Wieland</p></li>
+      		<li><p>Alyna Williams</p></li>
+      		<li><p>Tracy Williams</p></li>
+      		<li><p>Katie Willse</p></li>
+      		<li><p>Joseph Wilson</p></li>
+      		<li><p>Anne Winebrenner</p></li>
+      		<li><p>Pamela Witmer</p></li>
+      		<li><p>Jeffrey Wolf</p></li>
+      		<li><p>Katherine Wolski</p></li>
+      		<li><p>John Wonk</p></li>
+      		<li><p>Dan Wonk</p></li>
+      		<li><p>Robert Woodley</p></li>
+      		<li><p>Judy Woodley</p></li>
+      		<li><p>Thomas Woodley</p></li>
+      		<li><p>Jennifer Woyan</p></li>
+      		<li><p>Cynthia Wright-Pratt</p></li>
+      		<li><p>Warren Yates</p></li>
+      		<li><p>Anne Yoder</p></li>
+      		<li><p>Rickie Yudin</p></li>
+      		<li><p>Ryan Zaffino</p></li>
+      		<li><p>Duke Zandstra</p></li>
+      		<li><p>Jan Zasowski</p></li>
+      		<li><p>Hans Zietlow</p></li>
+      		<li><p>Laura Zimmermann</p></li>
+      		<li><p>Nancy Zivitz Sussman</p></li>
+      		<li><p>Dana Zukanovich</p></li>
+        </ul>
+      </section>
+      <section id='foundations'>
+       	<h2 id="foundations">—<br>Foundations</h2>
+       	<ul>
+        	<li><p>Charter Oak</p></li>
+      		<li><p>Chauncey and Marion D. McCormick Family Foundation</p></li>
+      		<li><p>Field Foundation</p></li>
+      		<li><p>Illinois Humanities</p></li>
+      		<li><p>JCCC Foundation</p></li>
+      		<li><p>Margaret S. &amp; Philip D. Block Jr. Family Foundation</p></li>
+      		<li><p>Prince Charitable Trusts</p></li>
+      		<li><p>The Allstate Foundation</p></li>
+      		<li><p>The Comer Foundation Fund</p></li>
+      		<li><p>The Donley Foundation</p></li>
+      		<li><p>The Loflin Foundation</p></li>
+      		<li><p>The Reva and David Logan Foundation</p></li>
+      		<li><p>The Seabury Foundation</p></li>	
+        </ul>
+      </section>
+      <section id='organizations'>
+       	<h2 id="organizations">—<br>Organizations</h2>
+       	<ul>
+     			<li><p>88 Brand Partners</p></li>
+     			<li><p>AT&amp;T </p></li>
+     			<li><p>Chicago Tribune </p></li>
+     			<li><p>Cole Haan</p></li>
+     			<li><p>DeFiore and Company</p></li>
+     			<li><p>Dunkin' Donuts</p></li>
+     			<li><p>Independent Publishers Group</p></li>
+     			<li><p>Milliman, Inc</p></li>
+     			<li><p>Peet's Coffee</p></li>
+     			<li><p>Wingstop</p></li>	
+       	</ul>
+      </section>
+      <section id='government'>
+       	<h2 id="government">—<br>Government</h2>
+       	<ul>
+     			<li><p>Department of Cultural Affairs and Special Events </p></li>
+     			<li><p>City of Chicago</p></li>
+     			<li><p>Illinois Arts Council Agency, James R. Thompson Center</p></li>
+     			<li><p>The Chicago Department of Family and Social Services</p></li>
+       	</ul>
+      </section>
+    </main>
+    <div id='contribute'>
+      <img id='donate' src='images/donate.png'>
+      <div>
+        <h1>Until next year!</h1>
+        <a href=''><h2>DONATE</h2></a>
+        <a href=''><h2>VOLUNTEER</h2></a>
+      </div>
+    </div>
+    <footer>
+      <div id='contact'>
+        <img width='28px' id='footer-symbol' src='images/826-symbol.svg'>
+        <h2>CONTACT US</h2><br>
+        <p class='smallcaps'>QUESTIONS? EMAIL <a href="mailto:development@826chi.org">DEVELOPMENT@826CHI.ORG</a></p>
+      </div>
+    </footer>
         
-    </div><!-- /.container -->
-    <!-- LiveReload -->
+  </div><!-- /.container -->
+  <!-- LiveReload -->
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   <script type="text/javascript" src="js/headroom.js"></script>
   <script>
@@ -1368,6 +1546,15 @@
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')</script>
+  <script type='text/javascript' src='js/html5shiv.min.js'></script>
   <script type="text/javascript" src='js/scrollspy.js'></script>
+  <script>
+    var icons = $('[id^="icon-"]');
+    icons.each(function(index, icon) {
+      $(this).css('width', Math.round($(this).width() * .1) + 'vw');
+    });
+    // var firstIconWidth = icons.width();
+    // icons.width(Math.round(firstIconWidth * 1.3));
+  </script>
   </body>
 </html>
