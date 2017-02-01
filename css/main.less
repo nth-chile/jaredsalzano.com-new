@@ -58,6 +58,7 @@ canvas {
 }
 cite {
   font-style: normal;
+  opacity: .6;
   .smallcaps {
     clear: left;
     display: inline-block;
@@ -103,11 +104,11 @@ p {
   margin-bottom: 1.7rem;
 }
 p, cite {
+  color: #ffffff;
   line-height: 29px;
   font-family: @copy-font;
   font-size: 1.1rem;
   opacity: 0.9;
-  color: #ffffff;
 }
 section {
   clear: both;
@@ -206,6 +207,9 @@ ul {
     height: 53px;
     width: 225px;
     padding-left: 20px;
+    img {
+      display: none;
+    }
     h2 {
       margin-bottom:  0;
       vertical-align: text-top;
@@ -320,8 +324,8 @@ ul {
     width:27vw;
     h2 {
       font-size: 1.55vw;
-      letter-spacing: .3vw;
-      line-height: 1.3vw;
+      letter-spacing: 4px;
+      line-height: 13px;
       margin-bottom: 1.5vw;
       margin-left: 3.3vw;
       margin-top: 1vw;
@@ -365,65 +369,112 @@ ul {
 
 
 //grid
+
 section#at-a-glance,
 div#after-school,
 div#field-trips,
 div#in-schools,
 div#workshops {
-      .row {
-      border-bottom: @dark-border;
-      margin-right: 1rem;
-      padding: .7rem 0;
-      span {
-        vertical-align: top;
-      }
+  .row {
+    border-bottom: @dark-border;
+    margin-right: 1rem;
+    padding: .7rem 0;
+    cite {
+      opacity: 0.6;
     }
-        .col-2, .col-4 {
+    span {
+      vertical-align: top;
+    }
+    p:nth-of-type(2) {
+      font-size: 1.37vw;
+      line-height: 2.29vw;
+    }
+  }
+  .row--quotes {
+    border-bottom: none;
+    blockquote, cite {
       display: inline-block;
-      height: 100%;
-      position:relative;
-      p {
-        margin-left: 1.2rem;
+      margin-left: 1.8rem;
+      max-width: 88%;
+      padding-top: .7rem;
+      text-indent: -7px;
+    }
+    .col-2:first-of-type {
+      cite {
+        margin-left: 25px;
+        text-indent: -20px;
       }
     }
-    .col-2 {
-      width: 48%;
-    }
-    .col-4 {
-      border-right: @dark-border;
-      width:24%;
-    }
-    .col-2:nth-child(1),
-    .col-4:nth-child(1) {
-      p {
-        margin-left: 0;
+    .col-2:last-of-type {
+      cite {
+        margin-left: 3rem;
+        text-indent: -20px;
       }
     }
     .col-2:nth-child(1) {
-      border-right: @dark-border;
+      border-right: none;
     }
     .col-2:nth-child(2) {
-      position: relative;
-      //left:1px;
-      //border-left: 1px solid #979797;
-      width:49%;
+      border-left: @dark-border;
+     // margin-left: -5px;
     }
-    .col-2:nth-child(3) {
-      width:49%;
+  }
+  .col-2, .col-4 {
+    display: inline-block;
+    height: 100%;
+    position:relative;
+    p {
+      margin-left: 1.2rem;
     }
-    .col-4:last-of-type {
-      border-right: none;
-      width:23%
+  }
+  .col-2 {
+    width: 48%;
+  }
+  .col-2:first-of-type {
+    cite {
+      //margin-left: 1rem;
     }
+    .h2 {
+      margin-left: .4rem;
+    }
+  }
+  .h2 {
+    display: inline-block;
+    margin-bottom: .8rem;
+    vertical-align: top;
+  }
+  .col-4 {
+    border-right: @dark-border;
+    width:24%;
+  }
+  .col-2:nth-child(1) {
+    border-right: @dark-border;
+  }
+  .col-2:nth-child(1),
+  .col-4:nth-child(1) {
+    p {
+      margin-left: 0;
+    }
+  }
+  .col-2:nth-child(2) {
+    position: relative;
+    //left:1px;
+    width:49%;
+  }
+  .col-2:nth-child(3) {
+    width:49%;
+  }
+  .col-4:last-of-type {
+    border-right: none;
+    width:23%
+  }
 }
-
-
-
 //sections
 section#letter {
   margin-bottom: 11rem;
   h1 {
     margin-bottom: 6rem;
+    max-width: 10rem;
   }
   .morse {
     left: 14.73vw;
@@ -580,17 +631,17 @@ section#at-a-glance {
   .row:nth-child(6), 
   .row:nth-child(7) {
       height: 12.25vw;
-    //   .col-4:nth-child(1) {
-    //   width:23%;
-    // }
-    // .col-4:nth-child(2),
-    // .col-4:nth-child(3) {
-    //   width:25%;
-    // }
+    .col-4:nth-child(1) {
+      width:22.8%;
+    }
+    .col-4:nth-child(2),
+    .col-4:nth-child(3) {
+      width:25%;
+    }
   }
 }
 section#updates {
-  margin-bottom: 13rem;
+  margin-bottom: 15rem;
   .floated-pair {
     margin-bottom: 14vw;
     img {
@@ -629,287 +680,239 @@ section#core-programs {
     margin-top: 0;
     padding-bottom: 1.7rem;
   }
-  div#after-school {
-    .no-3 {
-      margin-top: 2.4vw;
-    }
-    #icon-after-school {
-      left: 3.8vw;
-      top: 2.2vw;
-    }
-    .row:nth-of-type(2) {
-        border-top: @dark-border;
-        height: 14.2vw;
-        .col-2 {
-          p {
-            margin-left: 15vw;
-          }
-        }
-    }
-    .row:last-of-type {
-      border-bottom: none;
-      height: 14.8vw;
-      blockquote, cite {
-        display: inline-block;
-        margin-left: .3rem;
-        max-width: 20rem;
-      }
-      cite {
-        margin-left: 2rem;
-        p {
-          margin-left: 1.25rem;
-          margin-top: 0;
-        }
-      }
-      .col-2 {
-        padding: 1rem 0 0 0;
-      }
-      .col-2:first-of-type {
-        cite {
-          margin-left: 1rem;
-        }
-        .h2 {
-          margin-left: .4rem;
-        }
-      }
-      .h2 {
-        display: inline-block;
-        margin-bottom: .8rem;
-        vertical-align: top;
-      }
-    }
-
-
-  }
-  div#field-trips {
-    margin-top: 12rem;
-    // .quotes-div {
-    //   height: 25rem;
-    // }
-    #icon-authors {
-      left: 11.5vw;
-      top: 2.5vw;
-    }
-    .no-3 {
-      margin-top: 2.4vw;
-    }
-    //row 1
-    .row:nth-of-type(2) {
-      border-top: @dark-border;
-      height: 14.2vw;
-      .col-2 {
-        border-right: @dark-border;
-      }
-      .col-4:first-of-type {
-        width: 13.5vw;
-      }
-      p:last-of-type {
-        width: 10vw;
-      }
-    }
-    //row 2
-    .row:last-of-type {
-      border-bottom: none;
-      height: 31vw;
-      blockquote, cite {
-        display: inline-block;
-        margin-left: .3rem;
-        max-width: 20rem;
-      }
-      cite {
-        margin-left: 2rem;
-        p {
-          margin-left: 1.25rem;
-          margin-top: 0;
-          width: 15vw;
-        }
-      }
-      .col-2 {
-        padding: 1rem 0 0 0;
-      }
-      .col-2:first-of-type {
-        cite {
-          margin-left: 1rem;
-        }
-        .h2 {
-          margin-left: .4rem;
-        }
-      }
-      .h2 {
-        display: inline-block;
-        margin-bottom: .8rem;
-        vertical-align: top;
-      }
-    }
-  }
-
-  div#in-schools {
-    margin-top: 13rem;
-    .box {
-      left: 35vw;
-      width: 23.1vw;
-      p {
-        max-width: 22vw;
-      }
-    }
-    // .quotes-div {
-    //   height: 35vw;
-    // }
-    #icon-publications {
-      left: 3.4vw;
-      top: 1.3vw;
-    }
-    .row:nth-of-type(2) {
-      border-top: @dark-border;
-      height: 14vw;
-      .no-3 {
-        margin-top: 2.4vw;
-      }
-      .col-4:first-of-type {
-        width:13.5vw;
-        p:last-of-type {
-          width: 10vw;
-        }
-      }
-      .col-2 {
-        p {
-        margin-left: 16.5vw;
-        }
-      }
-    }
-    .row:nth-of-type(3) {
-      border-bottom: none;
-      height: 31vw;
-      blockquote, cite {
-        display: inline-block;
-        margin-left: .3rem;
-        max-width: 20rem;
-      }
-      cite {
-        margin-left: 2rem;
-        p {
-          margin-left: 1.25rem;
-          margin-top: 0;
-          width: 15vw;
-        }
-      }
-      .col-2 {
-        padding: 1rem 0 0 0;
-      }
-      .col-2:first-of-type {
-        cite {
-          margin-left: 1rem;
-        }
-        .h2 {
-          margin-left: .4rem;
-        }
-      }
-      .h2 {
-        display: inline-block;
-        margin-bottom: .8rem;
-        vertical-align: top;
-      }
-    }
-  }
-  div#workshops {
-    margin-top: 11.5rem;
-    .box {
-      left: 38.5vw;
-      width: 23.1vw;
-      p {
-        max-width: 21.5vw;
-      }
-    }
-    .big-box {
-      margin-top: 1.5rem;
-    }
-    .column {
-      width: 100%;
-      blockquote {
-        max-width: 30rem;
-      }
-      p {
-          max-width: 20rem;
-        }
-    }
-
-    #icon-workshops-2 {
-      left: 13vw;
-      top: 2.2vw;
-    }
-    .no-3 {
-      margin-top: 2.4vw;
-    }
-    //row 1
-    .row:nth-of-type(2) {
-      border-top: @dark-border;
-      height: 14.2vw;
-      .col-2 {
-        border-right: @dark-border;
-      }
-      .col-4:first-of-type {
-        width: 13.5vw;
-      }
-      p:last-of-type {
-        width: 10vw;
-      }
-    }
-    //row 2
-    .row:nth-of-type(3) {
-      border-bottom: none;
-      height: 19vw;
-      margin-bottom: 2rem;
-      blockquote, cite {
-        display: inline-block;
-        margin-left: .3rem;
-        max-width: 19rem;
-      }
-      cite {
-        margin-left: 2rem;
-        p {
-          margin-left: 1.25rem;
-          margin-top: 0;
-          width: 19vw;
-        }
-      }
-      .col-2 {
-        padding: 1rem 0 0 0;
-      }
-      .col-2:first-of-type {
-        cite {
-          margin-left: 1rem;
-        }
-        .h2 {
-          margin-left: .4rem;
-        }
-      }
-      .h2 {
-        display: inline-block;
-        margin-bottom: .8rem;
-        vertical-align: top;
-      }
-    }
-  }
-  div#publishing {
-    margin-top: 13rem;
-    .column {
-      width: 100%;
-      blockquote {
-        max-width: 40rem;
-      }
-    }
-  }
   h1 {
     margin-bottom: 5rem;
+    max-width: 10rem;
   }
   h3 {
     margin-bottom: -1rem;
   }
   .morse {
     height: 1.65vw;
-    left: 19.5vw;
-    top: 7vw;
+    left: 19vw;
+    top: 11.75vw;
     width: 14.49vw;
+  }
+}
+div#after-school {
+  .no-3 {
+    margin-top: 2.4vw;
+  }
+  #icon-after-school {
+    left: 3.8vw;
+    top: 2.2vw;
+  }
+  .row:nth-of-type(2) {
+    border-top: @dark-border;
+    height: 14.2vw;
+    .col-2 {
+      p {
+        margin-left: 15vw;
+      }
+    }
+  }
+  .row:nth-of-type(3) {
+    min-height: 14.8vw;
+    cite p {
+        margin-left: 1.25rem;
+    }
+  }
+}
+div#field-trips {
+  margin-top: 12rem;
+  // .quotes-div {
+  //   height: 25rem;
+  // }
+  .mobile {
+    display: none;
+  }
+  #icon-authors {
+    left: 12vw;
+    top: 2.5vw;
+  }
+  .no-3 {
+    margin-top: 2.4vw;
+  }
+  //row 1
+  .row:nth-of-type(2) {
+    border-top: @dark-border;
+    height: 14.2vw;
+    .col-2 {
+      border-right: @dark-border;
+    }
+    .col-4:first-of-type {
+      width: 13.5vw;
+    }
+    p:last-of-type {
+      width: 10vw;
+    }
+  }
+}
+
+div#in-schools {
+  margin-top: 13rem;
+  i {
+    font-style: normal;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .box {
+    left: 35vw;
+    width: 23.1vw;
+    p {
+      max-width: 22vw;
+    }
+  }
+  .mobile {
+    display: none;
+  }
+  // .quotes-div {
+  //   height: 35vw;
+  // }
+  #icon-publications {
+    left: 3.4vw;
+    top: 1.3vw;
+  }
+  .row:nth-of-type(2) {
+    border-top: @dark-border;
+    height: 14vw;
+    .no-3 {
+      margin-top: 2.4vw;
+    }
+    .col-4:first-of-type {
+      p:last-of-type {
+        width: 10vw;
+      }
+    }
+    .col-2 {
+      p {
+        margin-left: 16.5vw;
+      }
+    }
+  }
+}
+div#workshops {
+  margin-top: 11.5rem;
+  .box {
+    left: 38.5vw;
+    width: 23.1vw;
+    p {
+      max-width: 21.5vw;
+    }
+  }
+  .big-box {
+    margin-top: 1.5rem;
+  }
+  .mobile {
+    display: none;
+  }
+  .column {
+    width: 100%;
+    blockquote {
+      max-width: 30rem;
+    }
+    p {
+        max-width: 20rem;
+      }
+  }
+  #icon-workshops-2 {
+    left: 13vw;
+    top: 2.2vw;
+  }
+  .no-3 {
+    margin-top: 2.4vw;
+  }
+  //row 1
+  .row:nth-of-type(2) {
+    border-top: @dark-border;
+    height: 14.2vw;
+    .col-2 {
+      border-right: @dark-border;
+    }
+    .col-4:first-of-type {
+      width: 13.5vw;
+    }
+    p:last-of-type {
+      width: 10vw;
+    }
+  }
+  //row 2
+  .col-2:first-of-type {
+    cite {
+      margin-left: 1rem;
+    }
+    .h2 {
+      margin-left: .4rem;
+    }
+  }
+  .h2 {
+    display: inline-block;
+    margin-bottom: .8rem;
+    vertical-align: top;
+  }
+}
+div#publishing {
+  margin-top: 13rem;
+  .column {
+    width: 100%;
+    blockquote {
+      max-width: 40rem;
+    }
+  }
+  .mobile {
+    display: none;
+  }
+}
+div#publications {
+  .books {
+    column-count: 3;
+    column-gap: 0;
+    position: relative;
+    left: -16vw;
+    width: 87vw;
+  }
+  .books__item {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    //display: table-cell;
+    vertical-align: bottom;
+    padding: 0 .5rem 1.5rem .5rem;
+  }
+  .img-wrap {
+    display: table-cell;
+    height: 10rem;
+    vertical-align: bottom;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+  .row {
+    border-top: @dark-border;
+    margin-right: 1rem;
+    padding: .7rem 0;
+    blockquote {
+      margin-left: 1.8rem;
+      padding-top: .7rem;
+      text-indent: -7px;
+    }
+    cite {
+      display: inline-block;
+      margin-left: 3rem;
+      opacity: 0.6;
+      text-indent: -20px;
+    }
+    span {
+      vertical-align: top;
+    }
+  }
+  .col-2 {
+      display: inline-block;
+      height: 100%;
+      position:relative;
+      max-width: 100%;
   }
 }
 section#volunteers {
@@ -918,7 +921,7 @@ section#volunteers {
   .box {
     background-color: #fff;
     color: @slate;
-    margin-top:-20vw;
+    margin: -18vw 0 5vw -24vw;
     padding-bottom: 1.2vw;
     padding-left: 1.5vw;
     width:43.5vw;
@@ -953,6 +956,10 @@ section#financials-report {
   }
   .section-title {
     margin-bottom: 2rem;
+    max-width: 10rem;
+  }
+  .smallcaps {
+    margin-bottom: 0;
   }
 }
 section#team {
@@ -995,7 +1002,7 @@ section#funders {
     color: @slate;
     min-height: 26vw;
     width: 43vw;
-    margin: -26rem 0 0 0;
+    margin: -26vw 0 5vw -23.5vw;
     padding:1.9vw .5vw 1.2vw 1.7vw;
   }
   blockquote, cite {
@@ -1054,7 +1061,12 @@ section#foundations,
 section#organizations {
   margin-bottom: 3.5rem;
 }
-
+section#volunteers,
+section#funders {
+  .box {
+  position: relative;
+  }
+}
 .section-title {
   max-width:28rem;
 }
@@ -1062,32 +1074,34 @@ section#organizations {
 #at-a-glance .section-title {
   color: @light-blue;
 }
-
 .text-column {
-  width: 43.5vw;
+  max-width: 35rem;
 }
 div.floated-pair {
   clear: both;
-  margin: -.7rem 0;
+  margin: 0;
+  position: relative;
   width: 69vw;
   * {
     vertical-align: top
   }
   img {
-    position: relative;
-    background-color: @dark-grey;
+    position: absolute;
   }
   p:first-child.pair-left {
     display: inline-block;
-    width:28vw;
+    width: 28vw;
   }
 }
 .pair-left {
   display: inline-block;
 }
+.pair-left--mobile {
+  display: none;
+}
 .pair-right {
   display: inline-block;
-  float: right;
+  margin-left: 30vw;
 }
 div#yerika {
   background-color: @slate;
@@ -1096,10 +1110,13 @@ div#yerika {
   min-height:19vw;
   width:33vw;
   margin: 1.5rem 1.5rem 0 0;
-  padding: .5rem 0rem .5rem .75rem;
+  padding: .5rem 0rem 1.5rem .75rem;
   p {
     margin-left: 1rem;
     margin-top: 1rem;
+  }
+  blockquote {
+    text-indent: -6px;
   }
 }
 
@@ -1209,27 +1226,31 @@ div#yerika {
 // }
 
 img.strategic-planning {
-  margin: -4.5rem 0 0 -5rem;
+  left: 37vw;
+  top: -7vw;
 }
 img.the-code {
-  margin: .5rem 0 0 -8.5rem;
+  left: -11vw;
+  top: -4vw;
 }
 img.diversity {
-  margin:-1rem 0 0 -5rem;
+  left: 37vw;
+  top: 0vw;
 }
 img.design-cohort {
-  margin: 1rem 0 0 -8.5rem;
+  left: -11vw;
+  top: -7vw;
 }
 .pair-left.text-column {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .pair-right.text-column {
   margin-right: -3.5rem;
   margin-top: 2rem;
 }
-div.design-cohort {
-  margin-top:-2rem;
-  padding-top: 2.5rem;
+
+.text-column.design-cohort {
+  margin-top:-3rem;
 }
 
 .box {
@@ -1330,7 +1351,7 @@ div.design-cohort {
 }
 #expenses-wrap {
   float: right;
-  margin-right: -10.8rem;
+  margin-right: -9.8rem;
   margin-top: 12.2rem;
   .pie-chart {
     margin-top: 3.8rem;
@@ -1366,30 +1387,30 @@ div.design-cohort {
     * { 
       color: rgba(56, 216, 255, 0.5);
     }
-    left:29rem;
-    top:28rem;
+    left:28.5rem;
+    top:29rem;
   }
-  #government {
+  div#government {
     * { 
       color: #39D8FF;
     }
     left:35rem;
-    top:40.3rem;
+    top:40.6rem;
   }
   #corporate {
     * { 
       color: #69E2FF;
     }
-    left:27.7rem;
-    top:44.3.rem;
+    left:27.5rem;
+    top:45.rem;
   }
   #national-contributions {
     * { 
       color: #BCF2FF;
       max-width: 14rem;
     }
-    left:15.4rem;
-    top:45.1rem;
+    left:15rem;
+    top:46rem;
   }
   #fundraising-events {
     * { 
@@ -1467,8 +1488,8 @@ div.design-cohort {
       opacity: .6;
     }
 }
-#government p {
-  line-height: 9px;
+section#government p {
+  margin: 0 0 10px 0;
 }
 div#contribute {
   position: relative;
@@ -1540,8 +1561,938 @@ footer {
 
 
 //media queries
-@media only screen and (max-width : 760px) {
-  #after-school h3 {
-      margin-bottom: 1.5rem;
+@media all and (min-width: 37rem) {
+  div#publications {
+    .books {
+      column-count: 4;
+    }
+    .books__item {
+      padding: 0 .75rem 1.5rem .75rem;
+    }
+    .img-wrap {
+      display:block;
+      height: auto;
+    }
+    p.smallcaps {
+      display: none;
+    }
+    #running-fast {
+      padding-top: 10.2vw;
+    }
+    #i-remember-girl {
+      padding-top: 0;
+    }
+    #the-time-was-1124 {
+      padding-top: 0vw;
+    }
+    #new-voices {
+      padding-top: 4vw;
+    }
+    #the-monster-gasped {
+      padding-top: 0;
+    }
+    #cheetah-with-coffee {
+      padding-top: 0;
+    }
+    #flipping-a-switch {
+      padding-top: 15vw;
+    }
+    #this-could-go-on {
+      padding-top: 0;
+    }
+    #laughing-and-humming {
+      padding-top: 0;
+    }
+    #and-the-rest-is-noise {
+      padding-top: 0;
+    }
+  } 
+}
+
+@media all and (min-width: 44rem) {
+  div#publications {
+    .books {
+      column-count: 5;
+    }
+    .books__item {
+      padding: 0 .5rem 1.5rem .5rem;
+    }
+    #running-fast {
+      padding-top: 10.2vw;
+    }
+    #i-remember-girl {
+      padding-top: 0;
+    }
+    #the-time-was-1124 {
+      padding-top: 4vw;
+    }
+    #new-voices {
+      padding-top: 0;
+    }
+    #the-monster-gasped {
+      padding-top: 0;
+    }
+    #cheetah-with-coffee {
+      padding-top: 15vw;
+    }
+    #flipping-a-switch {
+      padding-top: 0;
+    }
+    #this-could-go-on {
+      padding-top: 0;
+    }
+    #and-the-rest-is-noise {
+      padding-top: 13.5vw;
     }
   }
+}
+
+@media all and (min-width: 58rem) {
+  div#publications {
+    .books {
+      column-count: 6;
+      height:70vw;
+    }
+    #running-fast {
+      padding-top: 10.2vw;
+    }
+    #i-remember-girl {
+      padding-top: 4vw;
+    }
+    #the-time-was-1124 {
+      padding-top: 0;
+    }
+    #the-monster-gasped {
+      padding-top: 15vw;
+    }
+    #cheetah-with-coffee {
+      padding-top: 0;
+    }
+    #flipping-a-switch {
+      padding-top: 0;
+    }
+    #this-could-go-on {
+      padding-top: 13.5vw;
+    }
+    #and-the-rest-is-noise {
+      padding-top: 4.7vw;
+    }
+  }
+}
+
+
+// @media all and (max-width: 74rem) {
+//   section#updates {
+//     .text-column {
+//       img {
+//         position: static;
+//       }
+//       p {
+//         clear:both;
+//       }
+//     }
+//   }
+// }
+@media all and (max-width: 58rem) {
+    section#letter {
+    .morse {
+      left: 5vw;
+      top: 26.5vw;
+    }
+  }
+  section#at-a-glance {
+    .morse {
+      left: -5vw;
+      top: 9vw;
+    }
+  }
+  section#core-programs {
+    .morse {
+      left: 19vw;
+      top: 12vw;
+    }
+  }
+  div#field-trips {
+    #icon-authors {
+      max-width: 14.5vw !important;
+      top: 4.5vw;
+    }
+  }
+  section#financials-report {
+    #expenses-wrap {
+      float:none;
+      margin-right: 0;
+    }
+  }
+}
+
+@media all and (max-width: 54rem) {
+  main {
+    margin-left: 18vw;
+    width: 70vw;
+  }
+  #income-wrap {
+    left: -4rem;
+    h3 {
+      margin-left: 4rem;
+    }
+  }
+}
+//mobile
+@media all and (max-width: 25rem) {
+.blockquote {
+  cite {
+    padding-left: .8rem;
+  }
+}
+h1 {
+  font-size:16vw;
+  letter-spacing: .6vw;
+  margin-bottom: 0rem;
+}
+h2, .h2 {
+  font-size: .9rem;
+  letter-spacing: 3px;
+  line-height: 1.4rem;
+  margin-bottom: .5rem;
+}
+h3  {
+  font-size: .9rem;
+  letter-spacing: 3px;
+  line-height: 1.5rem;
+  margin-bottom: 0;
+}
+main {
+  margin-left:10vw;
+  width: 80vw;
+}
+.morse {
+  //height:;
+}
+p {
+  //margin-bottom:;
+}
+p, cite {
+  line-height: 1.55rem;
+  font-size: .9rem;
+}
+.smallcaps {
+  line-height: 16px;
+  font-size: .7rem;
+}
+
+//theme
+.big-box {
+  width: 100%;
+  h3, p {
+    padding: 0 20px 0 20px;
+  }
+  h2 {
+    padding-left: 20px;
+    padding-top: 35px;
+  }
+}
+.morse {
+  height: 5vw;
+}
+
+//nav
+.navbar {
+  #nav-main {
+    border: none;
+    h2 {
+      color: @light-blue;
+      font-size: 3.5vw;
+    }
+  }
+  button#menu {
+    height: 56px;
+    width: 76px;
+    h2 {
+      display: none;
+      font-weight: bold;
+    }
+    #menu-icon {
+      display: block;
+      width: 37px;
+    }
+  }
+  .menu-list ol {
+    margin: 5px 0;
+    width: 220px;
+    li div {
+      padding: 5px 13px;
+    }
+  }
+}
+
+#header-wrap {
+  #map {
+    margin-bottom: -4px;
+    margin-left: -35%;
+    width: 150%;
+  }
+  #map-key {
+    display: none;
+  }
+  .page-header {
+    margin-bottom: 5rem;
+    padding: 5vw 4vw 4vw 7vw;
+    position: static;
+    height: 12rem;
+    width: 100%;
+    h2 {
+      font-size: 3vw;
+    }
+    img {
+      width: 16vw;
+    }
+    .page-title {
+      font-size: 15vw;
+      width: 0;
+    }
+  }
+}
+
+//sections
+section#letter {
+  margin-bottom: 7rem;
+  h1 {
+    margin-bottom: .5rem;
+  }
+  .pair-left {
+    display: none;
+  }
+  .pair-left--mobile {
+    display: inline-block;
+  }
+  #yerika {
+    float: none;
+    margin: 0 0 1rem -6.5vw;
+    width: 123%;
+    blockquote {
+      padding: .70rem .75rem 0 .75rem;
+    }
+  }
+}
+section#current-staff {
+  margin-bottom: 0rem;
+  h1 {
+    margin-bottom: 0rem;
+  }
+  h2 {
+    color: @light-blue;
+  }
+  h3 {
+    display: none;
+  }
+  li {
+    margin-right: 10px;
+    margin-top: .5rem;
+    width: 145px;
+    .smallcaps {
+      margin-top: -5px;
+    }
+  }
+}
+section#mission-statement {
+  min-height: 98rem;
+  .big-box {
+    padding-bottom: 7px;
+    top: 135vw;
+  }
+  img:nth-child(1) {
+    width: 80vw;
+    left:;
+    top: 310vw;
+  }
+  img:nth-child(2) {
+    width: 60vw;
+    left: 27vw;
+  }
+  img:nth-child(3) {
+    width: 40vw;
+    left: 5vw;
+    top: 20vw;
+  }
+  img:nth-child(4) {
+    width: 80vw;
+    left:;
+    top: 70vw;
+  }
+  img:nth-child(5) {
+    width: 70vw;
+    left:;
+    top: 275vw;
+    z-index: 999;
+  }
+}
+
+//grid
+section#at-a-glance {
+  h1 {
+    margin-bottom: 1rem;
+  }
+  .row {
+    border: none;
+    margin: 0;
+    padding: 0;
+    .col-2, .col-4 {
+      border-bottom: @dark-border;
+      margin: 0;
+      padding: 1.5rem 0 1rem 0;
+    }
+    .col-2 {
+      border-right: none;
+      width: 100%;
+    }
+    .col-4 {
+      border-left: none;      
+      width: 49%;
+    }
+    p {
+      margin-left: 0;
+    }
+    p:nth-of-type(2) {
+      font-size: 4vw;
+      line-height: 5vw;
+      width: 9rem;
+    }
+  }
+  .row:nth-of-type(1) {
+    min-height: 20rem;
+    .col-2, .col-4 {
+      height: 8rem;
+    }
+  }
+  .row:nth-of-type(2) {
+    min-height: 22.5rem;
+    .col-2 {
+      height: 8rem;
+    }
+    .col-4 {
+      height: 9.5rem;
+    }
+  }
+  .row:nth-of-type(3) .col-4:nth-of-type(2) {
+    border-right: none;
+  }
+  .row:nth-of-type(4) {
+    .col-4 {
+      border-bottom: none;
+    }
+  }
+  .row:nth-of-type(3),
+  .row:nth-of-type(4) {
+    min-height: 19.5rem;
+    .col-2 {
+      height: 6.5rem;
+    }
+    .col-4 {
+      height: 8rem;
+    }
+  }
+
+  //removing desktop rules
+  .row:nth-child(4) {
+    .col-2:first-child {
+      padding-bottom: 0;
+    }
+  }
+  .row:nth-child(5) {
+    .col-2 {
+      p {
+        margin-left: 0;
+      }
+    }
+  }
+  .row:nth-child(6) {
+    .col-4:nth-child(1) {
+      width: 49%;
+    }
+    .col-4:nth-child(2) {
+      width: 49%;
+    }
+  }
+  .row:nth-child(7) {
+    .col-4:nth-child(2) {
+      width: 49%;
+    }
+    .col-4:nth-child(3) {
+      width: 49%;
+    }
+  }
+  #icon-students-served {
+    left: 45vw;
+    top: 8vw;
+    width: 30vw !important;
+  }
+  #icon-hours {
+    left: 39vw;
+    top: 7vw;
+    width: 28vw !important;
+  }
+  #icon-active-volunteers {
+    left: 39vw;
+    top: 7vw;
+    width: 25vw !important;
+  }
+  #icon-field-trips {
+    left: 42vw;
+    top: 6vw;
+    width: 25vw !important;
+  }
+  #icon-workshops {
+    left: 39vw;
+    top: 12vw;
+    width: 33vw !important;
+  }
+}
+section#updates {
+  .floated-pair {
+    width: 100%;
+    img {
+      margin-left: -6vw; 
+      width: 110%;
+      padding: 1rem 0 0 0;
+      position: static;
+    }
+  }
+  .pair-right {
+    margin: 0;
+  }
+}
+section#core-programs {
+  .section-header-img {
+    margin-left: -6vw;
+    padding-bottom: 7rem;
+    width: 110%;
+  }
+  .box {
+    min-width: 60vw;
+    padding: 5vw 0 3vw 5vw;
+    #no97 {
+      font-size: 19vw;
+      line-height: 15vw;
+    }
+    .percent-sign {
+      font-size: 10vw;
+      line-height: 7.5vw;
+    }
+    p.smallcaps {
+      line-height: 17px;
+      font-size: 2.5vw;
+    }
+  }
+}
+div#after-school {
+  .box {
+    left: 22vw;
+    margin-top: 12rem;
+    p.smallcaps {
+      max-width: 55vw;
+    }
+  }
+  .no-3 {
+    font-size: 15vw;
+    line-height: 9vw;
+    margin-top: 2.4vw;
+  }
+  .row:nth-of-type(2) {
+    border: none;
+    height: 20rem;
+    padding: 0;
+    .col-2 {
+      border-bottom: @dark-border;
+      border-right: none;
+      border-top: @dark-border;
+      margin-bottom: 1rem;
+      height: 10rem;
+      width: 100%;
+    }
+    .col-4 {
+      margin-bottom: 1rem;
+      height: 8rem;
+      width: 49%;
+    }
+  }
+  .row:nth-of-type(3) {
+    border: none;
+    height: 22rem;
+    padding: 0;
+    .col-2 {
+      border-left: none;
+      border-right: none;
+      border-top: @dark-border;
+      height: 10rem;
+      width: 100%;
+    }
+  }
+}
+div#field-trips {
+  .box {
+    left: 22vw;
+    margin-top: 12rem;
+    p.smallcaps {
+      max-width: 55vw;
+    }
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inline-block;
+  }
+  .row:nth-of-type(2) {
+    border: none;
+    height: 20rem;
+    padding: 0;
+    .col-2 {
+      border-bottom: @dark-border;
+      border-right: none;
+      border-top: @dark-border;
+      margin-bottom: 1rem;
+      height: 10rem;
+      width: 100%;
+    }
+    .col-4 {
+      margin-bottom: 1rem;
+      height: 8rem;
+      width: 49%;
+      .no-3 {
+        font-size: 15vw;
+        line-height: 9vw;
+        margin-top: 2.4vw;
+      }
+    }
+  }
+  .row:nth-of-type(3) {
+    border: none;
+    height: 22rem;
+    padding: 0;
+    .col-2 {
+      border-left: none;
+      border-right: none;
+      border-top: @dark-border;
+      height: 10rem;
+      width: 100%;
+    }
+  }
+}
+div#in-schools {
+  .box {
+    left: 22vw;
+    margin-top: 12rem;
+    p.smallcaps {
+      max-width: 55vw;
+    }
+  }
+  .big-box {
+    margin-left: -5.1vw;
+    width: 100%;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inline-block;
+  }
+  .row:nth-of-type(2) {
+    border: none;
+    height: 20rem;
+    padding: 0;
+    .col-2 {
+      border-bottom: @dark-border;
+      border-right: none;
+      border-top: @dark-border;
+      margin-bottom: 1rem;
+      height: 10rem;
+      width: 100%;
+    }
+    .col-4 {
+      margin-bottom: 1rem;
+      height: 8rem;
+      width: 49%;
+      .no-3 {
+        font-size: 15vw;
+        line-height: 9vw;
+        margin-top: 2.4vw;
+      }
+    }
+  }
+  .row:nth-of-type(3) {
+    border: none;
+    height: 22rem;
+    padding: 0;
+    .col-2 {
+      border-left: none;
+      border-right: none;
+      border-top: @dark-border;
+      height: 10rem;
+      width: 100%;
+    }
+  }
+}
+div#workshops {
+  .box {
+    left: 22vw;
+    margin-top: 12rem;
+    p.smallcaps {
+      max-width: 55vw;
+    }
+  }
+  .big-box {
+    margin-left: -5.1vw;
+    width: 100%;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inline-block;
+  }
+  .row:nth-of-type(2) {
+    border: none;
+    height: 20rem;
+    padding: 0;
+    .col-2 {
+      border-bottom: @dark-border;
+      border-right: none;
+      border-top: @dark-border;
+      margin-bottom: 1rem;
+      height: 10rem;
+      width: 100%;
+    }
+    .col-4 {
+      margin-bottom: 1rem;
+      height: 8rem;
+      width: 49%;
+      .no-3 {
+        font-size: 15vw;
+        line-height: 9vw;
+        margin-top: 2.4vw;
+      }
+    }
+  }
+  .row:nth-of-type(3) {
+    border: none;
+    height: 22rem;
+    padding: 0;
+    .col-2 {
+      border-left: none;
+      border-right: none;
+      border-top: @dark-border;
+      height: 10rem;
+      width: 100%;
+    }
+  }
+}
+div#publishing {
+  .section-header-img {
+    padding-bottom: 1rem;
+  }
+  .mobile {
+    display: block;
+  }
+}
+div#publications {
+  margin-left: 9vw;
+  .desktop {
+    display: none;
+  }
+  .books__item {
+    padding: 0 .3rem 1.5rem .3rem;
+  }
+}
+section#volunteers,
+section#funders {
+  .section-header-img {
+    margin: 0 0 0 -6vw;
+    width: 110%;
+  }
+  .box {
+    left: 13vw;
+    margin: -4rem 0 3rem 0;
+    padding: 0;
+    min-height: 17rem;
+    width: 18.5rem;
+    blockquote {
+      line-height: 1.4rem;
+      text-indent: -6px;
+      padding: 1.3rem 1rem 0 1rem;
+    }
+    p.smallcaps {
+      max-width: 55vw;
+    }
+  }
+}
+section#financials-report {
+  min-height: 110rem;
+  #income-wrap,
+  #expenses-wrap {
+    display: none;
+  }
+  #income-wrap--mobile,
+  #expenses-wrap--moblie {
+    min-height: 65rem;
+  }
+  .pie-chart--mobile {
+    margin: 3rem 0;
+  }
+  table {
+    width: 100%;
+    td {
+      width: 49%;
+      p {
+        margin-left: 25px;
+      }
+    }
+  }
+  #big-total {
+      font-size: 14vw;
+      margin-top: 1.5rem;
+    }
+  .pie-data.total {
+    border-top: @dark-border;
+    margin-top: 2rem;
+    padding-top: .5rem;
+    width: 95%;
+  }
+  .pie-key {
+    position: relative;
+    top: 3rem;
+    width: 19px;
+    height: 19px;
+    border-radius: 100px;
+  }
+  #earned-income-key {
+    background-color: #FFFFFF;
+  }
+  #individuals-key {
+    background-color: #1D637B;
+  }
+  #fundraising-key {
+    background-color: #CED0D3;
+  }
+  #foundations-key {
+    background-color: #2A9DBD;
+  }
+  #contributions-key {
+    background-color: #848B91;
+  }
+  #government-key {
+    background-color: #39D8FF;
+  }
+  #corporate-key {
+    background-color: #848B91;
+  }
+  #td_earned-income * {
+    color: #FFFFFF;
+  }
+  #td_individuals * {
+    color: #1D637B;
+  }
+  #td_fundraising * {
+    color: #CED0D3;
+  }
+  #td_foundations * {
+    color: #2A9DBD;
+  }
+  #td_contributions * {
+    color: #848B91;
+  }
+  #td_government * {
+    color: #39D8FF;
+  }
+  #td_corporate * {
+    color: #848B91;
+  }
+
+  //expenses
+  #programming-key {
+    background-color: #FFFFFF;
+  } 
+  #fundraising-key2 {
+    background-color: #39D8FF;
+  } 
+  #administrative-key {
+    background-color: #1D637B;
+  }
+  #td_programming * {
+    color: #FFFFFF;
+  }
+  #td_fundraising2 * {
+    color: #39D8FF;
+  }
+  #td_administrative * {
+    color: #1D637B;
+  }
+}
+#associate-board ul,
+#board-of-directors ul,
+#design-cohort-members ul,
+#foundations ul,
+#individuals ul,
+#interns ul,
+#organizations ul,
+#volunteers2 ul {
+    -moz-column-count: 1;
+    -moz-column-gap: 0;
+    -webkit-column-count: 1;
+    -webkit-column-gap: 0;
+    column-count: 1;
+    column-gap: 0;
+}
+div#contribute {
+  padding: 0;
+  div {
+    background-color: @pale-red;
+    padding: 2rem 8vw 2rem 12vw;
+    height: 12rem;
+    position: relative;
+    top: 0;
+    text-align: center;
+    a:nth-child(2),
+    a:nth-child(3) {
+      background-color: #FFF;
+      display: block;
+      float: none;
+      margin: 1rem 0 0 0;
+      padding: 0;
+      height: 3rem;
+      width: 70vw;
+      h2 {
+        color: @pale-red;
+        font-weight: bold;
+        line-height: 3rem;
+      }
+    }
+    h1 {
+      font-family: @copy-font;
+      font-size: 16px;
+    }
+  }
+  img#donate {
+    margin-left: -36vw;
+    width: 150%;
+  }
+}
+footer {
+  //height: 13rem;
+  #contact {
+    padding: 3rem 0 0 12vw;
+  }
+}
+
+
+//numerals
+.no-1, .no-2, .no-3 {
+  font-size: 20vw;
+  line-height: 12vw;
+}
+.no-4, .no-5 {
+  font-size: 15vw;
+  line-height: 9vw;
+}
+
+}
