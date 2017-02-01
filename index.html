@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class='no-js' lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -127,31 +127,41 @@
       <h1>At A Glance</h1>
       <img class='morse' src='images/morsecode/ataglance.png'>
       <!--
-        col-x: width = 100% / x.
+        block-x: width = 100% / x.
         no-x: lower number = bigger font.
         -->
-      <div class='row'>
-        <span class='col-2'><img id='icon-students-served' src='images/icons/students.svg'><p class='no-2'>2364</p><p>Students Served</p>
-        </span><span class='col-2'>
-          <img id='icon-hours' src='images/icons/hours.svg'><p class='no-2'>844</p><p>Programming Hours</p>
-        </span>
+      <div class='block block-2'>
+        <div class='block__content'><img id='icon-students-served' src='images/icons/students.svg'><p class='no-2'>2364</p><p>Students Served</p></div>
       </div>
-      <div class='row'>
-        <span class='col-2'><img id='icon-active-volunteers' src='images/icons/icon-volunteers.svg'><p class='no-3'>302</p><p>Active Volunteers</p>
-        </span><span class='col-4'><p class='no-4'>114</p><p>After-School Tutoring Sessions</p>
-        </span><span class='col-4'><p class='no-5'>103</p><p>Schools Represented</p>
-        </span>
+      <div class='block block-2'>
+        <div class='block__content'><img id='icon-hours' src='images/icons/hours.svg'><p class='no-2'>844</p><p>Programming Hours</p></div>
       </div>
-      <div class='row'>
-        <span class='col-4'><p class='no-5'>76</p><p>Teachers Served</p>
-        </span><span class='col-4'><p class='no-5'>70</p><p>Student Publications</p>
-        </span><span class='col-2'><img id='icon-field-trips' src='images/icons/fieldtrips.svg'><p class='no-5'>69</p><p>Field Trips</p></span>
+      <div class='block block-2'>
+        <div class='block__content'><img id='icon-active-volunteers' src='images/icons/icon-volunteers.svg'><p class='no-3'>302</p><p>Active<br>Volunteers</p></div>
       </div>
-      <div class='row'>
-        <span class='col-2'><img id='icon-workshops' src='images/icons/workshops.svg'><p class='no-5'>28</p><p>Workshops</p>
-        </span><span class='col-4'><p class='no-5'>5</p><p>In-School Projects</p>
-        </span><span class='col-4'><p class='no-5'>1</p><p>School Served Virtually</p>
-        </span>
+      <div class='block block-4'>
+        <div class='block__content'><p class='no-4'>114</p><p>After-School<br>Tutoring<br>Sessions</p></div>
+      </div>
+      <div class='block block-4'>
+        <div class='block__content'><p class='no-5'>103</p><p>Schools<br>Represented</p></div>
+      </div>
+      <div class='block block-4'>
+        <div class='block__content'><p class='no-5'>76</p><p>Teachers<br>Served</p></div>
+      </div>
+      <div class='block block-4'>
+        <div class='block__content'><p class='no-5'>70</p><p>Student<br>Publications</p></div>
+      </div>
+      <div class='block block-2'>
+        <div class='block__content'><img id='icon-field-trips' src='images/icons/fieldtrips.svg'><p class='no-5'>69</p><p>Field Trips</p></div>
+      </div>
+      <div class='block block-2'>
+        <div class='block__content'><img id='icon-workshops' src='images/icons/workshops.svg'><p class='no-5'>28</p><p>Workshops</p></div>
+      </div>
+      <div class='block block-4'>
+        <div class='block__content'><p class='no-5'>5</p><p>In-School<br>Projects</p></div>
+      </div>
+      <div class='block block-4'>
+        <div class='block__content'><p class='no-5'>1</p><p>School Served Virtually</p></div>
       </div>
     </section>
 
@@ -197,94 +207,98 @@
       <div id='after-school'>
        	<h3>—<br>After-School Tutoring and Writing</h3>
         <div class='box'>
-          <p id='no97'>97</p><p class='percent-sign'>%</p>
+          <p class='no97'>97</p><p class='percent-sign'>%</p>
           <p class='smallcaps'>OF STUDENTS FEEL CONFIDENT ABOUT FINISHING THEIR HOMEWORK ASSIGNMENTS AT 826CHI</p>
         </div>
         <img class='section-header-img' src='images/afterschool.png'>
         <p>From 3:00pm to 6:00pm on Monday through Thursday, 50 students in grades 1-8 arrive to the 826CHI writing laboratory for homework and writing support. Volunteer tutors worked with students to set daily learning goals, respond to writing prompts, and answer homework questions. At the end of each semester, students select a single story from their writing portfolio, prepare it for publication, and share their writing from our stage at public readings. We also launched the Speakers and Snacks Series. Each semester, we invite four guests to participate in a 45-minute Q&amp;A session with questions developed by our students. The aim of this series is to expose students to a variety of professions in the arts and sciences, held by a diversity of people, to enable them to better visualize opportunities for their own futures.</p>
         
-        <div class='row'>
-          <span class='col-2'>
-            <img id='icon-after-school' src='images/icons/afterschool.svg'><p class='no-3'>144</p><p>After-School Sessions</p>
-          </span><span class='col-4'>
-            <p class='no-3'>53</p><p>Students</p>
-          </span><span class='col-4'>
-            <p class='no-3'>17</p><p>Schools</p>  
-          </span>
+        <div class='block-wrap'>
+        <div class='block block-2'>
+          <div class='block__content'><img id='icon-after-school' src='images/icons/afterschool.svg'><p class='no-3'>144</p><p>After-School<br>Sessions</p></div>
         </div>
-        <div class='row row--quotes'>
-          <span class='col-2'>
+        <div class='block block-4'>
+          <div class='block__content'><p class='no-3'>53</p><p>Students</p></div>
+        </div>
+        <div class='block block-4'>
+          <div class='block__content'><p class='no-3'>17</p><p>Schools</p></div>
+        </div>
+        <div class='block block-2 block--quotes'>
+          <div class='block__content'>
             <blockquote class='h2'>"The tutor helped me become a better writer and it made me want to write books when I get older."</blockquote>
-            <cite class='smallcaps'>– STUDENT<br>HARVARD SCHOOL OF EXCELLENCE</cite>
-          </span><span class='col-2'>
+            <p><cite class='smallcaps'>– STUDENT<br>HARVARD SCHOOL OF EXCELLENCE</cite></p>
+          </div>
+        </div>
+        <div class='block block-2 block--quotes'>
+          <div class='block__content'>
             <blockquote class='h2'>"I love that she has the practice to read and write here because she would be very reluctant to do it at home with me."</blockquote>
-            <cite  class='smallcaps'>– TERESA O., PARENT</cite>
-          </span>
+            <p><cite  class='smallcaps'>– TERESA O., PARENT</cite></p>
+          </div>
+        </div>
         </div>
       </div> <!-- after-school -->
           
       <div id='field-trips'>	
         <h3>—<br>Field Trips</h3>
         <div class='box'>
-          <p id='no97'>97</p><p class="percent-sign">%</p>
+          <p class='no97'>97</p><p class="percent-sign">%</p>
           <p class='smallcaps'>OF TEACHERS SAID THAT THEIR STUDENTS WERE CHALLENGED BY THE PROGRAM</p>
         </div>
         <img class='section-header-img' src='images/fieldtrips.png'>
        	<p>During 2015-2016 school year, 69 classrooms visited our writing studio on weekday mornings last year for lively Field Trips. Teachers can choose from several Field Trip themes, each one focusing on developing plot, crafting strong characters, and adding detailed description. Storytelling and Bookmaking was by far the most popular choice this year. This particular Field Trip ends with students proudly taking home their written pieces, bound and illustrated. 826CHI also published seven compilations of student writing from Field Trips during 2015-2016.</p>
         
-        <div class='row'>
-          <span class='col-4 desktop'>
-            <p class='no-3'>69</p><p>Total Field Trips</p>
-          </span><span class='col-2'>
-            <img id='icon-authors' src='images/icons/authors.svg'>
-            <p class='no-3'>1,829</p><p>Published Authors</p>
-          </span><span class='col-4 mobile'>
-            <p class='no-3'>69</p><p>Total Field Trips</p>
-          </span><span class='col-4'>
-            <p class='no-3'>40</p><p>Schools Served</p>  
-          </span>
+        <div class='block-wrap'>
+        <div class='block block-4 desktop'>
+          <div class='block__content'><p class='no-3'>69</p><p>Total Field<br>Trips</p></div>
         </div>
-        <div class='row row--quotes'>
-          <span class='col-2'>
-            <blockquote class='h2'>"I'm very excited that I learned something new. I can write in new ways and think in new ways."</blockquote>
-            <cite class='smallcaps'>– ARLENE S., STUDENT</cite>
-          </span><span class='col-2'>
-            <blockquote class='h2'>"I just got the books in the mail!!!  Thank you!!  They turned out awesome! :) The kids love them and one told me how happy their parents were. Can't thank you enough.  I was just getting worked up in a meeting that we needed the kids to love, even like!, writing more by showing them things like your methods!!"</blockquote>
-            <cite  class='smallcaps'>– JENNY R., TEACHER<br>HIRSCH METROPOLITAN HIGH SCHOOL</cite>
-          </span>
+        <div class='block block-2'>
+          <div class='block__content'><img id='icon-authors' src='images/icons/authors.svg'><p class='no-3'>1,829</p><p>Published<br>Authors</p></div>
+        </div>
+        <div class='block block-4'>
+          <div class='block__content'><p class='no-3'>40</p><p>Schools<br>Served</p></div>  
+        </div>
+        <div class='block block-4 mobile'>
+          <div class='block__content'><p class='no-3'>69</p><p>Total Field<br>Trips</p></div>
+        </div>
+
+        <div class='block block-2 block--quotes'>
+          <div class='block__content'><blockquote class='h2'>"I'm very excited that I learned something new. I can write in new ways and think in new ways."</blockquote><p><cite class='smallcaps'>– ARLENE S., STUDENT</cite></p></div>
+        </div>
+        <div class='block block-2 block--quotes'>
+          <div class='block__content'><blockquote class='h2'>"I just got the books in the mail!!!  Thank you!!  They turned out awesome! :) The kids love them and one told me how happy their parents were. Can't thank you enough.  I was just getting worked up in a meeting that we needed the kids to love, even like!, writing more by showing them things like your methods!!"</blockquote><p><cite  class='smallcaps'>– JENNY R., TEACHER<br>HIRSCH METROPOLITAN HIGH SCHOOL</cite></p></div>
+        </div>
         </div>
       </div> <!-- field trips -->
 
       <div id='in-schools'>
         <h3>—<br>In-Schools</h3>
         <div class='box'>
-          <p id='no97'>96</p><p class="percent-sign">%</p>
+          <p class='no97'>96</p><p class="percent-sign">%</p>
           <p class='smallcaps'>OF STUDENTS REPORTED FEELING PROUD OF THEIR WRITING AT THE END OF THE PROJECT</p>
         </div>
         <img class='section-header-img' src='images/inschools.png'>
        	<p class='italic'>Every school year, 826CHI partners with teachers in local high-need schools around Chicago to provide individualized assistance to students as they tackle various writing projects. During the 2015-2016 school year, we sent 254 volunteers to seven Chicago Public Schools for a total of 71 in-school sessions.  Projects ranged from revising AP World History essays to writing stories about power and place.  Four schools—Curie Metropolitan High School, Bowen High School, Wells Community Academy High School, and Brentano Elementary Math &amp; Science Academy—created publications during in-schools.  Our annual Young Authors Book Project, <i>The Monster Gasped, OMG!</i>, with Brentano Elementary culminated with a public reading at Printers Row Lit Fest.</p>
-       
-        <div class='row'>
-          <span class='col-2 mobile'>
-            <img id='icon-publications' src='images/icons/publications.svg'>
-            <p class='no-3'>4</p><p>In-House Publications</p>  
-          </span><span class='col-4'>
-            <p class='no-3'>294</p><p>Students Served</p>
-          </span><span class='col-4'>
-            <p class='no-3'>9</p><p>Teachers Supported</p>
-          </span><span class='col-2 desktop'>
-            <img id='icon-publications' src='images/icons/publications.svg'>
-            <p class='no-3'>4</p><p>In-House Publications</p>  
-          </span>
-        </div>
-        <div class='row row--quotes'>
-          <span class='col-2'>
-            <blockquote class='h2'>"What was the most memorable moment with 826CHI is that I get to publish a book with my own words, not with any other people’s words. I had never published a book before, and it’s very exciting."</blockquote>
-            <cite class='smallcaps'>– BETHSAIDA C., AGE 10</cite>
-          </span><span class='col-2'>
-            <blockquote class='h2'>"There is no way that I, alone, would have been able to provide such in-depth feedback for all of my students.  The process also helped students with goal setting and process monitoring.  One of the most important benefits is how the process of working with 826 helped students become more comfortable sharing their work and receiving constructive criticism."</blockquote>
-            <cite  class='smallcaps'>– JENI C., TEACHER<br>KELVYN PARK HIGH SCHOOL</cite>
-          </span>
+
+
+        <div class='block-wrap'>
+          <div class='block block-2 mobile'>
+            <div class='block__content'><img id='icon-publications' src='images/icons/publications.svg'><p class='no-3'>4</p><p>In-House<br>Publications</p></div>  
+          </div>
+          <div class='block block-4'>
+            <div class='block__content'><p class='no-3'>294</p><p>Students<br>Served</p></div>
+          </div>
+          <div class='block block-4'>
+            <div class='block__content'><p class='no-3'>9</p><p>Teachers<br>Supported</p></div>
+          </div>
+          <div class='block block-2 desktop'>
+            <div class='block__content'><img id='icon-publications' src='images/icons/publications.svg'><p class='no-3'>4</p><p>In-House<br>Publications</p></div>  
+          </div>
+          <div class='block block-2 block--quotes'>
+            <div class='block__content'><blockquote class='h2'>"What was the most memorable moment with 826CHI is that I get to publish a book with my own words, not with any other people’s words. I had never published a book before, and it’s very exciting."</blockquote><p><cite class='smallcaps'>– BETHSAIDA C., AGE 10</cite></p></div>
+          </div>
+          <div class='block block-2 block--quotes'>
+            <div class='block__content'><blockquote class='h2'>"There is no way that I, alone, would have been able to provide such in-depth feedback for all of my students.  The process also helped students with goal setting and process monitoring.  One of the most important benefits is how the process of working with 826 helped students become more comfortable sharing their work and receiving constructive criticism."</blockquote><p><cite  class='smallcaps'>– JENI C., TEACHER<br>KELVYN PARK HIGH SCHOOL</cite></p></div>
+          </div>
         </div>
 
         <div class='big-box'>
@@ -296,34 +310,32 @@
       <div id='workshops'>
        	<h3>—<br>Workshops</h3>
         <div class='box'>
-          <p id='no97'>97</p><p class="percent-sign">%</p>
+          <p class='no97'>97</p><p class="percent-sign">%</p>
           <p class='smallcaps'>OF STUDENTS SAID THEY LIKED WORKING WITH THE VOLUNTEERS AT 826 WORKSHOPS</p>
         </div>
         <img class='section-header-img' src='images/workshops.png'>
         <p>826CHI offers free workshops that provide in-depth and interdisciplinary writing instruction in areas such as poetry, creative fiction, screenwriting/playwriting and journalism. Twenty-eight workshops were instructed by 826CHI volunteers and staff in 2015-2016. Connecting Chicago students with these creative and generous mentors allows students to dream and achieve on a deeper scale. Workshops published five titles during 2015-2016, including: <i>Not Minding How Gloomy It Is Outside,  And the Rest is Noise: Pitchfork Music Writing,</i> and <i>The Time Was 11:24</i>.</p>
         
-        <div class='row'>
-          <span class='col-4 desktop'>
-            <p class='no-3'>188</p><p>Students Served</p>
-          </span><span class='col-2'>
-            <img id='icon-workshops-2' src='images/icons/workshops2.svg'>
-            <p class='no-3'>28</p><p>Writing Workshops</p>
-          </span><span class='col-4'>
-            <p class='no-3'>6</p><p>In-House Publications</p>  
-          </span><span class='col-4 mobile'>
-            <p class='no-3'>188</p><p>Students Served</p>
-          </span>
+        <div class='block-wrap'>
+          <div class='block block-2 mobile'>
+            <div class='block__content'><img id='icon-workshops-2' src='images/icons/workshops2.svg'><p class='no-3'>28</p><p>Writing<br>Workshops</p></div>
+          </div>
+          <div class='block block-4'>
+            <div class='block__content'><p class='no-3'>188</p><p>Students<br>Served</p></div>
+          </div>
+          <div class='block block-2 desktop'>
+            <div class='block__content'><img id='icon-workshops-2' src='images/icons/workshops2.svg'><p class='no-3'>28</p><p>Writing<br>Workshops</p></div>
+          </div>
+          <div class='block block-4'>
+            <div class='block__content'><p class='no-3'>6</p><p>In-House<br>Publications</p></div> 
+          </div>
+          <div class='block block-2 block--quotes'>
+            <div class='block__content'><blockquote class='h2'>"I loved the diverse environment and the instructors were so encouraging, inspiring, patient, and amazing in every way."</blockquote><p><cite  class='smallcaps'>– LAUREN E., STUDENT<br>WHITNEY YOUNG MAGNET HIGH SCHOOL</cite></p></div>
+          </div>
+          <div class='block block-2 block--quotes'>
+            <div class='block__content'><blockquote class='h2'>"I liked that this workshop was very open to ideas and opinions. You were safe to say anything and express any emotions."</blockquote><p><cite class='smallcaps'>– ISABELLA S., STUDENT<br>OGDEN INTERNATIONAL SCHOOL OF CHICAGO</cite></p></div>
+          </div>
         </div>
-
-        <div class='row row--quotes'>
-          <span class='col-2'>
-            <blockquote class='h2'>"I loved the diverse environment and the instructors were so encouraging, inspiring, patient, and amazing in every way."</blockquote>
-            <cite  class='smallcaps'>– LAUREN E., STUDENT<br>WHITNEY YOUNG MAGNET HIGH SCHOOL</cite>
-          </span><span class='col-2'>
-            <blockquote class='h2'>"I liked that this workshop was very open to ideas and opinions. You were safe to say anything and express any emotions."</blockquote>
-            <cite class='smallcaps'>– ISABELLA S., STUDENT<br>OGDEN INTERNATIONAL SCHOOL OF CHICAGO</cite>
-          </span>
-        </div>  
 
         <div class='big-box'>
          	<h3 id="college-essay-writing">Next level: College Essay Writing</h3>
@@ -339,11 +351,11 @@
        	<h3>—<br>Publishing</h3>
         <img class='section-header-img' src='images/publishing.png'>
        	<p>There is no other organization in Chicago publishing 6 to 18 year-olds’ creative work at the rate that 826CHI is publishing. Last year alone we published 70 books; printing over one-thousand copies so that every student had the chance to take ownership over their hard work. By publishing students’ stories, our young authors become an important part of an artistic dialogue. We work hard to promote the value and impact of our writers’ work. The Chicago Public Library now carries a variety of 826CHI publications in 80 locations across the city. We sell copies of student publications in our revenue-generating storefront, The Wicker Park Secret Agent Supply. Our major publications receive public launch events; solidifying our student voices as an essential part of Chicago’s literary canon. Our most recent YABP publication received extensive press coverage in local news from the Chicago Tribune to the Chicago Reader.</p>
-        <div class='row  row--quotes mobile'>
-          <span class='col-2'>
-            <blockquote class='h2'>"A riveting theme, plus enthusiasm, teamwork and a unique approach to teaching writing combined to make this an experience our students will remember all their lives."</blockquote>
-            <cite class='smallcaps'>– SETH LAVIN, PRINCIPAL<br>BRENTANO ELEMENTARY SCHOOL</cite>
-          </span>
+
+        <div class='block-wrap mobile'>
+          <div class='block block-2 block--quotes'>
+            <div class='block__content'><blockquote class='h2'>"A riveting theme, plus enthusiasm, teamwork and a unique approach to teaching writing combined to make this an experience our students will remember all their lives."</blockquote><p><cite class='smallcaps'>– SETH LAVIN, PRINCIPAL<br>BRENTANO ELEMENTARY SCHOOL</cite></p></div>
+          </div>
         </div>
       </div> <!-- publishing -->
 
@@ -352,72 +364,71 @@
 
       <div class='books'>
         <div class='books__item' id='running-fast'>
-          <div class='img-wrap'><img alt='' src='images/books/running-fast.jpg'></div>
-          <p class='smallcaps'>TITLE GOES HERE</p>
+          <div class='img-wrap'><img alt='' src='images/books/running-fast.jpg'><div class='books__title'><h2>RUNNING FAST, SCARED AND SHAKING</h2></div></div>
+          <p class='smallcaps'>RUNNING FAST, SCARED AND SHAKING</p>
         </div>
         <div class='books__item' id='not-minding-how-gloomy'>
-          <div class='img-wrap'><img alt='' src='images/books/not-minding-how-gloomy.jpg'></div>
-          <p class='smallcaps'>TITLE GOES HERE</p>
+          <div class='img-wrap'><img alt='' src='images/books/not-minding-how-gloomy.jpg'><div class='books__title'><h2>NOT MINDING HOW GLOOMY IT LOOKS OUTSIDE</h2></div></div>
+          <p class='smallcaps'>NOT MINDING HOW GLOOMY IT LOOKS OUTSIDE</p>
         </div>
         <div class='books__item' id='i-remember-girl'>
-          <div class='img-wrap'><img alt='' src='images/books/i-remember-girl.jpg'></div>
-          <p class='smallcaps'>TITLE GOES HERE</p>
+          <div class='img-wrap'><img alt='' src='images/books/i-remember-girl.jpg'><div class='books__title'><h2>I REMEMBER &hellip;</h2></div></div>
+          <p class='smallcaps'>I REMEMBER &hellip;</p>
         </div>
         <div class='books__item' id='the-time-was-1124'>
-          <div class='img-wrap'><img alt='' src='images/books/the-time-was-1124.jpg'></div>
-          <p class='smallcaps'>TITLE GOES HERE</p>
+          <div class='img-wrap'><img alt='' src='images/books/the-time-was-1124.jpg'><div class='books__title'><h2>THIS TIME WAS 11:24!</h2></div></div>
+          <p class='smallcaps'>THIS TIME WAS 11:24!</p>
         </div>
         <div class='books__item' id='new-voices'>
-          <div class='img-wrap'><img alt='' src='images/books/new-voices.jpg'></div>
-          <p class='smallcaps'>TITLE GOES HERE</p>
+          <div class='img-wrap'><img alt='' src='images/books/new-voices.jpg'><div class='books__title'><h2>NEW VOICES</h2></div></div>
+          <p class='smallcaps'>NEW VOICES</p>
         </div>
         <div class='books__item' id='the-monster-gasped'>
-          <div class='img-wrap'><img alt='' src='images/books/the-monster-gasped.jpg'></div>
-          <p class='smallcaps'>TITLE GOES HERE</p>
+          <div class='img-wrap'><img alt='' src='images/books/the-monster-gasped.jpg'><div class='books__title'><h2>THE MONSTER GASPED, OMG!</h2></div></div>
+          <p class='smallcaps'>THE MONSTER GASPED, OMG!</p>
         </div>
         <div class='books__item' id='cheetah-with-coffee'>
-          <div class='img-wrap'><img alt='' src='images/books/cheetah-with-coffee.jpg'></div>
-          <p class='smallcaps'>TITLE GOES HERE</p>
+          <div class='img-wrap'><img alt='' src='images/books/cheetah-with-coffee.jpg'><div class='books__title'><h2>A CHEETAH WITH COFFEE IN ITS DAILY DIET</h2></div></div>
+          <p class='smallcaps'>A CHEETAH WITH COFFEE IN ITS DAILY DIET</p>
         </div>
         <div class='books__item' id='spitting-a-little'>
-          <div class='img-wrap'><img alt='' src='images/books/spitting-a-little.jpg'></div>
-          <p class='smallcaps'>TITLE GOES HERE</p>
+          <div class='img-wrap'><img alt='' src='images/books/spitting-a-little.jpg'><div class='books__title'><h2>SPITTING A LITTLE FROM ALL THE EXCITEMENT</h2></div></div>
+          <p class='smallcaps'>SPITTING A LITTLE FROM ALL THE EXCITEMENT</p>
         </div>
         <div class='books__item' id='flipping-a-switch'>
-          <div class='img-wrap'><img alt='' src='images/books/flipping-a-switch.jpg'></div>
-          <p class='smallcaps'>TITLE GOES HERE</p>
+          <div class='img-wrap'><img alt='' src='images/books/flipping-a-switch.jpg'><div class='books__title'><h2>FLIPPING A SWITCH</h2></div></div>
+          <p class='smallcaps'>FLIPPING A SWITCH</p>
         </div>
         <div class='books__item' id='swimming-among-the-stars'>
-          <div class='img-wrap'><img alt='' src='images/books/swimming-among-the-stars.jpg'></div>
-          <p class='smallcaps'>TITLE GOES HERE</p>
+          <div class='img-wrap'><img alt='' src='images/books/swimming-among-the-stars.jpg'><div class='books__title'><h2>SWIMMING AMONG THE STARS</h2></div></div>
+          <p class='smallcaps'>SWIMMING AMONG THE STARS</p>
         </div>
         <div class='books__item' id='this-could-go-on'>
-          <div class='img-wrap'><img alt='' src='images/books/this-could-go-on-for-centuries.jpg'></div>
-          <p class='smallcaps'>TITLE GOES HERE</p>
+          <div class='img-wrap'><img alt='' src='images/books/this-could-go-on-for-centuries.jpg'><div class='books__title'><h2>THIS COULD GO ON FOR CENTURIES</h2></div></div>
+          <p class='smallcaps'>THIS COULD GO ON FOR CENTURIES</p>
         </div>
         <div class='books__item' id='laughing-and-humming'>
-          <div class='img-wrap'><img alt='' src='images/books/laughing-and-humming.jpg'></div>
-          <p class='smallcaps'>TITLE GOES HERE</p>
+          <div class='img-wrap'><img alt='' src='images/books/laughing-and-humming.jpg'><div class='books__title'><h2>LAUGHING &amp; HUMMING TO PASS THE TIME</h2></div></div>
+          <p class='smallcaps'>LAUGHING &amp; HUMMING TO PASS THE TIME</p>
         </div>
         <div class='books__item' id='and-the-rest-is-noise'>
-          <div class='img-wrap'><img alt='' src='images/books/and-the-rest-is-noise.jpg'></div>
-          <p class='smallcaps'>TITLE GOES HERE</p>
+          <div class='img-wrap'><img alt='' src='images/books/and-the-rest-is-noise.jpg'><div class='books__title'><h2>AND THE REST IS NOISE</h2></div></div>
+          <p class='smallcaps'>AND THE REST IS NOISE</p>
         </div>
         <div class='books__item' id='fire-in-my-heart'>
-          <div class='img-wrap'><img alt='' src='images/books/fire-in-my-heart.jpg'></div>
-          <p class='smallcaps'>TITLE GOES HERE</p>
+          <div class='img-wrap'><img alt='' src='images/books/fire-in-my-heart.jpg'><div class='books__title'><h2>FIRE IN MY HEART</h2></div></div>
+          <p class='smallcaps'>FIRE IN MY HEART</p>
         </div>
         <div class='books__item' id='a-record-in-space'>
-          <div class='img-wrap'><img alt='' src='images/books/a-record-in-space.jpg'></div>
-          <p class='smallcaps'>TITLE GOES HERE</p>
+          <div class='img-wrap'><img alt='' src='images/books/a-record-in-space.jpg'><div class='books__title'><h2>A RECORD IN SPACE</h2></div></div>
+          <p class='smallcaps'>A RECORD IN SPACE</p>
         </div>
       </div>
 
-      <div class='row  row--quotes desktop'>
-        <span class='col-2'>
-          <blockquote class='h2'>"A riveting theme, plus enthusiasm, teamwork and a unique approach to teaching writing combined to make this an experience our students will remember all their lives."</blockquote>
-          <cite class='smallcaps'>– SETH LAVIN, PRINCIPAL<br>BRENTANO ELEMENTARY SCHOOL</cite>
-        </span>
+      <div class='block-wrap desktop'>
+        <div class='block block-2 block--quotes'>
+          <div class='block__content'><blockquote class='h2'>"A riveting theme, plus enthusiasm, teamwork and a unique approach to teaching writing combined to make this an experience our students will remember all their lives."</blockquote><p><cite class='smallcaps'>– SETH LAVIN, PRINCIPAL<br>BRENTANO ELEMENTARY SCHOOL</cite></p></div>
+        </div>
       </div>
 
     </div> <!-- publications -->
@@ -550,79 +561,94 @@
       </div>
 
         <script>
-          //revenue
           var revenueResults = [
-           {name: "INDIVIDUALS", count: 190826, color: "#1D637B"},
-           {name: "FOUNTATIONS", count: 78845, color: "#2A9DBD"},
-           {name: "GOVERNMENT", count: 31067, color: "#39D8FF"},
-           {name: "CORPORATE", count: 8577, color: "#848B91"},
-           {name: "826NATIONAL CONTRIBUTIONS", count: 50211, color: "#848B91"},
-           {name: "FUNDRAISING EVENTS", count: 113297, color: "#CED0D3"},
-           {name: "EARNED INCOME", count: 203152, color: "#FFFFFF"},
-          ];
-          var cx = document.querySelector('#income').getContext("2d");
-          var total = revenueResults.reduce(function(sum, choice) {
-                                      return sum + choice.count;
-                                    }, 0);
-          // Start at the top
-          var currentAngle = -0.5 * Math.PI;
-          revenueResults.forEach(function(result) {
+             {name: "INDIVIDUALS", count: 190826, color: "#1D637B"},
+             {name: "FOUNTATIONS", count: 78845, color: "#2A9DBD"},
+             {name: "GOVERNMENT", count: 31067, color: "#39D8FF"},
+             {name: "CORPORATE", count: 8577, color: "#848B91"},
+             {name: "826NATIONAL CONTRIBUTIONS", count: 50211, color: "#848B91"},
+             {name: "FUNDRAISING EVENTS", count: 113297, color: "#CED0D3"},
+             {name: "EARNED INCOME", count: 203152, color: "#FFFFFF"},
+            ];
+
+           var expensesResults = [
+              {name: "PROGRAMMING", count: 400409, color: "#FFFFFF"},
+              {name: "FUNDRAISING", count: 51676, color: "#39D8FF"},
+              {name: "ADMINISTRATIVE", count: 28002, color: "#1D637B"},
+            ];
+
+          function drawCharts(scale) {
+            //revenue
+            var cx = document.querySelector('#income').getContext("2d");
+            var total = revenueResults.reduce(function(sum, choice) {
+                                        return sum + choice.count;
+                                      }, 0);
+            cx.clearRect(0, 0, document.querySelector('#income').width, document.querySelector('#income').height);
+            // Start at the top
+            var currentAngle = -0.5 * Math.PI;
+            
+            if (scale == 'md') {
+              if (lastCanvasSize == 'lg') cx.scale(.7, .7);
+            } else if (scale == 'lg') {
+              if (lastCanvasSize == 'md') cx.scale(1.43, 1.43);
+            }
+            lastCanvasSize = scale;
+            
+            revenueResults.forEach(function(result) {
+              var sliceAngle = (result.count / total) * 2 * Math.PI;
+              cx.beginPath();
+              cx.arc(320, 335, 319,
+                     currentAngle, currentAngle + sliceAngle);
+              currentAngle += sliceAngle;
+              cx.lineTo(320, 335);
+              cx.strokeStyle = result.color;
+              cx.stroke();
+            });
+
+            cx.beginPath();
+            cx.moveTo(306, 670);
+            cx.lineTo(303, 686);
+            cx.strokeStyle = revenueResults[4]['color'];
+            cx.stroke();
+
+            cx.beginPath();
+            cx.moveTo(428, 653);
+            cx.lineTo(435, 670);
+            cx.strokeStyle = revenueResults[3]['color'];
+            cx.stroke();
+
+            cx.beginPath();
+            cx.moveTo(488, 623);
+            cx.lineTo(495, 634);
+            cx.lineTo(548, 634);
+            cx.strokeStyle = revenueResults[2]['color'];
+            cx.stroke();
+
+            //expenses
+            var cx = document.querySelector('#expenses').getContext("2d");
+            var total = expensesResults.reduce(function(sum, choice) {
+                                        return sum + choice.count;
+                                      }, 0);
+            cx.clearRect(0, 0, document.querySelector('#expenses').width, document.querySelector('#expenses').height);
+            // Start at the top
+            var currentAngle = -0.5 * Math.PI;
+            expensesResults.forEach(function(result) {
             var sliceAngle = (result.count / total) * 2 * Math.PI;
             cx.beginPath();
-            cx.arc(320, 335, 319,
+            cx.arc(234, 260, 232,
                    currentAngle, currentAngle + sliceAngle);
             currentAngle += sliceAngle;
-            cx.lineTo(320, 335);
+            cx.lineTo(234, 260);
             cx.strokeStyle = result.color;
             cx.stroke();
-          });
+            });
 
-          cx.beginPath();
-          cx.moveTo(306, 670);
-          cx.lineTo(303, 686);
-          cx.strokeStyle = revenueResults[4]['color'];
-          cx.stroke();
-
-          cx.beginPath();
-          cx.moveTo(428, 653);
-          cx.lineTo(435, 670);
-          cx.strokeStyle = revenueResults[3]['color'];
-          cx.stroke();
-
-          cx.beginPath();
-          cx.moveTo(488, 623);
-          cx.lineTo(495, 634);
-          cx.lineTo(548, 634);
-          cx.strokeStyle = revenueResults[2]['color'];
-          cx.stroke();
-          //expenses
-          var expensesResults = [
-            {name: "PROGRAMMING", count: 400409, color: "#FFFFFF"},
-            {name: "FUNDRAISING", count: 51676, color: "#39D8FF"},
-            {name: "ADMINISTRATIVE", count: 28002, color: "#1D637B"},
-          ];
-          var cx = document.querySelector('#expenses').getContext("2d");
-          var total = expensesResults.reduce(function(sum, choice) {
-                                      return sum + choice.count;
-                                    }, 0);
-          // Start at the top
-          var currentAngle = -0.5 * Math.PI;
-          expensesResults.forEach(function(result) {
-          var sliceAngle = (result.count / total) * 2 * Math.PI;
-          cx.beginPath();
-          cx.arc(234, 260, 232,
-                 currentAngle, currentAngle + sliceAngle);
-          currentAngle += sliceAngle;
-          cx.lineTo(234, 260);
-          cx.strokeStyle = result.color;
-          cx.stroke();
-          });
-
-          cx.beginPath();
-          cx.moveTo(182, 1);
-          cx.lineTo(186, 19);
-          cx.strokeStyle = expensesResults[2]['color'];
-          cx.stroke();
+            cx.beginPath();
+            cx.moveTo(182, 1);
+            cx.lineTo(186, 19);
+            cx.strokeStyle = expensesResults[2]['color'];
+            cx.stroke();
+          }
 
           function drawMobileChart(chartId, results) {
             var cx = document.querySelector(chartId).getContext('2d');
@@ -631,10 +657,11 @@
             }, 0);
             var currentAngle = -0.5 * Math.PI;
             var counter = 0;
+            cx.clearRect(0, 0, chartId.width, chartId.height);
             results.forEach(function(result) {
               counter++;
               var sliceAngle = (result.count / total) * 2 * Math.PI;
-              cx.clearRect(0, 0, chartId.width, chartId.height);
+              
               cx.beginPath();
               cx.arc(145, 145, 145,
                 currentAngle, currentAngle + sliceAngle);
@@ -656,20 +683,21 @@
               } 
             });
           }
-
-          var mq = window.matchMedia( '(max-width: 25rem)' );
-          if(mq.matches) {
-              console.log('b');
-              drawMobileChart('#income--mobile', revenueResults);
-              drawMobileChart('#expenses--mobile', expensesResults);
-          }
-          window.onresize = function() {
-            if(mq.matches) {
-              console.log('a');
-              drawMobileChart('#income--mobile', revenueResults);
-              drawMobileChart('#expenses--mobile', expensesResults);
+          var md = window.matchMedia('all and (min-width: 428px) and (max-width: 764px)');
+          var lastCanvasSize = 'lg';
+          var mobile = window.matchMedia( 'all and (max-width: 427px)' );
+          var handler = function() {
+            if(mobile.matches) {
+                drawMobileChart('#income--mobile', revenueResults);
+                drawMobileChart('#expenses--mobile', expensesResults);
+            } else if (md.matches) {
+              drawCharts('md');
+            } else {
+              drawCharts('lg');
             }
-          };
+          }
+          handler();
+          window.onresize = handler;
         </script>
     </section>
 
@@ -677,18 +705,19 @@
      	<h1 class="section-title">2015-2016 Team</h1>
       <img class='morse' src='images/morsecode/team2.png'>
       <h2 class="section-title">—<br>Staff</h2>
-      <ul>
-        <li><h2>Tammy Beard</h2><p class='smallcaps'>Director of Development</p></li>
-        <li><h2>Kendra Curry-Khanna</h2><p class='smallcaps'>EXECUTIVE DIRECTOR</p></li>
-        <li><h2>Abi Humber</h2><p class='smallcaps'>Communications and Programs Manager</p></li>
-        <li><h2>Elif Karatas</h2><p class='smallcaps'>Volunteer Coordinator</p></li>
-        <li><h2>Sarah Kokernot</h2><p class='smallcaps'>Programs Manager</p></li>
-        <li><h2>Esther Lee</h2><p class='smallcaps'>Development Associate</p></li>
-        <li><h2>Amanda Lichthenstein</h2><p class='smallcaps'>Director of Education</p></li>
-        <li><h2>Kortney Morrow</h2><p class='smallcaps'>Development Coordinator</p></li>
-        <li><h2>Tyler Stoltenberg</h2><p class='smallcaps'>Operations Manager</p></li>
-        <li><h2>Stien van der Ploeg</h2><p class='smallcaps'>Director of Development</p></li>
-        <li><h2>Tracy Woodley</h2><p class='smallcaps'>Volunteer Coordinator</p></li>
+      <ul class='blocks-wrap'>
+        <li class='block block-4'><div class='block__content'><h2>Tammy Beard</h2><p class='smallcaps'>DIRECTOR OF DEVELOPMENT</p></div></li>
+        <li class='block block-4'><div class='block__content'><h2>Kendra Curry-Khanna</h2><p class='smallcaps'>EXECUTIVE DIRECTOR</p></div></li>
+        <li class='block block-4'><div class='block__content'><h2>Abi Humber</h2><p class='smallcaps'>COMMUNICATIONS AND PROGRAMS MANAGER</p></div></li>
+        <li class='block block-4'><div class='block__content'><h2>Elif Karatas</h2><p class='smallcaps'>VOLUNTEER COORDINATOR</p></div></li>
+        <li class='block block-4'><div class='block__content'><h2>Sarah Kokernot</h2><p class='smallcaps'>PROGRAMS MANAGER</p></div></li>
+        <li class='block block-4'><div class='block__content'><h2>Esther Lee</h2><p class='smallcaps'>DEVELOPMENT ASSOCIATE</p></div></li>
+        <li class='block block-4'><div class='block__content'><h2>Amanda Lichthenstein</h2><p class='smallcaps'>DIRECTOR OF EDUCATION</p></div></li>
+        <li class='block block-4'><div class='block__content'><h2>Kortney Morrow</h2><p class='smallcaps'>DEVELOPMENT COORDINATOR</p></div></li>
+        <li class='block block-4'><div class='block__content'><h2>Tyler Stoltenberg</h2><p class='smallcaps'>OPERATIONS MANAGER</p></div></li>
+        <li class='block block-4'><div class='block__content'><h2>Stien van der Ploeg</h2><p class='smallcaps'>DIRECTOR OF DEVELOPMENT</p></div></li>
+        <li class='block block-4'><div class='block__content'><h2>Tracy Woodley</h2><p class='smallcaps'>VOLUNTEER COORDINATOR</p></div></li>
+        <li class='block block-4'><div class='block__content'></div></li>
       </ul>
     </section>
     <section id="board-of-directors">
@@ -1588,7 +1617,7 @@
       <div id='contact'>
         <img width='28px' id='footer-symbol' src='images/826-symbol.svg'>
         <h2>CONTACT US</h2><br>
-        <p class='smallcaps'>QUESTIONS? EMAIL <a href="mailto:development@826chi.org">DEVELOPMENT@826CHI.ORG</a></p>
+        <p class='smallcaps'>QUESTIONS? <span>EMAIL <a href="mailto:development@826chi.org">DEVELOPMENT@826CHI.ORG</a></span></p>
       </div>
     </footer>
         
@@ -1624,5 +1653,6 @@
       $(this).css('width', Math.round($(this).width() * .1) + 'vw');
     });
   </script>
+  <script type='text/javascript' src='js/modernizr-custom.js'></script>
   </body>
 </html>

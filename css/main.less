@@ -1,6 +1,6 @@
 //LESS variables
 @dark-blue-grey-two: #223946;
-@dark-border: solid 1.5px @dark-blue-grey-two;
+@dark-border: 1.5px solid @dark-blue-grey-two;
 @headline-font: 'BebasNeue Light', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
 @numeric-font: 'BebasNeue Bold', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
 @copy-font: 'Courier Prime', 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
@@ -87,7 +87,7 @@ h2, .h2 {
 }
 h3  {
   font-size: 1.2rem;
-  letter-spacing: .35vw;
+  letter-spacing: 3px;
   line-height: 2rem;
   margin-bottom: 0;
 }
@@ -96,19 +96,22 @@ main {
   margin-left: 21vw;
   width: 60vw;
 }
+.mobile {
+  display: none;
+}
 .morse {
   height: 3.21vw;
   position: absolute;
 }
 p {
   margin-bottom: 1.7rem;
+  opacity: 0.9;
 }
 p, cite {
   color: #ffffff;
   line-height: 29px;
   font-family: @copy-font;
   font-size: 1.1rem;
-  opacity: 0.9;
 }
 section {
   clear: both;
@@ -206,6 +209,7 @@ ul {
     position:relative;
     height: 53px;
     width: 225px;
+    outline: none;
     padding-left: 20px;
     img {
       display: none;
@@ -303,7 +307,6 @@ ul {
   display: block;
   }
 }
-
 #header-wrap {
   width:100%;
   margin: 67px 0 7vw -.7vw;
@@ -323,8 +326,8 @@ ul {
     position: absolute;    
     width:27vw;
     h2 {
-      font-size: 1.55vw;
-      letter-spacing: 4px;
+      font-size: 1.6vw;
+      letter-spacing: .5vw;
       line-height: 13px;
       margin-bottom: 1.5vw;
       margin-left: 3.3vw;
@@ -368,107 +371,59 @@ ul {
 }
 
 
-//grid
-
-section#at-a-glance,
-div#after-school,
-div#field-trips,
-div#in-schools,
-div#workshops {
-  .row {
-    border-bottom: @dark-border;
-    margin-right: 1rem;
-    padding: .7rem 0;
-    cite {
-      opacity: 0.6;
-    }
-    span {
-      vertical-align: top;
-    }
-    p:nth-of-type(2) {
-      font-size: 1.37vw;
-      line-height: 2.29vw;
-    }
-  }
-  .row--quotes {
-    border-bottom: none;
-    blockquote, cite {
-      display: inline-block;
-      margin-left: 1.8rem;
-      max-width: 88%;
-      padding-top: .7rem;
+//blocks
+.block-wrap {
+  overflow: hidden;
+}
+.block {
+  box-sizing: border-box;
+  border-top: @dark-border;
+  float: left;
+  margin: 0;
+  padding: 1vw 0 1vw 0;
+  position: relative;
+}
+.block__content p {
+  margin-left: 1.5vw;
+}
+.block-2 {
+  width: 50%;
+}
+.block-4 {
+  width: 25%;
+}
+.block--quotes {
+  .block__content {
+    padding-top: 15px;
+    blockquote {
+      margin-bottom: .4rem;
+      margin-left: 10px;
+      margin-right: 3vw;
       text-indent: -7px;
     }
-    .col-2:first-of-type {
-      cite {
-        margin-left: 25px;
-        text-indent: -20px;
-      }
+    p:last-of-type {
+      line-height: normal;
+      margin: 0 0 0 32px;
+      text-indent: -20px;
     }
-    .col-2:last-of-type {
-      cite {
-        margin-left: 3rem;
-        text-indent: -20px;
-      }
-    }
-    .col-2:nth-child(1) {
-      border-right: none;
-    }
-    .col-2:nth-child(2) {
-      border-left: @dark-border;
-     // margin-left: -5px;
-    }
-  }
-  .col-2, .col-4 {
-    display: inline-block;
-    height: 100%;
-    position:relative;
-    p {
-      margin-left: 1.2rem;
-    }
-  }
-  .col-2 {
-    width: 48%;
-  }
-  .col-2:first-of-type {
-    cite {
-      //margin-left: 1rem;
-    }
-    .h2 {
-      margin-left: .4rem;
-    }
-  }
-  .h2 {
-    display: inline-block;
-    margin-bottom: .8rem;
-    vertical-align: top;
-  }
-  .col-4 {
-    border-right: @dark-border;
-    width:24%;
-  }
-  .col-2:nth-child(1) {
-    border-right: @dark-border;
-  }
-  .col-2:nth-child(1),
-  .col-4:nth-child(1) {
-    p {
-      margin-left: 0;
-    }
-  }
-  .col-2:nth-child(2) {
-    position: relative;
-    //left:1px;
-    width:49%;
-  }
-  .col-2:nth-child(3) {
-    width:49%;
-  }
-  .col-4:last-of-type {
-    border-right: none;
-    width:23%
   }
 }
+.block--quotes:last-child {
+  blockquote, p {
+    padding-left: 2vw;
+  }
+}
+.block__content {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  p:last-of-type {
+    font-size: 1.37vw;
+    line-height: 2.29vw;
+    margin-bottom: 0;
+  }
+}
+
 //sections
 section#letter {
   margin-bottom: 11rem;
@@ -500,10 +455,13 @@ section#current-staff {
   h1 {
     max-width: 40rem;
   }
+  ul {
+    column-count: 4;
+  }
   li {
     margin-top: 1.9rem;
-    float: left;
-    margin-right: 20px;
+    //float: left;
+    //margin-right: 20px;
     height:260px;
     width: 170px;
     h2 {
@@ -551,10 +509,10 @@ section#mission-statement {
     top:7.8vw;
   }
   img:nth-child(4) {
-    //height: 26.71vw;
+    margin-top: 5vw;
     width: 44vw;
     left:-14.1vw;
-    top:53.2vw;
+    bottom: 2rem;
   }
   img:nth-child(5) {
     //height: 32.48vw;
@@ -567,7 +525,7 @@ section#mission-statement {
     left:-5.1vw;
     top:24.2vw;
     margin-bottom: 8rem;
-    min-height: 31vw;
+    //min-height: 31vw;
     padding-bottom: 3rem;
     padding-left: .7rem;
     position: relative;
@@ -582,61 +540,106 @@ section#at-a-glance {
     left: -4.5vw;
     top: 7.5vw;
   }
+  #icon-students-served {
+    left: 17vw;
+    top: 7vw;
+  }
+  #icon-hours {
+   left: 17vw;
+   top: 6vw;
+  }
+  #icon-active-volunteers {
+   left: 2vw;
+   top: 6.2vw;
+  }
+  #icon-field-trips {
+   left: 15.7vw;
+   top: 2.5vw;
+  }
+  #icon-workshops {
+   left: 12.3vw;
+   top: 3.9vw;
+  }
   .no-2 {
-    margin-top: 5.8vw;
+    margin-top: 5.5vw;
   }
   .no-3 {
-    margin-top: 6.4vw;
+    margin-top: 5.8vw;
   }
   .no-4 {
-    margin-top: 6.9vw;
+    margin-left: .9vw;
+    margin-top: 6.3vw;
   }
   .no-5 {
-    margin-top: 7.7vw;
-  }
-  p:last-of-type {
-    font-size: 1.37vw;
-    line-height: 2.29vw;
-    width: 13vw;
+    margin-top: 4vw;
   }
 
-  .row:nth-of-type(3),
-  .row:nth-of-type(4) {
-    .no-5 {
-      margin-top: 3.5vw;
-    }
-    p:last-of-type {
-      margin-top: .5rem;
-    }
-  }
-  .row:last-of-type {
-    border-bottom: none;
-  }
-  .row:nth-child(4) {
+  //top row
+  .block:nth-of-type(1),
+  .block:nth-of-type(2) {
+    border-top: none;
     padding-top:2rem;
+    height: 20.5vw;
+  }
+  //second row
+  .block:nth-of-type(3),
+  .block:nth-of-type(4),
+  .block:nth-of-type(5) {
+    height: 20.5vw;
   }
 
-  //row heights
-  .row:nth-child(4) {
-      height: 17.5vw;
-  }
-  .row:nth-child(5) {
-    height:19vw;
-    .col-2 {
-      p {
-        margin-left: 14vw;
-      }
+  .block:nth-of-type(1),
+  .block:nth-of-type(3),
+  .block:nth-of-type(4),
+  .block:nth-of-type(6),
+  .block:nth-of-type(7),
+  .block:nth-of-type(9),
+  .block:nth-of-type(10) {
+    .block__content {
+      border-right: @dark-border;
     }
   }
-  .row:nth-child(6), 
-  .row:nth-child(7) {
-      height: 12.25vw;
-    .col-4:nth-child(1) {
-      width:22.8%;
+  .block:nth-of-type(1),
+  .block:nth-of-type(6),
+  .block:nth-of-type(9) {
+    p {
+      margin-left: 0;
     }
-    .col-4:nth-child(2),
-    .col-4:nth-child(3) {
-      width:25%;
+  }
+  //block 3
+  .block:nth-of-type(3) {
+    p {
+      margin-left: 14vw;
+    }
+  }
+  //block 5
+  .block:nth-of-type(5) {
+    .no-5 {
+      margin-top: 7.1vw;
+    }
+  }
+  //block 6
+  .block:nth-of-type(6) {
+    width: 22.8%;
+  }
+  //block 7
+  .block:nth-of-type(7) {
+    width: 27.2%;
+  }
+
+  //third row
+  .block:nth-of-type(6),
+  .block:nth-of-type(7),
+  .block:nth-of-type(8) {
+    height: 15vw;
+  }
+  //fourth row
+  .block:nth-of-type(9),
+  .block:nth-of-type(10),
+  .block:nth-of-type(11) {
+    height: 14vw;
+    .no-5 {
+      margin-top: 2vw;
     }
   }
 }
@@ -666,7 +669,6 @@ section#updates {
   }
 }
 section#core-programs {
-  margin-bottom: 15rem;
   .big-box {
       background-color: @slate;
       margin-top: 2rem;
@@ -678,7 +680,7 @@ section#core-programs {
   }
   .box {
     margin-top: 0;
-    padding-bottom: 1.7rem;
+    //padding-bottom: 1.7rem;
   }
   h1 {
     margin-bottom: 5rem;
@@ -695,58 +697,93 @@ section#core-programs {
   }
 }
 div#after-school {
+  .box {
+    width: 15.5rem;
+  }
   .no-3 {
-    margin-top: 2.4vw;
+    margin-top: 2.3vw;
   }
   #icon-after-school {
     left: 3.8vw;
     top: 2.2vw;
   }
-  .row:nth-of-type(2) {
-    border-top: @dark-border;
-    height: 14.2vw;
-    .col-2 {
-      p {
-        margin-left: 15vw;
-      }
+
+  //block 1
+  .block:nth-of-type(1) {
+    .block__content p {
+      margin-left: 15.5vw;
     }
   }
-  .row:nth-of-type(3) {
-    min-height: 14.8vw;
-    cite p {
-        margin-left: 1.25rem;
+
+  .block:nth-of-type(1),
+  .block:nth-of-type(2),
+  .block:nth-of-type(3) {
+    height: 16vw;
+  }
+
+  .block:nth-of-type(1),
+  .block:nth-of-type(2) {
+    .block__content {
+      border-right: @dark-border;
+    }
+  }
+  .block:nth-of-type(5){
+    .block__content {
+      border-left: @dark-border;
     }
   }
 }
 div#field-trips {
-  margin-top: 12rem;
-  // .quotes-div {
-  //   height: 25rem;
-  // }
-  .mobile {
-    display: none;
+  .box {
+    width: 15.5rem;
   }
+  margin-top: 12rem;
+  // .mobile {
+  //   display: none;
+  // }
   #icon-authors {
     left: 12vw;
-    top: 2.5vw;
+    top: 3.5vw;
   }
   .no-3 {
     margin-top: 2.4vw;
   }
-  //row 1
-  .row:nth-of-type(2) {
-    border-top: @dark-border;
-    height: 14.2vw;
-    .col-2 {
-      border-right: @dark-border;
-    }
-    .col-4:first-of-type {
-      width: 13.5vw;
-    }
-    p:last-of-type {
-      width: 10vw;
+
+  .block:nth-of-type(1) {
+    p {
+      margin-left: 0;
     }
   }
+
+  //row 1
+  .block:nth-of-type(1),
+  .block:nth-of-type(2),
+  .block:nth-of-type(3) {
+    height: 16.5vw;
+  }
+
+  .block:nth-of-type(2),
+  .block:nth-of-type(3) {
+    padding-left: .5vw;
+  }
+
+  .block:nth-of-type(1),
+  .block:nth-of-type(2) {
+    .block__content {
+      border-right: @dark-border;
+    }
+  }
+  .block:nth-of-type(2) {
+    .no-3 {
+      margin-left: .9vw;
+    }
+  }
+  .block:nth-of-type(6) {
+    .block__content {
+      border-left: @dark-border;
+    }
+  }
+
 }
 
 div#in-schools {
@@ -759,112 +796,110 @@ div#in-schools {
   }
   .box {
     left: 35vw;
-    width: 23.1vw;
-    p {
-      max-width: 22vw;
-    }
+    width: 17.5rem;
   }
-  .mobile {
-    display: none;
-  }
+  // .mobile {
+  //   display: none;
+  // }
   // .quotes-div {
   //   height: 35vw;
   // }
   #icon-publications {
-    left: 3.4vw;
-    top: 1.3vw;
+    left: 1vw;
+    top: 2.4vw;
   }
-  .row:nth-of-type(2) {
-    border-top: @dark-border;
-    height: 14vw;
-    .no-3 {
-      margin-top: 2.4vw;
+  //first block desktop
+  .block:nth-of-type(2) {
+    p {
+      margin-left: 0;
     }
-    .col-4:first-of-type {
-      p:last-of-type {
-        width: 10vw;
-      }
+  }
+  .block:nth-of-type(4) {
+    .block__content p {
+      margin-left: 14vw;
     }
-    .col-2 {
-      p {
-        margin-left: 16.5vw;
-      }
+  }
+  .block:nth-of-type(2),
+  .block:nth-of-type(3),
+  .block:nth-of-type(4) {
+    height: 17vw;
+  }
+  .block:nth-of-type(2),
+  .block:nth-of-type(3) {
+    .block__content {
+      border-right: @dark-border;
     }
+  }
+  .block:nth-of-type(6) {
+    .block__content {
+      border-left: @dark-border;
+    }
+  }
+  .no-3 {
+    margin-top: 2.4vw;
   }
 }
 div#workshops {
   margin-top: 11.5rem;
   .box {
     left: 38.5vw;
-    width: 23.1vw;
-    p {
-      max-width: 21.5vw;
-    }
+    width: 17.5rem;
   }
   .big-box {
     margin-top: 1.5rem;
   }
-  .mobile {
-    display: none;
-  }
-  .column {
-    width: 100%;
-    blockquote {
-      max-width: 30rem;
-    }
-    p {
-        max-width: 20rem;
-      }
-  }
   #icon-workshops-2 {
     left: 13vw;
-    top: 2.2vw;
+    top: 3vw;
   }
   .no-3 {
     margin-top: 2.4vw;
   }
   //row 1
-  .row:nth-of-type(2) {
-    border-top: @dark-border;
-    height: 14.2vw;
-    .col-2 {
+  .block:nth-of-type(2),
+  .block:nth-of-type(3),
+  .block:nth-of-type(4) {
+    height: 16vw;
+  }
+
+  .block:nth-of-type(2){
+    p {
+      margin-left: 0;
+    }
+  }
+
+  //right borders
+  .block:nth-of-type(2),
+  .block:nth-of-type(3) {
+    .block__content {
       border-right: @dark-border;
     }
-    .col-4:first-of-type {
-      width: 13.5vw;
-    }
-    p:last-of-type {
-      width: 10vw;
-    }
   }
-  //row 2
-  .col-2:first-of-type {
-    cite {
-      margin-left: 1rem;
+  .block:nth-of-type(6) {
+    .block__content {
+      border-left: @dark-border;
     }
-    .h2 {
-      margin-left: .4rem;
-    }
-  }
-  .h2 {
-    display: inline-block;
-    margin-bottom: .8rem;
-    vertical-align: top;
   }
 }
 div#publishing {
   margin-top: 13rem;
-  .column {
+  .block {
     width: 100%;
-    blockquote {
-      max-width: 40rem;
-    }
-  }
-  .mobile {
-    display: none;
   }
 }
 div#publications {
+  margin-top: 5rem;
+  .block {
+    width: 100%;
+    blockquote {
+      padding-left: 0;
+    }
+    p {
+      margin-left: 32px;
+      padding-left: 0;
+      text-indent: -20px;
+    }
+  }
   .books {
     column-count: 3;
     column-gap: 0;
@@ -881,57 +916,74 @@ div#publications {
     padding: 0 .5rem 1.5rem .5rem;
   }
   .img-wrap {
+    position: relative;
     display: table-cell;
     height: 10rem;
     vertical-align: bottom;
+    -webkit-transition: .5s;
+    transition: .5s;
+    -webkit-backface-visibility: hidden;
+    img {
+      margin-bottom: -4px;
+      width: 100%;
+    }
   }
-  img {
-    display: block;
+  .img-wrap, .books__title {
+    -webkit-transition: .5s;
+    transition: .5s;
+    -webkit-backface-visibility: hidden;
+  }
+  .books__title {
+    box-sizing: border-box;
+    opacity: 0;
+    background-color: @slate;
+    position: absolute;
+    bottom: 0;
+    min-height: 40%;
     width: 100%;
-  }
-  .row {
-    border-top: @dark-border;
-    margin-right: 1rem;
-    padding: .7rem 0;
-    blockquote {
-      margin-left: 1.8rem;
-      padding-top: .7rem;
-      text-indent: -7px;
-    }
-    cite {
-      display: inline-block;
-      margin-left: 3rem;
-      opacity: 0.6;
-      text-indent: -20px;
-    }
-    span {
-      vertical-align: top;
+    padding: 1rem;
+    h2 {
+      font-size: 2vw;
+      line-height: 2.6vw;
+      letter-spacing: 3px;
+      opacity: 1;
+      margin-bottom: 0;
     }
   }
-  .col-2 {
-      display: inline-block;
-      height: 100%;
-      position:relative;
-      max-width: 100%;
+  .img-wrap:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0 0 3rem 0 @background-color;
+    z-index: 999;
+    .books__title {
+      opacity: 1;
+    }
+  }
+  h3 {
+    margin-bottom: 2rem;
   }
 }
+
 section#volunteers {
   margin-bottom: 12rem;
   margin-top: 8.4rem;
   .box {
     background-color: #fff;
     color: @slate;
-    margin: -18vw 0 5vw -24vw;
-    padding-bottom: 1.2vw;
-    padding-left: 1.5vw;
+    left: 17vw;
+    margin: -19vw 0 4vw 0;
     width:43.5vw;
     blockquote, cite {font-weight: bold;}
     blockquote {
-      padding:0 1rem .3rem 0;
-      margin-left: .6rem;
+      padding:0;
+      margin-left: 10px;
+      text-indent: -6px;
     }
     cite {
-      padding-left: .8rem;
+      display: block;
+      margin-left: 6px;
+      text-indent: -20px;
     }
     p {
       padding:0;
@@ -940,7 +992,7 @@ section#volunteers {
   img {
     margin-top: 1rem;
     margin-bottom: 5rem;
-    width: 57.5vw;
+    //width: 57.5vw;
   }
   .morse {
     left: 11vw;
@@ -950,6 +1002,10 @@ section#volunteers {
 }
 section#financials-report {
   margin-bottom: 17rem;
+  #income-wrap--mobile,
+  #expenses-wrap--mobile {
+    display: none;
+  }
   .morse {
     left: -3.2vw;
     top: 12.5vw;
@@ -963,22 +1019,25 @@ section#financials-report {
   }
 }
 section#team {
-  margin-bottom: 3rem;
   h2.section-title {
     margin-bottom: 0;
   }
   .section-title {
     max-width: 40rem;
   }
-  li {
-    border-top: 2px solid rgba(255, 255, 255, .26);
-    float: left;
-    height: 130px;
-    padding-right: 15px;
-    padding-top: 1.5rem;
-    width: 170px;
+  .block {
+    border-top: 2px solid @dark-blue-grey-two;
+    //float: left;
+    height: 12vw;
+    // padding: 1.4rem 15px 1.2rem 0;
+    // width: 170px;
+    .block__content {
+      max-width: 90%;      
+    }
     .smallcaps {
-      margin-top: -10px;
+      .smallcaps;
+      margin-left: 0;
+      margin-top: -12px;
     }
   }
   .morse {
@@ -1000,27 +1059,31 @@ section#funders {
   .box {
     background-color: #fff;
     color: @slate;
-    min-height: 26vw;
+    //min-height: 26vw;
+    left: 17vw;
     width: 43vw;
-    margin: -26vw 0 5vw -23.5vw;
-    padding:1.9vw .5vw 1.2vw 1.7vw;
+    margin: -26vw 0 5vw 0;
+    //padding:1.9vw .5vw 1.2vw 1.7vw;
   }
   blockquote, cite {
     font-weight: bold;
   }
   blockquote {
-    padding:0;
-    margin-left: .6rem;
+    padding: 0;
+    margin-left: 10px;
     max-width: 31rem;
+    text-indent: -6px;
   }
   cite {
-    padding-left: .8rem;
+    display: block;
+    margin-left: 6px;
+    text-indent: -20px;
   }
   img {
     margin-top: -1rem;
     margin-bottom: 11rem;
     //height: 41vw;
-    width: 57.5vw;
+    //width: 57.5vw;
   }
   .morse {
     left: 2.2vw;
@@ -1107,10 +1170,13 @@ div#yerika {
   background-color: @slate;
   display: inline-block;
   float:right;
-  min-height:19vw;
+  //min-height:19vw;
   width:33vw;
   margin: 1.5rem 1.5rem 0 0;
   padding: .5rem 0rem 1.5rem .75rem;
+  .h2, .smallcaps {
+    opacity: 1;
+  }
   p {
     margin-left: 1rem;
     margin-top: 1rem;
@@ -1146,26 +1212,6 @@ div#yerika {
 
 [id^=icon] {
   position: absolute;
-}
-#icon-students-served {
-  left: 16.4vw;
-  top: 5vw;
-}
-#icon-hours {
-  left: 18.5vw;
-  top: 3.8vw;
-}
-#icon-active-volunteers {
-  left: 2vw;
-  top: 6.2vw;
-}
-#icon-field-trips {
-  left: 15.7vw;
-  top: 1.5vw;
-}
-#icon-workshops {
-  left: 12.3vw;
-  top: 3.9vw;
 }
 
 [id^=no], [class^=no], .percent-sign {
@@ -1255,26 +1301,26 @@ img.design-cohort {
 
 .box {
   position: absolute;
-  padding:2vw 0 0 2vw;
-  left: 39vw;
-  * {color: @dark-grey}
+  padding: 1.6rem 1rem 1.6rem 1.6rem;
+  left: 38.5vw;
+  * {
+    color: @dark-grey;
+    opacity: .9;
+  }
   blockquote {
     line-height: 1.7rem;
   }
   p.smallcaps {
     line-height: 1.2rem;
-    font-size: 1vw;
+    //font-size: 1vw;
     margin-bottom: .2rem;
     margin-top: .5rem;
   }
 }
 #core-programs .box, #field-trips .box {
   background-color: @pale-red;
-  padding-bottom: .5vw;
-  width: 20.5vw;
   p {
     color: #fff;
-    max-width: 19em;
   }
 }
 #field-trips .box {
@@ -1287,58 +1333,23 @@ img.design-cohort {
 .section-header-img {
   margin-top: 2.5rem;
   //height: 34.7vw;
-  width: 57.7vw;
+  //width: 57.7vw;
+  width: 100%;
+  //width: 46.25rem;
 }
 
-#no97 {
+.no97 {
   display: inline-block;
-  font-size: 7.8vw;
-  line-height: 6.6vw;
+  font-size: 6.25rem;
+  line-height: 4.5rem;
   position: static;
 }
 .percent-sign {
   display: inline-block;
-  font-size: 4.9vw;
-  line-height: 4vw;
+  font-size: 3.75rem;
+  line-height: 2.5rem;
   padding-left: 5px;
   vertical-align: top;
-}
-
-.quotes-div {
-  border-top: @dark-border;
-  margin: 2rem 0 0 0;
-  padding-top: .6rem;
-  width:96%;
-  height:15vw;
-  blockquote {
-    padding-left: 0;
-    padding-top: .8rem;
-    margin-left: .6rem;
-    max-width: 19rem;
-  }
-  cite {
-    padding-left: .7rem;
-    p {
-      padding-left:1.9rem;
-    }
-  }
-  p.h2 {
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: .8rem;
-  }
-}
-.column {
-  display: inline-block;
-  height:100%;
-  width:49%;
-  vertical-align: top;
-  border-right: @dark-border;
-}
-.column:last-of-type {
-  border: none;
-  padding-left: .8rem;
-  width:47%;
 }
 #expenses-wrap,
 #income-wrap {
@@ -1489,7 +1500,7 @@ img.design-cohort {
     }
 }
 section#government p {
-  margin: 0 0 10px 0;
+  margin: 0 0 8px 0;
 }
 div#contribute {
   position: relative;
@@ -1515,9 +1526,6 @@ div#contribute {
         line-height: 3.5rem;
         margin: 0;
       }
-    }
-    a:nth-child(2) {
-      margin-left: 5px;
     }
     a:nth-child(3) {
       margin-left: 1.5rem;
@@ -1561,10 +1569,53 @@ footer {
 
 
 //media queries
+@media all and (max-width :36.99rem) {
+  //nav
+.navbar {
+  #nav-main {
+    border: none;
+    h2 {
+      color: @light-blue;
+      font-size: 3.5vw;
+    }
+  }
+  button#menu {
+    height: 56px;
+    width: 76px;
+    h2 {
+      display: none;
+      font-weight: bold;
+    }
+    #menu-icon {
+      display: block;
+      width: 37px;
+    }
+  }
+  .menu-list ol {
+    margin: 5px 0;
+    width: 230px;
+    li div {
+      padding: 5px 13px;
+    }
+  }
+}
+  section#core-programs div#publications {
+    h3 {
+      margin-bottom: 0;
+    }
+    .books__item {
+      height: 20rem;
+      .img-wrap {
+        height: 20rem;
+      }
+    }
+  }
+}
 @media all and (min-width: 37rem) {
   div#publications {
     .books {
       column-count: 4;
+      margin-bottom: 3rem;
     }
     .books__item {
       padding: 0 .75rem 1.5rem .75rem;
@@ -1608,7 +1659,6 @@ footer {
     }
   } 
 }
-
 @media all and (min-width: 44rem) {
   div#publications {
     .books {
@@ -1646,7 +1696,6 @@ footer {
     }
   }
 }
-
 @media all and (min-width: 58rem) {
   div#publications {
     .books {
@@ -1679,25 +1728,78 @@ footer {
     }
   }
 }
-
-
-// @media all and (max-width: 74rem) {
-//   section#updates {
-//     .text-column {
-//       img {
-//         position: static;
-//       }
-//       p {
-//         clear:both;
-//       }
-//     }
-//   }
-// }
+@media all and (min-width: 1217px) {
+  section#mission-statement {
+    img:nth-child(1) {
+      top: 6vw;
+    }
+    img:nth-child(4) {
+      bottom: -3rem;
+    }
+  }
+  section#core-programs,
+  div#field-trips,
+  div#workshops {
+    .box {
+      left: 45vw;
+    }
+  }
+}
+@media all and (max-width: 1100px) {
+  section#current-staff ul {
+    column-count: 3;
+  }
+  section#team {
+    .block {
+      height: 14vw;
+    }
+  }
+}
+@media all and (max-width: 1216px) {
+  section#team {
+    .block {
+      width: 33.33%;
+    }
+  }
+  #board-of-directors ul,
+  #interns ul,
+  #associate-board ul,
+  #design-cohort-members ul,
+  #volunteers2 ul,
+  #individuals ul,
+  #foundations ul,
+  #organizations ul {
+    -moz-column-count: 2;
+    -moz-column-gap: 20vw;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20vw;
+    column-count: 2;
+    column-gap: 20vw;
+  }
+}
 @media all and (max-width: 58rem) {
     section#letter {
     .morse {
       left: 5vw;
       top: 26.5vw;
+    }
+    .floated-pair {
+      width: inherit;
+    }
+    .pair-left {
+      display: none;
+    }
+    .pair-left--mobile {
+      display: inline-block;
+    }
+    #yerika {
+      float: none;
+      margin: 0;
+      min-height: 0;
+      width: 100%;
+      blockquote {
+        padding: .70rem .75rem 0 .75rem;
+      }
     }
   }
   section#at-a-glance {
@@ -1714,7 +1816,7 @@ footer {
   }
   div#field-trips {
     #icon-authors {
-      max-width: 14.5vw !important;
+      width: 14.5vw !important;
       top: 4.5vw;
     }
   }
@@ -1731,24 +1833,374 @@ footer {
     margin-left: 18vw;
     width: 70vw;
   }
+  section#letter #signature {
+    height: 14vw;
+  }
+  section#current-staff {
+    ul {
+      column-count: 2;
+    }
+  }
+  section#core-programs {
+    h3 {
+      margin-bottom: 1rem;
+    }
+  }
+  div#publications {
+    .books{
+      left: -12vw;
+    }
+  }
   #income-wrap {
     left: -4rem;
     h3 {
       margin-left: 4rem;
     }
   }
+  section#team {
+    .blocks-wrap .block {
+      height: 20vw;
+    }
+  }
+  section#volunteers,
+  section#funders {
+    .box {
+      left: 25vw;
+    }
+  }
+  section#funders {
+    .box {
+      margin-top: -30vw;
+    }
+  }
+}
+@media all and (max-width: 764px) {
+  section#mission-statement {
+    img:nth-child(4) {
+      //bottom: -3rem;
+    }
+  }
+  div#after-school,
+  div#field-trips,
+  div#in-schools,
+  div#workshops {
+    .block .block__content p:last-of-type {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .block--quotes {
+      width: 100%;
+    }
+    .block--quotes:last-of-type {
+      .block__content{
+        border-left: none;
+        blockquote, p {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  section#core-programs {
+    .big-box {
+      box-sizing: border-box;
+      width: 100%;
+    }
+  }
+  section#financials-report {
+    #income-wrap .pie-data.total {
+      top: 32.5rem;
+    }
+    #expenses-wrap  {
+      margin-top: 0;
+    }
+    //pie chart
+    #income {
+      left: 4rem;
+    }
+    //values
+    #earned-income {
+      top: 12rem;
+    }
+    #individuals {
+      left: 22rem;
+      top: 12rem;
+    }
+    #foundations  {
+      left: 23rem;
+      top: 21rem;
+    }
+    #fundraising-events {
+      left: 9rem;
+      top: 22rem;
+    }
+    #national-contributions {
+      left: 12rem;
+      top: 34rem;
+    }
+    #government {
+      left: 29rem;
+      top: 28.5rem;
+    }
+    #corporate  {
+      left: 23rem;
+      top: 33rem;
+    }
+  }
+  section#volunteers,
+  section#funders {
+    .box {
+      .h2 {
+        font-size: 1.1rem;
+        line-height: 1.45rem;
+      }
+    }
+  }
+}
+@media all and (max-width: 44rem) {
+  section#mission-statement {
+    .big-box {
+      h2 {
+        padding-left: 25px;
+      }
+      p {
+        padding: 0 20px 0 25px;
+      }
+    }
+  }
+
+  //blocks
+  section#at-a-glance {
+    .block:nth-of-type(1),
+    .block:nth-of-type(2) {
+      height: 23vw;
+    }
+  }
+  div#after-school,
+  div#field-trips {
+    .block:nth-of-type(1),
+    .block:nth-of-type(2),
+    .block:nth-of-type(3) {
+      height: 21vw;
+    }
+  }
+  div#in-schools,
+  div#workshops {
+    .block:nth-of-type(2),
+    .block:nth-of-type(3),
+    .block:nth-of-type(4) {
+      height: 21vw;
+    }
+  }
+  div#workshops {
+    .block:nth-of-type(3) {
+      width: 45%;
+    }
+  }
+
+  section#core-programs,
+  div#field-trips,
+  div#in-schools,
+  div#workshops {
+    .box {
+      left: 35vw;
+      width: 15rem;
+      padding: .9rem .5rem .9rem .9rem;
+      .no97 {
+        font-size: 3.5rem;
+        line-height: 3rem;
+      }
+      .percent-sign {
+        font-size: 1.87rem;
+        line-height: 1.75rem; 
+      }
+      .smallcaps {
+        font-size: .65rem;
+        line-height: .95rem;
+      }
+    }
+    .section-header-img {
+      margin-top: 3.5rem;
+    }
+  }
+  section#letter {
+    .morse {
+      top: 30vw;
+    }
+  }
+  section#at-a-glance {
+    .morse {
+      top: 12vw;
+    }
+  }
+  section#team {
+    .blocks-wrap .block {
+      padding: .5rem 0;
+      min-height: 7rem;
+      width: 50%;
+      h2 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+      }
+    }
+  }
+  section#funders {
+    .box {
+      margin-top: -40vw;
+    }
+  }
+  section#volunteers,
+  section#funders {
+    .box {
+      padding: 1rem 1rem .625rem 1rem;
+      //width: 18.5rem;
+      blockquote.h2 {
+        font-size: .9rem;
+        letter-spacing: 3px;
+        line-height: 1.3rem;
+        margin-bottom: .5rem;
+      }
+      .smallcaps {
+        line-height: 16px;
+        font-size: .7rem;
+      }
+    }
+  }
+  #associate-board ul,
+  #board-of-directors ul,
+  #design-cohort-members ul,
+  #foundations ul,
+  #individuals ul,
+  #interns ul,
+  #organizations ul,
+  #volunteers2 ul {
+    -moz-column-count: 1;
+    -moz-column-gap: 0;
+    -webkit-column-count: 1;
+    -webkit-column-gap: 0;
+    column-count: 1;
+    column-gap: 0;
+  }
+  div#contribute div h1 {
+    font-size: 10vw;
+  }
+}
+@media all and (max-width: 548px) {
+  #header-wrap .page-header h2 {
+    font-size: 2vw;
+    letter-spacing: .5vw;
+  }
+  .section-header-img {
+    width: 115%;
+    margin-left: -7vw;
+  }
+  section#letter #signature {
+    height: 17vw;
+  }
+  section#at-a-glance {
+    .morse {
+      top: 14vw;
+    }
+  }
+  section#team {
+    .blocks-wrap .block {
+      h2 {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+  section#volunteers,
+  section#funders {
+    .box {
+      width: 50vw;
+      padding: .75rem;
+      .h2 {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    .smallcaps {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  section#volunteers {
+    .box {
+      margin-top: -28vw;
+    }
+  }
+  section#funders {
+    .box {
+      margin-top: -50vw;
+      
+    }
+  }
+
+  //blocks
+  div#after-school,
+  div#field-trips {
+    .block:nth-of-type(1),
+    .block:nth-of-type(2),
+    .block:nth-of-type(3) {
+      height: 27vw;
+    }
+  }
+  div#in-schools {
+    .block:nth-of-type(2),
+    .block:nth-of-type(3),
+    .block:nth-of-type(4) {
+      p:last-of-type  {
+        font-size: 12px;
+        line-height:  18px;
+      }
+    }
+  }
+  div#workshops {
+    .block:nth-of-type(2),
+    .block:nth-of-type(3),
+    .block:nth-of-type(4) {
+      height: 27vw;
+    }
+  }
+  div#workshops {
+    .block:nth-of-type(3) {
+      width: 45%;
+    }
+  }
+  div#contribute div {
+    top: 40%;
+    h1 {
+      font-size: 12vw;
+    }
+    a {
+      height: 3rem;
+      padding: 0 1rem;
+      h2 {
+        font-size: 1rem;
+        line-height: 3rem;
+      }
+    }
+  }
 }
 //mobile
-@media all and (max-width: 25rem) {
+//@media all and (max-width: 25rem) {
+@media all and (max-width: 427px) {
+.desktop {
+  display: none;
+}
+.mobile {
+  display: block;
+}
+
 .blockquote {
   cite {
     padding-left: .8rem;
   }
 }
+
 h1 {
   font-size:16vw;
   letter-spacing: .6vw;
-  margin-bottom: 0rem;
 }
 h2, .h2 {
   font-size: .9rem;
@@ -1766,9 +2218,6 @@ main {
   margin-left:10vw;
   width: 80vw;
 }
-.morse {
-  //height:;
-}
 p {
   //margin-bottom:;
 }
@@ -1783,6 +2232,7 @@ p, cite {
 
 //theme
 .big-box {
+  margin-left: 0;
   width: 100%;
   h3, p {
     padding: 0 20px 0 20px;
@@ -1796,35 +2246,48 @@ p, cite {
   height: 5vw;
 }
 
-//nav
 .navbar {
   #nav-main {
-    border: none;
+    a {
+      padding: 0;
+      text-align: center;
+      width: 100%;
+    }
     h2 {
-      color: @light-blue;
-      font-size: 3.5vw;
-    }
-  }
-  button#menu {
-    height: 56px;
-    width: 76px;
-    h2 {
-      display: none;
-      font-weight: bold;
-    }
-    #menu-icon {
-      display: block;
-      width: 37px;
-    }
-  }
-  .menu-list ol {
-    margin: 5px 0;
-    width: 220px;
-    li div {
-      padding: 5px 13px;
+      font-size: 4vw;
+      letter-spacing: 3px;
     }
   }
 }
+// //nav
+// .navbar {
+//   #nav-main {
+//     border: none;
+//     h2 {
+//       color: @light-blue;
+//       font-size: 3.5vw;
+//     }
+//   }
+//   button#menu {
+//     height: 56px;
+//     width: 76px;
+//     h2 {
+//       display: none;
+//       font-weight: bold;
+//     }
+//     #menu-icon {
+//       display: block;
+//       width: 37px;
+//     }
+//   }
+//   .menu-list ol {
+//     margin: 5px 0;
+//     width: 220px;
+//     li div {
+//       padding: 5px 13px;
+//     }
+//   }
+// }
 
 #header-wrap {
   #map {
@@ -1842,7 +2305,7 @@ p, cite {
     height: 12rem;
     width: 100%;
     h2 {
-      font-size: 3vw;
+      font-size: 4vw;
     }
     img {
       width: 16vw;
@@ -1860,25 +2323,21 @@ section#letter {
   h1 {
     margin-bottom: .5rem;
   }
-  .pair-left {
-    display: none;
+  .morse {
+    left: 12vw;
+    top: 47vw;
+
   }
-  .pair-left--mobile {
-    display: inline-block;
-  }
-  #yerika {
-    float: none;
-    margin: 0 0 1rem -6.5vw;
-    width: 123%;
-    blockquote {
-      padding: .70rem .75rem 0 .75rem;
-    }
+  #signature {
+    height: 22vw;
+    top: -25px;
   }
 }
 section#current-staff {
   margin-bottom: 0rem;
-  h1 {
-    margin-bottom: 0rem;
+  .morse {
+    left: 4vw;
+    top: 23.5vw;
   }
   h2 {
     color: @light-blue;
@@ -1929,99 +2388,99 @@ section#mission-statement {
 }
 
 //grid
+.block {
+  padding: 5vw 0 5vw 0;
+}
+.block--quotes {
+  .block__content {
+    padding-top: 0;
+  }
+}
+.block__content {
+  p {
+    margin-left: 3vw;
+  }
+  p:last-of-type {
+    font-size: 3.5vw;
+    line-height: 5.5vw;
+  }
+}
+.block-2 {
+  width: 100%;
+}
+.block-4 {
+  width: 50%;
+}
+
 section#at-a-glance {
   h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
-  .row {
-    border: none;
-    margin: 0;
-    padding: 0;
-    .col-2, .col-4 {
-      border-bottom: @dark-border;
-      margin: 0;
-      padding: 1.5rem 0 1rem 0;
-    }
-    .col-2 {
+  .morse {
+    left: -5vw;
+    top: 14vw;
+  }
+
+  .block:nth-of-type(1),
+  .block:nth-of-type(2),
+  .block:nth-of-type(3) {
+    height: 42vw;
+  }
+  .block:nth-of-type(4),
+  .block:nth-of-type(5) {
+    height: 50vw;
+  }
+  .block:nth-of-type(6),
+  .block:nth-of-type(7),
+  .block:nth-of-type(8),
+  .block:nth-of-type(9),
+  .block:nth-of-type(10),
+  .block:nth-of-type(11) {
+    height: 40vw;
+  }
+
+  //overwrites
+  .block:nth-of-type(2) {
+    border-top: @dark-border;
+    padding-top: 5vw;
+  }
+  .block:nth-of-type(1),
+  .block:nth-of-type(3),
+  .block:nth-of-type(7),
+  .block:nth-of-type(9) {
+    .block__content {
       border-right: none;
-      width: 100%;
     }
-    .col-4 {
-      border-left: none;      
-      width: 49%;
-    }
-    p {
+  }
+  .block:nth-of-type(6),
+  .block:nth-of-type(7){
+    width: 50%;
+  }
+
+  //remove left margin from first in row
+  .block:nth-of-type(1),
+  .block:nth-of-type(2),
+  .block:nth-of-type(3),
+  .block:nth-of-type(4),
+  .block:nth-of-type(6),
+  .block:nth-of-type(8),
+  .block:nth-of-type(9),
+  .block:nth-of-type(10) {
+    .block__content p {
       margin-left: 0;
-    }
-    p:nth-of-type(2) {
-      font-size: 4vw;
-      line-height: 5vw;
-      width: 9rem;
-    }
-  }
-  .row:nth-of-type(1) {
-    min-height: 20rem;
-    .col-2, .col-4 {
-      height: 8rem;
-    }
-  }
-  .row:nth-of-type(2) {
-    min-height: 22.5rem;
-    .col-2 {
-      height: 8rem;
-    }
-    .col-4 {
-      height: 9.5rem;
-    }
-  }
-  .row:nth-of-type(3) .col-4:nth-of-type(2) {
-    border-right: none;
-  }
-  .row:nth-of-type(4) {
-    .col-4 {
-      border-bottom: none;
-    }
-  }
-  .row:nth-of-type(3),
-  .row:nth-of-type(4) {
-    min-height: 19.5rem;
-    .col-2 {
-      height: 6.5rem;
-    }
-    .col-4 {
-      height: 8rem;
     }
   }
 
-  //removing desktop rules
-  .row:nth-child(4) {
-    .col-2:first-child {
-      padding-bottom: 0;
+  //make no-5s in 8 and 9 bigger
+  .block:nth-of-type(8),
+  .block:nth-of-type(9) {
+    .no-5 {
+      font-size: 20vw;
+      line-height: 12vw;
+      margin-top: 6vw;
     }
   }
-  .row:nth-child(5) {
-    .col-2 {
-      p {
-        margin-left: 0;
-      }
-    }
-  }
-  .row:nth-child(6) {
-    .col-4:nth-child(1) {
-      width: 49%;
-    }
-    .col-4:nth-child(2) {
-      width: 49%;
-    }
-  }
-  .row:nth-child(7) {
-    .col-4:nth-child(2) {
-      width: 49%;
-    }
-    .col-4:nth-child(3) {
-      width: 49%;
-    }
-  }
+
   #icon-students-served {
     left: 45vw;
     top: 8vw;
@@ -2039,16 +2498,23 @@ section#at-a-glance {
   }
   #icon-field-trips {
     left: 42vw;
-    top: 6vw;
+    top: 8vw;
     width: 25vw !important;
   }
   #icon-workshops {
     left: 39vw;
-    top: 12vw;
+    top: 14vw;
     width: 33vw !important;
   }
 }
 section#updates {
+  h1 {
+    margin-bottom: 0;
+  }
+  .morse {
+    left: 0;
+    top: 6vw;
+  }
   .floated-pair {
     width: 100%;
     img {
@@ -2063,26 +2529,27 @@ section#updates {
   }
 }
 section#core-programs {
+   h1 {
+    margin-bottom: 0;
+  }
   .section-header-img {
-    margin-left: -6vw;
-    padding-bottom: 7rem;
+    margin-left: -4vw;
+    padding-bottom: 9rem;
     width: 110%;
   }
   .box {
-    min-width: 60vw;
-    padding: 5vw 0 3vw 5vw;
-    #no97 {
-      font-size: 19vw;
-      line-height: 15vw;
-    }
-    .percent-sign {
-      font-size: 10vw;
-      line-height: 7.5vw;
-    }
+    //min-width: 60vw;
+    //padding: 5vw 0 3vw 5vw;
     p.smallcaps {
       line-height: 17px;
       font-size: 2.5vw;
     }
+  }
+  .morse {
+    height: 2.97vw;
+    width: 26.08vw;
+    left: 33.5vw;
+    top: 23vw;
   }
 }
 div#after-school {
@@ -2093,43 +2560,41 @@ div#after-school {
       max-width: 55vw;
     }
   }
+  #icon-after-school {
+    left: 43vw;
+    top: 7vw;
+    width: 20vw !important;
+  }
   .no-3 {
     font-size: 15vw;
     line-height: 9vw;
     margin-top: 2.4vw;
   }
-  .row:nth-of-type(2) {
-    border: none;
-    height: 20rem;
-    padding: 0;
-    .col-2 {
-      border-bottom: @dark-border;
-      border-right: none;
-      border-top: @dark-border;
-      margin-bottom: 1rem;
-      height: 10rem;
-      width: 100%;
-    }
-    .col-4 {
-      margin-bottom: 1rem;
-      height: 8rem;
-      width: 49%;
+  .block:nth-of-type(1),
+  .block:nth-of-type(4),
+  .block:nth-of-type(5) {
+    height: 41vw;
+  }
+  .block:nth-of-type(2),
+  .block:nth-of-type(3) {
+    height: 38vw;
+    .no-3 {
+      margin-top: 5vw;
     }
   }
-  .row:nth-of-type(3) {
-    border: none;
-    height: 22rem;
-    padding: 0;
-    .col-2 {
-      border-left: none;
-      border-right: none;
-      border-top: @dark-border;
-      height: 10rem;
-      width: 100%;
+  .block:nth-of-type(1),
+  .block:nth-of-type(2) {
+    .block__content p {
+      margin-left: 0;
     }
+  }
+  //overwrite
+  .block:nth-of-type(3) {
+    padding-left: 0;
   }
 }
 div#field-trips {
+  margin-top: 5rem;
   .box {
     left: 22vw;
     margin-top: 12rem;
@@ -2137,49 +2602,29 @@ div#field-trips {
       max-width: 55vw;
     }
   }
-  .desktop {
-    display: none;
+  #icon-authors {
+    left: 40vw;
+    top: 5vw;
+    width: 38vw !important;
   }
-  .mobile {
-    display: inline-block;
+  .block:nth-of-type(2) {
+    height: 42vw;
   }
-  .row:nth-of-type(2) {
-    border: none;
-    height: 20rem;
-    padding: 0;
-    .col-2 {
-      border-bottom: @dark-border;
-      border-right: none;
-      border-top: @dark-border;
-      margin-bottom: 1rem;
-      height: 10rem;
-      width: 100%;
-    }
-    .col-4 {
-      margin-bottom: 1rem;
-      height: 8rem;
-      width: 49%;
-      .no-3 {
-        font-size: 15vw;
-        line-height: 9vw;
-        margin-top: 2.4vw;
-      }
+  .block:nth-of-type(3),
+  .block:nth-of-type(4) {
+    height: 38vw;
+  }
+  .block:nth-of-type(3) {
+    .block__content {
+      border-right: @dark-border;
     }
   }
-  .row:nth-of-type(3) {
-    border: none;
-    height: 22rem;
-    padding: 0;
-    .col-2 {
-      border-left: none;
-      border-right: none;
-      border-top: @dark-border;
-      height: 10rem;
-      width: 100%;
-    }
+  .block:nth-of-type(5) {
+    min-height: 42vw;
   }
 }
 div#in-schools {
+  margin-top: 5rem;
   .box {
     left: 22vw;
     margin-top: 12rem;
@@ -2188,52 +2633,27 @@ div#in-schools {
     }
   }
   .big-box {
-    margin-left: -5.1vw;
+    //margin-left: -5.1vw;
     width: 100%;
   }
-  .desktop {
-    display: none;
+  #icon-publications {
+    left: 42vw;
+    top: 5vw;
+    width: 26vw !important;
   }
-  .mobile {
-    display: inline-block;
+  .block:nth-of-type(1) {
+    height: 42vw;
   }
-  .row:nth-of-type(2) {
-    border: none;
-    height: 20rem;
-    padding: 0;
-    .col-2 {
-      border-bottom: @dark-border;
-      border-right: none;
-      border-top: @dark-border;
-      margin-bottom: 1rem;
-      height: 10rem;
-      width: 100%;
-    }
-    .col-4 {
-      margin-bottom: 1rem;
-      height: 8rem;
-      width: 49%;
-      .no-3 {
-        font-size: 15vw;
-        line-height: 9vw;
-        margin-top: 2.4vw;
-      }
-    }
+  .block:nth-of-type(2),
+  .block:nth-of-type(3), {
+    height: 38vw;
   }
-  .row:nth-of-type(3) {
-    border: none;
-    height: 22rem;
-    padding: 0;
-    .col-2 {
-      border-left: none;
-      border-right: none;
-      border-top: @dark-border;
-      height: 10rem;
-      width: 100%;
-    }
+  .block:nth-of-type(5) {
+    min-height: 42vw;
   }
 }
 div#workshops {
+  margin-top: 5rem;
   .box {
     left: 22vw;
     margin-top: 12rem;
@@ -2242,57 +2662,41 @@ div#workshops {
     }
   }
   .big-box {
-    margin-left: -5.1vw;
+   // margin-left: -5.1vw;
     width: 100%;
   }
-  .desktop {
-    display: none;
+  #icon-workshops-2 {
+    left: 36vw;
+    top: 7vw;
+    width: 30vw !important;
   }
-  .mobile {
-    display: inline-block;
+  .block:nth-of-type(1) {
+    height: 42vw;
   }
-  .row:nth-of-type(2) {
-    border: none;
-    height: 20rem;
-    padding: 0;
-    .col-2 {
-      border-bottom: @dark-border;
-      border-right: none;
-      border-top: @dark-border;
-      margin-bottom: 1rem;
-      height: 10rem;
-      width: 100%;
-    }
-    .col-4 {
-      margin-bottom: 1rem;
-      height: 8rem;
-      width: 49%;
-      .no-3 {
-        font-size: 15vw;
-        line-height: 9vw;
-        margin-top: 2.4vw;
-      }
+  .block:nth-of-type(1),
+  .block:nth-of-type(2) {
+    .block__content p {
+      margin-left: 0;
     }
   }
-  .row:nth-of-type(3) {
-    border: none;
-    height: 22rem;
-    padding: 0;
-    .col-2 {
-      border-left: none;
-      border-right: none;
-      border-top: @dark-border;
-      height: 10rem;
-      width: 100%;
+  .block:nth-of-type(2),
+  .block:nth-of-type(3) {
+    height: 38vw;
+  }
+  .block:nth-of-type(2) {
+    .block__content {
+      border-right: @dark-border;
     }
   }
+  .block:nth-of-type(4) {
+    min-height: 42vw;
+  }
+
 }
 div#publishing {
+  margin-top: 5rem;
   .section-header-img {
     padding-bottom: 1rem;
-  }
-  .mobile {
-    display: block;
   }
 }
 div#publications {
@@ -2304,63 +2708,93 @@ div#publications {
     padding: 0 .3rem 1.5rem .3rem;
   }
 }
+section#volunteers {
+  margin-bottom: 0;
+  .morse {
+    left: -.5vw;
+    top: 2vw;
+    width: 28.49vw;
+  }
+}
 section#volunteers,
 section#funders {
+  margin-top: 5rem;
   .section-header-img {
-    margin: 0 0 0 -6vw;
+    margin: 0 0 0 -4vw;
     width: 110%;
   }
   .box {
     left: 13vw;
     margin: -4rem 0 3rem 0;
-    padding: 0;
-    min-height: 17rem;
-    width: 18.5rem;
+    //padding: 0;
+    width: 70vw;
     blockquote {
       line-height: 1.4rem;
       text-indent: -6px;
-      padding: 1.3rem 1rem 0 1rem;
+      //padding: 1.3rem 1rem 0 1rem;
     }
-    p.smallcaps {
+    .smallcaps {
+      text-indent: -20px;
+      margin-left: 16px;
       max-width: 55vw;
     }
   }
 }
 section#financials-report {
-  min-height: 110rem;
+  margin-bottom: 0;
+  margin-top: 5rem;
+  .morse {
+    left: -1vw;
+    top: 6vw;
+  }
   #income-wrap,
   #expenses-wrap {
     display: none;
   }
   #income-wrap--mobile,
-  #expenses-wrap--moblie {
-    min-height: 65rem;
+  #expenses-wrap--mobile {
+    display: block;
   }
   .pie-chart--mobile {
-    margin: 3rem 0;
+    margin: 3rem 0 0 0;
   }
   table {
+    border-collapse: separate;
+    border-spacing: 0 .9rem;
     width: 100%;
     td {
+      vertical-align: bottom;
+      padding: 0;
+      position: relative;
       width: 49%;
       p {
         margin-left: 25px;
+      }
+      .no {
+        font-size: 1.4rem;
+      }
+      .smallcaps {
+        font-size: .65rem;
+        line-height: .95rem;
       }
     }
   }
   #big-total {
       font-size: 14vw;
-      margin-top: 1.5rem;
-    }
+      margin: 1.5rem 0 4rem 0;
+  }
+  .pie-data {
+    position: static;
+  }
   .pie-data.total {
     border-top: @dark-border;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     padding-top: .5rem;
     width: 95%;
   }
   .pie-key {
-    position: relative;
-    top: 3rem;
+    position: absolute;
+    bottom: 4px;
     width: 19px;
     height: 19px;
     border-radius: 100px;
@@ -2428,20 +2862,48 @@ section#financials-report {
     color: #1D637B;
   }
 }
-#associate-board ul,
-#board-of-directors ul,
-#design-cohort-members ul,
-#foundations ul,
-#individuals ul,
-#interns ul,
-#organizations ul,
-#volunteers2 ul {
-    -moz-column-count: 1;
-    -moz-column-gap: 0;
-    -webkit-column-count: 1;
-    -webkit-column-gap: 0;
-    column-count: 1;
-    column-gap: 0;
+section#team {
+  h1 {
+    margin-bottom: 1.8rem;
+  }
+  margin-top: 10rem;
+  .blocks-wrap {
+    margin-top: 3rem;
+  }
+  .block {
+    border-top: @dark-border;
+    height: 30vw;
+    h2 {
+      line-height: 1.3rem;
+      margin: 0 0 .5rem 0;
+    }
+    .smallcaps {
+      font-size: .65rem;
+      line-height: .95rem;
+    }
+  }
+  .block:nth-child(odd) {
+    .block__content {
+      border-right: @dark-border;
+    }
+  }
+  .block:nth-child(11) {
+    .block__content{
+      border-right: none;
+    }
+  }
+  .morse {
+    left: 0;
+    top: 6vw;
+  }
+}
+section#funders {
+  .morse {
+    margin: 0;
+    left: 6.5vw;
+    top: 10vw;
+    width: 45.61vw;
+  }
 }
 div#contribute {
   padding: 0;
@@ -2491,8 +2953,13 @@ footer {
   line-height: 12vw;
 }
 .no-4, .no-5 {
-  font-size: 15vw;
+  font-size: 14vw;
   line-height: 9vw;
 }
 
+}
+@media all and (max-width: 338px) {
+  canvas {
+    left: -1rem;
+  }
 }
