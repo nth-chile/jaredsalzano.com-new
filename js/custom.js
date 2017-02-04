@@ -175,9 +175,9 @@ var revenueResults = [
               } 
             });
           }
-          var md = window.matchMedia('all and (min-width: 428px) and (max-width: 764px)');
+          var md = window.matchMedia('all and (min-width: 621px) and (max-width: 764px)');
           var lastCanvasSize = 'lg';
-          var mobile = window.matchMedia( 'all and (max-width: 427px)' );
+          var mobile = window.matchMedia( 'all and (max-width: 620px)' );
           var handler = function() {
             if(mobile.matches) {
                 drawMobileChart('#income--mobile', revenueResults);

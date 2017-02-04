@@ -324,58 +324,57 @@ ul {
   position: relative;
   #map {
     width:100%;
+    z-index: -5;
   }
   .page-header {
-    background-color: @slate;
+    //background-color: @slate;
     bottom: 12.5vw;
     display: inline-block;
-    height:26vw;
-    left:14.8vw;
-    padding: 5vw 4vw 4vw 4vw;
-    position: absolute;    
-    width:27vw;
-    h2 {
-      font-size: 1.6vw;
-      letter-spacing: .5vw;
-      line-height: 13px;
-      margin-bottom: 1.5vw;
-      margin-left: 3.3vw;
-      margin-top: 1vw;
-    }
+    left: 7rem;
+    top: 7rem;
+    padding: 2rem;
+    position: absolute;
     img {
-      margin: 3vw 0 .5vw 2.5vw;
-      width:6.8vw;
+      padding: 0 .5rem 1.2rem .5rem;
+      width: 7.5rem;
       }
+    p {
+      color: #fff;
+      font-size: 1rem;
+      margin: .9rem 0 0 0;
+      padding-left: 5px;
+    }
   }
   .page-title {
-    font-size: 7.7vw;
-    margin-left: 3vw;
-    margin-bottom: 0;
+    font-family: @numeric-font;
+    font-size: 7.7rem;
+    letter-spacing: normal;
+    line-height: 6rem;
+    margin: 0;
   }
   #map-key {
     background-color: @background-color;
     display: inline-block;
-    position: relative;
-    left:84vw;
-    line-height: 1.4vw;
-    bottom: 5vw;
+    position: absolute;
+    right: 8vw;
+    bottom: 4rem;
+    line-height: 1rem;
     //height: 2vw;
     white-space: nowrap;
     p {
       display: inline;
-      line-height: 1.4vw;
-      font-size: 1vw;
+      line-height: 1rem;
       margin: 0;
-      padding-right: .375vw;
+      padding-right: 4px;
       position: relative;
       white-space: nowrap;
     }
   }
     img {
       display: inline-block;
-      padding: 0 .6vw;
+      padding: 0 7px;
       position: relative;
-      width: .6vw;
+      width: 7px;
     }
 }
 
@@ -441,8 +440,8 @@ section#letter {
     max-width: 10rem;
   }
   .morse {
-    left: 14.73vw;
-    top: 16.5vw;
+    left: 9vw;
+    top: 25vw;
   }
   #signature {
   background-image: url('../images/Kendra%27sSignature.png');
@@ -467,6 +466,10 @@ section#current-staff {
   ul {
     column-count: 4;
     column-gap: 2rem;
+    -moz-column-count: 4;
+    -moz-column-gap: 2rem;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 2rem;
   }
   li {
     -webkit-column-break-inside: avoid;
@@ -504,26 +507,25 @@ section#mission-statement {
   >* {position: absolute;}
   img:nth-child(1) {
     //height: 21.5vw;
-    width: 32vw;
-    left: -17.3vw;
-    top: 10vw;
+    width: 25vw;
+    left: -16.3vw;
+    top: 14vw;
   }
   img:nth-child(2) {
     //height: 25.77vw;
-    width: 14vw;
-    left: 18vw;
-    top: 7.35vw;
+    width: 18vw;
+    left: 12vw;
+    top: 6.35vw;
   }
   img:nth-child(3) {
     //height: 40.1vw;
-    width: 39.92vw;
-    left: 39.99vw;
-    top: 4.8vw;
+    width: 59vw;
+    left: 33.99vw;
+    top: -11vw;
   }
   img:nth-of-type(4) {
-    margin-top: 5vw;
     width: 44vw;
-    left:-19.1vw;
+    left:-22.1vw;
     bottom: 17vw;
     z-index: -2;
   }
@@ -543,6 +545,7 @@ section#mission-statement {
     padding-bottom: 3rem;
     padding-left: .7rem;
     position: relative;
+    p {color: #fff;}
   }
 }
 section#at-a-glance {
@@ -559,16 +562,16 @@ section#at-a-glance {
     top: 7vw;
   }
   #icon-hours {
-   left: 17vw;
+   left: 19vw;
    top: 6vw;
   }
   #icon-active-volunteers {
    left: 2vw;
-   top: 6.2vw;
+   top: 7.2vw;
   }
   #icon-field-trips {
-   left: 15.7vw;
-   top: 2.5vw;
+   left: 17.7vw;
+   top: 3.5vw;
   }
   #icon-workshops {
    left: 12.3vw;
@@ -599,7 +602,7 @@ section#at-a-glance {
   .block:nth-of-type(3),
   .block:nth-of-type(4),
   .block:nth-of-type(5) {
-    height: 20.5vw;
+    height: 23.5vw;
   }
 
   .block:nth-of-type(1),
@@ -645,7 +648,7 @@ section#at-a-glance {
   .block:nth-of-type(6),
   .block:nth-of-type(7),
   .block:nth-of-type(8) {
-    height: 15vw;
+    height: 17vw;
   }
   //fourth row
   .block:nth-of-type(9),
@@ -689,6 +692,7 @@ section#core-programs {
       padding-top: 2rem;
       width: 55vw;
       h3, p {
+        color: #fff;
         padding-left: 1.75rem;
       }
   }
@@ -757,7 +761,7 @@ div#field-trips {
   //   display: none;
   // }
   #icon-authors {
-    left: 16vw;
+    left: 13vw;
     top: 4.5vw;
   }
   .no-3 {
@@ -803,12 +807,6 @@ div#field-trips {
 
 div#in-schools {
   margin-top: 13rem;
-  i {
-    font-style: normal;
-  }
-  .italic {
-    font-style: italic;
-  }
   .box {
     // left: 35vw;
     width: 17.5rem;
@@ -918,6 +916,10 @@ div#publications {
   .books {
     column-count: 3;
     column-gap: 0;
+    -moz-column-count: 3;
+    -moz-column-gap: 0;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 0;
     margin-bottom: 3rem;
     position: relative;
     left: -16vw;
@@ -960,7 +962,7 @@ div#publications {
     padding: 1rem;
     h2 {
       //font-size: 2vw;
-      line-height: 2.6vw;
+      //line-height: 2.6vw;
       letter-spacing: 3px;
       opacity: 1;
       margin-bottom: 0;
@@ -971,6 +973,7 @@ div#publications {
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     box-shadow: 0 0 3rem 0 @background-color;
+    cursor: pointer;
     z-index: 999;
     .books__title {
       opacity: 1;
@@ -988,7 +991,7 @@ section#volunteers {
     background-color: #fff;
     color: @slate;
     //left: 17vw;
-    margin: -19vw 0 4vw 0;
+    margin: -19vw 0 3rem 25vw;
     width:43.5vw;
     blockquote, cite {font-weight: bold;}
     blockquote {
@@ -998,8 +1001,8 @@ section#volunteers {
     }
     cite {
       display: block;
-      margin-left: 6px;
-      text-indent: -20px;
+      margin-left: 2px;
+      text-indent: -16px;
     }
     p {
       padding:0;
@@ -1057,7 +1060,7 @@ section#team {
     }
   }
   .morse {
-    left: 20.5vw;
+    left: 0vw;
     top: 3.5vw;
   }
   ul {
@@ -1078,7 +1081,7 @@ section#funders {
     //min-height: 26vw;
     //left: 17vw;
     width: 43vw;
-    margin: -26vw 0 5vw 0;
+    margin: -35vw 0 3rem 25vw;
     //padding:1.9vw .5vw 1.2vw 1.7vw;
   }
   blockquote, cite {
@@ -1087,7 +1090,6 @@ section#funders {
   blockquote {
     padding: 0;
     margin-left: 10px;
-    max-width: 31rem;
     text-indent: -6px;
   }
   cite {
@@ -1320,7 +1322,7 @@ img.design-cohort {
   //left: 38.5vw;
   * {
     color: @dark-grey;
-    opacity: .9;
+    opacity: 1;
   }
   blockquote {
     line-height: 1.7rem;
@@ -1507,6 +1509,11 @@ img.design-cohort {
     -webkit-column-gap: 3rem;
     column-count: 3;
     column-gap: 3rem;
+    li {
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
     p {
       margin: 0;
     }
@@ -1524,7 +1531,7 @@ div#contribute {
   padding-left: 21vw;
   width: 100%;
   img#donate {
-    margin-bottom: -4px;
+    margin-bottom: -5px;
     margin-left: -21vw;
     width: 100%;
   }
@@ -1535,17 +1542,31 @@ div#contribute {
     top: 50%;
     a {
       background-color: @pale-red;
-      height: 3.5rem;
+      border: 2px solid @pale-red;
+      height: 3.4rem;
       float: left;
       padding: 0 1.5rem;
       text-decoration: none;
+      -webkit-transition: .1s all ease-in-out;
+      transition: .1s all ease-in-out;
       h2 {
         line-height: 3.5rem;
-        margin: 0;
+        opacity: 1;
       }
     }
+    a:hover {
+      background-color: transparent;
+      border: 2px solid white;
+      h2 {
+        color: white;
+      }
+    }
+    a:nth-child(2) h2 {margin: 0 0 0 3px;}
     a:nth-child(3) {
       margin-left: 1.5rem;
+      h2 {
+        margin: 0 0 0 4px;
+      }
     }
     h1 {
       margin-bottom: 1.5rem;
@@ -1559,6 +1580,7 @@ footer {
     background-color: @dark-grey;
     height:13rem;
     padding: 4rem 0 0 18.5vw;
+    white-space: nowrap;
   }
   #contact * {
     display: inline-block;
@@ -1566,22 +1588,29 @@ footer {
   h2 {
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 0;
+    white-space: normal;
+    a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.6);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    }
   }
   #footer-symbol {
     margin: 0 4px -4px -4px;
     opacity: .6;
+    vertical-align: top;
   }
-  p {
-    margin-left: 33px;
-  }
-  .smallcaps, .smallcaps a {
-    color: #fff;
-    margin-top: 3px;
-  }
-  .smallcaps a {
-    border-bottom: 1px solid #fff;
-    text-decoration: none;
-  }
+  // p {
+  //   margin-left: 33px;
+  // }
+  // .smallcaps, .smallcaps a {
+  //   color: #fff;
+  //   margin-top: 3px;
+  // }
+  // .smallcaps a {
+  //   border-bottom: 1px solid #fff;
+  //   text-decoration: none;
+  // }
 }
 
 
@@ -1621,6 +1650,8 @@ footer {
   div#publications {
     .books {
       column-count: 4;
+      -moz-column-count: 4;
+      -webkit-column-count: 4;
       margin-bottom: 3rem;
     }
     .books__item {
@@ -1669,6 +1700,8 @@ footer {
   div#publications {
     .books {
       column-count: 5;
+      -moz-column-count: 5;
+      -webkit-column-count: 5;
     }
     .books__item {
       padding: 0 .5rem 1.5rem .5rem;
@@ -1706,6 +1739,8 @@ footer {
   div#publications {
     .books {
       column-count: 6;
+      -moz-column-count: 6;
+      -webkit-column-count: 6;
       height:70vw;
     }
     #running-fast {
@@ -1735,22 +1770,41 @@ footer {
   }
 }
 @media all and (min-width: 1217px) {
+  #header-wrap .page-title {
+    font-size: 10rem;
+    line-height: 9rem;
+  }
   section#mission-statement {
     img:nth-child(1) {
-      top: 6vw;
+      top: 11vw;
     }
     img:nth-of-type(4) {
-      bottom: 5vw;
+      bottom: 7vw;
     }
     img:nth-of-type(5) {
       bottom: 23vw;
     }
   }
-  section#core-programs,
-  div#field-trips,
-  div#workshops {
+  div#field-trips #icon-authors {
+    left: 12vw;
+  }
+  div#publications {
+    .books__item {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .img-wrap {
+      width: 15vw;
+    }
+  }
+  section#volunteers {
     .box {
-      //left: 45vw;
+      margin-top: -11vw;
+    }
+  }
+  section#funders {
+    .box {
+      margin-top: -25vw;
     }
   }
 }
@@ -1787,6 +1841,8 @@ footer {
 @media all and (max-width: 1100px) {
   section#current-staff ul {
     column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
   }
   section#mission-statement {
     img:nth-of-type(4) {
@@ -1803,6 +1859,9 @@ footer {
   }
 }
 @media all and (max-width: 58rem) {
+  #header-wrap .page-header {
+    top: 4rem;
+  }
   section#letter {
     .morse {
       left: 5vw;
@@ -1832,7 +1891,7 @@ footer {
       bottom: 24vw;
     }
     img:nth-of-type(5) {
-      bottom: 48vw;
+      bottom: 54vw;
     }
   }
   section#at-a-glance {
@@ -1861,7 +1920,9 @@ footer {
     }
   }
 }
-
+@media all and (min-width: 54rem) {section#at-a-glance #icon-students-served {
+  width: 9vw !important;
+  }}
 @media all and (max-width: 54rem) {
   main {
     margin-left: 18vw;
@@ -1873,6 +1934,8 @@ footer {
   section#current-staff {
     ul {
       column-count: 2;
+      -moz-column-count: 2;
+      -webkit-column-count: 2;
     }
   }
   section#core-programs {
@@ -1917,14 +1980,19 @@ footer {
   }
 }
 @media all and (max-width: 764px) {
+  #header-wrap .page-header {
+    left: 2rem;
+    top: 2rem;
+  }
   section#mission-statement {
     img:nth-of-type(4) {
       bottom: 30vw;
     }
     img:nth-of-type(5) {
-      bottom: 55vw;
+      bottom: 60vw;
     }
   }
+  section#at-a-glance,
   div#after-school,
   div#field-trips,
   div#in-schools,
@@ -2006,6 +2074,16 @@ footer {
   }
 }
 @media all and (max-width: 44rem) {
+  #header-wrap {
+    .page-header {
+      left: 1rem;
+      top: 1rem;
+    }
+    #map-key {
+      right: 5vw;
+      bottom: 3rem;
+    }
+  }
   section#mission-statement {
     .big-box {
       h2 {
@@ -2019,7 +2097,7 @@ footer {
       bottom: 44vw;
     }
     img:nth-of-type(5) {
-      bottom: 60vw;
+      bottom: 70vw;
     }
   }
 
@@ -2028,6 +2106,11 @@ footer {
     .block:nth-of-type(1),
     .block:nth-of-type(2) {
       height: 23vw;
+    }
+    .block:nth-of-type(3),
+    .block:nth-of-type(4),
+    .block:nth-of-type(5) {
+      height: 29.5vw;
     }
   }
   div#field-trips {
@@ -2090,7 +2173,7 @@ footer {
   }
   section#letter {
     .morse {
-      top: 30vw;
+      top: 28vw;
     }
   }
   section#at-a-glance {
@@ -2117,7 +2200,7 @@ footer {
   section#volunteers,
   section#funders {
     .box {
-      padding: 1rem 1rem .625rem 1rem;
+      padding: 1rem;
       //width: 18.5rem;
       blockquote.h2 {
         font-size: .9rem;
@@ -2148,104 +2231,6 @@ footer {
   }
   div#contribute div h1 {
     font-size: 10vw;
-  }
-}
-@media all and (max-width: 548px) {
-  #header-wrap .page-header h2 {
-    font-size: 2vw;
-    letter-spacing: .5vw;
-  }
-  .section-header-img {
-    width: 115%;
-    margin-left: -7vw;
-  }
-  section#letter #signature {
-    height: 17vw;
-  }
-  section#at-a-glance {
-    .morse {
-      top: 14vw;
-    }
-  }
-  section#team {
-    .blocks-wrap .block {
-      h2 {
-        font-size: 14px;
-        line-height: 18px;
-      }
-    }
-  }
-  section#volunteers,
-  section#funders {
-    .box {
-      width: 50vw;
-      padding: .75rem;
-      .h2 {
-        font-size: 16px;
-        line-height: 20px;
-      }
-    }
-    .smallcaps {
-      font-size: 12px;
-      line-height: 16px;
-    }
-  }
-  section#volunteers {
-    .box {
-      margin-top: -28vw;
-    }
-  }
-  section#funders {
-    .box {
-      margin-top: -50vw;
-      
-    }
-  }
-
-  //blocks
-  div#after-school,
-  div#field-trips {
-    .block:nth-of-type(1),
-    .block:nth-of-type(2),
-    .block:nth-of-type(3) {
-      height: 27vw;
-    }
-  }
-  div#in-schools {
-    .block:nth-of-type(2),
-    .block:nth-of-type(3),
-    .block:nth-of-type(4) {
-      p:last-of-type  {
-        font-size: 12px;
-        line-height:  18px;
-      }
-    }
-  }
-  div#workshops {
-    .block:nth-of-type(2),
-    .block:nth-of-type(3),
-    .block:nth-of-type(4) {
-      height: 27vw;
-    }
-  }
-  div#workshops {
-    .block:nth-of-type(3) {
-      width: 45%;
-    }
-  }
-  div#contribute div {
-    top: 40%;
-    h1 {
-      font-size: 12vw;
-    }
-    a {
-      height: 3rem;
-      padding: 0 1rem;
-      h2 {
-        font-size: 1rem;
-        line-height: 3rem;
-      }
-    }
   }
 }
 //mobile
@@ -2324,31 +2309,32 @@ p, cite {
       letter-spacing: 3px;
     }
   }
+    #logo h2 {
+      margin-bottom: 1.5rem;
+    }
 }
 #header-wrap {
+  margin-bottom: 5rem;
   #map {
     margin-bottom: -4px;
     margin-left: -35%;
     width: 150%;
   }
   #map-key {
-    display: none;
+    bottom: initial;
+    right: initial;
+    top: 23rem;
+    left: 2rem;
   }
   .page-header {
-    margin-bottom: 5rem;
-    padding: 5vw 4vw 4vw 7vw;
+    background-color: @slate;
+    margin-bottom: -4px;
     position: static;
-    height: 47vw;
     width: 100%;
     h2 {
       font-size: 4vw;
     }
-    img {
-      width: 16vw;
-    }
     .page-title {
-      font-size: 15vw;
-      width: 0;
     }
   }
 }
@@ -2361,7 +2347,7 @@ section#letter {
   }
   .morse {
     left: 12vw;
-    top: 47vw;
+    top: 39vw;
 
   }
   #signature {
@@ -2373,7 +2359,7 @@ section#current-staff {
   margin-bottom: 5rem;
   .morse {
     left: 4vw;
-    top: 23.5vw;
+    top: 20.5vw;
   }
   h3 {
     display: none;
@@ -2470,8 +2456,8 @@ section#at-a-glance {
     margin-bottom: 2rem;
   }
   .morse {
-    left: -5vw;
-    top: 14vw;
+    left: -7vw;
+    top: 12vw;
   }
 
   .block:nth-of-type(1),
@@ -2540,7 +2526,7 @@ section#at-a-glance {
     width: 30vw !important;
   }
   #icon-hours {
-    left: 39vw;
+    left: 46vw;
     top: 7vw;
     width: 28vw !important;
   }
@@ -2598,7 +2584,7 @@ section#core-programs {
     height: 2.97vw;
     width: 26.08vw;
     left: 33.5vw;
-    top: 23vw;
+    top: 20vw;
   }
 }
 div#after-school {
@@ -2606,7 +2592,7 @@ div#after-school {
    // right: -5vw;
     //margin-top: 12rem;
     p.smallcaps {
-      max-width: 55vw;
+      //max-width: 55vw;
     }
   }
   #icon-after-school {
@@ -2646,7 +2632,7 @@ div#field-trips {
     //left: 22vw;
     //margin-top: 12rem;
     p.smallcaps {
-      max-width: 55vw;
+      //max-width: 55vw;
     }
   }
   #icon-authors {
@@ -2673,7 +2659,7 @@ div#in-schools {
     //left: 22vw;
     //margin-top: 12rem;
     p.smallcaps {
-      max-width: 55vw;
+      //max-width: 55vw;
     }
   }
   .big-box {
@@ -2699,7 +2685,7 @@ div#workshops {
     //left: 22vw;
     //margin-top: 12rem;
     p.smallcaps {
-      max-width: 55vw;
+      //max-width: 55vw;
     }
   }
   .big-box {
@@ -2755,13 +2741,14 @@ section#core-programs div#publications {
     height: 45vw;
     padding: 0 .5rem 2rem .5rem;
     .img-wrap {
-      height: 53vw;
+      height: 48vw;
     }
     .img-wrap:hover {
       -webkit-transform: scale(1);
       -ms-transform: scale(1);
       transform: scale(1);
       box-shadow: 0 0 0 0 @background-color;
+      cursor: default;
       z-index: 999;
       .books__title {
         opacity: 0;
@@ -2785,10 +2772,9 @@ section#funders {
     width: 110%;
   }
   .box {
-    //left: 13vw;
-    margin: -4rem 0 3rem 0;
-    //padding: 0;
-    width: 70vw;
+    box-sizing: border-box;
+    margin: -2rem 0 3rem -4vw;
+    width: 110%;
     blockquote {
       line-height: 1.4rem;
       text-indent: -6px;
@@ -2797,7 +2783,7 @@ section#funders {
     .smallcaps {
       text-indent: -20px;
       margin-left: 16px;
-      max-width: 55vw;
+      //max-width: 55vw;
     }
   }
 }
@@ -2970,7 +2956,8 @@ div#contribute {
   padding: 0;
   div {
     background-color: @pale-red;
-    padding: 2rem 8vw 2rem 12vw;
+    //padding: 2rem 8vw 2rem 12vw;
+    padding: 2rem 0;
     height: 12rem;
     position: relative;
     top: 0;
@@ -2978,9 +2965,10 @@ div#contribute {
     a:nth-child(2),
     a:nth-child(3) {
       background-color: #FFF;
+      border: 2px solid white;
       display: block;
       float: none;
-      margin: 1rem 0 0 0;
+      margin: 1rem auto 0 auto;
       padding: 0;
       height: 3rem;
       width: 70vw;
@@ -2988,6 +2976,13 @@ div#contribute {
         color: @pale-red;
         font-weight: bold;
         line-height: 3rem;
+      }
+    }
+    a:hover {
+      background-color: transparent;
+      border: 2px solid white;
+      h2 {
+        color: white;
       }
     }
     h1 {
@@ -3003,7 +2998,7 @@ div#contribute {
 footer {
   //height: 13rem;
   #contact {
-    padding: 3rem 0 0 12vw;
+    padding: 3rem 12vw 0 12vw;
   }
 }
 
@@ -3019,8 +3014,164 @@ footer {
 }
 
 }
+@media all and (max-width: 548px) {
+  #header-wrap .page-header h2 {
+    font-size: 2vw;
+    letter-spacing: .5vw;
+  }
+  section#letter #signature {
+    height: 17vw;
+  }
+  section#at-a-glance {
+    .morse {
+      top: 14vw;
+    }
+  }
+  section#team {
+    .blocks-wrap .block {
+      h2 {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+  section#core-programs,
+  section#volunteers,
+  section#funders {
+    .section-header-img {
+      width: 125%;
+      margin-left: -12.5%;
+    }
+  }
+  section#volunteers,
+  section#funders {
+    .box {
+      width: 125%;
+      margin-left: -12.5%;
+      padding: 1.5rem 10vw;
+  //     .h2 {
+  //       font-size: 16px;
+  //       line-height: 20px;
+  //     }
+  //   }
+  //   .smallcaps {
+  //     font-size: 12px;
+  //     line-height: 16px;
+  //   }
+  // }
+  // section#volunteers {
+  //   .box {
+  //     margin-top: -28vw;
+  //   }
+  // }
+  // section#funders {
+  //   .box {
+  //     margin-top: -50vw;
+    }
+  }
+
+  //blocks
+  div#after-school,
+  div#field-trips {
+    .block:nth-of-type(1),
+    .block:nth-of-type(2),
+    .block:nth-of-type(3) {
+      height: 38vw;
+    }
+  }
+  div#in-schools {
+    .block:nth-of-type(2),
+    .block:nth-of-type(3),
+    .block:nth-of-type(4) {
+      p:last-of-type  {
+        font-size: 12px;
+        line-height:  18px;
+      }
+    }
+  }
+  div#workshops {
+    .block:nth-of-type(2),
+    .block:nth-of-type(3),
+    .block:nth-of-type(4) {
+      height: 27vw;
+    }
+  }
+  div#workshops {
+    .block:nth-of-type(3) {
+      width: 45%;
+    }
+  }
+  div#contribute div {
+    top: 40%;
+    h1 {
+      //font-size: 12vw;
+    }
+    a {
+      height: 3rem;
+      padding: 0 1rem;
+      h2 {
+        font-size: 1rem;
+        line-height: 3rem;
+      }
+    }
+  }
+}
+@media all and (max-width: 430px) {
+  section#letter {
+    .morse {
+      top: 43vw;
+    }
+  }
+  section#core-programs,
+  div#after-school,
+  div#field-trips,
+  div#in-schools,
+  div#workshops {
+    .section-header-img {
+      padding-bottom: 13rem;
+    }
+    .box {
+      margin-top: 16rem;
+    }
+  }
+}
 @media all and (max-width: 338px) {
+  .navbar #nav-main #nav-page-title {
+    h2 {
+      font-size: .8rem;
+    }
+  }
+  #header-wrap .page-title {
+    font-size: 6.5rem;
+    line-height: 5.6rem;
+  }
   canvas {
     left: -1rem;
+  }
+  section#letter #signature {
+    height: 22vw;
+  }
+  section#letter #yerika {
+    margin-left: -12.5%;
+    width: 125%;
+  }
+  section#core-programs,
+  div#after-school,
+  div#field-trips,
+  div#in-schools,
+  div#workshops {
+    .box {
+      box-sizing: border-box;
+      width: 125%;
+      margin-left: -12.5%;
+      margin-top: 77vw;
+    }
+  }
+  div#in-schools,
+  div#workshops {
+    .big-box {
+      margin-left: -12.5%;
+      width: 125%;
+    }
   }
 }
