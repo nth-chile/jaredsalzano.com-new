@@ -330,7 +330,8 @@ ul {
     //background-color: @slate;
     bottom: 12.5vw;
     display: inline-block;
-    left: 7rem;
+    left: 21vw;
+    margin-left: -2rem;
     top: 7rem;
     padding: 2rem;
     position: absolute;
@@ -547,6 +548,10 @@ section#mission-statement {
     position: relative;
     p {color: #fff;}
   }
+}
+.no-1, .no-2, .no-3, .no-4, .no-5 {
+  color: white;
+  opacity: 1;
 }
 section#at-a-glance {
   margin-bottom: 13rem;
@@ -1596,7 +1601,7 @@ footer {
     }
   }
   #footer-symbol {
-    margin: 0 4px -4px -4px;
+    margin: 4px 4px 0 0;
     opacity: .6;
     vertical-align: top;
   }
@@ -1817,6 +1822,11 @@ footer {
       bottom: 28vw;
     }
   }
+  section#updates {
+    .text-column p {
+      max-width: 30rem;
+    }
+  }
   section#team {
     .block {
       width: 33.33%;
@@ -1850,6 +1860,11 @@ footer {
     }
     img:nth-of-type(5) {
       bottom: 35vw;
+    }
+  }
+  section#updates {
+    .text-column p {
+      max-width: 25rem;
     }
   }
   section#team {
@@ -1928,6 +1943,9 @@ footer {
     margin-left: 18vw;
     width: 70vw;
   }
+  #header-wrap .page-header {
+    left: 18vw;
+  }
   section#letter #signature {
     height: 14vw;
   }
@@ -1981,7 +1999,7 @@ footer {
 }
 @media all and (max-width: 764px) {
   #header-wrap .page-header {
-    left: 2rem;
+    //left: 2rem;
     top: 2rem;
   }
   section#mission-statement {
@@ -1992,6 +2010,30 @@ footer {
       bottom: 60vw;
     }
   }
+  section#updates {
+  h1 {
+    margin-bottom: 0;
+  }
+  // .morse {
+  //   left: 0;
+  //   top: 6vw;
+  // }
+  .floated-pair {
+    width: 100%;
+    img {
+      margin-left: -6vw; 
+      width: 110%;
+      padding: 1rem 0 .5rem 0;
+      position: static;
+    }
+  }
+  .pair-right {
+    margin: 0;
+  }
+  .text-column p {
+    max-width: none;
+  }
+}
   section#at-a-glance,
   div#after-school,
   div#field-trips,
@@ -2076,7 +2118,7 @@ footer {
 @media all and (max-width: 44rem) {
   #header-wrap {
     .page-header {
-      left: 1rem;
+      //left: 1rem;
       top: 1rem;
     }
     #map-key {
@@ -2329,6 +2371,7 @@ p, cite {
   .page-header {
     background-color: @slate;
     margin-bottom: -4px;
+    margin-left: 0;
     position: static;
     width: 100%;
     h2 {
@@ -2546,27 +2589,27 @@ section#at-a-glance {
     width: 33vw !important;
   }
 }
-section#updates {
-  h1 {
-    margin-bottom: 0;
-  }
-  .morse {
-    left: 0;
-    top: 6vw;
-  }
-  .floated-pair {
-    width: 100%;
-    img {
-      margin-left: -6vw; 
-      width: 110%;
-      padding: 1rem 0 .5rem 0;
-      position: static;
-    }
-  }
-  .pair-right {
-    margin: 0;
-  }
-}
+// section#updates {
+//   h1 {
+//     margin-bottom: 0;
+//   }
+//   .morse {
+//     left: 0;
+//     top: 6vw;
+//   }
+//   .floated-pair {
+//     width: 100%;
+//     img {
+//       margin-left: -6vw; 
+//       width: 110%;
+//       padding: 1rem 0 .5rem 0;
+//       position: static;
+//     }
+//   }
+//   .pair-right {
+//     margin: 0;
+//   }
+// }
 section#core-programs {
    h1 {
     margin-bottom: 0;
@@ -2948,7 +2991,7 @@ section#funders {
   .morse {
     margin: 0;
     left: 6.5vw;
-    top: 10vw;
+    top: 8vw;
     width: 45.61vw;
   }
 }
@@ -3135,6 +3178,9 @@ footer {
     }
   }
 }
+  div#publishing .section-header-img {
+    padding-bottom: 1rem;
+  }
 @media all and (max-width: 338px) {
   .navbar #nav-main #nav-page-title {
     h2 {
