@@ -18,7 +18,7 @@ menuItems.click(function(e){
   $('html, body').stop().animate({ 
       scrollTop: offsetTop
   }, 300);
-  e.preventDefault();
+ // e.preventDefault();
 });
 // Bind to scroll
 $(window).scroll(function(){
