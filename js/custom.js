@@ -11,6 +11,9 @@ var logo = document.querySelector('#logo');
 var navPageTitle = document.querySelector('#nav-page-title');
 logo.onmouseover = function() {navPageTitle.style.display = 'none'};
 logo.onmouseout = function() {navPageTitle.style.display = 'inline-block'};
+
+(function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document); // sticky hover fix in iOS
+
 //menu
 var $button = $('#menu');
 var chevron = document.querySelector('#chevron');
