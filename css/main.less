@@ -70,7 +70,7 @@ h1, h2, .h2, h3 {
   margin-top: 0;
   font-family: @headline-font;
   font-weight: normal;
-  opacity: 0.9;
+  opacity: 1;
   color: #ffffff;
 }
 h1 {
@@ -208,8 +208,8 @@ ul {
     width: 225px;
     outline: none;
     padding-left: 20px;
-    -webkit-transition: .5s all ease-out;
-    transition: .5s all ease-out;
+    -webkit-transition: .2s all ease-in-out;
+    transition: .2s all ease-in-out;
     img#menu-icon {
       display: none;
     }
@@ -224,8 +224,8 @@ ul {
 //headroom.js
 .headroom {
     will-change: transform;
-    -webkit-transition: transform 200ms linear;
-    transition: transform 200ms linear;
+    -webkit-transition: transform 100ms linear;
+    transition: transform 100ms linear;
 }
 .headroom--pinned {
     -webkit-transform: translateY(0%);
@@ -250,14 +250,18 @@ ul {
     top: 60px;
     width: 224px;
     overflow: hidden;
+    @media (max-height: 460px) {
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
     a {
       border-left: 4px solid @slate;
       right: 31px;
       padding-left: 14px;
       position: relative;
       text-decoration: none;
-      -webkit-transition: .5s all ease-out;
-      transition: .5s all ease-out;
+      -webkit-transition: .3s all ease-in-out;
+      transition: .3s all ease-in-out;
     }
     h2 {
       font-size: 1rem;
@@ -268,13 +272,19 @@ ul {
       display:  block;  
       margin: 0 25px;
       padding: 7px 13px;
-      -webkit-transition: .3s all ease-out;
-      transition: .3s all ease-out;
+      -webkit-transition: .2s all ease-in-out;
+      transition: .2s all ease-in-out;
     }
     li {
       display: block;
-      -webkit-transition: .5s all ease-out;
-      transition: .5s all ease-out;
+      -webkit-transition: .3s all ease-in-out;
+      transition: .3s all ease-in-out;
+    }
+    li:first-of-type {
+      padding-top: 8px;
+    }
+    li:last-of-type {
+      padding-bottom: 8px;
     }
     li:hover {
     background-color: #537f93;
@@ -305,14 +315,22 @@ ul {
       transform: scaleY(-1);
   }
 }
+.touch .menu-list ol li:hover {
+  background-color: @slate;
+  a {
+    border-left: 4px solid @slate;
+  }
+  div {
+    border-bottom: 1px solid @background-color;
+  }
+}
 #header-wrap {
   width:100%;
   margin: 67px 0 7vw -.7vw;
-  margin-left: -.7vw;
-  margin-top: 67px;
   position: relative;
   #map {
-    width:100%;
+    margin-left: -3px;
+    width:101%;
     z-index: -5;
   }
   .page-header {
@@ -324,13 +342,13 @@ ul {
     padding: 2rem;
     position: absolute;
     img {
-      padding: 0 .5rem 1.2rem .5rem;
-      width: 7.5rem;
+      padding: 0 .5rem 1.6rem .5rem;
+      width: 6.5rem;
       }
     p {
       color: #fff;
       font-size: 1rem;
-      margin: .9rem 0 0 0;
+      margin: .2rem 0 0 0;
       padding-left: 5px;
     }
   }
@@ -399,7 +417,7 @@ ul {
     p:last-of-type {
       line-height: normal;
       margin: 0 0 0 32px;
-      text-indent: -20px;
+      text-indent: -17px;
     }
   }
 }
@@ -871,7 +889,7 @@ div#publications {
     p {
       margin-left: 32px;
       padding-left: 0;
-      text-indent: -20px;
+      text-indent: -17px;
     }
   }
   .books {
@@ -919,11 +937,7 @@ div#publications {
     min-height: 40%;
     width: 100%;
     padding: 1rem;
-    h2 {
-      letter-spacing: 3px;
-      opacity: 1;
-      margin-bottom: 0;
-    }
+    h2 {line-height: 1.2rem}
   }
   .img-wrap:hover {
     -webkit-transform: scale(1.1);
@@ -1480,6 +1494,10 @@ footer {
       color: rgba(255, 255, 255, 0.6);
       border-bottom: 1px solid rgba(255, 255, 255, 0.6);
     }
+    a:hover {
+      color: white;
+      border-bottom: 1px solid white;
+    }
   }
   #footer-symbol {
     margin: 4px 4px 0 0;
@@ -1512,56 +1530,57 @@ footer {
   }
   .menu-list ol {
     margin-right: 0;
-    top: 70px;
+    top: 71px;
+    width: 100%;
     li div {
       padding: 5px 13px;
     }
   }
 }
 }
-@media all and (min-width: 37rem) {
-  div#publications {
-    .books {
-      column-count: 4;
-      -moz-column-count: 4;
-      -webkit-column-count: 4;
-      margin-bottom: 3rem;
-    }
-    .books__item {
-      padding: 0 .75rem 1.5rem .75rem;
-    }
-    #running-fast {
-      padding-top: 10.2vw;
-    }
-    #i-remember-girl {
-      padding-top: 0;
-    }
-    #the-time-was-1124 {
-      padding-top: 0vw;
-    }
-    #new-voices {
-      padding-top: 4vw;
-    }
-    #the-monster-gasped {
-      padding-top: 0;
-    }
-    #cheetah-with-coffee {
-      padding-top: 0;
-    }
-    #flipping-a-switch {
-      padding-top: 15vw;
-    }
-    #this-could-go-on {
-      padding-top: 0;
-    }
-    #laughing-and-humming {
-      padding-top: 0;
-    }
-    #and-the-rest-is-noise {
-      padding-top: 0;
-    }
-  } 
-}
+// @media all and (min-width: 37rem) {
+//   div#publications {
+//     .books {
+//       // column-count: 4;
+//       // -moz-column-count: 4;
+//       // -webkit-column-count: 4;
+//       //margin-bottom: 3rem;
+//     }
+//     .books__item {
+//       padding: 0 .75rem 1.5rem .75rem;
+//     }
+//     #running-fast {
+//       padding-top: 10.2vw;
+//     }
+//     #i-remember-girl {
+//       padding-top: 0;
+//     }
+//     #the-time-was-1124 {
+//       padding-top: 0vw;
+//     }
+//     #new-voices {
+//       padding-top: 4vw;
+//     }
+//     #the-monster-gasped {
+//       padding-top: 0;
+//     }
+//     #cheetah-with-coffee {
+//       padding-top: 0;
+//     }
+//     #flipping-a-switch {
+//       padding-top: 15vw;
+//     }
+//     #this-could-go-on {
+//       padding-top: 0;
+//     }
+//     #laughing-and-humming {
+//       padding-top: 0;
+//     }
+//     #and-the-rest-is-noise {
+//       padding-top: 0;
+//     }
+//   } 
+// }
 @media all and (min-width: 44rem) {
   div#publications {
     .books {
@@ -1692,21 +1711,6 @@ footer {
     .block {
       width: 33.33%;
     }
-  }
-  #board-of-directors ul,
-  #interns ul,
-  #associate-board ul,
-  #design-cohort-members ul,
-  #volunteers2 ul,
-  #individuals ul,
-  #foundations ul,
-  #organizations ul {
-    -moz-column-count: 2;
-    -moz-column-gap: 20vw;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 20vw;
-    column-count: 2;
-    column-gap: 20vw;
   }
 }
 @media all and (max-width: 1100px) {
@@ -1853,6 +1857,9 @@ footer {
   }
 }
 @media all and (max-width: 764px) {
+  h2, .h2, h3 {
+    font-weight: bold;
+  }
   #header-wrap .page-header {
     top: 2rem;
   }
@@ -1871,8 +1878,7 @@ footer {
   .floated-pair {
     width: 100%;
     img {
-      margin-left: -6vw; 
-      width: 110%;
+      width: 100%;
       padding: 1rem 0 .5rem 0;
       position: static;
     }
@@ -1960,6 +1966,21 @@ footer {
     .box {
         line-height: 1.45rem;
     }
+  }
+  #board-of-directors ul,
+  #interns ul,
+  #associate-board ul,
+  #design-cohort-members ul,
+  #volunteers2 ul,
+  #individuals ul,
+  #foundations ul,
+  #organizations ul {
+    -moz-column-count: 2;
+    -moz-column-gap: 20vw;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20vw;
+    column-count: 2;
+    column-gap: 20vw;
   }
 }
 @media all and (max-width: 44rem) {
@@ -2052,6 +2073,19 @@ footer {
       top: 12vw;
     }
   }
+  section#core-programs div#publications {
+    .img-wrap:hover {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      box-shadow: 0 0 0 0 @background-color;
+      cursor: default;
+      z-index: 99;
+      .books__title {
+        opacity: 0;
+      }
+    }
+  }
   section#team {
     .blocks-wrap .block {
       padding: .5rem 0;
@@ -2084,21 +2118,6 @@ footer {
       }
     }
   }
-  #associate-board ul,
-  #board-of-directors ul,
-  #design-cohort-members ul,
-  #foundations ul,
-  #individuals ul,
-  #interns ul,
-  #organizations ul,
-  #volunteers2 ul {
-    -moz-column-count: 1;
-    -moz-column-gap: 0;
-    -webkit-column-count: 1;
-    -webkit-column-gap: 0;
-    column-count: 1;
-    column-gap: 0;
-  }
   div#contribute div h1 {
     font-size: 10vw;
   }
@@ -2110,7 +2129,6 @@ footer {
 .mobile {
   display: block;
 }
-
 .blockquote {
   cite {
     padding-left: .8rem;
@@ -2166,16 +2184,20 @@ p, cite {
       width: 100%;
     }
     h2 {
+      font-weight: normal;
       letter-spacing: 3px;
     }
+  }
+  ol {
+    box-shadow: -1px 1px 5px -2px @background-color;
   }
 }
 #header-wrap {
   margin-bottom: 5rem;
   #map {
     margin-bottom: -4px;
-    margin-left: -35%;
-    width: 150%;
+    margin-left: -125%;
+    width: 240%;
   }
   #map-key {
     bottom: auto;
@@ -2191,8 +2213,6 @@ p, cite {
     width: 100%;
     h2 {
       font-size: 4vw;
-    }
-    .page-title {
     }
   }
 }
@@ -2247,7 +2267,6 @@ section#mission-statement {
   }
   img:nth-child(1) {
     position: static;
-    margin-bottom: -3.5rem;
     margin-left: -10vw;
     width: 63%;
   }
@@ -2416,6 +2435,10 @@ section#core-programs {
     top: 20vw;
   }
 }
+div#after-school {
+  .section-header-img {
+    padding-bottom: 11rem;
+  }
   #icon-after-school {
     left: 43vw;
     top: 7vw;
@@ -2446,6 +2469,7 @@ section#core-programs {
   .block:nth-of-type(3) {
     padding-left: 0;
   }
+}
 div#field-trips {
   margin-top: 5rem;
   #icon-authors {
@@ -2468,9 +2492,6 @@ div#field-trips {
 }
 div#in-schools {
   margin-top: 5rem;
-  .box {
-    margin-top: 28rem;
-  }
   .big-box {
     width: 100%;
   }
@@ -2507,16 +2528,13 @@ div#workshops {
     }
   }
   .block:nth-of-type(2),
-  .block:nth-of-type(3) {
+  .block:nth-of-type(4) {
     height: 38vw;
   }
   .block:nth-of-type(2) {
     .block__content {
       border-right: @dark-border;
     }
-  }
-  .block:nth-of-type(4) {
-    min-height: 42vw;
   }
 }
 div#publishing {
@@ -2534,7 +2552,7 @@ section#core-programs div#publications {
     margin-bottom: 0;
   }
   .books {
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
   }
   .books__item {
     height: 45vw;
@@ -2623,10 +2641,6 @@ section#financials-report {
       }
     }
   }
-  #big-total {
-      font-size: 14vw;
-      margin: 1.5rem 0 4rem 0;
-  }
   .pie-data {
     position: static;
   }
@@ -2635,6 +2649,12 @@ section#financials-report {
     margin-top: 1.5rem;
     padding-top: .5rem;
     width: 95%;
+    .big-total {
+      color: white;
+      font-size: 14vw;
+      line-height: 3.2rem;
+      margin: 1.5rem 0 4rem 0;
+    }
   }
   .pie-key {
     position: absolute;
@@ -2729,11 +2749,6 @@ section#team {
   .block:nth-child(odd) {
     .block__content {
       border-right: @dark-border;
-    }
-  }
-  .block:nth-child(11) {
-    .block__content{
-      border-right: none;
     }
   }
   .morse {
@@ -2868,7 +2883,7 @@ footer {
     .block:nth-of-type(2),
     .block:nth-of-type(3),
     .block:nth-of-type(4) {
-      height: 27vw;
+      height: 38vw;
     }
   }
   div#workshops {
@@ -2894,33 +2909,52 @@ footer {
       top: 43vw;
     }
   }
-  section#core-programs div#in-schools .box {
-    margin-top: 24rem;
-  }
-  section#core-programs,
-  div#after-school,
-  div#field-trips,
-  div#workshops {
-    .section-header-img {
+  section#core-programs {
+    div#in-schools,
+    div#after-school,
+    div#field-trips,
+    div#workshops {
+      .section-header-img {
       padding-bottom: 13rem;
     }
-    .box {
-      margin-top: 16rem;
+      .box {
+        margin-top: 16rem;
+      }
     }
   }
-}
   div#publishing .section-header-img {
     padding-bottom: 1rem;
   }
+    #associate-board ul,
+  #board-of-directors ul,
+  #design-cohort-members ul,
+  #foundations ul,
+  #individuals ul,
+  #interns ul,
+  #organizations ul,
+  #volunteers2 ul {
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-gap: 0;
+    -moz-column-gap: 0;
+    -webkit-column-gap: 0;
+  }
+}
 @media all and (max-width: 338px) {
   .navbar #nav-main #nav-page-title {
     h2 {
       font-size: .8rem;
     }
   }
-  #header-wrap .page-title {
-    font-size: 6.5rem;
-    line-height: 5.6rem;
+  #header-wrap {
+    #map-key {
+      top: 22rem;
+    }
+    .page-title {
+      font-size: 6.5rem;
+      line-height: 5.6rem;
+    }
   }
   canvas {
     left: -1rem;
@@ -2932,19 +2966,17 @@ footer {
     margin-left: -12.5%;
     width: 125%;
   }
-  section#core-programs div#in-schools .box {
-    margin-top: 107vw;
-  }
-  section#core-programs,
-  div#after-school,
-  div#field-trips,
-  div#in-schools,
-  div#workshops {
-    .box {
-      box-sizing: border-box;
-      width: 125%;
-      margin-left: -12.5%;
-      margin-top: 77vw;
+  section#core-programs {
+    div#after-school,
+    div#field-trips,
+    div#in-schools,
+    div#workshops {
+      .box {
+        box-sizing: border-box;
+        width: 125%;
+        margin-left: -12.5%;
+        margin-top: 77vw;
+      }
     }
   }
   div#in-schools,
