@@ -114,11 +114,6 @@ function showMenu() {
   });
 }
 
-//icons
-var icons = $('[id^="icon-"]');
-icons.each(function(index, icon) {
-  $(this).css('width', Math.round($(this).width() * .1) + 'vw');
-});
 //pie charts
 var revenueResults = [
   {name: "INDIVIDUALS", count: 190826, color: "#1D637B"},
