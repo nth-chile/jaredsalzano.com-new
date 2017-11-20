@@ -1,0 +1,84 @@
+#programs {
+	background-color: $offwhite;
+	main .bg--blue {
+		padding-bottom: 187px;
+		margin-bottom: 113px;
+	}
+}
+.books {
+	margin: 0 auto;
+	//width: 83vw;
+	white-space: nowrap;
+	margin-bottom: 68px;
+}
+.books__book {
+	height: 21vw;
+	margin: 1vw;
+}
+.number-items-boxes {
+	margin: 0 auto;
+	max-width: 891px;
+	text-align: left;
+}
+.number-items-box {
+	display: inline-block;
+	height: 110px;
+	margin-right: 100px;
+	text-align: left;
+	width: 210px;
+	white-space: nowrap;
+	&:last-child {
+		margin-right: 0;
+	}
+	div {
+		display: inline-block;
+		white-space: normal;
+	}
+	.copy--20--futura {
+		margin-left: 14px;
+	}
+}
+.programs__program {
+	.programs__program__body {
+		margin: 0 auto;
+		max-width: 891px;
+		text-align: left;
+		img {
+			display: inline-block;
+			max-width: 412px;
+			vertical-align: top;
+		}
+		.copy--16--bookmania {
+			display: inline-block;
+			margin-left: 60px;
+			margin-top: 0;
+			max-width: 412px;
+		}
+	}
+	.programs__program__statistic {
+		margin-bottom: 70px;
+	}
+}
+#title__programs {
+	max-width: 256px;
+}
+#astw {
+	margin-bottom: 190px;
+	.programs__program__title {max-width: 678px;}
+}
+#fieldtrips {
+	margin-bottom: 102px;
+	.programs__program__title {max-width: 223px;}
+}
+#workshops {
+	margin-bottom: 276px;
+	.programs__program__title {max-width: 252px;}
+}
+#in-schools {
+	margin-bottom: 193px;
+	.programs__program__title {max-width: 256px;}
+}
+#publishing {
+	margin-bottom: 185px;
+	.programs__program__title {max-width: 270px;}
+}

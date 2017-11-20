@@ -1,0 +1,114 @@
+#supporters {
+	background-color: $light-green;
+	.list-section {
+		margin: 0 19vw;
+		h2 {
+			font-weight: normal;
+			margin-bottom: -50px;
+			text-align: left;
+		}
+	}
+	h2 {
+		font-weight: normal;
+		text-align: left;
+	}
+	ul {
+		list-style: none;
+		transform: translateX(-100px);
+		width: 400px;
+		p {
+			margin: 0;
+		}
+	}
+	#fivek {
+		padding-bottom: 300px;
+	}
+	#fivehundred {
+		margin-top: -400px;
+	}
+	#gt-onehundred {
+		margin-top: -400px;
+		ul:not(:nth-of-type(1)) {
+			margin-top: -400px;
+		}
+		ul:nth-of-type(2) {
+			transform: translateX(-43vw);
+		}
+		ul:nth-of-type(3) {
+			transform: translateX(2vw);
+		}
+		ul:nth-of-type(4) {
+			transform: translateX(-27vw);
+		}
+	}
+	#fivek {
+		background: url(../assets/sketch-calculator@2x.png) no-repeat;
+		background-size: 450px;
+		background-position: bottom right 100px;
+		transform: translateX(11vw);
+	}
+	#tenk, #onek {
+		transform: translateX(39vw);
+	}
+	#lt-onehundred {
+		ul:nth-of-type(2) {
+			margin-top: -1000px;
+			transform: translateX(26vw);
+		}
+		ul:nth-of-type(3) {
+			margin-top: -200px;
+		}
+		ul:nth-of-type(4) {
+			margin-top: -680px;
+			transform: translateX(33vw);
+		}
+		ul:nth-of-type(5) {
+			margin-top: -420px;
+			transform: translateX(0vw);
+		}
+		ul:nth-of-type(6) {
+			margin-top: -80px;
+			transform: translateX(28vw);
+		}
+		ul:nth-of-type(7) {
+			margin-top: -180px;
+			transform: translateX(-8vw);
+		}
+		ul:nth-of-type(8) {
+			margin-top: -420px;
+			transform: translateX(28vw);
+		}
+	}
+	#gt-onehundred {
+		background: url(../assets/sketch-sharpener@2x.png) no-repeat;
+		background-size: 400px;
+		background-position: 0 700px;
+		padding-left: 39vw;
+	}
+}
+#volunteer-committees {
+	margin: 0 auto;
+	max-width: 785px;
+	text-align: left;
+	h2 {
+		display: inline-block;
+		margin-bottom: 0;
+		padding-right: 30px;
+	}
+	ul {
+		display: inline-block;
+		padding: 0 0 0 10px;
+	}
+}
+#img-supporters {
+	margin: 200px 0 107px;
+	max-width: 589px;
+}
+#title__supporters {
+	margin-top: 90px;
+	max-width: 410px;
+}
+#title__donors {
+	margin-bottom: 20px;
+	max-width: 385px;
+}

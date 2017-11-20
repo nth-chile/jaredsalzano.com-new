@@ -1,0 +1,31 @@
+#letter {
+	background-color: $orange;
+	h5 {
+		margin: 70px 0 0 0;
+	}
+}
+#letter-from-kendra {
+	width: 24vw;
+	transform: translateX(4vw);
+}
+#letter-from-kendra-img {
+	width: 44vw;
+	transform: translateX(-3vw);
+	position: relative;
+	z-index: -1;
+}
+#letter main {
+	margin-bottom: 217px;
+}
+#signature {
+	background: url(../assets/kendrasignature.png) no-repeat;
+	background-size: contain;
+	margin: 0 auto;
+	padding-top: 109px;
+	width: 190px;
+	transform: translateX(20px);
+	span {
+		display: block;
+		transform: translateX(-20px);
+	}
+}

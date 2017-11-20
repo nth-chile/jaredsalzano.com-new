@@ -1,0 +1,166 @@
+#home {background-color: $offwhite;}
+.stats {
+	position: relative;
+}
+.stats__stat {
+	position: relative;
+	& > div {
+		position: relative;
+		text-align: left;
+	}
+}
+#hp-grid-1 {
+	width:11vw;
+	margin-left: 3vw;
+	margin-right: 3vw;
+	transform: translateX(-4vw) translateY(5vw);
+}
+#hp-grid-2 {
+	width:21vw;
+	margin-right: 3vw;
+	transform: translateX(-2vw) translateY(-1vw);
+}
+#hp-grid-3 {
+	width:22vw;
+	margin-right: 3vw;
+	transform: translateX(-1vw);
+}
+#hp-grid-4 {
+	width:11vw;
+	margin-right: 3vw;
+	transform: translateX(0vw) translateY(-6vw);
+}
+#hp-grid-5 {
+	width:15vw;
+	margin-left: 3vw;
+	margin-right: 6vw;
+	transform: translateX(-5vw) translateY(5vw);
+}
+#hp-grid-8 {
+	width:17vw;
+	transform: translateX(-6vw) translateY(14vw);
+}
+#hp-grid-9 {
+	width:23vw;
+	transform: translateX(-4vw) translateY(18vw);
+}
+#hp-grid-6 {
+	width:17vw;
+	transform: translateX(2vw) translateY(-6vw);
+}
+#hp-grid-7 {
+	width:17vw;
+	margin-left: 3vw;
+	transform: translateY(4vw);
+}
+#hp-grid-11 {
+	width:18vw;
+	transform: translateX(5vw) translateY(16vw);
+}
+#hp-grid-13 {
+	width: 18vw;
+	transform: translateX(12vw) translateY(27vw);
+}
+#hp-grid-10 {
+	width: 20vw;
+	transform: translateX(14vw) translateY(-3vw);
+}
+#hp-grid-12 {
+	width: 17vw;
+	transform: translateX(-5vw) translateY(14vw);
+}
+#hp-grid__wrap {
+	margin-bottom: 18vw;
+}
+#mission {
+	img {
+		display: block;
+		margin: 0 auto;
+		width: 61vw;
+		-webkit-transform: translateX(2vw);
+		        transform: translateX(2vw);
+	}
+	-webkit-transform: translateY(-32vw);
+	        transform: translateY(-32vw);
+}
+#stat__students-served {
+	left: -4vw;
+	height: 190px;
+	& > div {
+		left: 56.3vw;
+		top: -170px;
+	}
+}
+#stat__zipcodes {
+	left: 20vw;
+	height: 190px;
+	& > div {
+		left: 42vw;
+		top: -80px;
+	}
+}
+#stat__active-volunteers {
+	left: -15vw;
+	height: 190px;
+	& > div {
+		left: 53vw;
+		top: -160px;
+	}
+}
+#stat__programming-hours {
+	left: 10vw;
+	& > div {
+		left: 41vw;
+		top: -65px;
+	}
+}
+#stat__teachers-served {
+	left: -10vw;
+	height: 40px;
+	& > div {
+		left: 38vw;
+		top: -60px;
+	}
+	.copy--20--futura {
+		margin-left: 4px;
+	}
+}
+#stat__writing-sessions {
+	left: 25vw;
+	height: 200px;
+	& > div {
+		left: 38vw;
+		top: -90px;
+	}
+	.copy--20--futura {
+		margin-left: 13px;
+	}
+}
+#stat__schools {
+	left: -24vw;
+	height: 180px;
+	& > div {
+		left: 38vw;
+		top: -70px;
+	}
+	.copy--20--futura {
+		margin-left: 13px;
+	}
+}
+#stat__publications {
+	left: 16vw;
+	& > div {
+		left: 37vw;
+		top: -90px;
+	}
+}
+#stat__field-trips {
+	left: -5vw;
+	& > div {
+		left: 35vw;
+		top: -90px;
+	}
+	.copy--20--futura {
+		margin-left: 4px;
+	}
+}

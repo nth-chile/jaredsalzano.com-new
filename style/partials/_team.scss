@@ -1,0 +1,94 @@
+#team {
+	background-color: $green;
+	.list-section {
+		margin: 19vw;
+		h2 {
+			font-weight: normal;
+			margin-top: 210px;
+		}
+	}
+	ul {
+		list-style: none;
+		columns: 2;
+		width: 580px;
+		li {
+			-webkit-column-break-inside: avoid;
+			page-break-inside: avoid;
+			break-inside: avoid;
+		}
+		p {
+			margin: 0;
+		}
+	}
+	ul.spacey li {
+		margin-bottom: 15px;
+	}
+}
+// #team
+#staff {
+	background: url(../assets/sketch-apple@2x.png) no-repeat;
+	background-position: 0vw 5vw;
+	background-size: 300px;
+	ul {
+		margin: 0 auto;
+		transform: translateX(10vw) translateY(-115px);
+	}
+}
+#directors {
+	h2 {
+		margin-bottom: -45px;
+		text-align: left;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+}
+#associate-board {
+	background: url(../assets/sketch-ruler@2x.png) no-repeat;
+	//background-position: 13vw 5vw;
+	background-size: 200px;
+	h2, ul {
+		transform: translateX(21.5vw);
+	}
+	h2 {
+		text-align: left;
+		margin-bottom: -45px;
+	}
+	ul {
+		margin: 0;
+	}
+	.col-2 {
+		transform: translateY(550px);
+	}
+}
+#interns {
+	h2 {
+		margin-bottom: -95px;
+		padding: 30px;
+		text-align: left;
+	}
+	.col-2 {
+		transform: translateY(400px);
+	}
+}
+.team-members__member {
+	margin-bottom: 73px;
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid;
+	height: 25vw;
+	img {
+		margin-bottom: 25px;
+		width: 100%;
+	}
+}
+#title__team {
+	max-width: 401px;
+	margin-bottom: 57px;
+}
+#team-members {
+	column-gap: 5vw;
+	column-count: 3;
+	margin: 0 18vw;
+}

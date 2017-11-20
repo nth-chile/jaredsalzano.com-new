@@ -1,0 +1,158 @@
+$blue: #9bc3d9;
+$green: #91af7f;
+$light-green: #dded9d;
+$offwhite: #f7f6f4;
+$orange: #f28460;
+$yellow: #fde88e;
+$pink: #edd3f0;
+$purple: #b6c0f8;
+$red: rgb(207, 71, 92);
+
+@font-face {
+	font-family: 'BebasNeue';
+	src: url('../assets/fonts/Bebas/BebasNeue.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Futura';
+	src: url('../assets/fonts/Futura/FuturaTDem/f011025t.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Bookmania';
+	src: url('../assets/fonts/Bookmania/Bookmania/Bookmania Regular.otf') format('truetype');
+}
+@font-face {
+	font-family: 'Bookmania Italic';
+	src: url('../assets/fonts/Bookmania/Bookmania/Bookmania Regular Italic.otf') format('opentype');
+}
+
+
+html, body {
+	overflow-x: hidden;
+	width: 100%;
+}
+body {
+	text-align: center;
+	color: rgba(0, 0, 0, .48);
+	font-family: "Futura";
+	font-size: 20px;
+	line-height: 28px;
+}
+.copy--20--bebas {
+	font-family: BebasNeue;
+	font-size: 20px;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	color: rgba(0, 0, 0, 0.48);
+}
+.copy--16--bookmania {
+	color: rgba(0, 0, 0, 0.5);
+	font-family: "Bookmania";
+	font-size: 16px;
+	line-height: 1.63;
+	letter-spacing: -0.1px;
+}
+.copy--20--futura {
+	color: rgba(0, 0, 0, .48);
+	font-family: "Futura";
+	font-size: 20px;
+	line-height: 28px;
+}
+.copy--big--numbers {
+	color: $red;
+	font-family: BebasNeue;
+	font-size: 72px;
+	line-height: 40px;
+	letter-spacing: -3.7px;
+}
+h2 {
+	color: white;
+	font-family: BebasNeue;
+	font-size: 90px;
+	line-height: 80px;
+	letter-spacing: -1.5px;
+}
+h6 {
+	color: rgba(0, 0, 0, .48);
+	font-family: BebasNeue;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 1;
+	letter-spacing: 0.2px;
+}
+header {
+	margin-bottom: -4px;
+	padding: 55px 0 20px;
+	p {
+		transform: translateX(-10px) translateY(-35px);
+	}
+}
+
+
+
+/*** IDS ***/
+
+// section titles
+#_826link-1 {
+	background: url(../assets/826-logo@2x.png) no-repeat;
+	background-size: contain;
+	display: block;
+	margin: 0 auto;
+	height: 106px;
+	width: 124px;
+}
+
+
+/*** MODIFIERS ***/
+.bg--blue {
+	background-color: $blue;
+}
+.text--green {
+	color: $green;
+}
+.w506 {
+	@extend .shrinkable;
+	width: auto;
+	max-width: 506px;
+	margin: 0 auto;
+}
+.w557 {
+	@extend .shrinkable;
+	width: auto;
+	max-width: 570px;
+	margin: 0 auto;
+}
+.w570 {
+	@extend .shrinkable;
+	width: auto;
+	max-width: 570px;
+	margin: 0 auto;
+}
+.w584 {
+	@extend .shrinkable;
+	width: auto;
+	max-width: 584px;
+	margin: 0 auto;
+}
+.w651 {
+	@extend .shrinkable;
+	width: auto;
+	max-width: 651px;
+	margin: 0 auto;
+}
+.w666 {
+	@extend .shrinkable;
+	width: auto;
+	max-width: 666px;
+	margin: 0 auto;
+}
+// .shrinkable {
+// 	padding: 0 11vw;
+// 	width: 100%;
+// 	box-sizing: content-box;
+// }
+
+//mate .shrinkable
+.shrinkable {
+	padding: 0 11%;
+	width: calc(100% - 22%);
+}

@@ -1,0 +1,134 @@
+#students {
+	background-color: $purple;
+	h2 {
+		font-weight: normal;
+	}
+	i {
+		transform: translateY(6px);
+	}
+	#map {
+		width: 52vw;
+	}
+	section {
+		margin: 0 auto;
+		position: relative;
+		width: 36vw;
+		& > * {
+			position: absolute;
+		}
+		canvas {
+			left: 0;
+		}
+		h2 {
+			margin: 0;
+		}
+		.pie-slice {
+			p {
+				margin: 0;
+			}
+		}
+	}
+	#race {
+		height: 660px;
+		img {
+			left: 100px;
+			margin-top: 128px;
+			width: 304px;
+		}
+		.pie-slice:nth-child(2) {
+			left: 217px;
+			top: 36px;
+		}
+		.pie-slice:nth-child(3) {
+			left: 127px;
+			top: 57px;
+		}
+		.pie-slice:nth-child(4) {
+			left: 59px;
+			top: 107px;
+		}
+		.pie-slice:nth-child(5) {
+			left: 5px;
+			top: 219px;
+		}
+		.pie-slice:nth-child(6) {
+			left: -7px;
+			top: 355px;
+		}
+		.pie-slice:nth-child(7) {
+			left: 423px;
+			top: 355px;
+		}
+	}
+	#gender {
+		height: 626px;
+		img {
+			left: 150px;
+			margin-top: 80px;
+			width: 302px;
+		}
+		.pie-slice:nth-child(2) {
+			left: 277px;
+    		top: -6px;
+		}
+		.pie-slice:nth-child(3) {
+			left: 59px;
+			top: 107px;
+		}
+		.pie-slice:nth-child(4) {
+			left: 449px;
+    		top: 337px
+		}
+	}
+	#english {
+		height: 714px;
+		img {
+			left: 94px;
+    		margin-top: 60px;
+			width: 328px;
+		}
+		.pie-slice:nth-child(2) {
+			left: -10px;
+    		top: 207px;
+		}
+		.pie-slice:nth-child(3) {
+			left: 450px;
+			top: 200px;
+		}
+	}
+	.w651 {
+		margin: 30px auto 40px;
+	}
+}
+#title__students {
+	max-width: 442px;
+}
+#icon-star {
+	background: url(../assets/sticker-star@2x.png) no-repeat;
+	background-size: contain;
+	display: inline-block;
+	margin: 0 5px 0 18px;
+	height: 30px;
+	width: 32px;
+}
+#icon-face {
+	background: url(../assets/sticker-face@2x.png) no-repeat;
+	background-size: contain;
+	display: inline-block;
+	margin: 0 5px 0 27px;
+	height: 33px;
+	width: 32px;
+}
+#icon-dot {
+	background: url(../assets/sticker-dot@2x.png) no-repeat;
+	background-size: contain;
+	display: inline-block;
+	margin: 0 5px 0 23px;
+	height: 24px;
+	width: 24px;
+}
+#key {
+	h6, p {
+		display: inline-block;
+	}
+}

@@ -1,0 +1,64 @@
+#partners {
+	background-color: $yellow;
+	.list-section {
+		margin: 19vw;
+		h2 {
+			font-weight: normal;
+			margin-top: 210px;
+			text-align: left;
+		}
+	}
+	#network {
+		ul {
+			transform: translateX(-76px) translateY(-130px);
+		}
+	}
+	#community-partners {
+		background: url(../assets/sketch-scissors@2x.png) no-repeat;
+		background-position: -1vw 1100px;
+		background-size: 280px;
+		position: relative;
+		h2 {
+			transform: translateX(17vw);
+		}
+		ul:nth-child(2) {
+			transform: translateX(14vw) translateY(-135px);
+		}
+		ul:nth-child(3) {
+			position: absolute;
+			top: 35%;
+			right: -150px;
+		}
+	}
+	#school-partners {
+		background: url(../assets/sketch-eraser.png) no-repeat;
+		background-position: 38vw 3000px;
+		background-size: 300px;
+		padding-bottom: 400px;
+		position: relative;
+		h2 {
+			margin-bottom: -80px;
+		}
+		ul:nth-child(3) {
+			position: absolute;
+			top: 38%;
+			right: 0;
+		}
+		ul:nth-child(4) {
+			position: relative;
+			top: 400px;
+		}
+	}
+	ul {
+		list-style: none;
+		width: 315px;
+		li {
+		}
+		p {
+			margin: 0;
+		}
+	}
+}
+#title__partners {
+	max-width: 547px;
+}
