@@ -6,11 +6,11 @@
 }
 #letter-from-kendra {
 	width: 24vw;
-	transform: translateX(4vw);
+	transform: translateX(4vw) translateY(-4vw);
 }
 #letter-from-kendra-img {
-	width: 44vw;
-	transform: translateX(-3vw);
+	width: 52vw;
+	transform: translateX(-4vw);
 	position: relative;
 	z-index: -1;
 }
@@ -20,7 +20,7 @@
 #signature {
 	background: url(../assets/kendrasignature.png) no-repeat;
 	background-size: contain;
-	margin: 0 auto;
+	margin: 40px auto 0;
 	padding-top: 109px;
 	width: 190px;
 	transform: translateX(20px);
