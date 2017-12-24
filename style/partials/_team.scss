@@ -1,16 +1,32 @@
 #team {
 	background-color: $green;
 	.list-section {
-		margin: 19vw;
+		margin: 11%;
+		@media (min-width: 830px) {
+			margin: 19vw;
+		}
 		h2 {
 			font-weight: normal;
 			margin-top: 210px;
+			@media (max-width: 830px) {
+				width: 380px;
+			}
+			@media (max-width: 320px) {
+				width: 268px;
+				font-size: 60px;
+				line-height: 53px;
+			}
 		}
 	}
 	ul {
 		list-style: none;
-		columns: 2;
-		width: 580px;
+		@media (min-width: 830px) {
+			columns: 2;
+			width: 580px;
+		}
+		@media (max-width: 829.5px) {
+			padding-left: 0;
+		}
 		li {
 			-webkit-column-break-inside: avoid;
 			page-break-inside: avoid;
@@ -23,20 +39,35 @@
 	ul.spacey li {
 		margin-bottom: 15px;
 	}
+	@media (max-width: 1120px) {
+		h2 {margin-top: 0;}
+	}
 }
 // #team
 #staff {
 	background: url(../assets/sketch-apple@2x.png) no-repeat;
-	background-position: 0vw 5vw;
+	background-position: -3vw bottom;
 	background-size: 300px;
 	ul {
 		margin: 0 auto;
-		transform: translateX(10vw) translateY(-115px);
+		transform: translateY(-115px);
+		@media all and (max-width: 320px) {
+			transform: translateY(-85px);
+		}
+	}
+	@media (min-width: 1120px) {
+		background-position: 0vw 5vw;
+		ul {
+			transform: translateX(10vw);
+		}
 	}
 }
 #directors {
 	h2 {
 		margin-bottom: -45px;
+		@media all and (max-width: 320px) {
+			margin-bottom: -35px;
+		}
 		text-align: left;
 	}
 	ul {
@@ -46,17 +77,25 @@
 }
 #associate-board {
 	background: url(../assets/sketch-ruler@2x.png) no-repeat;
-	//background-position: 13vw 5vw;
 	background-size: 200px;
-	h2, ul {
-		transform: translateX(21.5vw);
+	@media (min-width: 1120px) {
+		h2, ul {
+			transform: translateX(21.5vw);
+		}
+	}
+	@media (max-width: 1120px) {
+		background-position: 3vw bottom;
 	}
 	h2 {
 		text-align: left;
 		margin-bottom: -45px;
+		@media all and (max-width: 320px) {
+			margin-bottom: -35px;
+		}
 	}
 	ul {
 		margin: 0;
+		padding-bottom: 120px;
 	}
 	.col-2 {
 		transform: translateY(550px);
@@ -65,6 +104,9 @@
 #interns {
 	h2 {
 		margin-bottom: -95px;
+		@media all and (max-width: 320px) {
+			margin-bottom: -85px;
+		}
 		padding: 30px;
 		text-align: left;
 	}
@@ -74,12 +116,30 @@
 }
 .team-members__member {
 	margin-bottom: 73px;
+	@media all and (max-width: 1120px) {
+		margin-bottom: 103px;
+	}
+	@media all and (max-width: 830px) {
+		margin-bottom: 123px;
+	}
+	@media all and (max-width: 489px) {
+		margin-bottom: 173px;
+	}
 	-webkit-column-break-inside: avoid;
 	page-break-inside: avoid;
 	break-inside: avoid;
 	height: 25vw;
 	img {
 		margin-bottom: 25px;
+		@media all and (max-width: 1120px) {
+			margin-bottom: 20px;
+		}
+		@media all and (max-width: 830px) {
+			margin-bottom: 12px;
+		}
+		@media all and (max-width: 489px) {
+			margin-bottom: 8px;
+		}
 		width: 100%;
 	}
 }
@@ -91,4 +151,22 @@
 	column-gap: 5vw;
 	column-count: 3;
 	margin: 0 18vw;
+	@media all and ( max-width: 489px ) {
+		column-count: 2;
+	}
+}
+
+@media (max-width: 1120px) {
+	.list-section {
+		text-align: left;
+		li {text-align:center;}
+		h2, ul {
+			transform: translateX(0);
+		}
+	}
+}
+@media (max-width: 830px) {
+	#team .col-2 {
+		transform: none;
+	}
 }

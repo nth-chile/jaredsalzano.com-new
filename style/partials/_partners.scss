@@ -1,16 +1,25 @@
 #partners {
 	background-color: $yellow;
 	.list-section {
-		margin: 19vw;
+		margin: 0 11%;
 		h2 {
 			font-weight: normal;
-			margin-top: 210px;
 			text-align: left;
+			@media (max-width: 320px) {
+				width: 268px;
+				font-size: 60px;
+				line-height: 53px;
+			}
 		}
 	}
 	#network {
 		ul {
 			transform: translateX(-76px) translateY(-130px);
+			@media all and (max-width: 320px) {
+				transform: translateX(0px) translateY(-40px);
+				padding-left: 0;
+				min-width: 0;
+			}
 		}
 	}
 	#community-partners {
@@ -18,6 +27,10 @@
 		background-position: -1vw 1100px;
 		background-size: 280px;
 		position: relative;
+		margin-bottom: 300px;
+		@media all and (max-width: 320px) {
+			background-position: bottom;
+		}
 		h2 {
 			transform: translateX(17vw);
 		}
@@ -29,29 +42,62 @@
 			top: 35%;
 			right: -150px;
 		}
+		@media (max-width: 1150px) {
+			h2 {
+				transform: translateX(0);
+			}
+			ul:nth-child(2) {
+				transform: translateX(0) translateY(-135px);
+				margin-bottom: 0;
+			}
+			ul:nth-child(3) {
+				margin-top: 0;
+				position: static;
+				transform: translateY(-135px);
+			}
+		}
+		@media all and (max-width: 320px) {
+			ul, ul:nth-child(2), ul:nth-child(3) {
+				transform: translateX(0px) translateY(-70px);
+				padding-left: 0;
+				min-width: 0;
+			}
+		}
 	}
 	#school-partners {
 		background: url(../assets/sketch-eraser.png) no-repeat;
 		background-position: 38vw 3000px;
 		background-size: 300px;
-		padding-bottom: 400px;
+		padding-bottom: 550px;
 		position: relative;
+		@media all and (max-width: 320px) {
+			background-position: bottom;
+		}
 		h2 {
 			margin-bottom: -80px;
 		}
 		ul:nth-child(3) {
 			position: absolute;
-			top: 38%;
+			top: 31%;
 			right: 0;
 		}
 		ul:nth-child(4) {
 			position: relative;
 			top: 400px;
 		}
+		@media all and (max-width: 320px) {
+			ul, ul:nth-child(3), ul:nth-child(4) {
+				transform: translateX(0px) translateY(40px);
+				padding-left: 0;
+				margin: 0;
+				min-width: 0;
+				position: static;
+			}
+		}
 	}
 	ul {
 		list-style: none;
-		width: 315px;
+		min-width: 315px;
 		li {
 		}
 		p {

@@ -82,8 +82,11 @@ h6 {
 header {
 	margin-bottom: -4px;
 	padding: 55px 0 20px;
+	a {
+		transform: translateX(10px)
+	}
 	p {
-		transform: translateX(-10px) translateY(-35px);
+		transform: translateY(-35px);
 	}
 }
 

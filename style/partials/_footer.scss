@@ -20,6 +20,10 @@ nav {
 	&:last-child {
 		border-right: none;
 	}
+	@media (max-width: 368px) {
+		border-right: none;
+		display: block;
+	}
 }
 .nav__links {
 	display: inline-block;
@@ -89,4 +93,57 @@ nav {
 	transform: translateX(2vw) translateY(-2vw);
 	height: 16vw;
 	width: 15vw;
+}
+
+@media all and (max-width: 660px) {
+	nav {
+		margin: 0 8vw 0 7vw;
+		width: calc(100% - 15vw);
+	}
+	#nav__link__kendra {
+		margin-left: 4vw;
+		transform: translateX(-7vw) translateY(9vw);
+		height: 34.56vw;
+		width: 26.88vw;
+	}
+	#nav__link__financials {
+		margin-left: 0vw;
+		transform: translateX(0vw);
+		height: 20.8vw;
+		width: 30.4vw;
+	}
+	#nav__link__our-team {
+		margin-left: 4vw;
+		margin-top: 4vw;
+		transform: translateX(-4vw) translateY(0.5vw);
+		height: 24.8vw;
+		width: 18.4vw;
+	}
+	#nav__link__our-students {
+		margin-top: 4vw;
+		transform: translateY(1vw);
+		height: 30.4vw;
+		width: 22.4vw;
+	}
+	#nav__link__programs {
+		margin-left: 1vw;
+		margin-top: 4vw;
+		transform: translateY(-3vw);
+		height: 22.4vw;
+		width: 25.6vw;
+	}
+	#nav__link__partners {
+		margin-left: 3vw;
+		margin-top: 8vw;
+		transform: translateY(-2vw);
+		height: 26.56vw;
+		width: 24vw;
+	}
+	#nav__link__our-supporters {
+		margin-left: 1vw;
+		margin-top: 8vw;
+		transform: translateX(2vw) translateY(-2vw);
+		height: 25.6vw;
+		width: 24vw;
+	}
 }
