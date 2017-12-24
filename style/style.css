@@ -46,7 +46,7 @@ body {
   font-family: BebasNeue;
   font-size: 72px;
   line-height: 40px;
-  letter-spacing: -3.7px; }
+  letter-spacing: 0px; }
 
 h2 {
   color: white;
@@ -269,73 +269,74 @@ nav {
   background-color: #f7f6f4; }
 
 .stats {
-  position: relative; }
+  position: relative;
+  margin-top: 90px; }
 
 .stats__stat {
-  position: relative; }
+  position: relative;
+  margin: 0; }
   .stats__stat > div {
     position: relative;
-    text-align: left; }
+    text-align: left;
+    left: 50%;
+    width: 200px; }
+  @media all and (max-width: 980px) and (min-width: 731px) {
+    .stats__stat {
+      position: static;
+      display: inline-block;
+      width: 42%; }
+      .stats__stat:nth-child(odd) {
+        margin-left: -100px; }
+      .stats__stat > div {
+        top: -100px !important; }
+        .stats__stat > div:nth-child(odd) {
+          margin-left: 0px !important; }
+        .stats__stat > div:nth-child(even) {
+          margin-left: 40px !important; } }
 
 #hp-grid-1 {
-  width: 11vw;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  transform: translateX(-4vw) translateY(5vw); }
+  width: 17vw;
+  position: relative;
+  top: 6vw; }
 
 #hp-grid-2 {
-  width: 21vw;
-  margin-right: 3vw;
-  transform: translateX(-2vw) translateY(-1vw); }
+  width: 26vw;
+  position: relative;
+  top: -7vw;
+  left: -1vw; }
 
 #hp-grid-3 {
-  width: 22vw;
-  margin-right: 3vw;
-  transform: translateX(-1vw); }
+  width: 26vw;
+  position: relative;
+  left: -1vw;
+  top: -2vw; }
 
 #hp-grid-4 {
-  width: 11vw;
-  margin-right: 3vw;
-  transform: translateX(0vw) translateY(-6vw); }
+  width: 24vw;
+  position: relative;
+  top: -8vw; }
 
 #hp-grid-5 {
-  width: 15vw;
-  margin-left: 3vw;
-  margin-right: 6vw;
-  transform: translateX(-5vw) translateY(5vw); }
-
-#hp-grid-8 {
-  width: 17vw;
-  transform: translateX(-6vw) translateY(14vw); }
-
-#hp-grid-9 {
-  width: 23vw;
-  transform: translateX(-4vw) translateY(18vw); }
+  width: 22vw;
+  position: relative;
+  left: -2vw;
+  top: 15vw; }
 
 #hp-grid-6 {
-  width: 17vw;
-  transform: translateX(2vw) translateY(-6vw); }
+  width: 20vw;
+  position: relative;
+  left: -2vw;
+  top: 15vw; }
 
 #hp-grid-7 {
-  width: 17vw;
-  margin-left: 3vw;
-  transform: translateY(4vw); }
+  width: 26vw;
+  position: relative;
+  top: 22vw; }
 
-#hp-grid-11 {
-  width: 18vw;
-  transform: translateX(5vw) translateY(16vw); }
-
-#hp-grid-13 {
-  width: 18vw;
-  transform: translateX(12vw) translateY(27vw); }
-
-#hp-grid-10 {
-  width: 20vw;
-  transform: translateX(14vw) translateY(-3vw); }
-
-#hp-grid-12 {
-  width: 17vw;
-  transform: translateX(-5vw) translateY(14vw); }
+#hp-grid-8 {
+  width: 22vw;
+  position: relative;
+  top: 14vw; }
 
 #hp-grid__wrap {
   margin-bottom: 18vw; }
@@ -347,21 +348,19 @@ nav {
       margin-bottom: 0; }
       #hp-grid__wrap img {
         margin: 0;
-        transform: translateX(0) translateY(0);
+        position: static;
         width: 100%; } }
   #hp-grid__wrap img {
     padding: 10px;
     box-sizing: border-box; }
 
 #mission {
-  -webkit-transform: translateY(-52vw);
-  transform: translateY(-52vw); }
+  transform: translateY(-41vw); }
   #mission img {
     display: block;
     margin: 0 auto;
     width: 61vw;
-    -webkit-transform: translateX(2vw);
-    transform: translateX(2vw); }
+    transform: translateX(4vw); }
   @media all and (max-width: 660px) {
     #mission {
       margin-bottom: 18vw;
@@ -371,74 +370,92 @@ nav {
         width: 115%; } }
 
 #stat__students-served {
-  left: -4vw;
   height: 190px; }
+  @media all and (min-width: 731px) {
+    #stat__students-served {
+      left: -4vw; } }
   #stat__students-served > div {
-    left: 56.3vw;
+    margin-left: 94px;
     top: -170px; }
 
 #stat__zipcodes {
-  left: 20vw;
   height: 190px; }
+  @media all and (min-width: 731px) {
+    #stat__zipcodes {
+      left: 20vw; } }
   #stat__zipcodes > div {
-    left: 42vw;
+    margin-left: -90px;
     top: -80px; }
 
 #stat__active-volunteers {
-  left: -15vw;
   height: 190px; }
+  @media all and (min-width: 731px) {
+    #stat__active-volunteers {
+      left: -15vw; } }
   #stat__active-volunteers > div {
-    left: 53vw;
+    margin-left: 47px;
     top: -160px; }
 
-#stat__programming-hours {
-  left: 10vw; }
-  #stat__programming-hours > div {
-    left: 41vw;
-    top: -65px; }
+@media all and (min-width: 731px) {
+  #stat__programming-hours {
+    left: 10vw; } }
+#stat__programming-hours > div {
+  margin-left: -108px;
+  top: -65px; }
 
 #stat__teachers-served {
-  left: -10vw;
   height: 40px; }
+  @media all and (min-width: 731px) {
+    #stat__teachers-served {
+      left: -10vw; } }
   #stat__teachers-served > div {
-    left: 38vw;
+    margin-left: -130px;
     top: -60px; }
   #stat__teachers-served .copy--20--futura {
     margin-left: 4px; }
 
 #stat__writing-sessions {
-  left: 25vw;
   height: 200px; }
+  @media all and (min-width: 731px) {
+    #stat__writing-sessions {
+      left: 25vw; } }
   #stat__writing-sessions > div {
-    left: 38vw;
+    margin-left: -140px;
     top: -90px; }
   #stat__writing-sessions .copy--20--futura {
     margin-left: 13px; }
 
 #stat__schools {
-  left: -24vw;
   height: 180px; }
+  @media all and (min-width: 731px) {
+    #stat__schools {
+      left: -24vw; } }
   #stat__schools > div {
-    left: 38vw;
+    margin-left: -140px;
     top: -70px; }
   #stat__schools .copy--20--futura {
     margin-left: 13px; }
 
-#stat__publications {
-  left: 16vw; }
-  #stat__publications > div {
-    left: 37vw;
-    top: -90px; }
+@media all and (min-width: 731px) {
+  #stat__publications {
+    left: 16vw; } }
+#stat__publications > div {
+  margin-left: -150px;
+  top: -90px; }
 
-#stat__field-trips {
-  left: -5vw; }
-  #stat__field-trips > div {
-    left: 35vw;
-    top: -90px; }
-  #stat__field-trips .copy--20--futura {
-    margin-left: 4px; }
+@media all and (min-width: 731px) {
+  #stat__field-trips {
+    left: -5vw; } }
+#stat__field-trips > div {
+  margin-left: -170px;
+  top: -90px; }
+#stat__field-trips .copy--20--futura {
+  margin-left: 4px; }
 
-@media all and (max-width: 660px) {
+@media all and (max-width: 731px) {
+  .stats__stat {
+    text-align: center; }
+
   #stat__students-served,
   #stat__zipcodes,
   #stat__active-volunteers,
@@ -456,34 +473,53 @@ nav {
   #stat__students-served {
     left: -10vw; }
     #stat__students-served > div {
-      left: 56.3vw;
+      margin: 0 94px;
       top: -170px; }
 
   #stat__zipcodes {
-    left: -8vw; }
+    left: -10vw; }
     #stat__zipcodes > div {
-      left: 56.3vw;
+      margin: 0 94px;
       top: -170px; }
+
+  #stat__active-volunteers {
+    left: -10vw; }
+    #stat__active-volunteers > div {
+      margin: 0 94px; }
 
   #stat__programming-hours {
     left: -10vw; }
+    #stat__programming-hours > div {
+      margin: 0 94px; }
 
   #stat__teachers-served {
-    left: -7vw; }
+    left: -10vw; }
+    #stat__teachers-served > div {
+      margin: 0 94px; }
 
   #stat__writing-sessions {
-    left: -5vw; }
+    left: -10vw; }
+    #stat__writing-sessions > div {
+      margin: 0 94px; }
     #stat__writing-sessions .copy--20--futura {
       width: 200px; }
 
   #stat__schools {
-    left: -5vw; }
+    left: -10vw; }
+    #stat__schools > div {
+      margin: 0 94px; }
 
   #stat__publications {
-    left: -2vw; }
+    left: -10vw; }
+    #stat__publications > div {
+      margin: 0 94px; }
 
   #stat__field-trips {
-    left: 0; } }
+    left: -10vw; }
+    #stat__field-trips img {
+      margin-left: -30px; }
+    #stat__field-trips > div {
+      margin: 0 94px; } }
 #letter {
   background-color: #f28460; }
   #letter h5 {

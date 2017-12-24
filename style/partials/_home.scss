@@ -1,74 +1,86 @@
 #home {background-color: $offwhite;}
 .stats {
 	position: relative;
+	margin-top: 90px;
 }
 .stats__stat {
 	position: relative;
+	margin: 0;
 	& > div {
 		position: relative;
 		text-align: left;
+		left: 50%;
+		width: 200px;
+	}
+	@media all and (max-width: 980px) and (min-width: 731px) {
+		position: static;
+		display: inline-block;
+		width: 42%;
+		&:nth-child(odd) {
+			margin-left: -100px;
+		}
+		& > div {
+			top: -100px !important;
+			&:nth-child(odd) {
+				margin-left: 0px !important;
+			}
+			&:nth-child(even) {
+				margin-left: 40px !important;
+			}
+		}
 	}
 }
 #hp-grid-1 {
-	width:11vw;
-	margin-left: 3vw;
-	margin-right: 3vw;
-	transform: translateX(-4vw) translateY(5vw);
+	width:17vw;
+	position: relative;
+	// margin-left: 3vw;
+	// margin-right: 3vw;
+	top: 6vw;
 }
 #hp-grid-2 {
-	width:21vw;
-	margin-right: 3vw;
-	transform: translateX(-2vw) translateY(-1vw);
+	width:26vw;
+	position: relative;
+	// margin-right: 3vw;
+	top: -7vw;
+	left: -1vw;
 }
 #hp-grid-3 {
-	width:22vw;
-	margin-right: 3vw;
-	transform: translateX(-1vw);
+	width:26vw;
+	position: relative;
+	// margin-right: 3vw;
+	left: -1vw;
+	top: -2vw;
 }
 #hp-grid-4 {
-	width:11vw;
-	margin-right: 3vw;
-	transform: translateX(0vw) translateY(-6vw);
+	width:24vw;
+	position: relative;
+	// margin-right: 3vw;
+	top: -8vw;
 }
 #hp-grid-5 {
-	width:15vw;
-	margin-left: 3vw;
-	margin-right: 6vw;
-	transform: translateX(-5vw) translateY(5vw);
-}
-#hp-grid-8 {
-	width:17vw;
-	transform: translateX(-6vw) translateY(14vw);
-}
-#hp-grid-9 {
-	width:23vw;
-	transform: translateX(-4vw) translateY(18vw);
+	width:22vw;
+	position: relative;
+	// margin-left: 3vw;
+	left: -2vw;
+	top: 15vw;
 }
 #hp-grid-6 {
-	width:17vw;
-	transform: translateX(2vw) translateY(-6vw);
+	width:20vw;
+	position: relative;
+	left: -2vw;
+	top: 15vw;
 }
 #hp-grid-7 {
-	width:17vw;
-	margin-left: 3vw;
-	transform: translateY(4vw);
+	width:26vw;
+	position: relative;
+	top: 22vw;
 }
-#hp-grid-11 {
-	width:18vw;
-	transform: translateX(5vw) translateY(16vw);
+#hp-grid-8 {
+	width: 22vw;
+	position: relative;
+	top: 14vw;
 }
-#hp-grid-13 {
-	width: 18vw;
-	transform: translateX(12vw) translateY(27vw);
-}
-#hp-grid-10 {
-	width: 20vw;
-	transform: translateX(14vw) translateY(-3vw);
-}
-#hp-grid-12 {
-	width: 17vw;
-	transform: translateX(-5vw) translateY(14vw);
-}
+
 #hp-grid__wrap {
 	margin-bottom: 18vw;
 	@media all and (max-width: 660px) {
@@ -77,30 +89,24 @@
 		padding: 40px;
 		margin-bottom: 0;
 		& img {
-			margin: 0; 
-			transform: translateX(0) translateY(0); 
+			margin: 0;
+			position: static;
 			width: 100%;
 		}
-			// -webkit-column-break-inside: avoid;
-			// page-break-inside: avoid;
-			// break-inside: avoid;
 	}
 	img {
 		padding: 10px;
-		box-sizing: 
-		border-box;
+		box-sizing: border-box;
 	}
 }
 #mission {
+	transform: translateY(-41vw);
 	img {
 		display: block;
 		margin: 0 auto;
 		width: 61vw;
-		-webkit-transform: translateX(2vw);
-		        transform: translateX(2vw);
+		transform: translateX(4vw);
 	}
-	-webkit-transform: translateY(-52vw);
-	        transform: translateY(-52vw);
 	@media all and (max-width: 660px) {
 		margin-bottom: 18vw;
 		transform: translateX(0) translateY(0);
@@ -111,41 +117,41 @@
 	}
 }
 #stat__students-served {
-	left: -4vw;
+	@media all and (min-width: 731px) { left: -4vw; }
 	height: 190px;
 	& > div {
-		left: 56.3vw;
+		margin-left: 94px;
 		top: -170px;
 	}
 }
 #stat__zipcodes {
-	left: 20vw;
+	@media all and (min-width: 731px) { left: 20vw; }
 	height: 190px;
 	& > div {
-		left: 42vw;
+		margin-left: -90px;
 		top: -80px;
 	}
 }
 #stat__active-volunteers {
-	left: -15vw;
+	@media all and (min-width: 731px) { left: -15vw; }
 	height: 190px;
 	& > div {
-		left: 53vw;
+		margin-left: 47px;
 		top: -160px;
 	}
 }
 #stat__programming-hours {
-	left: 10vw;
+	@media all and (min-width: 731px) { left: 10vw; }
 	& > div {
-		left: 41vw;
+		margin-left: -108px;
 		top: -65px;
 	}
 }
 #stat__teachers-served {
-	left: -10vw;
+	@media all and (min-width: 731px) { left: -10vw; }
 	height: 40px;
 	& > div {
-		left: 38vw;
+		margin-left: -130px;
 		top: -60px;
 	}
 	.copy--20--futura {
@@ -153,10 +159,10 @@
 	}
 }
 #stat__writing-sessions {
-	left: 25vw;
+	@media all and (min-width: 731px) { left: 25vw; }
 	height: 200px;
 	& > div {
-		left: 38vw;
+		margin-left: -140px;
 		top: -90px;
 	}
 	.copy--20--futura {
@@ -164,10 +170,10 @@
 	}
 }
 #stat__schools {
-	left: -24vw;
+	@media all and (min-width: 731px) { left: -24vw; }
 	height: 180px;
 	& > div {
-		left: 38vw;
+		margin-left: -140px;
 		top: -70px;
 	}
 	.copy--20--futura {
@@ -175,16 +181,16 @@
 	}
 }
 #stat__publications {
-	left: 16vw;
+	@media all and (min-width: 731px) { left: 16vw; }
 	& > div {
-		left: 37vw;
+		margin-left: -150px;
 		top: -90px;
 	}
 }
 #stat__field-trips {
-	left: -5vw;
+	@media all and (min-width: 731px) { left: -5vw; }
 	& > div {
-		left: 35vw;
+		margin-left: -170px;
 		top: -90px;
 	}
 	.copy--20--futura {
@@ -192,7 +198,10 @@
 	}
 }
 
-@media all and (max-width: 660px) {
+@media all and (max-width: 731px) {
+	.stats__stat {
+		text-align: center;
+	}
 	#stat__students-served,
 	#stat__zipcodes,
 	#stat__active-volunteers,
@@ -210,37 +219,49 @@
 	#stat__students-served {
 		left: -10vw;
 		& > div {
-			left: 56.3vw;
+			margin: 0 94px;
 			top: -170px;
 		}
 	}
 	#stat__zipcodes {
-		left: -8vw;
+		left: -10vw;
 		& > div {
-			left: 56.3vw;
+			margin: 0 94px;
 			top: -170px;
 		}
 	}
-	//#stat__active-volunteers
+	#stat__active-volunteers {
+		left: -10vw;
+		& > div {	margin: 0 94px; }
+	}
 	#stat__programming-hours {
 		left: -10vw;
+		& > div {	margin: 0 94px; }
 	}
 	#stat__teachers-served {
-		left: -7vw;
+		left: -10vw;
+		& > div {	margin: 0 94px; }
 	}
 	#stat__writing-sessions {
-		left: -5vw;
+		left: -10vw;
+		& > div {	margin: 0 94px; }
 		.copy--20--futura {
 			width: 200px;
 		}
 	}
 	#stat__schools {
-		left: -5vw;
+		left: -10vw;
+		& > div {	margin: 0 94px; }
 	}
 	#stat__publications {
-		left: -2vw;
+		left: -10vw;
+		& > div {	margin: 0 94px; }
 	}
 	#stat__field-trips {
-		left: 0;
+		left: -10vw;
+		img {
+			margin-left: -30px;
+		}
+		& > div {	margin: 0 94px; }
 	}
 }
