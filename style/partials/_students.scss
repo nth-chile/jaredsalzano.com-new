@@ -7,12 +7,12 @@
 		transform: translateY(6px);
 	}
 	#map {
-		width: 52vw;
+		max-width: 750px;
 	}
 	section {
 		margin: 0 auto;
 		position: relative;
-		width: 36vw;
+		max-width: 550px;
 		& > * {
 			position: absolute;
 		}
@@ -33,7 +33,7 @@
 		img {
 			left: 100px;
 			margin-top: 128px;
-			width: 304px;
+			width: 55%;
 		}
 		.pie-slice:nth-child(2) {
 			left: 217px;
@@ -128,7 +128,15 @@
 	width: 24px;
 }
 #key {
+	margin-bottom: 190px;
 	h6, p {
 		display: inline-block;
 	}
+	h6 {
+		margin: 0;
+	}
+}
+.key__item {
+	display: inline-block;
+	white-space: nowrap;
 }

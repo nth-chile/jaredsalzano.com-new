@@ -665,9 +665,12 @@ nav {
   @media all and (max-width: 830px) {
     .team-members__member {
       margin-bottom: 123px; } }
-  @media all and (max-width: 489px) {
+  @media all and (max-width: 659px) {
     .team-members__member {
       margin-bottom: 173px; } }
+  @media all and (max-width: 489px) {
+    .team-members__member {
+      margin-bottom: 82vw; } }
   .team-members__member img {
     margin-bottom: 25px;
     width: 100%; }
@@ -677,9 +680,10 @@ nav {
     @media all and (max-width: 830px) {
       .team-members__member img {
         margin-bottom: 12px; } }
-    @media all and (max-width: 489px) {
+    @media all and (max-width: 659px) {
       .team-members__member img {
-        margin-bottom: 8px; } }
+        margin-bottom: 8px;
+        height: auto; } }
 
 #title__team {
   max-width: 401px;
@@ -689,9 +693,12 @@ nav {
   column-gap: 5vw;
   column-count: 3;
   margin: 0 18vw; }
-  @media all and (max-width: 489px) {
+  @media all and (max-width: 659px) {
     #team-members {
       column-count: 2; } }
+  @media all and (max-width: 489px) {
+    #team-members {
+      column-count: 1; } }
 
 @media (max-width: 1120px) {
   .list-section {
@@ -710,11 +717,11 @@ nav {
   #students i {
     transform: translateY(6px); }
   #students #map {
-    width: 52vw; }
+    max-width: 750px; }
   #students section {
     margin: 0 auto;
     position: relative;
-    width: 36vw; }
+    max-width: 550px; }
     #students section > * {
       position: absolute; }
     #students section canvas {
@@ -728,7 +735,7 @@ nav {
     #students #race img {
       left: 100px;
       margin-top: 128px;
-      width: 304px; }
+      width: 55%; }
     #students #race .pie-slice:nth-child(2) {
       left: 217px;
       top: 36px; }
@@ -804,8 +811,16 @@ nav {
   height: 24px;
   width: 24px; }
 
-#key h6, #key p {
-  display: inline-block; }
+#key {
+  margin-bottom: 190px; }
+  #key h6, #key p {
+    display: inline-block; }
+  #key h6 {
+    margin: 0; }
+
+.key__item {
+  display: inline-block;
+  white-space: nowrap; }
 
 #programs {
   background-color: #f7f6f4; }
@@ -932,8 +947,14 @@ nav {
 
 #partners {
   background-color: #fde88e; }
+  #partners ul {
+    list-style: none; }
+    #partners ul p {
+      margin: 0; }
   #partners .list-section {
-    margin: 0 11%; }
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1178px; }
     #partners .list-section h2 {
       font-weight: normal;
       text-align: left; }
@@ -942,30 +963,48 @@ nav {
           width: 268px;
           font-size: 60px;
           line-height: 53px; } }
-  #partners #network ul {
-    transform: translateX(-76px) translateY(-130px); }
-    @media all and (max-width: 320px) {
-      #partners #network ul {
-        transform: translateX(0px) translateY(-40px);
-        padding-left: 0;
-        min-width: 0; } }
+    #partners .list-section > div {
+      position: relative; }
+  #partners #network {
+    padding: 0 6vw; }
+    #partners #network ul {
+      transform: translateX(-76px) translateY(-130px);
+      width: 315px; }
+      @media all and (max-width: 527px) {
+        #partners #network ul {
+          padding: 0;
+          transform: translateX(0) translateY(-130px);
+          width: 100%; } }
   #partners #community-partners {
     background: url(../assets/sketch-scissors@2x.png) no-repeat;
-    background-position: -1vw 1100px;
+    background-position: 7vw 1100px;
     background-size: 280px;
+    min-height: 1450px;
     position: relative;
-    margin-bottom: 300px; }
-    @media all and (max-width: 320px) {
+    padding-left: 17vw;
+    margin-bottom: 200px; }
+    @media all and (max-width: 527px) {
       #partners #community-partners {
-        background-position: bottom; } }
-    #partners #community-partners h2 {
-      transform: translateX(17vw); }
+        padding: 0 6vw; } }
+    #partners #community-partners ul {
+      width: 350px; }
+      @media all and (max-width: 368px) {
+        #partners #community-partners ul {
+          width: 315px; } }
+      @media all and (max-width: 527px) {
+        #partners #community-partners ul {
+          padding: 0;
+          transform: translateX(0) translateY(-130px);
+          width: 100%; } }
     #partners #community-partners ul:nth-child(2) {
-      transform: translateX(14vw) translateY(-135px); }
+      transform: translateX(-60px) translateY(-135px); }
     #partners #community-partners ul:nth-child(3) {
       position: absolute;
       top: 35%;
-      right: -150px; }
+      left: 270px; }
+    @media all and (max-width: 320px) {
+      #partners #community-partners {
+        background-position: bottom; } }
     @media (max-width: 1150px) {
       #partners #community-partners h2 {
         transform: translateX(0); }
@@ -976,41 +1015,48 @@ nav {
         margin-top: 0;
         position: static;
         transform: translateY(-135px); } }
-    @media all and (max-width: 320px) {
-      #partners #community-partners ul, #partners #community-partners ul:nth-child(2), #partners #community-partners ul:nth-child(3) {
-        transform: translateX(0px) translateY(-70px);
-        padding-left: 0;
-        min-width: 0; } }
   #partners #school-partners {
     background: url(../assets/sketch-eraser.png) no-repeat;
-    background-position: 38vw 3000px;
+    background-position: 750px 2251px;
     background-size: 300px;
-    padding-bottom: 550px;
-    position: relative; }
+    min-height: 2878px;
+    margin-bottom: 200px;
+    position: relative;
+    padding: 0 6vw; }
     @media all and (max-width: 320px) {
       #partners #school-partners {
         background-position: bottom; } }
     #partners #school-partners h2 {
       margin-bottom: -80px; }
+    #partners #school-partners ul {
+      width: 410px; }
+      @media all and (max-width: 368px) {
+        #partners #school-partners ul {
+          width: 315px; } }
+      @media all and (max-width: 527px) {
+        #partners #school-partners ul {
+          padding: 0;
+          width: 100%; } }
+      @media all and (max-width: 1120px) {
+        #partners #school-partners ul {
+          margin-bottom: 0; } }
     #partners #school-partners ul:nth-child(3) {
       position: absolute;
       top: 31%;
-      right: 0; }
+      left: 550px; }
     #partners #school-partners ul:nth-child(4) {
       position: relative;
-      top: 400px; }
+      top: 470px; }
+    @media all and (max-width: 1120px) {
+      #partners #school-partners ul:nth-child(3), #partners #school-partners ul:nth-child(4) {
+        position: static;
+        margin: 0; } }
     @media all and (max-width: 320px) {
       #partners #school-partners ul, #partners #school-partners ul:nth-child(3), #partners #school-partners ul:nth-child(4) {
         transform: translateX(0px) translateY(40px);
         padding-left: 0;
         margin: 0;
-        min-width: 0;
         position: static; } }
-  #partners ul {
-    list-style: none;
-    min-width: 315px; }
-    #partners ul p {
-      margin: 0; }
 
 #title__partners {
   max-width: 547px; }
@@ -1042,10 +1088,17 @@ nav {
       margin-top: -400px; }
     #supporters #gt-onehundred ul:nth-of-type(2) {
       transform: translateX(-43vw); }
-    #supporters #gt-onehundred ul:nth-of-type(3) {
-      transform: translateX(2vw); }
+      @media all and (max-width: 1150px) {
+        #supporters #gt-onehundred ul:nth-of-type(2) {
+          transform: translateX(-50vw); } }
+    @media all and (min-width: 1150px) {
+      #supporters #gt-onehundred ul:nth-of-type(3) {
+        transform: translateX(2vw); } }
     #supporters #gt-onehundred ul:nth-of-type(4) {
       transform: translateX(-27vw); }
+      @media all and (max-width: 1150px) {
+        #supporters #gt-onehundred ul:nth-of-type(4) {
+          transform: translateX(-43vw); } }
   #supporters #fivek {
     background: url(../assets/sketch-calculator@2x.png) no-repeat;
     background-size: 450px;
@@ -1078,6 +1131,8 @@ nav {
     background-size: 400px;
     background-position: 0 700px;
     padding-left: 39vw; }
+  #supporters #in-kind {
+    margin-bottom: 200px; }
 
 #volunteer-committees {
   margin: 0 auto;
@@ -1089,10 +1144,12 @@ nav {
     padding-right: 30px; }
   #volunteer-committees ul {
     display: inline-block;
-    padding: 0 0 0 10px; }
+    padding: 0 0 0 10px;
+    transform: none; }
 
 #img-supporters {
-  margin: 200px 0 107px;
+  display: block;
+  margin: 200px auto 107px;
   max-width: 589px; }
 
 #title__supporters {
@@ -1100,7 +1157,47 @@ nav {
   max-width: 410px; }
 
 #title__donors {
-  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto 20px;
   max-width: 385px; }
+
+@media all and (max-width: 829.5px) {
+  #supporters .list-section {
+    margin: 0;
+    width: auto; }
+    #supporters .list-section h2 {
+      transform: translateX(200px); }
+  #supporters ul {
+    transform: none;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0; }
+  #supporters ul:not(:nth-of-type(1)) {
+    margin-top: 0; }
+  #supporters #fivehundred {
+    margin-top: 0; }
+  #supporters #gt-onehundred {
+    margin-top: 0;
+    padding-left: 0; }
+    #supporters #gt-onehundred ul:not(:nth-of-type(1)) {
+      margin-top: 0; }
+    #supporters #gt-onehundred ul:nth-of-type(2),
+    #supporters #gt-onehundred ul:nth-of-type(3),
+    #supporters #gt-onehundred ul:nth-of-type(4) {
+      transform: none; }
+  #supporters #fivek,
+  #supporters #tenk,
+  #supporters #onek {
+    transform: none; }
+  #supporters #lt-onehundred ul:nth-of-type(2),
+  #supporters #lt-onehundred ul:nth-of-type(3),
+  #supporters #lt-onehundred ul:nth-of-type(4),
+  #supporters #lt-onehundred ul:nth-of-type(5),
+  #supporters #lt-onehundred ul:nth-of-type(6),
+  #supporters #lt-onehundred ul:nth-of-type(7),
+  #supporters #lt-onehundred ul:nth-of-type(8) {
+    margin-top: 0px;
+    transform: none; } }
 
 /*# sourceMappingURL=style.css.map */

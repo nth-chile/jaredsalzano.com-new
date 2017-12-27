@@ -1,7 +1,17 @@
 #partners {
 	background-color: $yellow;
+	ul {
+		list-style: none;
+		li {
+		}
+		p {
+			margin: 0;
+		}
+	}
 	.list-section {
-		margin: 0 11%;
+		box-sizing: border-box;
+		margin: 0 auto;
+		max-width: 1178px;
 		h2 {
 			font-weight: normal;
 			text-align: left;
@@ -11,36 +21,54 @@
 				line-height: 53px;
 			}
 		}
+		& > div {
+			position: relative;
+		}
 	}
 	#network {
+		padding: 0 6vw;
 		ul {
 			transform: translateX(-76px) translateY(-130px);
-			@media all and (max-width: 320px) {
-				transform: translateX(0px) translateY(-40px);
-				padding-left: 0;
-				min-width: 0;
+			width: 315px;
+			@media all and (max-width: 527px) {
+				padding: 0;
+				transform: translateX(0) translateY(-130px);
+				width: 100%;
 			}
 		}
 	}
 	#community-partners {
 		background: url(../assets/sketch-scissors@2x.png) no-repeat;
-		background-position: -1vw 1100px;
+		background-position: 7vw 1100px;
 		background-size: 280px;
+		min-height: 1450px;
 		position: relative;
-		margin-bottom: 300px;
-		@media all and (max-width: 320px) {
-			background-position: bottom;
+		padding-left: 17vw;
+		margin-bottom: 200px;
+		@media all and (max-width: 527px) {
+			padding: 0 6vw;
 		}
-		h2 {
-			transform: translateX(17vw);
+		ul {
+			width: 350px;
+			@media all and (max-width: 368px) {
+				width: 315px;
+			}
+			@media all and (max-width: 527px) {
+				padding: 0;
+				transform: translateX(0) translateY(-130px);
+				width: 100%;
+			}
 		}
 		ul:nth-child(2) {
-			transform: translateX(14vw) translateY(-135px);
+			transform: translateX(-60px) translateY(-135px);
 		}
 		ul:nth-child(3) {
 			position: absolute;
 			top: 35%;
-			right: -150px;
+			left: 270px;
+		}
+		@media all and (max-width: 320px) {
+			background-position: bottom;
 		}
 		@media (max-width: 1150px) {
 			h2 {
@@ -56,52 +84,56 @@
 				transform: translateY(-135px);
 			}
 		}
-		@media all and (max-width: 320px) {
-			ul, ul:nth-child(2), ul:nth-child(3) {
-				transform: translateX(0px) translateY(-70px);
-				padding-left: 0;
-				min-width: 0;
-			}
-		}
 	}
 	#school-partners {
 		background: url(../assets/sketch-eraser.png) no-repeat;
-		background-position: 38vw 3000px;
+		background-position: 750px 2251px;
 		background-size: 300px;
-		padding-bottom: 550px;
+		min-height: 2878px;
+		margin-bottom: 200px;
 		position: relative;
+		padding: 0 6vw;
 		@media all and (max-width: 320px) {
 			background-position: bottom;
 		}
 		h2 {
 			margin-bottom: -80px;
 		}
+		ul {
+			width: 410px;
+			@media all and (max-width: 368px) {
+				width: 315px;
+			}
+			@media all and (max-width: 527px) {
+				padding: 0;
+				width: 100%;
+			}
+			@media all and (max-width: 1120px) {
+				margin-bottom: 0;
+			}
+		}
 		ul:nth-child(3) {
 			position: absolute;
 			top: 31%;
-			right: 0;
+			left: 550px;
 		}
 		ul:nth-child(4) {
 			position: relative;
-			top: 400px;
+			top: 470px;
+		}
+		@media all and (max-width: 1120px) {
+			ul:nth-child(3), ul:nth-child(4) {
+				position: static;
+				margin: 0;
+			}
 		}
 		@media all and (max-width: 320px) {
 			ul, ul:nth-child(3), ul:nth-child(4) {
 				transform: translateX(0px) translateY(40px);
 				padding-left: 0;
 				margin: 0;
-				min-width: 0;
 				position: static;
 			}
-		}
-	}
-	ul {
-		list-style: none;
-		min-width: 315px;
-		li {
-		}
-		p {
-			margin: 0;
 		}
 	}
 }
