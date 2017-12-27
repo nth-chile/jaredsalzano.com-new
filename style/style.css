@@ -733,9 +733,14 @@ nav {
   #students #race {
     height: 660px; }
     #students #race img {
-      left: 100px;
-      margin-top: 128px;
-      width: 55%; }
+      left: 10px;
+      box-sizing: border-box;
+      padding: 0 10px;
+      margin-top: 60px;
+      width: 100%; }
+      @media all and (max-width: 460px) {
+        #students #race img {
+          margin-top: 160px; } }
     #students #race .pie-slice:nth-child(2) {
       left: 217px;
       top: 36px; }
@@ -757,9 +762,12 @@ nav {
   #students #gender {
     height: 626px; }
     #students #gender img {
-      left: 150px;
-      margin-top: 80px;
-      width: 302px; }
+      left: 80px;
+      margin-top: 10px;
+      width: 70%; }
+      @media all and (max-width: 460px) {
+        #students #gender img {
+          margin-top: 110px; } }
     #students #gender .pie-slice:nth-child(2) {
       left: 277px;
       top: -6px; }
@@ -772,9 +780,14 @@ nav {
   #students #english {
     height: 714px; }
     #students #english img {
-      left: 94px;
+      left: 0px;
+      box-sizing: border-box;
+      padding: 20px;
       margin-top: 60px;
-      width: 328px; }
+      width: 100%; }
+      @media all and (max-width: 460px) {
+        #students #english img {
+          margin-top: 160px; } }
     #students #english .pie-slice:nth-child(2) {
       left: -10px;
       top: 207px; }

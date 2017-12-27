@@ -31,9 +31,14 @@
 	#race {
 		height: 660px;
 		img {
-			left: 100px;
-			margin-top: 128px;
-			width: 55%;
+			left: 10px;
+			box-sizing: border-box;
+			padding: 0 10px;
+			margin-top: 60px;
+			width: 100%;
+			@media all and (max-width: 460px) {
+				margin-top: 160px;
+			}
 		}
 		.pie-slice:nth-child(2) {
 			left: 217px;
@@ -63,9 +68,12 @@
 	#gender {
 		height: 626px;
 		img {
-			left: 150px;
-			margin-top: 80px;
-			width: 302px;
+			left: 80px;
+			margin-top: 10px;
+			width: 70%;
+			@media all and (max-width: 460px) {
+				margin-top: 110px;
+			}
 		}
 		.pie-slice:nth-child(2) {
 			left: 277px;
@@ -83,9 +91,14 @@
 	#english {
 		height: 714px;
 		img {
-			left: 94px;
-    		margin-top: 60px;
-			width: 328px;
+			left: 0px;
+			box-sizing: border-box;
+			padding: 20px;
+    	margin-top: 60px;
+			width: 100%;
+			@media all and (max-width: 460px) {
+				margin-top: 160px;
+			}
 		}
 		.pie-slice:nth-child(2) {
 			left: -10px;
