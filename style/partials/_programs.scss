@@ -19,6 +19,7 @@
 	margin: 0 auto;
 	max-width: 891px;
 	padding-top: 50px;
+	white-space: nowrap;
 	@media (min-width: 980.5px) {
 		display: none;
 	}
@@ -40,8 +41,8 @@
 			display: inline-block;
 			white-space: normal;
 		}
-		.copy--20--futura {
-			margin-left: 14px;
+		.copy--big--numbers {
+			display: block;
 		}
 	}
 }
@@ -99,7 +100,7 @@
 				width: calc(100% - 22%);
 			}
 			@media (min-width: 980.5px) {
-				margin-left: 60px;
+				margin-left: 45px;
 			}
 		}
 	}

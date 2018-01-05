@@ -21,6 +21,15 @@ body {
   font-size: 20px;
   line-height: 28px; }
 
+.border-link {
+  border-bottom: solid 2px rgba(0, 0, 0, 0.48);
+  padding-bottom: -2px;
+  text-decoration: none; }
+  .border-link:hover, .border-link:focus {
+    color: #171912;
+    border-color: #171912;
+    padding-bottom: 2px; }
+
 .copy--20--bebas {
   font-family: BebasNeue;
   font-size: 20px;
@@ -54,6 +63,9 @@ h2 {
   font-size: 90px;
   line-height: 80px;
   letter-spacing: -1.5px; }
+
+h5 {
+  font-weight: normal; }
 
 h6 {
   color: rgba(0, 0, 0, 0.48);
@@ -127,18 +139,17 @@ footer {
   footer h5 {
     margin: 188px 0 -20px; }
 
+#programs footer h5 {
+  margin-top: 56px; }
+
 nav {
   margin: 0 16vw 0 14vw;
   width: calc(100% - 30vw); }
 
-.border-link {
-  border-bottom: solid 2px rgba(0, 0, 0, 0.48);
-  text-decoration: none; }
-
 .link-row__box {
   border-right: 1px solid rgba(0, 0, 0, 0.25);
   display: inline-block;
-  padding: 15px 20px; }
+  padding: 5px 20px; }
   .link-row__box:last-child {
     border-right: none; }
   @media (max-width: 368px) {
@@ -167,6 +178,8 @@ nav {
   transform: translateX(-7vw) translateY(6vw);
   height: 21.6vw;
   width: 16.8vw; }
+  #nav__link__kendra:hover {
+    transform: scale(1.05) rotate(5deg) translateX(-6.5vw) translateY(6.5vw); }
 
 #nav__link__financials {
   background: url(../assets/nav-financials@2x.png) no-repeat;
@@ -175,6 +188,8 @@ nav {
   transform: translateX(-3.5vw);
   height: 13vw;
   width: 19vw; }
+  #nav__link__financials:hover {
+    transform: scale(1.05) rotate(5deg) translateX(-3.5vw); }
 
 #nav__link__our-team {
   background: url(../assets/nav-ourteam@2x.png) no-repeat;
@@ -183,6 +198,8 @@ nav {
   transform: translateX(-4vw) translateY(0.5vw);
   height: 15.5vw;
   width: 11.5vw; }
+  #nav__link__our-team:hover {
+    transform: scale(1.05) rotate(5deg) translateX(-4vw) translateY(1vw); }
 
 #nav__link__our-students {
   background: url(../assets/nav-students@2x.png) no-repeat;
@@ -190,6 +207,8 @@ nav {
   transform: translateY(1vw);
   height: 19vw;
   width: 14vw; }
+  #nav__link__our-students:hover {
+    transform: scale(1.05) rotate(5deg) translateY(1vw); }
 
 #nav__link__programs {
   background: url(../assets/nav-programs@2x.png) no-repeat;
@@ -198,6 +217,8 @@ nav {
   transform: translateY(-3vw);
   height: 14vw;
   width: 16vw; }
+  #nav__link__programs:hover {
+    transform: scale(1.05) rotate(5deg) translateY(-3vw); }
 
 #nav__link__partners {
   background: url(../assets/nav-partners@2x.png) no-repeat;
@@ -206,6 +227,8 @@ nav {
   transform: translateY(-2vw);
   height: 16.6vw;
   width: 15vw; }
+  #nav__link__partners:hover {
+    transform: scale(1.05) rotate(5deg) translateY(-2vw); }
 
 #nav__link__our-supporters {
   background: url(../assets/nav-supporters@2x.png) no-repeat;
@@ -214,6 +237,8 @@ nav {
   transform: translateX(2vw) translateY(-2vw);
   height: 16vw;
   width: 15vw; }
+  #nav__link__our-supporters:hover {
+    transform: scale(1.05) rotate(5deg) translateX(2vw) translateY(-2vw); }
 
 @media all and (max-width: 660px) {
   nav {
@@ -222,49 +247,49 @@ nav {
 
   #nav__link__kendra {
     margin-left: 4vw;
-    transform: translateX(-7vw) translateY(9vw);
-    height: 34.56vw;
-    width: 26.88vw; }
+    transform: translateX(-5vw) translateY(10vw);
+    height: 45.36vw;
+    width: 35.28vw; }
 
   #nav__link__financials {
     margin-left: 0vw;
     transform: translateX(0vw);
-    height: 20.8vw;
-    width: 30.4vw; }
+    height: 27.3vw;
+    width: 39.9vw; }
 
   #nav__link__our-team {
     margin-left: 4vw;
     margin-top: 4vw;
-    transform: translateX(-4vw) translateY(0.5vw);
-    height: 24.8vw;
-    width: 18.4vw; }
+    transform: translateX(-7vw) translateY(0.5vw);
+    height: 35.6vw;
+    width: 26.45vw; }
 
   #nav__link__our-students {
     margin-top: 4vw;
-    transform: translateY(1vw);
-    height: 30.4vw;
-    width: 22.4vw; }
+    transform: translateX(7vw) translateY(1vw);
+    height: 39.9vw;
+    width: 29.4vw; }
 
   #nav__link__programs {
     margin-left: 1vw;
     margin-top: 4vw;
-    transform: translateY(-3vw);
-    height: 22.4vw;
-    width: 25.6vw; }
+    transform: translateX(-5vw) translateY(-3vw);
+    height: 29.4vw;
+    width: 33.6vw; }
 
   #nav__link__partners {
     margin-left: 3vw;
     margin-top: 8vw;
-    transform: translateY(-2vw);
-    height: 26.56vw;
-    width: 24vw; }
+    transform: translateX(4vw) translateY(-2vw);
+    height: 34.8vw;
+    width: 31.5vw; }
 
   #nav__link__our-supporters {
     margin-left: 1vw;
     margin-top: 8vw;
     transform: translateX(2vw) translateY(-2vw);
-    height: 25.6vw;
-    width: 24vw; } }
+    height: 33.6vw;
+    width: 31.5vw; } }
 #home {
   background-color: #f7f6f4; }
 
@@ -461,65 +486,58 @@ nav {
   #stat__active-volunteers,
   #stat__programming-hours,
   #stat__teachers-served,
-  #stat__programming-hours,
-  #stat__teachers-served,
   #stat__writing-sessions,
   #stat__schools,
   #stat__publications,
   #stat__field-trips {
-    height: auto;
-    margin-bottom: 8vw; }
+    left: -18vw;
+    height: 200px;
+    margin-bottom: 10px; }
+    #stat__students-served img,
+    #stat__zipcodes img,
+    #stat__active-volunteers img,
+    #stat__programming-hours img,
+    #stat__teachers-served img,
+    #stat__writing-sessions img,
+    #stat__schools img,
+    #stat__publications img,
+    #stat__field-trips img {
+      transform: scale(0.7); }
+    #stat__students-served > div,
+    #stat__zipcodes > div,
+    #stat__active-volunteers > div,
+    #stat__programming-hours > div,
+    #stat__teachers-served > div,
+    #stat__writing-sessions > div,
+    #stat__schools > div,
+    #stat__publications > div,
+    #stat__field-trips > div {
+      margin: 0 20vw; }
 
-  #stat__students-served {
-    left: -10vw; }
-    #stat__students-served > div {
-      margin: 0 94px;
-      top: -170px; }
+  #stat__students-served > div {
+    top: -170px; }
 
-  #stat__zipcodes {
-    left: -10vw; }
-    #stat__zipcodes > div {
-      margin: 0 94px;
-      top: -170px; }
-
-  #stat__active-volunteers {
-    left: -10vw; }
-    #stat__active-volunteers > div {
-      margin: 0 94px; }
-
-  #stat__programming-hours {
-    left: -10vw; }
-    #stat__programming-hours > div {
-      margin: 0 94px; }
-
-  #stat__teachers-served {
-    left: -10vw; }
-    #stat__teachers-served > div {
-      margin: 0 94px; }
+  #stat__zipcodes > div {
+    top: -170px; }
 
   #stat__writing-sessions {
-    left: -10vw; }
-    #stat__writing-sessions > div {
-      margin: 0 94px; }
+    transform: translateY(-90px); }
     #stat__writing-sessions .copy--20--futura {
       width: 200px; }
 
-  #stat__schools {
-    left: -10vw; }
-    #stat__schools > div {
-      margin: 0 94px; }
-
-  #stat__publications {
-    left: -10vw; }
-    #stat__publications > div {
-      margin: 0 94px; }
-
-  #stat__field-trips {
-    left: -10vw; }
-    #stat__field-trips img {
-      margin-left: -30px; }
-    #stat__field-trips > div {
-      margin: 0 94px; } }
+  #stat__field-trips img {
+    margin-left: -30px; } }
+@media all and (max-width: 400px) {
+  #stat__students-served .copy--20--futura,
+  #stat__zipcodes .copy--20--futura,
+  #stat__active-volunteers .copy--20--futura,
+  #stat__programming-hours .copy--20--futura,
+  #stat__teachers-served .copy--20--futura,
+  #stat__writing-sessions .copy--20--futura,
+  #stat__schools .copy--20--futura,
+  #stat__publications .copy--20--futura,
+  #stat__field-trips .copy--20--futura {
+    width: 100px; } }
 #letter {
   background-color: #f28460; }
   #letter h5 {
@@ -853,7 +871,8 @@ nav {
 .number-items-boxes--mobile {
   margin: 0 auto;
   max-width: 891px;
-  padding-top: 50px; }
+  padding-top: 50px;
+  white-space: nowrap; }
   @media (min-width: 980.5px) {
     .number-items-boxes--mobile {
       display: none; } }
@@ -874,8 +893,8 @@ nav {
     .number-items-boxes--mobile .number-items-box div {
       display: inline-block;
       white-space: normal; }
-    .number-items-boxes--mobile .number-items-box .copy--20--futura {
-      margin-left: 14px; }
+    .number-items-boxes--mobile .number-items-box .copy--big--numbers {
+      display: block; }
 
 .number-items-boxes {
   margin: 0 auto;
@@ -926,7 +945,7 @@ nav {
         width: calc(100% - 22%); } }
     @media (min-width: 980.5px) {
       .programs__program .programs__program__body .copy--16--bookmania {
-        margin-left: 60px; } }
+        margin-left: 45px; } }
 .programs__program .programs__program__statistic {
   margin-bottom: 70px; }
 

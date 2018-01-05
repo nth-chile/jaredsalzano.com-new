@@ -207,61 +207,50 @@
 	#stat__active-volunteers,
 	#stat__programming-hours,
 	#stat__teachers-served,
+	#stat__writing-sessions,
+	#stat__schools,
+	#stat__publications,
+	#stat__field-trips {
+		left: -18vw;
+		height: 200px;
+		img {
+			transform: scale(.7);
+		}
+		margin-bottom: 10px;
+		& > div { margin: 0 20vw; }
+	}
+	#stat__students-served {
+		& > div {
+			top: -170px;
+		}
+	}
+	#stat__zipcodes {
+		& > div {
+			top: -170px;
+		}
+	}
+	#stat__writing-sessions	{
+		transform: translateY(-90px);
+		.copy--20--futura {
+			width: 200px;
+		}
+	}
+	#stat__field-trips img {
+		margin-left: -30px;
+	}
+}
+@media all and (max-width: 400px) {
+	#stat__students-served,
+	#stat__zipcodes,
+	#stat__active-volunteers,
 	#stat__programming-hours,
 	#stat__teachers-served,
 	#stat__writing-sessions,
 	#stat__schools,
 	#stat__publications,
 	#stat__field-trips {
-		height: auto;
-		margin-bottom: 8vw;
-	}
-	#stat__students-served {
-		left: -10vw;
-		& > div {
-			margin: 0 94px;
-			top: -170px;
-		}
-	}
-	#stat__zipcodes {
-		left: -10vw;
-		& > div {
-			margin: 0 94px;
-			top: -170px;
-		}
-	}
-	#stat__active-volunteers {
-		left: -10vw;
-		& > div {	margin: 0 94px; }
-	}
-	#stat__programming-hours {
-		left: -10vw;
-		& > div {	margin: 0 94px; }
-	}
-	#stat__teachers-served {
-		left: -10vw;
-		& > div {	margin: 0 94px; }
-	}
-	#stat__writing-sessions {
-		left: -10vw;
-		& > div {	margin: 0 94px; }
 		.copy--20--futura {
-			width: 200px;
+			width: 100px;
 		}
-	}
-	#stat__schools {
-		left: -10vw;
-		& > div {	margin: 0 94px; }
-	}
-	#stat__publications {
-		left: -10vw;
-		& > div {	margin: 0 94px; }
-	}
-	#stat__field-trips {
-		left: -10vw;
-		img {
-			margin-left: -30px;
-		}
-		& > div {	margin: 0 94px; }
 	}
 }

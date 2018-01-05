@@ -5,18 +5,15 @@ footer {
 		margin: 188px 0 -20px;
 	}
 }
+#programs footer h5 { margin-top: 56px; }
 nav {
 	margin: 0 16vw 0 14vw;
 	width: calc(100% - 30vw);
 }
-.border-link {
-	border-bottom: solid 2px rgba(0, 0, 0, 0.48);
-	text-decoration: none;
-}
 .link-row__box {
 	border-right: 1px solid rgba(0, 0, 0, 0.25);
 	display: inline-block;
-	padding: 15px 20px;
+	padding: 5px 20px;
 	&:last-child {
 		border-right: none;
 	}
@@ -44,6 +41,9 @@ nav {
 	background-size: contain;
 	margin-left: 4vw;
 	transform: translateX(-7vw) translateY(6vw);
+	&:hover {
+	  transform: scale(1.05) rotate(5deg) translateX(-6.5vw) translateY(6.5vw);
+	}
 	height: 21.6vw;
 	width: 16.8vw;
 }
@@ -52,6 +52,9 @@ nav {
 	background-size: contain;
 	margin-left: 0vw;
 	transform: translateX(-3.5vw);
+	&:hover {
+	  transform: scale(1.05) rotate(5deg) translateX(-3.5vw);
+	}
 	height: 13vw;
 	width: 19vw;
 }
@@ -60,6 +63,9 @@ nav {
 	background-size: contain;
 	margin-left: 4vw;
 	transform: translateX(-4vw) translateY(0.5vw);
+	&:hover {
+	  transform: scale(1.05) rotate(5deg) translateX(-4vw) translateY(1vw);
+	}
 	height: 15.5vw;
 	width: 11.5vw;
 }
@@ -67,6 +73,9 @@ nav {
 	background: url(../assets/nav-students@2x.png) no-repeat;
 	background-size: contain;
 	transform: translateY(1vw);
+	&:hover {
+	  transform: scale(1.05) rotate(5deg) translateY(1vw);
+	}
 	height: 19vw;
 	width: 14vw;
 }
@@ -75,6 +84,9 @@ nav {
 	background-size: contain;
 	margin-left: 1vw;
 	transform: translateY(-3vw);
+	&:hover {
+	  transform: scale(1.05) rotate(5deg) translateY(-3vw);
+	}
 	height: 14vw;
 	width: 16vw;
 }
@@ -83,6 +95,9 @@ nav {
 	background-size: contain;
 	margin-left: 3vw;
 	transform: translateY(-2vw);
+	&:hover {
+	  transform: scale(1.05) rotate(5deg) translateY(-2vw);
+	}
 	height: 16.6vw;
 	width: 15vw;
 }
@@ -91,6 +106,9 @@ nav {
 	background-size: contain;
 	margin-left: 1vw;
 	transform: translateX(2vw) translateY(-2vw);
+	&:hover {
+	  transform: scale(1.05) rotate(5deg) translateX(2vw) translateY(-2vw);
+	}
 	height: 16vw;
 	width: 15vw;
 }
@@ -102,48 +120,48 @@ nav {
 	}
 	#nav__link__kendra {
 		margin-left: 4vw;
-		transform: translateX(-7vw) translateY(9vw);
-		height: 34.56vw;
-		width: 26.88vw;
+		transform: translateX(-5vw) translateY(10vw);
+		height: 45.36vw;
+		width: 35.28vw;
 	}
 	#nav__link__financials {
 		margin-left: 0vw;
 		transform: translateX(0vw);
-		height: 20.8vw;
-		width: 30.4vw;
+		height: 27.3vw;
+		width: 39.9vw;
 	}
 	#nav__link__our-team {
 		margin-left: 4vw;
 		margin-top: 4vw;
-		transform: translateX(-4vw) translateY(0.5vw);
-		height: 24.8vw;
-		width: 18.4vw;
+		transform: translateX(-7vw) translateY(0.5vw);
+		height: 35.6vw;
+		width: 26.45vw;
 	}
 	#nav__link__our-students {
 		margin-top: 4vw;
-		transform: translateY(1vw);
-		height: 30.4vw;
-		width: 22.4vw;
+		transform: translateX(7vw) translateY(1vw);
+		height: 39.9vw;
+		width: 29.4vw;
 	}
 	#nav__link__programs {
 		margin-left: 1vw;
 		margin-top: 4vw;
-		transform: translateY(-3vw);
-		height: 22.4vw;
-		width: 25.6vw;
+		transform: translateX(-5vw) translateY(-3vw);
+		height: 29.4vw;
+		width: 33.6vw;
 	}
 	#nav__link__partners {
 		margin-left: 3vw;
 		margin-top: 8vw;
-		transform: translateY(-2vw);
-		height: 26.56vw;
-		width: 24vw;
+		transform: translateX(4vw) translateY(-2vw);
+		height: 34.8vw;
+		width: 31.5vw;
 	}
 	#nav__link__our-supporters {
 		margin-left: 1vw;
 		margin-top: 8vw;
 		transform: translateX(2vw) translateY(-2vw);
-		height: 25.6vw;
-		width: 24vw;
+		height: 33.6vw;
+		width: 31.5vw;
 	}
 }
