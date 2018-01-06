@@ -4,6 +4,15 @@
 		padding-bottom: 187px;
 		margin-bottom: 113px;
 	}
+	#_826link-1 {
+		background: url(../assets/826logo-programs@2x.png) no-repeat;
+		background-size: contain;
+		display: block;
+		margin: 0 auto;
+		height: 99px;
+		transform: translateX(15px) translateY(5px);
+		width: 115px;
+	}
 }
 .books {
 	margin: 0 auto;
@@ -15,6 +24,9 @@
 	height: 21vw;
 	margin: 1vw;
 }
+.copy--big--numbers--startswithone {
+	transform: translateX(-10px);
+}
 .number-items-boxes--mobile {
 	margin: 0 auto;
 	max-width: 891px;
@@ -24,13 +36,10 @@
 		display: none;
 	}
 	.number-items-box {
-		@media (max-width: 489px) {
-			text-align: left;
-			padding-left: 14%;
-			&:first-child {
-				padding-left: 11%;
-			}
-		}
+		display: inline-block;
+		min-width: 0;
+		text-align: left;
+		vertical-align: text-top;
 		@media (min-width: 489px) {
 			display: inline-block;
 		}
@@ -114,6 +123,16 @@
 #astw {
 	margin-bottom: 190px;
 	.programs__program__title {max-width: 678px;}
+	@media all and (min-width: 540px) {
+		.programs__program__title.mobile {
+			display:none;
+		}
+	}
+	@media all and (max-width: 539.5px) {
+		.programs__program__title:not(.mobile) {
+			display: none;
+		}
+	}
 }
 #fieldtrips {
 	margin-bottom: 102px;
@@ -130,4 +149,12 @@
 #publishing {
 	margin-bottom: 185px;
 	.programs__program__title {max-width: 270px;}
+	@media all and (max-width: 539.5px) {
+		.number-items-boxes--mobile {
+			padding-left: 11vw;
+		}
+		.number-items-box {
+			display: block;
+		}
+	}
 }

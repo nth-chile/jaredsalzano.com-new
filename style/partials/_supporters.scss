@@ -1,11 +1,22 @@
 #supporters {
 	background-color: $light-green;
+	#_826link-1 {
+		background: url(../assets/826logo-supporters@2x.png) no-repeat;
+		background-size: contain;
+		display: block;
+		margin: 0 auto;
+		height: 99px;
+		transform: translateX(10px) translateY(5px);
+		width: 115px;
+	}
 	.list-section {
 		margin: 0 19vw;
 		h2 {
 			font-weight: normal;
 			margin-bottom: -50px;
+			position: relative;
 			text-align: left;
+			z-index: -1;
 		}
 	}
 	h2 {
@@ -21,30 +32,46 @@
 		}
 	}
 	#fivek {
-		padding-bottom: 300px;
+		padding-bottom: 500px;
 	}
 	#fivehundred {
 		margin-top: -400px;
 	}
 	#gt-onehundred {
 		margin-top: -400px;
+		h2 {
+			@media all and (min-width: 829.5px) {
+				transform: translateX(-400px);
+			}
+		}
 		ul:not(:nth-of-type(1)) {
 			margin-top: -400px;
 		}
+		ul:nth-of-type(1) {
+			@media all and (min-width: 829.5px) {
+				transform: translateX(-500px);
+			}
+		}
 		ul:nth-of-type(2) {
+			transform: translateX(-100px) translateY(350px);
+		}
+		ul:nth-of-type(3) {
 			@media all and (max-width: 1150px) {
 				transform: translateX(-50vw);
 			}
 			transform: translateX(-43vw);
 		}
-		ul:nth-of-type(3) {
+		ul:nth-of-type(4) {
 			@media all and (min-width: 1150px) {
 				transform: translateX(2vw);
 			}
 		}
-		ul:nth-of-type(4) {
+		ul:nth-of-type(5) {
 			@media all and (max-width: 1150px) {
 				transform: translateX(-43vw);
+			}
+			@media all and (max-width: 829.5px) {
+				transform: none;
 			}
 			transform: translateX(-27vw);
 		}
@@ -52,7 +79,10 @@
 	#fivek {
 		background: url(../assets/sketch-calculator@2x.png) no-repeat;
 		background-size: 450px;
-		background-position: bottom right 100px;
+		@media all and (max-width: 1120px) {
+			background-position: bottom right 100px;
+		}
+		background-position: bottom 400px right;
 		transform: translateX(11vw);
 	}
 	#tenk, #onek {
@@ -90,7 +120,7 @@
 	#gt-onehundred {
 		background: url(../assets/sketch-sharpener@2x.png) no-repeat;
 		background-size: 400px;
-		background-position: 0 700px;
+		background-position: 0 800px;
 		padding-left: 39vw;
 	}
 	#in-kind {
@@ -105,6 +135,10 @@
 		display: inline-block;
 		margin-bottom: 0;
 		padding-right: 30px;
+		@media all and (max-width: 400px) {
+			font-size: 70px;
+			line-height: 60px;
+		}
 	}
 	ul {
 		display: inline-block;
@@ -133,7 +167,7 @@
 			margin: 0;
 			width: auto;
 			h2 {
-				transform: translateX(200px);
+				transform: translateX(20vw);
 			}
 		}
 		ul {

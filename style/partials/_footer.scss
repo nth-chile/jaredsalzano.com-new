@@ -6,6 +6,7 @@ footer {
 	}
 }
 #programs footer h5 { margin-top: 56px; }
+#team footer h5 { margin-top: 96px; }
 nav {
 	margin: 0 16vw 0 14vw;
 	width: calc(100% - 30vw);
@@ -123,23 +124,35 @@ nav {
 		transform: translateX(-5vw) translateY(10vw);
 		height: 45.36vw;
 		width: 35.28vw;
+		&:hover {
+		  transform: scale(1.05) rotate(5deg) translateX(-4vw) translateY(9.5vw);
+		}
 	}
 	#nav__link__financials {
 		margin-left: 0vw;
 		transform: translateX(0vw);
 		height: 27.3vw;
 		width: 39.9vw;
+		&:hover {
+		  transform: scale(1.05) rotate(5deg) translateX(-0.5vw);
+		}
 	}
 	#nav__link__our-team {
 		margin-left: 4vw;
 		margin-top: 4vw;
 		transform: translateX(-7vw) translateY(0.5vw);
+		&:hover {
+		  transform: scale(1.05) rotate(5deg) translateX(-6vw) translateY(1vw);
+		}
 		height: 35.6vw;
 		width: 26.45vw;
 	}
 	#nav__link__our-students {
 		margin-top: 4vw;
 		transform: translateX(7vw) translateY(1vw);
+		&:hover {
+		  transform: scale(1.05) rotate(5deg) translateX(7vw) translateY(1vw);
+		}
 		height: 39.9vw;
 		width: 29.4vw;
 	}
@@ -147,6 +160,9 @@ nav {
 		margin-left: 1vw;
 		margin-top: 4vw;
 		transform: translateX(-5vw) translateY(-3vw);
+		&:hover {
+			transform: scale(1.05) rotate(5deg) translateX(-5vw) translateY(-3vw);
+		}
 		height: 29.4vw;
 		width: 33.6vw;
 	}
@@ -154,6 +170,9 @@ nav {
 		margin-left: 3vw;
 		margin-top: 8vw;
 		transform: translateX(4vw) translateY(-2vw);
+		&:hover {
+		  transform: scale(1.05) rotate(5deg) translateX(3vw) translateY(-2vw);
+		}
 		height: 34.8vw;
 		width: 31.5vw;
 	}
@@ -161,6 +180,9 @@ nav {
 		margin-left: 1vw;
 		margin-top: 8vw;
 		transform: translateX(2vw) translateY(-2vw);
+		&:hover {
+		  transform: scale(1.05) rotate(5deg) translateX(2vw) translateY(-2vw);
+		}
 		height: 33.6vw;
 		width: 31.5vw;
 	}

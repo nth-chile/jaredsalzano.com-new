@@ -1,5 +1,14 @@
 #team {
 	background-color: $green;
+	#_826link-1 {
+		background: url(../assets/826logo-team@2x.png) no-repeat;
+		background-size: contain;
+		display: block;
+		margin: 0 auto;
+		height: 99px;
+		transform: translateX(15px) translateY(5px);
+		width: 115px;
+	}
 	.list-section {
 		margin: 11%;
 		@media (min-width: 830px) {
@@ -126,7 +135,10 @@
 		margin-bottom: 173px;
 	}
 	@media all and (max-width: 489px) {
-		margin-bottom: 82vw;
+		margin-bottom: 50vw;
+	}
+	@media all and (max-width: 389px) {
+		margin-bottom: 60vw;
 	}
 	-webkit-column-break-inside: avoid;
 	page-break-inside: avoid;
@@ -159,7 +171,7 @@
 		column-count: 2;
 	}
 	@media all and ( max-width: 489px ) {
-		column-count: 1;
+		margin: 0 15vw;
 	}
 }
 

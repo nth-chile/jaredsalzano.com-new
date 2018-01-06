@@ -98,24 +98,27 @@ header {
 	a {
 		transform: translateX(10px)
 	}
+}
+
+header {
+	p {
+		margin-bottom: 36px;
+		transform: translateY(-19px);
+	}
+}
+#home header {
 	p {
 		transform: translateY(-35px);
 	}
 }
 
+ul {
+	max-width: 90vw;
+}
+
 
 
 /*** IDS ***/
-
-// section titles
-#_826link-1 {
-	background: url(../assets/826-logo@2x.png) no-repeat;
-	background-size: contain;
-	display: block;
-	margin: 0 auto;
-	height: 106px;
-	width: 124px;
-}
 
 
 /*** MODIFIERS ***/
@@ -161,13 +164,6 @@ header {
 	max-width: 666px;
 	margin: 0 auto;
 }
-// .shrinkable {
-// 	padding: 0 11vw;
-// 	width: 100%;
-// 	box-sizing: content-box;
-// }
-
-//mate .shrinkable
 .shrinkable {
 	padding: 0 11%;
 	width: calc(100% - 22%);

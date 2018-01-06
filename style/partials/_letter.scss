@@ -3,16 +3,34 @@
 	h5 {
 		margin: 70px 0 0 0;
 	}
+	#_826link-1 {
+		background: url(../assets/826logo-about@2x.png) no-repeat;
+		background-size: contain;
+		display: block;
+		margin: 0 auto;
+		height: 90px;
+		width: 105px;
+	}
 }
 #letter-from-kendra {
 	width: 24vw;
 	transform: translateX(4vw) translateY(-4vw);
+	@media all and (max-width: 527px) {
+		transform: translateX(-11vw);
+		width: 40vw;
+	}
 }
 #letter-from-kendra-img {
 	width: 52vw;
 	transform: translateX(-4vw);
 	position: relative;
 	z-index: -1;
+	@media all and (max-width: 527px) {
+		display: block;
+		margin: 0 auto;
+		transform: translateX(5vw) translateY(-10vw);
+		width: 70vw;
+	}
 }
 #letter main {
 	margin-bottom: 217px;

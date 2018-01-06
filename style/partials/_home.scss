@@ -1,4 +1,14 @@
-#home {background-color: $offwhite;}
+#home {
+	background-color: $offwhite;
+	#_826link-1 {
+		background: url(../assets/826-logo@2x.png) no-repeat;
+		background-size: contain;
+		display: block;
+		margin: 0 auto;
+		height: 106px;
+		width: 124px;
+	}
+}
 .stats {
 	position: relative;
 	margin-top: 90px;

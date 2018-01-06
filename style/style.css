@@ -80,18 +80,18 @@ header {
   padding: 55px 0 20px; }
   header a {
     transform: translateX(10px); }
-  header p {
-    transform: translateY(-35px); }
+
+header p {
+  margin-bottom: 36px;
+  transform: translateY(-19px); }
+
+#home header p {
+  transform: translateY(-35px); }
+
+ul {
+  max-width: 90vw; }
 
 /*** IDS ***/
-#_826link-1 {
-  background: url(../assets/826-logo@2x.png) no-repeat;
-  background-size: contain;
-  display: block;
-  margin: 0 auto;
-  height: 106px;
-  width: 124px; }
-
 /*** MODIFIERS ***/
 .bg--blue {
   background-color: #9bc3d9; }
@@ -141,6 +141,9 @@ footer {
 
 #programs footer h5 {
   margin-top: 56px; }
+
+#team footer h5 {
+  margin-top: 96px; }
 
 nav {
   margin: 0 16vw 0 14vw;
@@ -250,12 +253,16 @@ nav {
     transform: translateX(-5vw) translateY(10vw);
     height: 45.36vw;
     width: 35.28vw; }
+    #nav__link__kendra:hover {
+      transform: scale(1.05) rotate(5deg) translateX(-4vw) translateY(9.5vw); }
 
   #nav__link__financials {
     margin-left: 0vw;
     transform: translateX(0vw);
     height: 27.3vw;
     width: 39.9vw; }
+    #nav__link__financials:hover {
+      transform: scale(1.05) rotate(5deg) translateX(-0.5vw); }
 
   #nav__link__our-team {
     margin-left: 4vw;
@@ -263,12 +270,16 @@ nav {
     transform: translateX(-7vw) translateY(0.5vw);
     height: 35.6vw;
     width: 26.45vw; }
+    #nav__link__our-team:hover {
+      transform: scale(1.05) rotate(5deg) translateX(-6vw) translateY(1vw); }
 
   #nav__link__our-students {
     margin-top: 4vw;
     transform: translateX(7vw) translateY(1vw);
     height: 39.9vw;
     width: 29.4vw; }
+    #nav__link__our-students:hover {
+      transform: scale(1.05) rotate(5deg) translateX(7vw) translateY(1vw); }
 
   #nav__link__programs {
     margin-left: 1vw;
@@ -276,6 +287,8 @@ nav {
     transform: translateX(-5vw) translateY(-3vw);
     height: 29.4vw;
     width: 33.6vw; }
+    #nav__link__programs:hover {
+      transform: scale(1.05) rotate(5deg) translateX(-5vw) translateY(-3vw); }
 
   #nav__link__partners {
     margin-left: 3vw;
@@ -283,15 +296,26 @@ nav {
     transform: translateX(4vw) translateY(-2vw);
     height: 34.8vw;
     width: 31.5vw; }
+    #nav__link__partners:hover {
+      transform: scale(1.05) rotate(5deg) translateX(3vw) translateY(-2vw); }
 
   #nav__link__our-supporters {
     margin-left: 1vw;
     margin-top: 8vw;
     transform: translateX(2vw) translateY(-2vw);
     height: 33.6vw;
-    width: 31.5vw; } }
+    width: 31.5vw; }
+    #nav__link__our-supporters:hover {
+      transform: scale(1.05) rotate(5deg) translateX(2vw) translateY(-2vw); } }
 #home {
   background-color: #f7f6f4; }
+  #home #_826link-1 {
+    background: url(../assets/826-logo@2x.png) no-repeat;
+    background-size: contain;
+    display: block;
+    margin: 0 auto;
+    height: 106px;
+    width: 124px; }
 
 .stats {
   position: relative;
@@ -542,16 +566,33 @@ nav {
   background-color: #f28460; }
   #letter h5 {
     margin: 70px 0 0 0; }
+  #letter #_826link-1 {
+    background: url(../assets/826logo-about@2x.png) no-repeat;
+    background-size: contain;
+    display: block;
+    margin: 0 auto;
+    height: 90px;
+    width: 105px; }
 
 #letter-from-kendra {
   width: 24vw;
   transform: translateX(4vw) translateY(-4vw); }
+  @media all and (max-width: 527px) {
+    #letter-from-kendra {
+      transform: translateX(-11vw);
+      width: 40vw; } }
 
 #letter-from-kendra-img {
   width: 52vw;
   transform: translateX(-4vw);
   position: relative;
   z-index: -1; }
+  @media all and (max-width: 527px) {
+    #letter-from-kendra-img {
+      display: block;
+      margin: 0 auto;
+      transform: translateX(5vw) translateY(-10vw);
+      width: 70vw; } }
 
 #letter main {
   margin-bottom: 217px; }
@@ -571,12 +612,28 @@ nav {
   background-color: #edd3f0; }
   #financials header {
     margin-bottom: -60px; }
+  #financials #_826link-1 {
+    background: url(../assets/826logo-financials@2x.png) no-repeat;
+    background-size: contain;
+    display: block;
+    margin: 0 auto;
+    height: 99px;
+    transform: translateX(15px) translateY(5px);
+    width: 115px; }
 
 #title__financials {
   max-width: 511px; }
 
 #team {
   background-color: #91af7f; }
+  #team #_826link-1 {
+    background: url(../assets/826logo-team@2x.png) no-repeat;
+    background-size: contain;
+    display: block;
+    margin: 0 auto;
+    height: 99px;
+    transform: translateX(15px) translateY(5px);
+    width: 115px; }
   #team .list-section {
     margin: 11%; }
     @media (min-width: 830px) {
@@ -688,7 +745,10 @@ nav {
       margin-bottom: 173px; } }
   @media all and (max-width: 489px) {
     .team-members__member {
-      margin-bottom: 82vw; } }
+      margin-bottom: 50vw; } }
+  @media all and (max-width: 389px) {
+    .team-members__member {
+      margin-bottom: 60vw; } }
   .team-members__member img {
     margin-bottom: 25px;
     width: 100%; }
@@ -716,7 +776,7 @@ nav {
       column-count: 2; } }
   @media all and (max-width: 489px) {
     #team-members {
-      column-count: 1; } }
+      margin: 0 15vw; } }
 
 @media (max-width: 1120px) {
   .list-section {
@@ -732,6 +792,13 @@ nav {
   background-color: #b6c0f8; }
   #students h2 {
     font-weight: normal; }
+  #students #_826link-1 {
+    background: url(../assets/826logo-students@2x.png) no-repeat;
+    background-size: contain;
+    display: block;
+    margin: 0 auto;
+    height: 90px;
+    width: 105px; }
   #students i {
     transform: translateY(6px); }
   #students #map {
@@ -746,6 +813,9 @@ nav {
       left: 0; }
     #students section h2 {
       margin: 0; }
+      @media all and (max-width: 460px) {
+        #students section h2 {
+          position: static; } }
     #students section .pie-slice p {
       margin: 0; }
   #students #race {
@@ -758,7 +828,7 @@ nav {
       width: 100%; }
       @media all and (max-width: 460px) {
         #students #race img {
-          margin-top: 160px; } }
+          margin-top: 80px; } }
     #students #race .pie-slice:nth-child(2) {
       left: 217px;
       top: 36px; }
@@ -785,7 +855,7 @@ nav {
       width: 70%; }
       @media all and (max-width: 460px) {
         #students #gender img {
-          margin-top: 110px; } }
+          margin-top: 30px; } }
     #students #gender .pie-slice:nth-child(2) {
       left: 277px;
       top: -6px; }
@@ -805,7 +875,7 @@ nav {
       width: 100%; }
       @media all and (max-width: 460px) {
         #students #english img {
-          margin-top: 160px; } }
+          margin-top: 80px; } }
     #students #english .pie-slice:nth-child(2) {
       left: -10px;
       top: 207px; }
@@ -858,6 +928,14 @@ nav {
   #programs main .bg--blue {
     padding-bottom: 187px;
     margin-bottom: 113px; }
+  #programs #_826link-1 {
+    background: url(../assets/826logo-programs@2x.png) no-repeat;
+    background-size: contain;
+    display: block;
+    margin: 0 auto;
+    height: 99px;
+    transform: translateX(15px) translateY(5px);
+    width: 115px; }
 
 .books {
   margin: 0 auto;
@@ -868,6 +946,9 @@ nav {
   height: 21vw;
   margin: 1vw; }
 
+.copy--big--numbers--startswithone {
+  transform: translateX(-10px); }
+
 .number-items-boxes--mobile {
   margin: 0 auto;
   max-width: 891px;
@@ -877,14 +958,12 @@ nav {
     .number-items-boxes--mobile {
       display: none; } }
   .number-items-boxes--mobile .number-items-box {
+    display: inline-block;
+    min-width: 0;
+    text-align: left;
+    vertical-align: text-top;
     height: 110px;
     padding-right: 30px; }
-    @media (max-width: 489px) {
-      .number-items-boxes--mobile .number-items-box {
-        text-align: left;
-        padding-left: 14%; }
-        .number-items-boxes--mobile .number-items-box:first-child {
-          padding-left: 11%; } }
     @media (min-width: 489px) {
       .number-items-boxes--mobile .number-items-box {
         display: inline-block; } }
@@ -956,6 +1035,12 @@ nav {
   margin-bottom: 190px; }
   #astw .programs__program__title {
     max-width: 678px; }
+  @media all and (min-width: 540px) {
+    #astw .programs__program__title.mobile {
+      display: none; } }
+  @media all and (max-width: 539.5px) {
+    #astw .programs__program__title:not(.mobile) {
+      display: none; } }
 
 #fieldtrips {
   margin-bottom: 102px; }
@@ -976,6 +1061,11 @@ nav {
   margin-bottom: 185px; }
   #publishing .programs__program__title {
     max-width: 270px; }
+  @media all and (max-width: 539.5px) {
+    #publishing .number-items-boxes--mobile {
+      padding-left: 11vw; }
+    #publishing .number-items-box {
+      display: block; } }
 
 #partners {
   background-color: #fde88e; }
@@ -983,6 +1073,13 @@ nav {
     list-style: none; }
     #partners ul p {
       margin: 0; }
+  #partners #_826link-1 {
+    background: url(../assets/826logo-partners@2x.png) no-repeat;
+    background-size: contain;
+    display: block;
+    margin: 0 auto;
+    height: 90px;
+    width: 105px; }
   #partners .list-section {
     box-sizing: border-box;
     margin: 0 auto;
@@ -1095,12 +1192,22 @@ nav {
 
 #supporters {
   background-color: #dded9d; }
+  #supporters #_826link-1 {
+    background: url(../assets/826logo-supporters@2x.png) no-repeat;
+    background-size: contain;
+    display: block;
+    margin: 0 auto;
+    height: 99px;
+    transform: translateX(10px) translateY(5px);
+    width: 115px; }
   #supporters .list-section {
     margin: 0 19vw; }
     #supporters .list-section h2 {
       font-weight: normal;
       margin-bottom: -50px;
-      text-align: left; }
+      position: relative;
+      text-align: left;
+      z-index: -1; }
   #supporters h2 {
     font-weight: normal;
     text-align: left; }
@@ -1111,31 +1218,45 @@ nav {
     #supporters ul p {
       margin: 0; }
   #supporters #fivek {
-    padding-bottom: 300px; }
+    padding-bottom: 500px; }
   #supporters #fivehundred {
     margin-top: -400px; }
   #supporters #gt-onehundred {
     margin-top: -400px; }
+    @media all and (min-width: 829.5px) {
+      #supporters #gt-onehundred h2 {
+        transform: translateX(-400px); } }
     #supporters #gt-onehundred ul:not(:nth-of-type(1)) {
       margin-top: -400px; }
+    @media all and (min-width: 829.5px) {
+      #supporters #gt-onehundred ul:nth-of-type(1) {
+        transform: translateX(-500px); } }
     #supporters #gt-onehundred ul:nth-of-type(2) {
+      transform: translateX(-100px) translateY(350px); }
+    #supporters #gt-onehundred ul:nth-of-type(3) {
       transform: translateX(-43vw); }
       @media all and (max-width: 1150px) {
-        #supporters #gt-onehundred ul:nth-of-type(2) {
+        #supporters #gt-onehundred ul:nth-of-type(3) {
           transform: translateX(-50vw); } }
     @media all and (min-width: 1150px) {
-      #supporters #gt-onehundred ul:nth-of-type(3) {
+      #supporters #gt-onehundred ul:nth-of-type(4) {
         transform: translateX(2vw); } }
-    #supporters #gt-onehundred ul:nth-of-type(4) {
+    #supporters #gt-onehundred ul:nth-of-type(5) {
       transform: translateX(-27vw); }
       @media all and (max-width: 1150px) {
-        #supporters #gt-onehundred ul:nth-of-type(4) {
+        #supporters #gt-onehundred ul:nth-of-type(5) {
           transform: translateX(-43vw); } }
+      @media all and (max-width: 829.5px) {
+        #supporters #gt-onehundred ul:nth-of-type(5) {
+          transform: none; } }
   #supporters #fivek {
     background: url(../assets/sketch-calculator@2x.png) no-repeat;
     background-size: 450px;
-    background-position: bottom right 100px;
+    background-position: bottom 400px right;
     transform: translateX(11vw); }
+    @media all and (max-width: 1120px) {
+      #supporters #fivek {
+        background-position: bottom right 100px; } }
   #supporters #tenk, #supporters #onek {
     transform: translateX(39vw); }
   #supporters #lt-onehundred ul:nth-of-type(2) {
@@ -1161,7 +1282,7 @@ nav {
   #supporters #gt-onehundred {
     background: url(../assets/sketch-sharpener@2x.png) no-repeat;
     background-size: 400px;
-    background-position: 0 700px;
+    background-position: 0 800px;
     padding-left: 39vw; }
   #supporters #in-kind {
     margin-bottom: 200px; }
@@ -1174,6 +1295,10 @@ nav {
     display: inline-block;
     margin-bottom: 0;
     padding-right: 30px; }
+    @media all and (max-width: 400px) {
+      #volunteer-committees h2 {
+        font-size: 70px;
+        line-height: 60px; } }
   #volunteer-committees ul {
     display: inline-block;
     padding: 0 0 0 10px;
@@ -1198,7 +1323,7 @@ nav {
     margin: 0;
     width: auto; }
     #supporters .list-section h2 {
-      transform: translateX(200px); }
+      transform: translateX(20vw); }
   #supporters ul {
     transform: none;
     margin-bottom: 0;

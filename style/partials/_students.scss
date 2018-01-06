@@ -3,6 +3,14 @@
 	h2 {
 		font-weight: normal;
 	}
+	#_826link-1 {
+		background: url(../assets/826logo-students@2x.png) no-repeat;
+		background-size: contain;
+		display: block;
+		margin: 0 auto;
+		height: 90px;
+		width: 105px;
+	}
 	i {
 		transform: translateY(6px);
 	}
@@ -21,6 +29,9 @@
 		}
 		h2 {
 			margin: 0;
+			@media all and (max-width: 460px) {
+				position: static;
+			}
 		}
 		.pie-slice {
 			p {
@@ -37,7 +48,7 @@
 			margin-top: 60px;
 			width: 100%;
 			@media all and (max-width: 460px) {
-				margin-top: 160px;
+				margin-top: 80px;
 			}
 		}
 		.pie-slice:nth-child(2) {
@@ -72,7 +83,7 @@
 			margin-top: 10px;
 			width: 70%;
 			@media all and (max-width: 460px) {
-				margin-top: 110px;
+				margin-top: 30px;
 			}
 		}
 		.pie-slice:nth-child(2) {
@@ -97,7 +108,7 @@
     	margin-top: 60px;
 			width: 100%;
 			@media all and (max-width: 460px) {
-				margin-top: 160px;
+				margin-top: 80px;
 			}
 		}
 		.pie-slice:nth-child(2) {
