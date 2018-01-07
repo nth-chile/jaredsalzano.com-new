@@ -12,6 +12,44 @@
 		transform: translateX(15px) translateY(5px);
 		width: 115px;
 	}
+	section {
+		height: 530px;
+		margin: 0 auto;
+		position: relative;
+		text-align: left;
+		max-width: 400px;
+		& > * {
+			position: absolute;
+		}
+		h2 {
+			font-weight: normal;
+			margin: 0;
+		}
+		.pie-slice {
+			p {
+				margin: 0;
+			}
+		}
+	}
+	#revenue {
+		margin-top: 150px;
+		img {
+			left: 10px;
+			box-sizing: border-box;
+			padding: 0 10px;
+			margin-top: 80px;
+			width: 100%;
+		}
+	}
+	#expenses {
+		img {
+			left: 10px;
+			box-sizing: border-box;
+			padding: 0 10px;
+			margin-top: 60px;
+			width: 100%;
+		}
+	}
 }
 #title__financials {
 	max-width: 511px;

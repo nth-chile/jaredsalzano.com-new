@@ -620,6 +620,33 @@ nav {
     height: 99px;
     transform: translateX(15px) translateY(5px);
     width: 115px; }
+  #financials section {
+    height: 530px;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    max-width: 400px; }
+    #financials section > * {
+      position: absolute; }
+    #financials section h2 {
+      font-weight: normal;
+      margin: 0; }
+    #financials section .pie-slice p {
+      margin: 0; }
+  #financials #revenue {
+    margin-top: 150px; }
+    #financials #revenue img {
+      left: 10px;
+      box-sizing: border-box;
+      padding: 0 10px;
+      margin-top: 80px;
+      width: 100%; }
+  #financials #expenses img {
+    left: 10px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin-top: 60px;
+    width: 100%; }
 
 #title__financials {
   max-width: 511px; }
@@ -820,6 +847,9 @@ nav {
       margin: 0; }
   #students #race {
     height: 660px; }
+    @media all and (max-width: 460px) {
+      #students #race {
+        height: 550px; } }
     #students #race img {
       left: 10px;
       box-sizing: border-box;
@@ -849,6 +879,9 @@ nav {
       top: 355px; }
   #students #gender {
     height: 626px; }
+    @media all and (max-width: 460px) {
+      #students #gender {
+        height: 550px; } }
     #students #gender img {
       left: 80px;
       margin-top: 10px;
@@ -867,6 +900,9 @@ nav {
       top: 337px; }
   #students #english {
     height: 714px; }
+    @media all and (max-width: 460px) {
+      #students #english {
+        height: 550px; } }
     #students #english img {
       left: 0px;
       box-sizing: border-box;

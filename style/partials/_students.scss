@@ -41,6 +41,9 @@
 	}
 	#race {
 		height: 660px;
+		@media all and (max-width: 460px) {
+			height: 550px;
+		}
 		img {
 			left: 10px;
 			box-sizing: border-box;
@@ -78,6 +81,9 @@
 	}
 	#gender {
 		height: 626px;
+		@media all and (max-width: 460px) {
+			height: 550px;
+		}
 		img {
 			left: 80px;
 			margin-top: 10px;
@@ -101,6 +107,9 @@
 	}
 	#english {
 		height: 714px;
+		@media all and (max-width: 460px) {
+			height: 550px;
+		}
 		img {
 			left: 0px;
 			box-sizing: border-box;
