@@ -17,7 +17,7 @@ html, body {
 body {
   text-align: center;
   color: rgba(0, 0, 0, 0.48);
-  font-family: "Futura PT";
+  /* font-family: "Futura PT"; */
   font-size: 20px;
   line-height: 28px; }
 
@@ -31,7 +31,7 @@ body {
     padding-bottom: 2px; }
 
 .copy--20--bebas {
-  font-family: "BebasNeue";
+  /* font-family: "BebasNeue"; */
   font-size: 20px;
   line-height: 20px;
   letter-spacing: 0.2px;
@@ -39,27 +39,27 @@ body {
 
 .copy--16--bookmania {
   color: rgba(0, 0, 0, 0.5);
-  font-family: "Bookmania";
+  /* font-family: "Bookmania"; */
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: -0.1px; }
 
 .copy--20--futura {
   color: rgba(0, 0, 0, 0.48);
-  font-family: "Futura PT";
+  /* font-family: "Futura PT"; */
   font-size: 20px;
   line-height: 28px; }
 
 .copy--big--numbers {
   color: #cf475c;
-  font-family: "BebasNeue";
+  /* font-family: "BebasNeue"; */
   font-size: 72px;
   line-height: 40px;
   letter-spacing: 0px; }
 
 h2 {
   color: white;
-  font-family: "BebasNeue";
+  font-family: "bebas-neue","Haettenschweiler","Arial Narrow Bold", sans-serif;
   font-size: 90px;
   line-height: 80px;
   letter-spacing: -1.5px; }
@@ -69,7 +69,7 @@ h5 {
 
 h6 {
   color: rgba(0, 0, 0, 0.48);
-  font-family: "BebasNeue";
+  font-family: "bebas-neue","Haettenschweiler","Arial Narrow Bold", sans-serif;
   font-size: 20px;
   font-weight: normal;
   line-height: 1;
