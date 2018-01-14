@@ -54,6 +54,7 @@
 		padding-left: 17vw;
 		margin-bottom: 200px;
 		@media all and (max-width: 527px) {
+			background-position: 0 bottom;
 			padding: 0 6vw;
 		}
 		ul {
@@ -79,6 +80,8 @@
 			background-position: bottom;
 		}
 		@media (max-width: 1150px) {
+			& > div {padding-bottom: 130px;}
+			margin-bottom: 70px;
 			h2 {
 				transform: translateX(0);
 			}
@@ -134,6 +137,15 @@
 				position: static;
 				margin: 0;
 			}
+		}
+		@media all and (max-width: 980px) {
+			background-position: right 120px bottom;
+			background-size: 260px;
+			margin-bottom: 20px;
+			padding-bottom: 210px;
+		}
+		@media all and (max-width: 489px) {
+			background-position: center bottom;
 		}
 		@media all and (max-width: 320px) {
 			ul, ul:nth-child(3), ul:nth-child(4) {

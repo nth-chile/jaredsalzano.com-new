@@ -38,7 +38,16 @@
 		margin-top: -400px;
 	}
 	#gt-onehundred {
+		background: url(../assets/sketch-sharpener@2x.png) no-repeat;
+		background-size: 400px;
+		background-position: 0 800px;
+		padding-left: 39vw;
 		margin-top: -400px;
+		@media all and (max-width: 829px) {
+			background-position: 0 bottom;
+			background-size: 280px;
+			padding-bottom: 270px;
+		}
 		h2 {
 			@media all and (min-width: 829.5px) {
 				transform: translateX(-400px);
@@ -80,7 +89,13 @@
 		background: url(../assets/sketch-calculator@2x.png) no-repeat;
 		background-size: 450px;
 		@media all and (max-width: 1120px) {
-			background-position: bottom right 100px;
+			background-position: bottom right 10px;
+			background-size: 320px;
+			padding-bottom: 340px;
+		}
+		@media all and (max-width: 539.5px) {
+			background-size: 230px;
+			padding-bottom: 260px;
 		}
 		background-position: bottom 400px right;
 		transform: translateX(11vw);
@@ -116,12 +131,6 @@
 			margin-top: -420px;
 			transform: translateX(28vw);
 		}
-	}
-	#gt-onehundred {
-		background: url(../assets/sketch-sharpener@2x.png) no-repeat;
-		background-size: 400px;
-		background-position: 0 800px;
-		padding-left: 39vw;
 	}
 	#in-kind {
 		margin-bottom: 200px;

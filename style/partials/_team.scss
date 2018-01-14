@@ -10,9 +10,9 @@
 		width: 115px;
 	}
 	.list-section {
-		margin: 11%;
+		&:not(#staff):not(#associate-board) {margin: 11%;}
 		@media (min-width: 830px) {
-			margin: 19vw;
+			&:not(#staff):not(#associate-board) {margin: 19vw};
 		}
 		h2 {
 			font-weight: normal;
@@ -57,6 +57,11 @@
 	background: url(../assets/sketch-apple@2x.png) no-repeat;
 	background-position: -3vw bottom;
 	background-size: 300px;
+	padding-bottom: 220px;
+	margin: 11% 11% 0 11%;
+	@media all and (min-width: 830px) {
+		margin: 19vw 19vw 0 19vw;
+	}
 	ul {
 		margin: 0 auto;
 		transform: translateY(-115px);
@@ -64,11 +69,15 @@
 			transform: translateY(-85px);
 		}
 	}
-	@media (min-width: 1120px) {
+	@media all and (min-width: 1120px) {
 		background-position: 0vw 5vw;
 		ul {
 			transform: translateX(10vw);
 		}
+	}
+	@media all and (max-width: 731px) {
+		background-size: 220px;
+		padding-bottom: 120px;
 	}
 }
 #directors {
@@ -87,6 +96,11 @@
 #associate-board {
 	background: url(../assets/sketch-ruler@2x.png) no-repeat;
 	background-size: 200px;
+	padding-bottom: 280px;
+	margin: 11% 11% 0 11%;
+	@media (min-width: 830px) {
+		margin: 19vw 19vw 0 19vw;
+	}
 	@media (min-width: 1120px) {
 		h2, ul {
 			transform: translateX(21.5vw);
@@ -94,6 +108,14 @@
 	}
 	@media (max-width: 1120px) {
 		background-position: 3vw bottom;
+	}
+	@media (max-width: 730px) {
+		background-size: 140px;
+		padding-bottom: 130px;
+	}
+	@media (max-width: 520px) {
+		background-size: 110px;
+		padding-bottom: 120px;
 	}
 	h2 {
 		text-align: left;
@@ -172,6 +194,16 @@
 	}
 	@media all and ( max-width: 489px ) {
 		margin: 0 15vw;
+	}
+	.copy--20--bebas, .copy--16--bookmania {
+		display: block;
+	}
+	.copy--20--bebas {
+		line-height: 24px;
+		margin-bottom: 5px;
+	}
+	.copy--16--bookmania {
+		line-height: 1.5;
 	}
 }
 

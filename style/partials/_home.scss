@@ -40,59 +40,67 @@
 		}
 	}
 }
-#hp-grid-1 {
-	width:17vw;
-	position: relative;
-	// margin-left: 3vw;
-	// margin-right: 3vw;
-	top: 6vw;
-}
-#hp-grid-2 {
-	width:26vw;
-	position: relative;
-	// margin-right: 3vw;
-	top: -7vw;
-	left: -1vw;
-}
-#hp-grid-3 {
-	width:26vw;
-	position: relative;
-	// margin-right: 3vw;
-	left: -1vw;
-	top: -2vw;
-}
-#hp-grid-4 {
-	width:24vw;
-	position: relative;
-	// margin-right: 3vw;
-	top: -8vw;
-}
-#hp-grid-5 {
-	width:22vw;
-	position: relative;
-	// margin-left: 3vw;
-	left: -2vw;
-	top: 15vw;
-}
-#hp-grid-6 {
-	width:20vw;
-	position: relative;
-	left: -2vw;
-	top: 15vw;
-}
-#hp-grid-7 {
-	width:26vw;
-	position: relative;
-	top: 22vw;
-}
-#hp-grid-8 {
-	width: 22vw;
-	position: relative;
-	top: 14vw;
-}
 
-#hp-grid__wrap {
+.hp-grid__wrap {
 	margin-bottom: 18vw;
+	img {
+		padding: 10px;
+		box-sizing: border-box;
+	}
+}
+.hp-grid__wrap--desktop {
+	@media all and (min-width: 660.5px) {
+		.hp-grid-1 {
+			width:17vw;
+			position: relative;
+			// margin-left: 3vw;
+			// margin-right: 3vw;
+			top: 6vw;
+		}
+		.hp-grid-2 {
+			width:26vw;
+			position: relative;
+			// margin-right: 3vw;
+			top: -7vw;
+			left: -1vw;
+		}
+		.hp-grid-3 {
+			width:26vw;
+			position: relative;
+			// margin-right: 3vw;
+			left: -1vw;
+			top: -2vw;
+		}
+		.hp-grid-4 {
+			width:24vw;
+			position: relative;
+			// margin-right: 3vw;
+			top: -8vw;
+		}
+		.hp-grid-5 {
+			width:22vw;
+			position: relative;
+			// margin-left: 3vw;
+			left: -2vw;
+			top: 15vw;
+		}
+		.hp-grid-6 {
+			width:20vw;
+			position: relative;
+			left: -2vw;
+			top: 15vw;
+		}
+		.hp-grid-7 {
+			width:26vw;
+			position: relative;
+			top: 22vw;
+		}
+		.hp-grid-8 {
+			width: 22vw;
+			position: relative;
+			top: 14vw;
+		}
+	}
 	@media all and (max-width: 660px) {
 		columns: 2;
 		column-gap: 0px;
@@ -104,9 +112,62 @@
 			width: 100%;
 		}
 	}
+	@media all and (max-width: 539.5px) {
+		display: none;
+	}
+}
+.hp-grid__wrap--mobile {
+	display: none;
+	@media all and (max-width: 539.5px) {
+		display: block;
+	}
+	& > div:nth-child(2) {
+		margin: 30px;
+	}
 	img {
-		padding: 10px;
-		box-sizing: border-box;
+		width: 44vw;
+	}
+	.hp-grid-1 {
+		position: relative;
+		// margin-left: 3vw;
+		// margin-right: 3vw;
+		top: -1vw;
+	}
+	.hp-grid-2 {
+		position: relative;
+		// margin-right: 3vw;
+		top: -14vw;
+		left: -1vw;
+	}
+	.hp-grid-3 {
+		position: relative;
+		// margin-right: 3vw;
+		left: -1vw;
+		top: 3vw;
+	}
+	.hp-grid-4 {
+		position: relative;
+		// margin-right: 3vw;
+		top: -6vw;
+	}
+	.hp-grid-5 {
+		position: relative;
+		// margin-left: 3vw;
+		left: -2vw;
+		top: 0vw;
+	}
+	.hp-grid-6 {
+		position: relative;
+		left: -2vw;
+		top: 3vw;
+	}
+	.hp-grid-7 {
+		position: relative;
+		top: 0vw;
+	}
+	.hp-grid-8 {
+		position: relative;
+		top: 2vw;
 	}
 }
 #mission {
@@ -124,6 +185,9 @@
 			transform: translateX(-1vw);
 			width:115%;
 		}
+	}
+	@media all and (max-width: 539.5px) {
+		display: none;
 	}
 }
 #stat__students-served {

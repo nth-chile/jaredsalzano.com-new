@@ -343,65 +343,100 @@ nav {
         .stats__stat > div:nth-child(even) {
           margin-left: 40px !important; } }
 
-#hp-grid-1 {
-  width: 17vw;
-  position: relative;
-  top: 6vw; }
-
-#hp-grid-2 {
-  width: 26vw;
-  position: relative;
-  top: -7vw;
-  left: -1vw; }
-
-#hp-grid-3 {
-  width: 26vw;
-  position: relative;
-  left: -1vw;
-  top: -2vw; }
-
-#hp-grid-4 {
-  width: 24vw;
-  position: relative;
-  top: -8vw; }
-
-#hp-grid-5 {
-  width: 22vw;
-  position: relative;
-  left: -2vw;
-  top: 15vw; }
-
-#hp-grid-6 {
-  width: 20vw;
-  position: relative;
-  left: -2vw;
-  top: 15vw; }
-
-#hp-grid-7 {
-  width: 26vw;
-  position: relative;
-  top: 22vw; }
-
-#hp-grid-8 {
-  width: 22vw;
-  position: relative;
-  top: 14vw; }
-
-#hp-grid__wrap {
+.hp-grid__wrap {
   margin-bottom: 18vw; }
-  @media all and (max-width: 660px) {
-    #hp-grid__wrap {
-      columns: 2;
-      column-gap: 0px;
-      padding: 40px;
-      margin-bottom: 0; }
-      #hp-grid__wrap img {
-        margin: 0;
-        position: static;
-        width: 100%; } }
-  #hp-grid__wrap img {
+  .hp-grid__wrap img {
     padding: 10px;
     box-sizing: border-box; }
+
+@media all and (min-width: 660.5px) {
+  .hp-grid__wrap--desktop .hp-grid-1 {
+    width: 17vw;
+    position: relative;
+    top: 6vw; }
+  .hp-grid__wrap--desktop .hp-grid-2 {
+    width: 26vw;
+    position: relative;
+    top: -7vw;
+    left: -1vw; }
+  .hp-grid__wrap--desktop .hp-grid-3 {
+    width: 26vw;
+    position: relative;
+    left: -1vw;
+    top: -2vw; }
+  .hp-grid__wrap--desktop .hp-grid-4 {
+    width: 24vw;
+    position: relative;
+    top: -8vw; }
+  .hp-grid__wrap--desktop .hp-grid-5 {
+    width: 22vw;
+    position: relative;
+    left: -2vw;
+    top: 15vw; }
+  .hp-grid__wrap--desktop .hp-grid-6 {
+    width: 20vw;
+    position: relative;
+    left: -2vw;
+    top: 15vw; }
+  .hp-grid__wrap--desktop .hp-grid-7 {
+    width: 26vw;
+    position: relative;
+    top: 22vw; }
+  .hp-grid__wrap--desktop .hp-grid-8 {
+    width: 22vw;
+    position: relative;
+    top: 14vw; } }
+@media all and (max-width: 660px) {
+  .hp-grid__wrap--desktop {
+    columns: 2;
+    column-gap: 0px;
+    padding: 40px;
+    margin-bottom: 0; }
+    .hp-grid__wrap--desktop img {
+      margin: 0;
+      position: static;
+      width: 100%; } }
+@media all and (max-width: 539.5px) {
+  .hp-grid__wrap--desktop {
+    display: none; } }
+
+.hp-grid__wrap--mobile {
+  display: none; }
+  @media all and (max-width: 539.5px) {
+    .hp-grid__wrap--mobile {
+      display: block; } }
+  .hp-grid__wrap--mobile > div:nth-child(2) {
+    margin: 30px; }
+  .hp-grid__wrap--mobile img {
+    width: 44vw; }
+  .hp-grid__wrap--mobile .hp-grid-1 {
+    position: relative;
+    top: -1vw; }
+  .hp-grid__wrap--mobile .hp-grid-2 {
+    position: relative;
+    top: -14vw;
+    left: -1vw; }
+  .hp-grid__wrap--mobile .hp-grid-3 {
+    position: relative;
+    left: -1vw;
+    top: 3vw; }
+  .hp-grid__wrap--mobile .hp-grid-4 {
+    position: relative;
+    top: -6vw; }
+  .hp-grid__wrap--mobile .hp-grid-5 {
+    position: relative;
+    left: -2vw;
+    top: 0vw; }
+  .hp-grid__wrap--mobile .hp-grid-6 {
+    position: relative;
+    left: -2vw;
+    top: 3vw; }
+  .hp-grid__wrap--mobile .hp-grid-7 {
+    position: relative;
+    top: 0vw; }
+  .hp-grid__wrap--mobile .hp-grid-8 {
+    position: relative;
+    top: 2vw; }
 
 #mission {
   transform: translateY(-41vw); }
@@ -417,6 +452,9 @@ nav {
       #mission img {
         transform: translateX(-1vw);
         width: 115%; } }
+  @media all and (max-width: 539.5px) {
+    #mission {
+      display: none; } }
 
 #stat__students-served {
   height: 190px; }
@@ -635,17 +673,11 @@ nav {
       margin: 0; }
   #financials #revenue {
     margin-top: 150px; }
-    #financials #revenue img {
-      left: 10px;
-      box-sizing: border-box;
-      padding: 0 10px;
-      margin-top: 80px;
-      width: 100%; }
-  #financials #expenses img {
+  #financials #expenses img, #financials #revenue img {
     left: 10px;
     box-sizing: border-box;
     padding: 0 10px;
-    margin-top: 60px;
+    margin-top: 130px;
     width: 100%; }
 
 #title__financials {
@@ -661,22 +693,22 @@ nav {
     height: 99px;
     transform: translateX(15px) translateY(5px);
     width: 115px; }
-  #team .list-section {
+  #team .list-section:not(#staff):not(#associate-board) {
     margin: 11%; }
-    @media (min-width: 830px) {
-      #team .list-section {
-        margin: 19vw; } }
-    #team .list-section h2 {
-      font-weight: normal;
-      margin-top: 210px; }
-      @media (max-width: 830px) {
-        #team .list-section h2 {
-          width: 380px; } }
-      @media (max-width: 320px) {
-        #team .list-section h2 {
-          width: 268px;
-          font-size: 60px;
-          line-height: 53px; } }
+  @media (min-width: 830px) {
+    #team .list-section:not(#staff):not(#associate-board) {
+      margin: 19vw; } }
+  #team .list-section h2 {
+    font-weight: normal;
+    margin-top: 210px; }
+    @media (max-width: 830px) {
+      #team .list-section h2 {
+        width: 380px; } }
+    @media (max-width: 320px) {
+      #team .list-section h2 {
+        width: 268px;
+        font-size: 60px;
+        line-height: 53px; } }
   #team ul {
     list-style: none; }
     @media (min-width: 830px) {
@@ -701,18 +733,27 @@ nav {
 #staff {
   background: url(../assets/sketch-apple@2x.png) no-repeat;
   background-position: -3vw bottom;
-  background-size: 300px; }
+  background-size: 300px;
+  padding-bottom: 220px;
+  margin: 11% 11% 0 11%; }
+  @media all and (min-width: 830px) {
+    #staff {
+      margin: 19vw 19vw 0 19vw; } }
   #staff ul {
     margin: 0 auto;
     transform: translateY(-115px); }
     @media all and (max-width: 320px) {
       #staff ul {
         transform: translateY(-85px); } }
-  @media (min-width: 1120px) {
+  @media all and (min-width: 1120px) {
     #staff {
       background-position: 0vw 5vw; }
       #staff ul {
         transform: translateX(10vw); } }
+  @media all and (max-width: 731px) {
+    #staff {
+      background-size: 220px;
+      padding-bottom: 120px; } }
 
 #directors h2 {
   margin-bottom: -45px;
@@ -726,13 +767,26 @@ nav {
 
 #associate-board {
   background: url(../assets/sketch-ruler@2x.png) no-repeat;
-  background-size: 200px; }
+  background-size: 200px;
+  padding-bottom: 280px;
+  margin: 11% 11% 0 11%; }
+  @media (min-width: 830px) {
+    #associate-board {
+      margin: 19vw 19vw 0 19vw; } }
   @media (min-width: 1120px) {
     #associate-board h2, #associate-board ul {
       transform: translateX(21.5vw); } }
   @media (max-width: 1120px) {
     #associate-board {
       background-position: 3vw bottom; } }
+  @media (max-width: 730px) {
+    #associate-board {
+      background-size: 140px;
+      padding-bottom: 130px; } }
+  @media (max-width: 520px) {
+    #associate-board {
+      background-size: 110px;
+      padding-bottom: 120px; } }
   #associate-board h2 {
     text-align: left;
     margin-bottom: -45px; }
@@ -804,6 +858,13 @@ nav {
   @media all and (max-width: 489px) {
     #team-members {
       margin: 0 15vw; } }
+  #team-members .copy--20--bebas, #team-members .copy--16--bookmania {
+    display: block; }
+  #team-members .copy--20--bebas {
+    line-height: 24px;
+    margin-bottom: 5px; }
+  #team-members .copy--16--bookmania {
+    line-height: 1.5; }
 
 @media (max-width: 1120px) {
   .list-section {
@@ -1150,6 +1211,7 @@ nav {
     margin-bottom: 200px; }
     @media all and (max-width: 527px) {
       #partners #community-partners {
+        background-position: 0 bottom;
         padding: 0 6vw; } }
     #partners #community-partners ul {
       width: 350px; }
@@ -1171,15 +1233,19 @@ nav {
       #partners #community-partners {
         background-position: bottom; } }
     @media (max-width: 1150px) {
-      #partners #community-partners h2 {
-        transform: translateX(0); }
-      #partners #community-partners ul:nth-child(2) {
-        transform: translateX(0) translateY(-135px);
-        margin-bottom: 0; }
-      #partners #community-partners ul:nth-child(3) {
-        margin-top: 0;
-        position: static;
-        transform: translateY(-135px); } }
+      #partners #community-partners {
+        margin-bottom: 70px; }
+        #partners #community-partners > div {
+          padding-bottom: 130px; }
+        #partners #community-partners h2 {
+          transform: translateX(0); }
+        #partners #community-partners ul:nth-child(2) {
+          transform: translateX(0) translateY(-135px);
+          margin-bottom: 0; }
+        #partners #community-partners ul:nth-child(3) {
+          margin-top: 0;
+          position: static;
+          transform: translateY(-135px); } }
   #partners #school-partners {
     background: url(../assets/sketch-eraser.png) no-repeat;
     background-position: right 120px bottom 420px;
@@ -1216,6 +1282,15 @@ nav {
       #partners #school-partners ul:nth-child(3), #partners #school-partners ul:nth-child(4) {
         position: static;
         margin: 0; } }
+    @media all and (max-width: 980px) {
+      #partners #school-partners {
+        background-position: right 120px bottom;
+        background-size: 260px;
+        margin-bottom: 20px;
+        padding-bottom: 210px; } }
+    @media all and (max-width: 489px) {
+      #partners #school-partners {
+        background-position: center bottom; } }
     @media all and (max-width: 320px) {
       #partners #school-partners ul, #partners #school-partners ul:nth-child(3), #partners #school-partners ul:nth-child(4) {
         transform: translateX(0px) translateY(40px);
@@ -1258,7 +1333,16 @@ nav {
   #supporters #fivehundred {
     margin-top: -400px; }
   #supporters #gt-onehundred {
+    background: url(../assets/sketch-sharpener@2x.png) no-repeat;
+    background-size: 400px;
+    background-position: 0 800px;
+    padding-left: 39vw;
     margin-top: -400px; }
+    @media all and (max-width: 829px) {
+      #supporters #gt-onehundred {
+        background-position: 0 bottom;
+        background-size: 280px;
+        padding-bottom: 270px; } }
     @media all and (min-width: 829.5px) {
       #supporters #gt-onehundred h2 {
         transform: translateX(-400px); } }
@@ -1292,7 +1376,13 @@ nav {
     transform: translateX(11vw); }
     @media all and (max-width: 1120px) {
       #supporters #fivek {
-        background-position: bottom right 100px; } }
+        background-position: bottom right 10px;
+        background-size: 320px;
+        padding-bottom: 340px; } }
+    @media all and (max-width: 539.5px) {
+      #supporters #fivek {
+        background-size: 230px;
+        padding-bottom: 260px; } }
   #supporters #tenk, #supporters #onek {
     transform: translateX(39vw); }
   #supporters #lt-onehundred ul:nth-of-type(2) {
@@ -1315,11 +1405,6 @@ nav {
   #supporters #lt-onehundred ul:nth-of-type(8) {
     margin-top: -420px;
     transform: translateX(28vw); }
-  #supporters #gt-onehundred {
-    background: url(../assets/sketch-sharpener@2x.png) no-repeat;
-    background-size: 400px;
-    background-position: 0 800px;
-    padding-left: 39vw; }
   #supporters #in-kind {
     margin-bottom: 200px; }
 
