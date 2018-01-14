@@ -79,14 +79,20 @@ header {
   margin-bottom: -4px;
   padding: 55px 0 20px; }
   header a {
-    transform: translateX(10px); }
+    -webkit-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+            transform: translateX(10px); }
 
 header p {
   margin-bottom: 36px;
-  transform: translateY(-19px); }
+  -webkit-transform: translateY(-19px);
+      -ms-transform: translateY(-19px);
+          transform: translateY(-19px); }
 
 #home header p {
-  transform: translateY(-35px); }
+  -webkit-transform: translateY(-35px);
+      -ms-transform: translateY(-35px);
+          transform: translateY(-35px); }
 
 ul {
   max-width: 90vw; }
@@ -162,6 +168,8 @@ nav {
 
 .nav__links {
   display: inline-block;
+  -webkit-transition: .05s all;
+  -o-transition: .05s all;
   transition: .05s all; }
 
 #_826link-2 {
@@ -179,70 +187,98 @@ nav {
   background: url(../assets/nav-letter@2x.png) no-repeat;
   background-size: contain;
   margin-left: 4vw;
-  transform: translateX(-7vw) translateY(6vw);
+  -webkit-transform: translateX(-7vw) translateY(6vw);
+      -ms-transform: translateX(-7vw) translateY(6vw);
+          transform: translateX(-7vw) translateY(6vw);
   height: 21.6vw;
   width: 16.8vw; }
   #nav__link__kendra:hover {
-    transform: scale(1.05) rotate(5deg) translateX(-6.5vw) translateY(6.5vw); }
+    -webkit-transform: scale(1.05) rotate(5deg) translateX(-6.5vw) translateY(6.5vw);
+        -ms-transform: scale(1.05) rotate(5deg) translateX(-6.5vw) translateY(6.5vw);
+            transform: scale(1.05) rotate(5deg) translateX(-6.5vw) translateY(6.5vw); }
 
 #nav__link__financials {
   background: url(../assets/nav-financials@2x.png) no-repeat;
   background-size: contain;
   margin-left: 0vw;
-  transform: translateX(-3.5vw);
+  -webkit-transform: translateX(-3.5vw);
+      -ms-transform: translateX(-3.5vw);
+          transform: translateX(-3.5vw);
   height: 13vw;
   width: 19vw; }
   #nav__link__financials:hover {
-    transform: scale(1.05) rotate(5deg) translateX(-3.5vw); }
+    -webkit-transform: scale(1.05) rotate(5deg) translateX(-3.5vw);
+        -ms-transform: scale(1.05) rotate(5deg) translateX(-3.5vw);
+            transform: scale(1.05) rotate(5deg) translateX(-3.5vw); }
 
 #nav__link__our-team {
   background: url(../assets/nav-ourteam@2x.png) no-repeat;
   background-size: contain;
   margin-left: 4vw;
-  transform: translateX(-4vw) translateY(0.5vw);
+  -webkit-transform: translateX(-4vw) translateY(0.5vw);
+      -ms-transform: translateX(-4vw) translateY(0.5vw);
+          transform: translateX(-4vw) translateY(0.5vw);
   height: 15.5vw;
   width: 11.5vw; }
   #nav__link__our-team:hover {
-    transform: scale(1.05) rotate(5deg) translateX(-4vw) translateY(1vw); }
+    -webkit-transform: scale(1.05) rotate(5deg) translateX(-4vw) translateY(1vw);
+        -ms-transform: scale(1.05) rotate(5deg) translateX(-4vw) translateY(1vw);
+            transform: scale(1.05) rotate(5deg) translateX(-4vw) translateY(1vw); }
 
 #nav__link__our-students {
   background: url(../assets/nav-students@2x.png) no-repeat;
   background-size: contain;
-  transform: translateY(1vw);
+  -webkit-transform: translateY(1vw);
+      -ms-transform: translateY(1vw);
+          transform: translateY(1vw);
   height: 19vw;
   width: 14vw; }
   #nav__link__our-students:hover {
-    transform: scale(1.05) rotate(5deg) translateY(1vw); }
+    -webkit-transform: scale(1.05) rotate(5deg) translateY(1vw);
+        -ms-transform: scale(1.05) rotate(5deg) translateY(1vw);
+            transform: scale(1.05) rotate(5deg) translateY(1vw); }
 
 #nav__link__programs {
   background: url(../assets/nav-programs@2x.png) no-repeat;
   background-size: contain;
   margin-left: 1vw;
-  transform: translateY(-3vw);
+  -webkit-transform: translateY(-3vw);
+      -ms-transform: translateY(-3vw);
+          transform: translateY(-3vw);
   height: 14vw;
   width: 16vw; }
   #nav__link__programs:hover {
-    transform: scale(1.05) rotate(5deg) translateY(-3vw); }
+    -webkit-transform: scale(1.05) rotate(5deg) translateY(-3vw);
+        -ms-transform: scale(1.05) rotate(5deg) translateY(-3vw);
+            transform: scale(1.05) rotate(5deg) translateY(-3vw); }
 
 #nav__link__partners {
   background: url(../assets/nav-partners@2x.png) no-repeat;
   background-size: contain;
   margin-left: 3vw;
-  transform: translateY(-2vw);
+  -webkit-transform: translateY(-2vw);
+      -ms-transform: translateY(-2vw);
+          transform: translateY(-2vw);
   height: 16.6vw;
   width: 15vw; }
   #nav__link__partners:hover {
-    transform: scale(1.05) rotate(5deg) translateY(-2vw); }
+    -webkit-transform: scale(1.05) rotate(5deg) translateY(-2vw);
+        -ms-transform: scale(1.05) rotate(5deg) translateY(-2vw);
+            transform: scale(1.05) rotate(5deg) translateY(-2vw); }
 
 #nav__link__our-supporters {
   background: url(../assets/nav-supporters@2x.png) no-repeat;
   background-size: contain;
   margin-left: 1vw;
-  transform: translateX(2vw) translateY(-2vw);
+  -webkit-transform: translateX(2vw) translateY(-2vw);
+      -ms-transform: translateX(2vw) translateY(-2vw);
+          transform: translateX(2vw) translateY(-2vw);
   height: 16vw;
   width: 15vw; }
   #nav__link__our-supporters:hover {
-    transform: scale(1.05) rotate(5deg) translateX(2vw) translateY(-2vw); }
+    -webkit-transform: scale(1.05) rotate(5deg) translateX(2vw) translateY(-2vw);
+        -ms-transform: scale(1.05) rotate(5deg) translateX(2vw) translateY(-2vw);
+            transform: scale(1.05) rotate(5deg) translateX(2vw) translateY(-2vw); }
 
 @media all and (max-width: 660px) {
   nav {
@@ -251,63 +287,91 @@ nav {
 
   #nav__link__kendra {
     margin-left: 4vw;
-    transform: translateX(-5vw) translateY(10vw);
+    -webkit-transform: translateX(-5vw) translateY(10vw);
+        -ms-transform: translateX(-5vw) translateY(10vw);
+            transform: translateX(-5vw) translateY(10vw);
     height: 45.36vw;
     width: 35.28vw; }
     #nav__link__kendra:hover {
-      transform: scale(1.05) rotate(5deg) translateX(-4vw) translateY(9.5vw); }
+      -webkit-transform: scale(1.05) rotate(5deg) translateX(-4vw) translateY(9.5vw);
+          -ms-transform: scale(1.05) rotate(5deg) translateX(-4vw) translateY(9.5vw);
+              transform: scale(1.05) rotate(5deg) translateX(-4vw) translateY(9.5vw); }
 
   #nav__link__financials {
     margin-left: 0vw;
-    transform: translateX(0vw);
+    -webkit-transform: translateX(0vw);
+        -ms-transform: translateX(0vw);
+            transform: translateX(0vw);
     height: 27.3vw;
     width: 39.9vw; }
     #nav__link__financials:hover {
-      transform: scale(1.05) rotate(5deg) translateX(-0.5vw); }
+      -webkit-transform: scale(1.05) rotate(5deg) translateX(-0.5vw);
+          -ms-transform: scale(1.05) rotate(5deg) translateX(-0.5vw);
+              transform: scale(1.05) rotate(5deg) translateX(-0.5vw); }
 
   #nav__link__our-team {
     margin-left: 4vw;
     margin-top: 4vw;
-    transform: translateX(-7vw) translateY(0.5vw);
+    -webkit-transform: translateX(-7vw) translateY(0.5vw);
+        -ms-transform: translateX(-7vw) translateY(0.5vw);
+            transform: translateX(-7vw) translateY(0.5vw);
     height: 35.6vw;
     width: 26.45vw; }
     #nav__link__our-team:hover {
-      transform: scale(1.05) rotate(5deg) translateX(-6vw) translateY(1vw); }
+      -webkit-transform: scale(1.05) rotate(5deg) translateX(-6vw) translateY(1vw);
+          -ms-transform: scale(1.05) rotate(5deg) translateX(-6vw) translateY(1vw);
+              transform: scale(1.05) rotate(5deg) translateX(-6vw) translateY(1vw); }
 
   #nav__link__our-students {
     margin-top: 4vw;
-    transform: translateX(7vw) translateY(1vw);
+    -webkit-transform: translateX(7vw) translateY(1vw);
+        -ms-transform: translateX(7vw) translateY(1vw);
+            transform: translateX(7vw) translateY(1vw);
     height: 39.9vw;
     width: 29.4vw; }
     #nav__link__our-students:hover {
-      transform: scale(1.05) rotate(5deg) translateX(7vw) translateY(1vw); }
+      -webkit-transform: scale(1.05) rotate(5deg) translateX(7vw) translateY(1vw);
+          -ms-transform: scale(1.05) rotate(5deg) translateX(7vw) translateY(1vw);
+              transform: scale(1.05) rotate(5deg) translateX(7vw) translateY(1vw); }
 
   #nav__link__programs {
     margin-left: 1vw;
     margin-top: 4vw;
-    transform: translateX(-5vw) translateY(-3vw);
+    -webkit-transform: translateX(-5vw) translateY(-3vw);
+        -ms-transform: translateX(-5vw) translateY(-3vw);
+            transform: translateX(-5vw) translateY(-3vw);
     height: 29.4vw;
     width: 33.6vw; }
     #nav__link__programs:hover {
-      transform: scale(1.05) rotate(5deg) translateX(-5vw) translateY(-3vw); }
+      -webkit-transform: scale(1.05) rotate(5deg) translateX(-5vw) translateY(-3vw);
+          -ms-transform: scale(1.05) rotate(5deg) translateX(-5vw) translateY(-3vw);
+              transform: scale(1.05) rotate(5deg) translateX(-5vw) translateY(-3vw); }
 
   #nav__link__partners {
     margin-left: 3vw;
     margin-top: 8vw;
-    transform: translateX(4vw) translateY(-2vw);
+    -webkit-transform: translateX(4vw) translateY(-2vw);
+        -ms-transform: translateX(4vw) translateY(-2vw);
+            transform: translateX(4vw) translateY(-2vw);
     height: 34.8vw;
     width: 31.5vw; }
     #nav__link__partners:hover {
-      transform: scale(1.05) rotate(5deg) translateX(3vw) translateY(-2vw); }
+      -webkit-transform: scale(1.05) rotate(5deg) translateX(3vw) translateY(-2vw);
+          -ms-transform: scale(1.05) rotate(5deg) translateX(3vw) translateY(-2vw);
+              transform: scale(1.05) rotate(5deg) translateX(3vw) translateY(-2vw); }
 
   #nav__link__our-supporters {
     margin-left: 1vw;
     margin-top: 8vw;
-    transform: translateX(2vw) translateY(-2vw);
+    -webkit-transform: translateX(2vw) translateY(-2vw);
+        -ms-transform: translateX(2vw) translateY(-2vw);
+            transform: translateX(2vw) translateY(-2vw);
     height: 33.6vw;
     width: 31.5vw; }
     #nav__link__our-supporters:hover {
-      transform: scale(1.05) rotate(5deg) translateX(2vw) translateY(-2vw); } }
+      -webkit-transform: scale(1.05) rotate(5deg) translateX(2vw) translateY(-2vw);
+          -ms-transform: scale(1.05) rotate(5deg) translateX(2vw) translateY(-2vw);
+              transform: scale(1.05) rotate(5deg) translateX(2vw) translateY(-2vw); } }
 #home {
   background-color: #f7f6f4; }
   #home #_826link-1 {
@@ -348,7 +412,8 @@ nav {
   margin-bottom: 18vw; }
   .hp-grid__wrap img {
     padding: 10px;
-    box-sizing: border-box; }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
 
 @media all and (min-width: 660.5px) {
   .hp-grid__wrap--desktop .hp-grid-1 {
@@ -389,8 +454,10 @@ nav {
     top: 14vw; } }
 @media all and (max-width: 660px) {
   .hp-grid__wrap--desktop {
-    columns: 2;
-    column-gap: 0px;
+    -webkit-columns: 2;
+            columns: 2;
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
     padding: 40px;
     margin-bottom: 0; }
     .hp-grid__wrap--desktop img {
@@ -440,18 +507,26 @@ nav {
     top: 2vw; }
 
 #mission {
-  transform: translateY(-41vw); }
+  -webkit-transform: translateY(-41vw);
+      -ms-transform: translateY(-41vw);
+          transform: translateY(-41vw); }
   #mission img {
     display: block;
     margin: 0 auto;
     width: 61vw;
-    transform: translateX(4vw); }
+    -webkit-transform: translateX(4vw);
+        -ms-transform: translateX(4vw);
+            transform: translateX(4vw); }
   @media all and (max-width: 660px) {
     #mission {
       margin-bottom: 18vw;
-      transform: translateX(0) translateY(0); }
+      -webkit-transform: translateX(0) translateY(0);
+          -ms-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0); }
       #mission img {
-        transform: translateX(-1vw);
+        -webkit-transform: translateX(-1vw);
+            -ms-transform: translateX(-1vw);
+                transform: translateX(-1vw);
         width: 115%; } }
   @media all and (max-width: 539.5px) {
     #mission {
@@ -565,7 +640,9 @@ nav {
     #stat__schools img,
     #stat__publications img,
     #stat__field-trips img {
-      transform: scale(0.7); }
+      -webkit-transform: scale(0.7);
+          -ms-transform: scale(0.7);
+              transform: scale(0.7); }
     #stat__students-served > div,
     #stat__zipcodes > div,
     #stat__active-volunteers > div,
@@ -584,7 +661,9 @@ nav {
     top: -170px; }
 
   #stat__writing-sessions {
-    transform: translateY(-90px); }
+    -webkit-transform: translateY(-90px);
+        -ms-transform: translateY(-90px);
+            transform: translateY(-90px); }
     #stat__writing-sessions .copy--20--futura {
       width: 200px; }
 
@@ -615,22 +694,30 @@ nav {
 
 #letter-from-kendra {
   width: 24vw;
-  transform: translateX(4vw) translateY(-4vw); }
+  -webkit-transform: translateX(4vw) translateY(-4vw);
+      -ms-transform: translateX(4vw) translateY(-4vw);
+          transform: translateX(4vw) translateY(-4vw); }
   @media all and (max-width: 527px) {
     #letter-from-kendra {
-      transform: translateX(-11vw);
+      -webkit-transform: translateX(-11vw);
+          -ms-transform: translateX(-11vw);
+              transform: translateX(-11vw);
       width: 40vw; } }
 
 #letter-from-kendra-img {
   width: 52vw;
-  transform: translateX(-4vw);
+  -webkit-transform: translateX(-4vw);
+      -ms-transform: translateX(-4vw);
+          transform: translateX(-4vw);
   position: relative;
   z-index: -1; }
   @media all and (max-width: 527px) {
     #letter-from-kendra-img {
       display: block;
       margin: 0 auto;
-      transform: translateX(5vw) translateY(-10vw);
+      -webkit-transform: translateX(5vw) translateY(-10vw);
+          -ms-transform: translateX(5vw) translateY(-10vw);
+              transform: translateX(5vw) translateY(-10vw);
       width: 70vw; } }
 
 #letter main {
@@ -642,10 +729,14 @@ nav {
   margin: 40px auto 0;
   padding-top: 109px;
   width: 190px;
-  transform: translateX(20px); }
+  -webkit-transform: translateX(20px);
+      -ms-transform: translateX(20px);
+          transform: translateX(20px); }
   #signature span {
     display: block;
-    transform: translateX(-20px); }
+    -webkit-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+            transform: translateX(-20px); }
 
 #financials {
   background-color: #edd3f0; }
@@ -657,7 +748,9 @@ nav {
     display: block;
     margin: 0 auto;
     height: 99px;
-    transform: translateX(15px) translateY(5px);
+    -webkit-transform: translateX(15px) translateY(5px);
+        -ms-transform: translateX(15px) translateY(5px);
+            transform: translateX(15px) translateY(5px);
     width: 115px; }
   #financials section {
     height: 530px;
@@ -676,7 +769,8 @@ nav {
     margin-top: 150px; }
   #financials #expenses img, #financials #revenue img {
     left: 10px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 0 10px;
     margin-top: 130px;
     width: 100%; }
@@ -697,7 +791,9 @@ nav {
     display: block;
     margin: 0 auto;
     height: 99px;
-    transform: translateX(15px) translateY(5px);
+    -webkit-transform: translateX(15px) translateY(5px);
+        -ms-transform: translateX(15px) translateY(5px);
+            transform: translateX(15px) translateY(5px);
     width: 115px; }
   #team .list-section:not(#staff):not(#associate-board) {
     margin: 11%; }
@@ -719,14 +815,14 @@ nav {
     list-style: none; }
     @media (min-width: 830px) {
       #team ul {
-        columns: 2;
+        -webkit-columns: 2;
+                columns: 2;
         width: 580px; } }
     @media (max-width: 829.5px) {
       #team ul {
         padding-left: 0; } }
     #team ul li {
       -webkit-column-break-inside: avoid;
-      page-break-inside: avoid;
       break-inside: avoid; }
     #team ul p {
       margin: 0; }
@@ -747,15 +843,21 @@ nav {
       margin: 19vw 19vw 0 19vw; } }
   #staff ul {
     margin: 0 auto;
-    transform: translateY(-115px); }
+    -webkit-transform: translateY(-115px);
+        -ms-transform: translateY(-115px);
+            transform: translateY(-115px); }
     @media all and (max-width: 320px) {
       #staff ul {
-        transform: translateY(-85px); } }
+        -webkit-transform: translateY(-85px);
+            -ms-transform: translateY(-85px);
+                transform: translateY(-85px); } }
   @media all and (min-width: 1120px) {
     #staff {
       background-position: 0vw 5vw; }
       #staff ul {
-        transform: translateX(10vw); } }
+        -webkit-transform: translateX(10vw);
+            -ms-transform: translateX(10vw);
+                transform: translateX(10vw); } }
   @media all and (max-width: 731px) {
     #staff {
       background-size: 220px;
@@ -781,7 +883,9 @@ nav {
       margin: 19vw 19vw 0 19vw; } }
   @media (min-width: 1120px) {
     #associate-board h2, #associate-board ul {
-      transform: translateX(21.5vw); } }
+      -webkit-transform: translateX(21.5vw);
+          -ms-transform: translateX(21.5vw);
+              transform: translateX(21.5vw); } }
   @media (max-width: 1120px) {
     #associate-board {
       background-position: 3vw bottom; } }
@@ -803,7 +907,9 @@ nav {
     margin: 0;
     padding-bottom: 120px; }
   #associate-board .col-2 {
-    transform: translateY(550px); }
+    -webkit-transform: translateY(550px);
+        -ms-transform: translateY(550px);
+            transform: translateY(550px); }
 
 #interns h2 {
   margin-bottom: -95px;
@@ -813,11 +919,12 @@ nav {
     #interns h2 {
       margin-bottom: -85px; } }
 #interns .col-2 {
-  transform: translateY(400px); }
+  -webkit-transform: translateY(400px);
+      -ms-transform: translateY(400px);
+          transform: translateY(400px); }
 
 .team-members__member {
   -webkit-column-break-inside: avoid;
-  page-break-inside: avoid;
   break-inside: avoid;
   display: inline-block;
   height: 33vw;
@@ -883,10 +990,14 @@ nav {
     .list-section li {
       text-align: center; }
     .list-section h2, .list-section ul {
-      transform: translateX(0); } }
+      -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+              transform: translateX(0); } }
 @media (max-width: 830px) {
   #team .col-2 {
-    transform: none; } }
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; } }
 #students {
   background-color: #b6c0f8; }
   #students h2 {
@@ -899,7 +1010,9 @@ nav {
     height: 90px;
     width: 105px; }
   #students i {
-    transform: translateY(6px); }
+    -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+            transform: translateY(6px); }
   #students #map {
     max-width: 750px; }
   #students section {
@@ -924,7 +1037,8 @@ nav {
         height: 550px; } }
     #students #race img {
       left: 10px;
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       padding: 0 10px;
       margin-top: 60px;
       width: 100%; }
@@ -977,7 +1091,8 @@ nav {
         height: 550px; } }
     #students #english img {
       left: 0px;
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       padding: 20px;
       margin-top: 60px;
       width: 100%; }
@@ -1042,7 +1157,9 @@ nav {
     display: block;
     margin: 0 auto;
     height: 99px;
-    transform: translateX(15px) translateY(5px);
+    -webkit-transform: translateX(15px) translateY(5px);
+        -ms-transform: translateX(15px) translateY(5px);
+            transform: translateX(15px) translateY(5px);
     width: 115px; }
 
 .books {
@@ -1055,7 +1172,9 @@ nav {
   margin: 1vw; }
 
 .copy--big--numbers--startswithone {
-  transform: translateX(-10px); }
+  -webkit-transform: translateX(-10px);
+      -ms-transform: translateX(-10px);
+          transform: translateX(-10px); }
 
 .number-items-boxes--mobile {
   margin: 0 auto;
@@ -1189,7 +1308,8 @@ nav {
     height: 90px;
     width: 105px; }
   #partners .list-section {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0 auto;
     max-width: 1178px; }
     #partners .list-section h2 {
@@ -1205,12 +1325,16 @@ nav {
   #partners #network {
     padding: 0 6vw; }
     #partners #network ul {
-      transform: translateX(-76px) translateY(-130px);
+      -webkit-transform: translateX(-76px) translateY(-130px);
+          -ms-transform: translateX(-76px) translateY(-130px);
+              transform: translateX(-76px) translateY(-130px);
       width: 315px; }
       @media all and (max-width: 527px) {
         #partners #network ul {
           padding: 0;
-          transform: translateX(0) translateY(-130px);
+          -webkit-transform: translateX(0) translateY(-130px);
+              -ms-transform: translateX(0) translateY(-130px);
+                  transform: translateX(0) translateY(-130px);
           width: 100%; } }
   #partners #community-partners {
     background: url(../assets/sketch-scissors@2x.png) no-repeat;
@@ -1232,10 +1356,14 @@ nav {
       @media all and (max-width: 527px) {
         #partners #community-partners ul {
           padding: 0;
-          transform: translateX(0) translateY(-130px);
+          -webkit-transform: translateX(0) translateY(-130px);
+              -ms-transform: translateX(0) translateY(-130px);
+                  transform: translateX(0) translateY(-130px);
           width: 100%; } }
     #partners #community-partners ul:nth-child(2) {
-      transform: translateX(-60px) translateY(-135px); }
+      -webkit-transform: translateX(-60px) translateY(-135px);
+          -ms-transform: translateX(-60px) translateY(-135px);
+              transform: translateX(-60px) translateY(-135px); }
     #partners #community-partners ul:nth-child(3) {
       position: absolute;
       top: 35%;
@@ -1249,14 +1377,20 @@ nav {
         #partners #community-partners > div {
           padding-bottom: 130px; }
         #partners #community-partners h2 {
-          transform: translateX(0); }
+          -webkit-transform: translateX(0);
+              -ms-transform: translateX(0);
+                  transform: translateX(0); }
         #partners #community-partners ul:nth-child(2) {
-          transform: translateX(0) translateY(-135px);
+          -webkit-transform: translateX(0) translateY(-135px);
+              -ms-transform: translateX(0) translateY(-135px);
+                  transform: translateX(0) translateY(-135px);
           margin-bottom: 0; }
         #partners #community-partners ul:nth-child(3) {
           margin-top: 0;
           position: static;
-          transform: translateY(-135px); } }
+          -webkit-transform: translateY(-135px);
+              -ms-transform: translateY(-135px);
+                  transform: translateY(-135px); } }
   #partners #school-partners {
     background: url(../assets/sketch-eraser@2x.png) no-repeat;
     background-position: right 120px bottom 420px;
@@ -1304,7 +1438,9 @@ nav {
         background-position: center bottom; } }
     @media all and (max-width: 320px) {
       #partners #school-partners ul, #partners #school-partners ul:nth-child(3), #partners #school-partners ul:nth-child(4) {
-        transform: translateX(0px) translateY(40px);
+        -webkit-transform: translateX(0px) translateY(40px);
+            -ms-transform: translateX(0px) translateY(40px);
+                transform: translateX(0px) translateY(40px);
         padding-left: 0;
         margin: 0;
         position: static; } }
@@ -1323,7 +1459,9 @@ nav {
     display: block;
     margin: 0 auto;
     height: 99px;
-    transform: translateX(10px) translateY(5px);
+    -webkit-transform: translateX(10px) translateY(5px);
+        -ms-transform: translateX(10px) translateY(5px);
+            transform: translateX(10px) translateY(5px);
     width: 115px; }
   #supporters .list-section {
     margin: 0 19vw; }
@@ -1338,7 +1476,9 @@ nav {
     text-align: left; }
   #supporters ul {
     list-style: none;
-    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+            transform: translateX(-100px);
     width: 400px; }
     #supporters ul p {
       margin: 0; }
@@ -1359,35 +1499,55 @@ nav {
         padding-bottom: 270px; } }
     @media all and (min-width: 829.5px) {
       #supporters #gt-onehundred h2 {
-        transform: translateX(-400px); } }
+        -webkit-transform: translateX(-400px);
+            -ms-transform: translateX(-400px);
+                transform: translateX(-400px); } }
     #supporters #gt-onehundred ul:not(:nth-of-type(1)) {
       margin-top: -400px; }
     @media all and (min-width: 829.5px) {
       #supporters #gt-onehundred ul:nth-of-type(1) {
-        transform: translateX(-500px); } }
+        -webkit-transform: translateX(-500px);
+            -ms-transform: translateX(-500px);
+                transform: translateX(-500px); } }
     #supporters #gt-onehundred ul:nth-of-type(2) {
-      transform: translateX(-100px) translateY(350px); }
+      -webkit-transform: translateX(-100px) translateY(350px);
+          -ms-transform: translateX(-100px) translateY(350px);
+              transform: translateX(-100px) translateY(350px); }
     #supporters #gt-onehundred ul:nth-of-type(3) {
-      transform: translateX(-43vw); }
+      -webkit-transform: translateX(-43vw);
+          -ms-transform: translateX(-43vw);
+              transform: translateX(-43vw); }
       @media all and (max-width: 1150px) {
         #supporters #gt-onehundred ul:nth-of-type(3) {
-          transform: translateX(-50vw); } }
+          -webkit-transform: translateX(-50vw);
+              -ms-transform: translateX(-50vw);
+                  transform: translateX(-50vw); } }
     @media all and (min-width: 1150px) {
       #supporters #gt-onehundred ul:nth-of-type(4) {
-        transform: translateX(2vw); } }
+        -webkit-transform: translateX(2vw);
+            -ms-transform: translateX(2vw);
+                transform: translateX(2vw); } }
     #supporters #gt-onehundred ul:nth-of-type(5) {
-      transform: translateX(-27vw); }
+      -webkit-transform: translateX(-27vw);
+          -ms-transform: translateX(-27vw);
+              transform: translateX(-27vw); }
       @media all and (max-width: 1150px) {
         #supporters #gt-onehundred ul:nth-of-type(5) {
-          transform: translateX(-43vw); } }
+          -webkit-transform: translateX(-43vw);
+              -ms-transform: translateX(-43vw);
+                  transform: translateX(-43vw); } }
       @media all and (max-width: 829.5px) {
         #supporters #gt-onehundred ul:nth-of-type(5) {
-          transform: none; } }
+          -webkit-transform: none;
+              -ms-transform: none;
+                  transform: none; } }
   #supporters #fivek {
     background: url(../assets/sketch-calculator@2x.png) no-repeat;
     background-size: 450px;
     background-position: bottom 400px right;
-    transform: translateX(11vw); }
+    -webkit-transform: translateX(11vw);
+        -ms-transform: translateX(11vw);
+            transform: translateX(11vw); }
     @media all and (max-width: 1120px) {
       #supporters #fivek {
         background-position: bottom right 10px;
@@ -1398,27 +1558,41 @@ nav {
         background-size: 230px;
         padding-bottom: 260px; } }
   #supporters #tenk, #supporters #onek {
-    transform: translateX(39vw); }
+    -webkit-transform: translateX(39vw);
+        -ms-transform: translateX(39vw);
+            transform: translateX(39vw); }
   #supporters #lt-onehundred ul:nth-of-type(2) {
     margin-top: -1000px;
-    transform: translateX(26vw); }
+    -webkit-transform: translateX(26vw);
+        -ms-transform: translateX(26vw);
+            transform: translateX(26vw); }
   #supporters #lt-onehundred ul:nth-of-type(3) {
     margin-top: -200px; }
   #supporters #lt-onehundred ul:nth-of-type(4) {
     margin-top: -680px;
-    transform: translateX(33vw); }
+    -webkit-transform: translateX(33vw);
+        -ms-transform: translateX(33vw);
+            transform: translateX(33vw); }
   #supporters #lt-onehundred ul:nth-of-type(5) {
     margin-top: -420px;
-    transform: translateX(0vw); }
+    -webkit-transform: translateX(0vw);
+        -ms-transform: translateX(0vw);
+            transform: translateX(0vw); }
   #supporters #lt-onehundred ul:nth-of-type(6) {
     margin-top: -80px;
-    transform: translateX(28vw); }
+    -webkit-transform: translateX(28vw);
+        -ms-transform: translateX(28vw);
+            transform: translateX(28vw); }
   #supporters #lt-onehundred ul:nth-of-type(7) {
     margin-top: -180px;
-    transform: translateX(-8vw); }
+    -webkit-transform: translateX(-8vw);
+        -ms-transform: translateX(-8vw);
+            transform: translateX(-8vw); }
   #supporters #lt-onehundred ul:nth-of-type(8) {
     margin-top: -420px;
-    transform: translateX(28vw); }
+    -webkit-transform: translateX(28vw);
+        -ms-transform: translateX(28vw);
+            transform: translateX(28vw); }
   #supporters #in-kind {
     margin-bottom: 200px; }
 
@@ -1437,7 +1611,9 @@ nav {
   #volunteer-committees ul {
     display: inline-block;
     padding: 0 0 0 10px;
-    transform: none; }
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; }
 
 #img-supporters {
   display: block;
@@ -1458,9 +1634,13 @@ nav {
     margin: 0;
     width: auto; }
     #supporters .list-section h2 {
-      transform: translateX(20vw); }
+      -webkit-transform: translateX(20vw);
+          -ms-transform: translateX(20vw);
+              transform: translateX(20vw); }
   #supporters ul {
-    transform: none;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
@@ -1477,11 +1657,15 @@ nav {
     #supporters #gt-onehundred ul:nth-of-type(2),
     #supporters #gt-onehundred ul:nth-of-type(3),
     #supporters #gt-onehundred ul:nth-of-type(4) {
-      transform: none; }
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none; }
   #supporters #fivek,
   #supporters #tenk,
   #supporters #onek {
-    transform: none; }
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; }
   #supporters #lt-onehundred ul:nth-of-type(2),
   #supporters #lt-onehundred ul:nth-of-type(3),
   #supporters #lt-onehundred ul:nth-of-type(4),
@@ -1490,6 +1674,6 @@ nav {
   #supporters #lt-onehundred ul:nth-of-type(7),
   #supporters #lt-onehundred ul:nth-of-type(8) {
     margin-top: 0px;
-    transform: none; } }
-
-/*# sourceMappingURL=style.css.map */
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; } }
