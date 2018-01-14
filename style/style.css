@@ -161,7 +161,8 @@ nav {
       display: block; } }
 
 .nav__links {
-  display: inline-block; }
+  display: inline-block;
+  transition: .05s all; }
 
 #_826link-2 {
   background: url(../assets/826-logo.svg) no-repeat;
@@ -1257,7 +1258,7 @@ nav {
           position: static;
           transform: translateY(-135px); } }
   #partners #school-partners {
-    background: url(../assets/sketch-eraser.png) no-repeat;
+    background: url(../assets/sketch-eraser@2x.png) no-repeat;
     background-position: right 120px bottom 420px;
     background-size: 300px;
     min-height: 2878px;
