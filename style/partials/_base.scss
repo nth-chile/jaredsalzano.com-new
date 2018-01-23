@@ -9,22 +9,22 @@ $purple: #b6c0f8;
 $red: rgb(207, 71, 92);
 $blackish: rgb(23, 25, 18);
 
-@font-face {
-	font-family: 'BebasNeue';
-	src: url('../assets/fonts/Bebas/BebasNeue.otf') format('opentype');
-}
-@font-face {
-	font-family: 'Futura';
-	src: url('../assets/fonts/Futura/FuturaTDem/f011025t.ttf') format('truetype');
-}
-@font-face {
-	font-family: 'Bookmania';
-	src: url('../assets/fonts/Bookmania/Bookmania/Bookmania Regular.otf') format('truetype');
-}
-@font-face {
-	font-family: 'Bookmania Italic';
-	src: url('../assets/fonts/Bookmania/Bookmania/Bookmania Regular Italic.otf') format('opentype');
-}
+// @font-face {
+// 	font-family: 'BebasNeue';
+// 	src: url('../assets/fonts/Bebas/BebasNeue.otf') format('opentype');
+// }
+// @font-face {
+// 	font-family: 'Futura';
+// 	src: url('../assets/fonts/Futura/FuturaTDem/f011025t.ttf') format('truetype');
+// }
+// @font-face {
+// 	font-family: 'Bookmania';
+// 	src: url('../assets/fonts/Bookmania/Bookmania/Bookmania Regular.otf') format('truetype');
+// }
+// @font-face {
+// 	font-family: 'Bookmania Italic';
+// 	src: url('../assets/fonts/Bookmania/Bookmania/Bookmania Regular Italic.otf') format('opentype');
+// }
 
 
 html, body {
@@ -34,7 +34,7 @@ html, body {
 body {
 	text-align: center;
 	color: rgba(0, 0, 0, .48);
-	font-family: "Futura";
+	// font-family: "Futura";
 	font-size: 20px;
 	line-height: 28px;
 }
@@ -50,7 +50,7 @@ body {
 	}
 }
 .copy--20--bebas {
-	font-family: BebasNeue;
+	// font-family: BebasNeue;
 	font-size: 20px;
 	line-height: 20px;
 	letter-spacing: 0.2px;
@@ -58,27 +58,27 @@ body {
 }
 .copy--16--bookmania {
 	color: rgba(0, 0, 0, 0.5);
-	font-family: "Bookmania";
+	// font-family: "Bookmania";
 	font-size: 16px;
 	line-height: 1.63;
 	letter-spacing: -0.1px;
 }
 .copy--20--futura {
 	color: rgba(0, 0, 0, .48);
-	font-family: "Futura";
+	// font-family: "Futura";
 	font-size: 20px;
 	line-height: 28px;
 }
 .copy--big--numbers {
 	color: $red;
-	font-family: BebasNeue;
+	// font-family: BebasNeue;
 	font-size: 72px;
 	line-height: 40px;
 	letter-spacing: 0px;
 }
 h2 {
 	color: white;
-	font-family: BebasNeue;
+	font-family: "bebas-neue","Haettenschweiler","Arial Narrow Bold", sans-serif;
 	font-size: 90px;
 	line-height: 80px;
 	letter-spacing: -1.5px;
@@ -86,7 +86,7 @@ h2 {
 h5 { font-weight: normal; }
 h6 {
 	color: rgba(0, 0, 0, .48);
-	font-family: BebasNeue;
+	font-family: "bebas-neue","Haettenschweiler","Arial Narrow Bold", sans-serif;
 	font-size: 20px;
 	font-weight: normal;
 	line-height: 1;
