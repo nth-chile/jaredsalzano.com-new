@@ -1,11 +1,7 @@
-"use client"
-
 import styles from './project.module.scss'
-import { useEffect, useState, FunctionComponent } from "react"
-import Test from '../../../content/test.mdx'
-import { MDXProvider } from '@mdx-js/react'
+import getContentBySlug from "@/utils/getContentBySlug"
 
-export default function ProjectPage({
+export default async function ProjectPage({
   params: { 
     projectSlug 
   }
@@ -14,17 +10,17 @@ export default function ProjectPage({
     projectSlug: String
   }
 }) {
-  const dashedTitle = projectSlug.replace(/ /g, '-')
-  const [Test2, setTest2] = useState<FunctionComponent<any> | null>(() => Test)
+  const slug = projectSlug.replace(/ /g, '-')
+  let frontMatter
+  let html
 
-  useEffect(() => {
-    import(`../../../content/${dashedTitle}.mdx`).then((res) => {
-      setTest2(res.default)
-    }
-    )
-  }, [dashedTitle])
+  try {
+    const content = await getContentBySlug(slug)
+    frontMatter = content.frontMatter
+    html = content.html
+  } catch (err) {
+    throw err
+  }
 
-  return <MDXProvider>
-    <Test2 />
-  </MDXProvider>
+  return <div dangerouslySetInnerHTML={{ __html: html }} />
 }

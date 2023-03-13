@@ -1,0 +1,29 @@
+.image-bg {
+  position: absolute;
+  top: -240px;
+  right: -240px;
+  bottom: -240px;
+  left: -240px;
+  overflow: hidden;
+}
+
+.image-bg__inner {
+  animation: bg-slide 25s linear infinite;
+  background-image: url(/sky1.jpg);
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: 50% 100%;
+  bottom: 0px;
+  filter: blur(80px);
+  left: 0px;
+  position: absolute;
+  right: 100%;
+  top: 0px;
+  width: 400%;
+  z-index: 0;
+}
+
+@keyframes bg-slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }  
+}
