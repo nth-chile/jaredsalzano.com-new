@@ -1,0 +1,8 @@
+[context.production]
+  publish = "dist/"
+
+[context.wedo]
+  publish = "./"
+
+[context.studioapt]
+  publish = "./"

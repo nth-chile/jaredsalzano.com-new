@@ -1,3 +1,7 @@
+html {
+  background-color: rgb(228, 237, 255);
+}
+
 .image-bg {
   position: fixed;
   top: -240px;
@@ -10,7 +14,7 @@
 
 .image-bg__inner {
   animation: bg-slide 10s linear infinite;
-  background-image: url(/sky1.jpg);
+  background-image: url(/sky.jpg);
   background-position: center;
   background-repeat: repeat-x;
   background-size: 50% 100%;

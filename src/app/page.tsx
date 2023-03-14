@@ -1,7 +1,8 @@
 import "@/styles/home.scss"
 import Image from "next/image"
 import getPreviewsForAllPosts from "@/utils/getPreviewsForAllPosts"
-import ImageBg from "./components/ImageBg"
+import ImageBg from "@/components/ImageBg"
+import Footer from "@/components/Footer"
 
 export default async function Home() {
   const posts = await getPreviewsForAllPosts()
@@ -34,6 +35,7 @@ export default async function Home() {
           </ul>
         </main>
       </div>
+      <Footer />
     </>
   )
 }

@@ -1,4 +1,4 @@
-import styles from './project.module.scss'
+import '@/styles/project.scss'
 import getContentBySlug from "@/utils/getContentBySlug"
 
 export default async function ProjectPage({
@@ -22,5 +22,10 @@ export default async function ProjectPage({
     throw err
   }
 
-  return <div dangerouslySetInnerHTML={{ __html: html }} />
+  return (
+    <div>
+      <h1 className="font-times font-semibold text-2xl text-gray-600 mb-5">{frontMatter.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
+    </div>
+  )
 }
