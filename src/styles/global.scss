@@ -2,16 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-$white: #FFFAEC;
+// $white: #FFFAEC;
 $black: #242321;
 $blue: #2F69FF;
 
 html {
-//   height: 100%;
-//   width: 100%;
-//   margin: 0;
-//   padding: 0;
-  color: $white;
-//   font-family: Times;
-  // font-size: 24px;
+  background-color: rgb(228, 237, 255);
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.font-times {
+  font-family: Times;
+}
+
+.page-container {
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 10px;
+  position: relative;
+
+  @screen sm {
+    padding: 100px 60px;
+  }
+}
+
+.text-container {
+  max-width: 37em;  
 }

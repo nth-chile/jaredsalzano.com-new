@@ -1,6 +1,6 @@
 ---
 title: Dojobase - Interactive Platform
-featuredImage: https://picsum.photos/200/301
+featuredImage: https://picsum.photos/200/298
 ---
 
 # Test
