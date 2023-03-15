@@ -3,9 +3,25 @@ import Image from "next/image"
 import getPreviewsForAllPosts from "@/utils/getPreviewsForAllPosts"
 import ImageBg from "@/components/ImageBg"
 import Footer from "@/components/Footer"
+import matter from "gray-matter"
+
+function getSortedPosts(posts: any[]) {
+  return [...posts].sort((a, b) => {
+    if( a.frontMatter.order < b.frontMatter.order ) {
+      return -1;
+    }
+
+    if( a.frontMatter.order > b.frontMatter.order ) {
+      return 1;
+    }
+
+    return 0;
+  })
+}
 
 export default async function Home() {
-  const posts = await getPreviewsForAllPosts()
+  let posts = await getPreviewsForAllPosts()
+  posts = getSortedPosts(posts)
   
   return (
     <>
@@ -20,7 +36,8 @@ export default async function Home() {
             <p>If you’d like to discuss a project, you can email me at <a className="text-blue-800 underline" href="mailto:jaredsalzano@gmail.com" target="_blank">jaredsalzano@gmail.com</a>.</p>
           </div>
           <ul className="project-grid grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8 md:gap-y-20">
-            {posts.map(({frontMatter, slug}, index) => (
+            {posts
+            .map(({frontMatter, slug}, index) => (
                 <li key={index} className="project-grid__item">
                   <a href={`/projects/${slug}`}>
                     <article>

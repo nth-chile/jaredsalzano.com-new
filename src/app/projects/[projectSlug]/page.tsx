@@ -1,8 +1,6 @@
 import '@/styles/project.scss'
 import getContentBySlug from "@/utils/getContentBySlug"
-// import type {Metadata} from "next"
 
-// or dynamic metadata
 export async function generateMetadata({ params } : { params: any}) {
   try {
     const content = await getContentBySlug(params.projectSlug)

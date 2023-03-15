@@ -1,6 +1,7 @@
 ---
 title: Tolli - Artist Networking App
 featuredImage: /posts/tolli/hero.png
+order: 4
 ---
 
 Tolli aimed to help artists connect and collaborate with each other. Think of it as a dating app, except instead of finding romance, artists find other artists interested in collaborating on a project. We helped them design and build apps for web and iOS using React and React Native.
