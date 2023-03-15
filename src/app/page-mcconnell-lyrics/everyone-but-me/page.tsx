@@ -15,7 +15,7 @@ export default function EveryoneButMe() {
     Split decisions, stealing signs<br />
     Forget them again, shadows on my mind<br />
     Try to piece it together, which leads to my demise<br />
-    And I ask myself, "Should I really be surprised?"<br />
+    And I ask myself, “Should I really be surprised?”<br />
 <br />
     I get up, only to find that the feeling’s<br />
     Corrupt. Disrupted by demons downstream<br />
