@@ -4,3 +4,4 @@ command = "npm run build"
 
 [[context.production.plugins]]
 package = "@netlify/plugin-nextjs"
+
