@@ -1,17 +1,11 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Work_Sans } from "next/font/google"
-
-const workSans = Work_Sans({
-  subsets: ["latin"],
-  weight: "700"
-})
 
 export default function PageMcConnellLyricsIndex() {
   return (
     <div className="page-mcconnell-lyrics__index">
       <a className="page-mcconnell-lyrics__back inline-block mt-5" href="/">back</a>
-      <h1 className={`${workSans.className} max-w-xl`}>Lyrics to Page McConnell’s self-titled album</h1>
+      <h1 className="font-work-sans max-w-xl">Lyrics to Page McConnell’s self-titled album</h1>
       <div className="flex justify-between flex-col sm:flex-row">
         <ol className="m-0 py-0 order-2 sm:order-1 list-decimal">
           <li>
