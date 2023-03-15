@@ -4,7 +4,7 @@ featuredImage: /posts/tolli/hero.png
 order: 4
 ---
 
-Tolli aimed to help artists connect and collaborate with each other. Think of it as a dating app, except instead of finding romance, artists find other artists interested in collaborating on a project. We helped them design and build apps for web and iOS using React and React Native.
+Tolli's aim was to help artists connect and collaborate with each other. It was designed to connect artists like a dating app would, except instead of finding romance, artists find other artists interested in collaborating on a project. I helped them build their web app with React.
 
 <img alt="Tolli website screenshot" src="/posts/tolli/2.png" />
 

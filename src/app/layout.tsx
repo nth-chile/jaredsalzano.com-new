@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: "",
     images: [
       {
-        url: "/meta-img.png",
+        url: "https://jaredsalzano.com/meta-img.png",
         height: 1573,
         width: 1631
       }
@@ -41,17 +41,11 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://jaredsalzano.com/"
   },
-  other: {
-    color: "#5bbad5",
-    custom: "meta",
-    href: "/safari-pinned-tab.svg",
-    rel: "mask-icon",
-  },
   themeColor: "white",
   twitter: {
     card: "summary_large_image",
     description: "",
-    images: ["/meta-img.png"],
+    images: ["https://jaredsalzano.com/meta-img.png"],
     title: "Jared Salzano"
   }
 }

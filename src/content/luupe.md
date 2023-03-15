@@ -4,7 +4,7 @@ featuredImage: /posts/luupe/1.png
 order: 3
 ---
 
-[The Luupe](https://theluupe.com/) is a community of women photographers creating custom content for leading brands. We did the development work for their marketing site and blog and built a React UI library for their web app.
+[The Luupe](https://theluupe.com/) is a community of women photographers creating custom content for leading brands. I did the development work for their marketing site and blog and built a React UI library for their web app.
 
 <img alt="The Luupe type styles" src="/posts/luupe/type.png" />
 
