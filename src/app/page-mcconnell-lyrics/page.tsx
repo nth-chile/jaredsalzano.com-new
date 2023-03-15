@@ -43,7 +43,7 @@ export default function PageMcConnellLyricsIndex() {
           </li>
         </ol>
         <Image
-          alt="album cover"
+          alt="Page McConnell album cover"
           className="mb-10 order-1 sm:order-2 max-w-full"
           height={300}
           src="/page-mcconnell.jpeg"

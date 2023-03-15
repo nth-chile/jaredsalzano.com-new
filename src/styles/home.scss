@@ -2,38 +2,6 @@ html {
   background-color: rgb(228, 237, 255);
 }
 
-.image-bg {
-  position: fixed;
-  top: -240px;
-  right: -240px;
-  bottom: -240px;
-  left: -240px;
-  overflow: hidden;
-  background-color: white;
-}
-
-.image-bg__inner {
-  animation: bg-slide 10s linear infinite;
-  background-image: url(/sky.jpg);
-  background-position: center;
-  background-repeat: repeat-x;
-  background-size: 50% 100%;
-  bottom: 0px;
-  filter: blur(80px) brightness(1.4);
-  opacity: .5;
-  left: 0px;
-  position: absolute;
-  right: 100%;
-  top: 0px;
-  width: 400%;
-  z-index: 0;
-}
-
-@keyframes bg-slide {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }  
-}
-
 .page-home__wave {
   font-size: 35px
 }
@@ -41,8 +9,18 @@ html {
 .project-grid__item {
   &:hover, &:focus {
     .project-grid__item__image-container {
-      box-shadow: 0 50px 80px -20px rgba(0,0,0,0.27), 0 30px 50px -30px rgba(0,0,0,0.3);
-      transform: translateY(-1px) scale(1.001);
+      @screen sm {
+        box-shadow: 0 50px 80px -20px rgba(0,0,0,0.27), 0 30px 50px -30px rgba(0,0,0,0.3);
+        transform: translateY(-1px) scale(1.001);
+      }
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover, &:focus, &:visited {
+        text-decoration: none;
+      }
     }
 
     h2 {
@@ -53,6 +31,10 @@ html {
 }
 
 .project-grid__item__image-container {
-  box-shadow: 0 30px 60px -10px rgb(0 0 0 / 30%), 0 18px 36px -18px rgb(0 0 0 / 33%);
   transition: ease-in-out .25s;
+  
+  @screen sm {
+    box-shadow: 0 30px 60px -10px rgb(0 0 0 / 30%), 0 18px 36px -18px rgb(0 0 0 / 33%);
+  }
+
 }
