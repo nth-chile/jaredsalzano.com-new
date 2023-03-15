@@ -1,11 +1,2 @@
-[context.826chi-2016]
-  command = "echo 'hello'"
-  publish = "./"
-
-[context.826chi-2017]
-  command = "echo 'hello'"
-  publish = "./"
-
-[context.wedo]
-  command = "echo 'hello'"
-  publish = "./"
+[[context.production.plugins]]
+package = "@netlify/plugin-nextjs"
