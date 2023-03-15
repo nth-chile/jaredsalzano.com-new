@@ -1,2 +1,8 @@
+[context.826chi-2016]
+  publish = "./"
+
+[context.826chi-2017]
+  publish = "./"
+
 [context.wedo]
   publish = "./"
