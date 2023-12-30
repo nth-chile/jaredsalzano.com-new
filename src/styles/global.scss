@@ -40,13 +40,12 @@ body {
 }
 
 .image-bg__inner {
-  animation: bg-slide 10s linear infinite;
+  animation: bg-slide 8s linear infinite;
   background-image: url(/sky.jpg);
-  background-position: center;
   background-repeat: repeat-x;
   background-size: 50% 100%;
   bottom: 0px;
-  filter: blur(80px) brightness(1.4);
+  filter: brightness(1.1);
   opacity: .5;
   left: 0px;
   position: absolute;
@@ -57,8 +56,8 @@ body {
 }
 
 @keyframes bg-slide {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }  
+  from { background-position: 0%; }
+  to { background-position: -100%; }  
 }
 
 .h-100vh {

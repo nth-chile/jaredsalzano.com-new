@@ -8,7 +8,7 @@ export default async function OtherStuff() {
       <ImageBg />
       <div className="flex flex-col h-100vh">
         <div className="page-container w-full grow">
-          <a aria-label="home" className="text-blue-800 underline inline-block mb-14 text-lg" href="/">back</a>
+          <a aria-label="home" className="text-blue-800 underline inline-block mb-14 text-lg" href="/">« home</a>
           <main className="relative">
             <ul className="text-blue-800 underline text-shadow-lg text-lg">
               <li>
@@ -18,7 +18,7 @@ export default async function OtherStuff() {
                 <a target="_blank" href="https://sugarstream.live/">sugarstream</a>
               </li>
               <li>
-                <a target="_blank" href="page-mcconnell-lyrics">page lyrics</a>
+                <a href="page-mcconnell-lyrics">page lyrics</a>
               </li>
             </ul>
           </main>

@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function PageMcConnellLyricsIndex() {
   return (
     <div className="page-mcconnell-lyrics__index">
-      <a className="page-mcconnell-lyrics__back inline-block mt-5" href="/">back</a>
+      <a className="page-mcconnell-lyrics__back inline-block mt-5" href="/">« home</a>
       <h1 className="font-work-sans max-w-xl">Lyrics to Page McConnell’s self-titled album</h1>
       <div className="flex justify-between flex-col sm:flex-row">
         <ol className="m-0 py-0 order-2 sm:order-1 list-decimal">

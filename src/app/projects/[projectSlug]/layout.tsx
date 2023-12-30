@@ -8,14 +8,7 @@ export default function ProjectLayout({
 }) {
   return (
     <div className="page-container">
-      <a aria-label="home" className="project__back inline-block mb-14 text-lg" href="/">
-        <Image
-          alt=""
-          src="/android-chrome-192x192.png"
-          height={60}
-          width={60}
-        />
-      </a>
+      <a aria-label="home" className="text-blue-800 underline inline-block mb-14" href="/">« home</a>
       {children}
       <MakeProjectLinksOpenInNewTab />
     </div>

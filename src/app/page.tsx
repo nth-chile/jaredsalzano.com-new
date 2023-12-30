@@ -42,7 +42,13 @@ export default async function Home() {
                   <a href={`/projects/${slug}`}>
                     <article>
                       <div className="project-grid__item__image-container relative h-72 mb-5">
-                        <Image className="h-48 drop-shadow w-full object-cover object-left-top" src={frontMatter.featuredImage} alt={frontMatter.title} fill />
+                        <Image
+                          className={`${frontMatter.imgClass} h-48 drop-shadow w-full object-cover`} 
+                          src={frontMatter.featuredImage} 
+                          alt={frontMatter.title} 
+                          fill 
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                        />
                       </div>
                       <h2 className="font-times font-semibold text-2xl text-gray-600">{frontMatter.title}</h2>
                     </article>

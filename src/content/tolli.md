@@ -1,13 +1,14 @@
 ---
 title: Tolli - Artist Networking App
 featuredImage: /posts/tolli/hero.png
-order: 4
+imgClass: object-left-top
+order: 7
 ---
 
-Tolli aimed to help artists connect and collaborate with each other. Think of it as a dating app, except instead of finding romance, artists find other artists interested in collaborating on a project. We helped them design and build apps for web and iOS using React and React Native.
+Tolli was designed to help artists connect and collaborate with each other. Sort of like a dating app, but for creative projects instead of for dating. I helped them build their web app with React.
+
+Designed by my brother Gage at [Studio Apartment](https://studioapt.co/).
 
 <img alt="Tolli website screenshot" src="/posts/tolli/2.png" />
 
 <img alt="Tolli website screenshot" src="/posts/tolli/1.png" />
-
-Designed by [Gage Salzano](https://studioapt.co/).
