@@ -1,2 +1,7 @@
-[context.wedo]
-  publish = "./"
+[context.production]
+publish = ".next/"
+command = "npm run build"
+
+[[context.production.plugins]]
+package = "@netlify/plugin-nextjs"
+
