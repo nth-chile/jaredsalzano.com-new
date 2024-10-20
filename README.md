@@ -1,4 +1,4 @@
-To update <your subdomain>.jaredsalzano.com:
+To update <your-subdomain>.jaredsalzano.com:
 - from the other repository
   - add a `netlify.toml`
   - `git remote add jaredsalzano.com https://github.com/nth-chile/jaredsalzano.com-new`
