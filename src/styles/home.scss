@@ -2,15 +2,64 @@ html {
   background-color: rgb(228, 237, 255);
 }
 
-.page-home__wave {
-  font-size: 35px
+.contact-btn {
+  background: linear-gradient(133deg, #66fff3, #47f9d8);
+  border: 1px solid #20e9c3;
+  letter-spacing: .01em;
+  padding: .70em .75em .75em .75em;
+  transition: background 1s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(133deg, #99fff7, #61fade);
+  }
+}
+
+.project-marquee {
+  margin-left: -10px;
+  width: calc(100% + 20px) !important;
+
+  @screen sm {
+    margin-left: -60px;
+    width: calc(100% + 120px) !important;
+  }
+
+  a {
+
+    &:hover,
+    &:focus {
+
+      article:before,
+      h2 {
+        opacity: 1;
+      }
+    }
+  }
+
+  article {
+    &:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 10;
+      opacity: 0;
+      transition: opacity ease-in-out 50ms;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, .3) 100%);
+    }
+  }
+
+  h2 {
+    transition: opacity ease-in-out 50ms;
+  }
 }
 
 .project-grid__item {
-  &:hover, &:focus {
+
+  &:hover,
+  &:focus {
     .project-grid__item__image-container {
       @screen sm {
-        box-shadow: 0 50px 80px -20px rgba(0,0,0,0.27), 0 30px 50px -30px rgba(0,0,0,0.3);
+        box-shadow: 0 50px 80px -20px rgba(0, 0, 0, 0.27), 0 30px 50px -30px rgba(0, 0, 0, 0.3);
         transform: translateY(-1px) scale(1.001);
       }
     }
@@ -18,7 +67,9 @@ html {
     a {
       text-decoration: none;
 
-      &:hover, &:focus, &:visited {
+      &:hover,
+      &:focus,
+      &:visited {
         text-decoration: none;
       }
     }
@@ -32,9 +83,8 @@ html {
 
 .project-grid__item__image-container {
   transition: ease-in-out .25s;
-  
+
   @screen sm {
     box-shadow: 0 30px 60px -10px rgb(0 0 0 / 30%), 0 18px 36px -18px rgb(0 0 0 / 33%);
   }
-
 }
