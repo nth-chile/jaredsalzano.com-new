@@ -47,7 +47,7 @@ export default async function Home() {
                     src={frontMatter.featuredImage}
                     alt={frontMatter.title}
                     fill
-                    priority={index > 4}
+                    priority
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                   <h2 className="opacity-0 absolute bottom-4 pl-5 pr-6 font-semibold text-xl text-white drop-shadow z-20">{frontMatter.title}</h2>
