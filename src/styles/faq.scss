@@ -1,0 +1,22 @@
+.faq {
+    p {
+        margin-bottom: 1em;
+    }
+}
+
+.faq-item {
+    background-color: rgba(0, 0, 0, .03);
+
+    &:hover,
+    &:focus {
+        background-color: rgba(0, 0, 0, .05);
+    }
+}
+
+dd {
+    transition: height .5s cubic-bezier(.4, 0, .2, 1);
+}
+
+svg {
+    transition: transform .5s cubic-bezier(.4, 0, .2, 1);
+}

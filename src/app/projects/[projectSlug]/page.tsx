@@ -1,9 +1,9 @@
 import '@/styles/project.scss'
 import getContentBySlug from "@/utils/getContentBySlug"
 
-export async function generateMetadata({ params } : { params: any}) {
+export async function generateMetadata({ params }: { params: any }) {
   try {
-    const content = await getContentBySlug(params.projectSlug)
+    const content = await getContentBySlug(`posts/${params.projectSlug}`)
 
     let title = `Jared Salzano`
 
@@ -18,10 +18,10 @@ export async function generateMetadata({ params } : { params: any}) {
 }
 
 export default async function ProjectPage({
-  params: { 
-    projectSlug 
+  params: {
+    projectSlug
   }
-} : {
+}: {
   params: {
     projectSlug: string
   }
@@ -30,7 +30,7 @@ export default async function ProjectPage({
   let html
 
   try {
-    const content = await getContentBySlug(projectSlug)
+    const content = await getContentBySlug(`posts/${projectSlug}`)
     frontMatter = content.frontMatter
     html = content.html
   } catch (err) {

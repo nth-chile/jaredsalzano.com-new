@@ -1,0 +1,23 @@
+.marquee {
+
+    &:hover,
+    &:focus {
+        .marquee-group {
+            animation-play-state: paused;
+        }
+    }
+}
+
+.marquee-group {
+    animation: scroll 45s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - theme('spacing.4')));
+    }
+}

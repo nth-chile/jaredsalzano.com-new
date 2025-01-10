@@ -3,8 +3,10 @@ import Image from "next/image"
 import getPreviewsForAllPosts from "@/utils/getPreviewsForAllPosts"
 import ImageBg from "@/components/ImageBg"
 import Footer from "@/components/Footer"
-import Marquee from "react-fast-marquee";
+import Marquee from "@/components/Marquee";
 import Testimonials from "@/components/Testimonials"
+import FAQ from "@/components/FAQ"
+import FAQAddHandlers from "@/components/FAQAddHandlers"
 
 function getSortedPosts(posts: any[]) {
   return [...posts].sort((a, b) => {
@@ -29,16 +31,16 @@ export default async function Home() {
       <ImageBg />
       <a className="absolute right-2 underline z-10 text-blue-700" href="/other-stuff">other stuff</a>
       <main className="relative">
-        <div className="page-container page-container-top">
+        <div className="page-container page-container-top-padding">
           <div className="text-gray-800 text-xl text-container mb-16">
             <p className="mb-10">Hello. I’m a senoir full-stack web & app developer living in NYC. Over the past eight years, I&apos;ve done a wide variety of work, from making small personal blogs to servicing Fortune 10 companies. You can see my full resume <a target="_blank" href="/resume.pdf" className="text-blue-700 underline">here</a>.</p>
             <a className="contact-btn text-gray-800 hover:text-gray-700 focus:text-gray-700 rounded-2xl font-semibold text-dark" href="mailto:jaredsalzano@gmail.com" target="_blank">Message me</a>
           </div>
         </div>
-        <Marquee className="project-marquee overflow-visible mb-4">
+        <Marquee className="project-marquee mb-4">
           {posts
             .map(({ frontMatter, slug }, index) => (
-              <a className="inline-block mx-4" key={index} href={`/projects/${slug}`}>
+              <a key={index} href={`/projects/${slug}`}>
                 <article className="h-72 relative rounded-2xl overflow-hidden drop-shadow" style={{ aspectRatio: "1.6 / 1" }}>
                   <Image
                     className={`${frontMatter.imgClass} w-full object-cover`}
@@ -53,8 +55,12 @@ export default async function Home() {
             )
             )}
         </Marquee>
-        <div className="page-container page-container-bottom">
-          <Testimonials />
+        <div className="page-container">
+          <Testimonials className="mb-16" />
+        </div>
+        <div style={{ backgroundColor: "rgba(255, 255, 255, .9)" }}>
+          <FAQ />
+          <FAQAddHandlers />
         </div>
       </main>
       <Footer />

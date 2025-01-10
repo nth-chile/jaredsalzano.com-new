@@ -1,6 +1,6 @@
 ---
 title: Dojobase - Professional Community Platform
-featuredImage: /posts/dojobase/dojobase-logo-2.png
+featuredImage: /posts/dojobase/hero-rotated-2.png
 imgClass: object-center
 order: 9
 ---

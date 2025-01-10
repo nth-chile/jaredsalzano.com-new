@@ -8,7 +8,7 @@ export default function ProjectLayout({
 }) {
   return (
     <div className="page-container">
-      <a aria-label="home" className="text-blue-700 underline inline-block mb-14" href="/">« home</a>
+      <a aria-label="home" className="inline-block mt-8 mb-10" href="/">Home</a>
       {children}
       <MakeProjectLinksOpenInNewTab />
     </div>

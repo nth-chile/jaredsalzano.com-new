@@ -21,10 +21,9 @@ const emitterDefaults = {
     }
 };
 
-export default function Testimonials() {
+export default function Testimonials({ className = '' }) {
     const [init, setInit] = useState(false);
 
-    // this should be run only once per application lifetime
     useEffect(() => {
         initParticlesEngine(async (engine) => {
             await loadEmittersPlugin(engine);
@@ -35,8 +34,9 @@ export default function Testimonials() {
     }, []);
 
     return (
-        <div className="bg-white rounded-2xl">
+        <div className={`rounded-2xl ${className}`}>
             <Swiper
+                autoHeight
                 effect={'fade'}
                 loop={true}
                 spaceBetween={0}
@@ -49,39 +49,41 @@ export default function Testimonials() {
                 {
                     [
                         {
-                            id: 1,
-                            quote: "He did that thang he built that site. Did it good good hey I'm words, maybe one maybe two lines of words.",
-                            name: "Wendy Sample",
-                            linkText: "wendysample.com",
-                            linkHref: "https://wendysample.com"
+                            id: 2,
+                            quote: "Incredibly professional and nice guy to work with. Genuinely went above and beyond the product requirements.",
+                            name: "Avi Muchnick",
                         },
                         {
-                            id: 2,
-                            quote: "Gets the projects on time, puts the website there and everything.",
-                            name: "Wendy Sample",
-                            linkText: "wendysample.com",
-                            linkHref: "https://wendysample.com"
+                            id: 1,
+                            quote: "Jared was a smart choice to develop my personal portfolio. He accomplished all the things I was worried wouldn't work and was very patient with all my questions and feedback! He was very responsive and quick with updates. He even met with me in person to show me how to use the custom template he built in WordPress. The project met my vision and I am very happy with it. Thank you!",
+                            name: "Denise M.",
+                            small: true
+                        },
+                        {
+                            id: 23,
+                            quote: "Jared has been a great resource for our firm. He promptly executes on updates to our site and is a pleasure to work with.",
+                            name: "Susie Baker",
+                            linkHref: "https://spearstreetcapital.com/",
+                            linkText: "spearstreetcapital.com"
                         },
                         {
                             id: 3,
-                            quote: "Builds a thing without not building it, every time.",
-                            name: "Wendy Sample",
-                            linkText: "wendysample.com",
-                            linkHref: "https://wendysample.com"
+                            quote: "Jared was easy to get a hold of and plan out the project with. He was flexible as we had to change things around mid-project and stuck to timelines and budget.",
+                            name: "Zach Holub",
                         }
-                    ].map(({ id, linkHref, linkText, name, quote }) => <SwiperSlide key={id}>
-                        <div className="bg-white rounded-2xl pt-20 pb-14 px-2 flex flex-col items-center text-gray-800">
-                            <blockquote className="font-bold text-balance text-center text-3xl mb-6" style={{ maxWidth: "22em" }}>
+                    ].map(({ linkHref, linkText, id, name, quote, small = false }) => <SwiperSlide key={id}>
+                        <div className="bg-white rounded-2xl border pt-20 pb-14 px-8 flex flex-col items-center text-gray-800">
+                            <blockquote className={`font-bold text-balance text-center mb-6 ${small ? 'text-xl' : 'text-3xl'}`} style={{ maxWidth: small ? "800px" : "700px" }}>
                                 <p>“{quote}”</p>
                             </blockquote>
                             <cite className="text-center not-italic">
                                 <p className="font-bold text-xl">{name}</p>
-                                <a href={linkHref} target="_blank" className="text-nowrap hover:border-b border-b-gray-800">{linkText}
+                                {linkHref && <a href={linkHref} target="_blank" className="text-nowrap hover:border-b border-b-gray-800">{linkText}
                                     <svg className="inline ml-1" style={{ marginTop: -1 }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M2.31787 9.18188L7.97472 3.52503" stroke="black" strokeWidth="1.75" strokeLinecap="square" strokeLinejoin="round" />
                                         <path d="M3.73242 2.81812L8.68217 2.81812L8.68217 7.76786" stroke="black" strokeWidth="1.75" strokeLinecap="square" strokeLinejoin="round" />
                                     </svg>
-                                </a>
+                                </a>}
                             </cite>
                         </div>
                     </SwiperSlide>)

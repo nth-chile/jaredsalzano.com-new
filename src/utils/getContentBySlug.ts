@@ -1,11 +1,11 @@
-import {unified} from 'unified'
+import { unified } from 'unified'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import rehypeFormat from 'rehype-format'
 import rehypeRaw from 'rehype-raw'
 import rehypeStringify from 'rehype-stringify'
 import matter from "gray-matter"
-import {read} from "to-vfile"
+import { read } from "to-vfile"
 import path from "path"
 
 export default async function getContentBySlug(slug: string) {
@@ -22,7 +22,7 @@ export default async function getContentBySlug(slug: string) {
     .use(rehypeFormat)
     .use(rehypeStringify)
     .process(content)
-  
+
   return {
     frontMatter,
     html: String(html)

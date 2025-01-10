@@ -16,14 +16,6 @@ html {
 }
 
 .project-marquee {
-  margin-left: -10px;
-  width: calc(100% + 20px) !important;
-
-  @screen sm {
-    margin-left: -60px;
-    width: calc(100% + 120px) !important;
-  }
-
   a {
 
     &:hover,
