@@ -1,9 +1,10 @@
 import '@/styles/project.scss'
 import getContentBySlug from "@/utils/getContentBySlug"
 
-export async function generateMetadata({ params }: { params: any }) {
+export async function generateMetadata({ params }: any) {
   try {
-    const content = await getContentBySlug(`posts/${params.projectSlug}`)
+    const { projectSlug } = await params
+    const content = await getContentBySlug(`posts/${projectSlug}`)
 
     let title = `Jared Salzano`
 
@@ -17,19 +18,12 @@ export async function generateMetadata({ params }: { params: any }) {
   }
 }
 
-export default async function ProjectPage({
-  params: {
-    projectSlug
-  }
-}: {
-  params: {
-    projectSlug: string
-  }
-}) {
+export default async function ProjectPage({ params }: any) {
   let frontMatter
   let html
 
   try {
+    const { projectSlug } = await params
     const content = await getContentBySlug(`posts/${projectSlug}`)
     frontMatter = content.frontMatter
     html = content.html
@@ -37,10 +31,10 @@ export default async function ProjectPage({
     throw err
   }
 
-  return <>
-    <div>
+  return (
+    <main>
       <h1 className="font-times font-semibold text-2xl text-gray-600 mb-5">{frontMatter.title}</h1>
       <div className="post-markdown-container" dangerouslySetInnerHTML={{ __html: html }} />
-    </div>
-  </>
+    </main>
+  )
 }

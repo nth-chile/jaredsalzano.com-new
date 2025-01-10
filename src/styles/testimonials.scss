@@ -1,8 +1,8 @@
-@import 'swiper/scss';
-@import 'swiper/scss/a11y';
-@import 'swiper/scss/effect-fade';
-@import 'swiper/scss/pagination';
-@import 'swiper/scss/autoplay';
+@use 'swiper/scss';
+@use 'swiper/scss/a11y';
+@use 'swiper/scss/effect-fade';
+@use 'swiper/scss/pagination';
+@use 'swiper/scss/autoplay';
 
 :root {
     --swiper-pagination-bottom: theme('spacing.5');

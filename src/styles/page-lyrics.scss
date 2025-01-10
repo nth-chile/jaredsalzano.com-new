@@ -6,10 +6,6 @@ html {
   background-color: $white;
 }
 
-.font-work-sans {
-  font-family: 'Work Sans', sans-serif;
-}
-
 .page-mcconnell-lyrics {
   color: $black;
   padding: 0 10px 40px;
@@ -39,7 +35,8 @@ html {
     color: $blue;
     text-decoration: underline;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $blue;
     }
   }

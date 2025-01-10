@@ -1,5 +1,6 @@
 import MakeProjectLinksOpenInNewTab from "@/components/MakeProjectLinksOpenInNewTab"
-import Image from "next/image"
+import Link from "next/link"
+import Footer from "@/components/Footer"
 
 export default function ProjectLayout({
   children,
@@ -7,10 +8,13 @@ export default function ProjectLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="page-container">
-      <a aria-label="home" className="inline-block mt-8 mb-10" href="/">Home</a>
-      {children}
-      <MakeProjectLinksOpenInNewTab />
+    <div>
+      <div className="page-container">
+        <Link aria-label="home" className="inline-block mt-8 mb-10" href="/">Home</Link>
+        {children}
+        <MakeProjectLinksOpenInNewTab />
+      </div>
+      <Footer />
     </div>
   )
 }

@@ -41,7 +41,6 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://jaredsalzano.com/"
   },
-  themeColor: "white",
   twitter: {
     card: "summary_large_image",
     description: "",

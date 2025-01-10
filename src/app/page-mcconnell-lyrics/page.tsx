@@ -1,12 +1,12 @@
-import type { Metadata } from "next"
+import Link from "next/link"
 import Image from "next/image"
 
 export default function PageMcConnellLyricsIndex() {
   return (
     <div className="page-mcconnell-lyrics__index">
-      <a className="page-mcconnell-lyrics__back inline-block mt-5" href="/">Home</a>
-      <h1 className="font-work-sans max-w-xl">Lyrics to Page McConnell’s self-titled album</h1>
-      <div className="flex justify-between flex-col sm:flex-row">
+      <Link className="page-mcconnell-lyrics__back inline-block mt-5 font-times" href="/">Home</Link>
+      <h1 className="max-w-xl">Lyrics to Page McConnell’s self-titled album</h1>
+      <div className="flex justify-between flex-col sm:flex-row font-times">
         <ol className="m-0 py-0 order-2 sm:order-1 list-decimal">
           <li>
             <a href="/page-mcconnell-lyrics/beauty-of-a-broken-heart">Beauty of a Broken Heart</a>
@@ -40,6 +40,7 @@ export default function PageMcConnellLyricsIndex() {
           alt="Page McConnell album cover"
           className="mb-10 order-1 sm:order-2 max-w-full"
           height={300}
+          priority
           src="/page-mcconnell.jpeg"
           width={300}
         />

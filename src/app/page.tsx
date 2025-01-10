@@ -47,6 +47,7 @@ export default async function Home() {
                     src={frontMatter.featuredImage}
                     alt={frontMatter.title}
                     fill
+                    priority={index > 4}
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                   <h2 className="opacity-0 absolute bottom-4 pl-5 pr-6 font-semibold text-xl text-white drop-shadow z-20">{frontMatter.title}</h2>
@@ -60,10 +61,13 @@ export default async function Home() {
         </div>
         <div style={{ backgroundColor: "rgba(255, 255, 255, .9)" }}>
           <FAQ />
+          {/* @ts-expect-error Async Server Component */}
           <FAQAddHandlers />
         </div>
       </main>
-      <Footer />
+      <div className="relative" style={{ backgroundColor: "rgba(255, 255, 255, 0.9)" }}>
+        <Footer />
+      </div>
     </>
   )
 }
