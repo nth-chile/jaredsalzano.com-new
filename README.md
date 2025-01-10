@@ -1,2 +1,6 @@
-To update [subdomain].jaredsalzano.com, `cd` to the other repository and do `git push jaredsalzano.com master:[subdomain]`
+To update `<your subdomain>.jaredsalzano.com`:
+- from the other repository
+  - add a `netlify.toml` if there isn't one
+  - `git remote add jaredsalzano.com https://github.com/nth-chile/jaredsalzano.com-new` if you haven't
+  - `git push jaredsalzano.com main:<your subdomain>`
 
