@@ -1,17 +1,15 @@
-import "@/styles/other-stuff.scss"
-import ImageBg from "@/components/ImageBg"
+import "@/styles/global.scss"
 import Footer from "@/components/Footer"
 import Link from "next/link"
 
 export default async function OtherStuff() {
   return (
     <>
-      <ImageBg />
       <div className="flex flex-col h-100vh">
         <div className="page-container w-full grow">
           <Link aria-label="home" className="text-blue-700 underline inline-block mt-8 mb-10" href="/">Home</Link>
           <main className="relative">
-            <ul className="text-blue-700 underline text-shadow-lg text-lg">
+            <ul className="text-blue-700 underline text-lg">
               <li>
                 <a target="_blank" href="https://nth-chile.github.io/platos-search/">plato’s search (game)</a>
               </li>

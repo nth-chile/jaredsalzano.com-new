@@ -33,9 +33,9 @@ export default async function FAQ() {
                     <div key={index} className="faq-item cursor-pointer border rounded-xl pb-3 mb-3">
                         <button className="pt-6 px-6 pb-3 w-full flex justify-between items-center">
                             <dt>
-                                <h3 className="text-xl font-bold">{question}</h3>
+                                <h3 className="text-xl font-bold text-left pr-2">{question}</h3>
                             </dt>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg className="flex-shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13.6569 5.50012L8 11.157L2.34314 5.50012" stroke="black" strokeWidth="2" strokeLinejoin="round" />
                             </svg>
                         </button>

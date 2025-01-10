@@ -31,7 +31,7 @@ export default async function Home() {
       <ImageBg />
       <a className="absolute right-2 underline z-10 text-blue-700" href="/other-stuff">other stuff</a>
       <main className="relative">
-        <div className="page-container page-container-top-padding">
+        <div className="page-container pt-28">
           <div className="text-gray-800 text-xl text-container mb-16">
             <p className="mb-10">Hello. I’m a senoir full-stack web & app developer living in NYC. Over the past eight years, I&apos;ve done a wide variety of work, from making small personal blogs to servicing Fortune 10 companies. You can see my full resume <a target="_blank" href="/resume.pdf" className="text-blue-700 underline">here</a>.</p>
             <a className="contact-btn text-gray-800 hover:text-gray-700 focus:text-gray-700 rounded-2xl font-semibold text-dark" href="mailto:jaredsalzano@gmail.com" target="_blank">Message me</a>
@@ -41,7 +41,7 @@ export default async function Home() {
           {posts
             .map(({ frontMatter, slug }, index) => (
               <a key={index} href={`/projects/${slug}`}>
-                <article className="h-72 relative rounded-2xl overflow-hidden drop-shadow" style={{ aspectRatio: "1.6 / 1" }}>
+                <article className="h-60 sm:h-72 relative rounded-2xl overflow-hidden shadow" style={{ aspectRatio: "1.6 / 1" }}>
                   <Image
                     className={`${frontMatter.imgClass} w-full object-cover`}
                     src={frontMatter.featuredImage}
@@ -56,9 +56,7 @@ export default async function Home() {
             )
             )}
         </Marquee>
-        <div className="page-container">
-          <Testimonials className="mb-16" />
-        </div>
+        <Testimonials />
         <div style={{ backgroundColor: "rgba(255, 255, 255, .9)" }}>
           <FAQ />
           {/* @ts-expect-error Async Server Component */}

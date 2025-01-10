@@ -2,14 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --swiper-pagination-bottom: theme('spacing.5');
+}
+
 body {
+  overscroll-behavior: none;
   min-height: 100vh;
   overflow-x: hidden;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .font-times {
-  font-family: Times;
+  font-family: Times, serif;
 }
 
 .page-container {
@@ -24,14 +29,6 @@ body {
   @screen sm {
     padding-left: 60px;
     padding-right: 60px;
-  }
-}
-
-.page-container-top-padding {
-  padding-top: 40px;
-
-  @screen sm {
-    padding-top: 100px;
   }
 }
 

@@ -1,13 +1,6 @@
-$white: #FFFAEC;
-$black: #242321;
-$blue: #2F69FF;
-
-html {
-  background-color: $white;
-}
-
 .page-mcconnell-lyrics {
-  color: $black;
+  background-color: #FFFAEC;
+  color: #242321;
   padding: 0 10px 40px;
   box-sizing: border-box;
   font-size: 24px;
@@ -32,12 +25,12 @@ html {
   }
 
   a {
-    color: $blue;
+    color: #2F69FF;
     text-decoration: underline;
 
     &:hover,
     &:focus {
-      color: $blue;
+      color: #2F69FF;
     }
   }
 }

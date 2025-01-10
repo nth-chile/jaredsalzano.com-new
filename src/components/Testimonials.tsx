@@ -6,7 +6,7 @@ import { A11y, Autoplay, EffectFade, Pagination } from 'swiper/modules';
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadEmittersPlugin } from "@tsparticles/plugin-emitters";
 import { loadSlim } from "@tsparticles/slim";
-import "@/styles/testimonials.scss"
+import "@/styles/testimonials.scss";
 
 const emitterDefaults = {
     rate: { delay: 2, quantity: 3 },
@@ -21,7 +21,7 @@ const emitterDefaults = {
     }
 };
 
-export default function Testimonials({ className = '' }) {
+export default function Testimonials() {
     const [init, setInit] = useState(false);
 
     useEffect(() => {
@@ -34,14 +34,14 @@ export default function Testimonials({ className = '' }) {
     }, []);
 
     return (
-        <div className={`rounded-2xl ${className}`}>
+        <div className={`testimonials mb-4 shadow sm:shadow-none`}>
             <Swiper
                 autoHeight
                 effect={'fade'}
                 loop={true}
                 spaceBetween={0}
                 slidesPerView={1}
-                modules={[A11y, Autoplay, EffectFade, Pagination]}
+                modules={[A11y, EffectFade, Pagination]}
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 5000, pauseOnMouseEnter: true }}
                 grabCursor={true}
@@ -72,7 +72,7 @@ export default function Testimonials({ className = '' }) {
                             name: "Zach Holub",
                         }
                     ].map(({ linkHref, linkText, id, name, quote, small = false }) => <SwiperSlide key={id}>
-                        <div className="bg-white rounded-2xl border pt-20 pb-14 px-8 flex flex-col items-center text-gray-800">
+                        <div className="bg-white sm:rounded-2xl border pt-20 pb-14 px-4 sm:px-8 flex flex-col items-center text-gray-800">
                             <blockquote className={`font-bold text-balance text-center mb-6 ${small ? 'text-xl' : 'text-3xl'}`} style={{ maxWidth: small ? "800px" : "700px" }}>
                                 <p>“{quote}”</p>
                             </blockquote>
@@ -89,7 +89,7 @@ export default function Testimonials({ className = '' }) {
                     </SwiperSlide>)
                 }
                 {init && <Particles
-                    className="particles rounded-2xl overflow-hidden"
+                    className="particles sm:rounded-2xl overflow-hidden"
                     options={{
                         fpsLimit: 60,
                         fullScreen: { enable: false },

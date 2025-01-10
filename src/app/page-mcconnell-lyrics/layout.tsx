@@ -1,3 +1,4 @@
+import "@/styles/global.scss"
 import "@/styles/page-lyrics.scss"
 import { ReactNode } from "react"
 import type { Metadata } from "next"

@@ -2,6 +2,14 @@
     p {
         margin-bottom: 1em;
     }
+
+    dd {
+        transition: height .5s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    svg {
+        transition: transform .5s cubic-bezier(.4, 0, .2, 1);
+    }
 }
 
 .faq-item {
@@ -11,12 +19,4 @@
     &:focus {
         background-color: rgba(0, 0, 0, .05);
     }
-}
-
-dd {
-    transition: height .5s cubic-bezier(.4, 0, .2, 1);
-}
-
-svg {
-    transition: transform .5s cubic-bezier(.4, 0, .2, 1);
 }
