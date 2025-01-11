@@ -15,7 +15,7 @@ export default function PageMcConnellLayout({ children }: { children: ReactNode 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       </Head>
-      <div className="page-mcconnell-lyrics">
+      <div className="page-mcconnell-lyrics min-h-full">
         {children}
       </div>
     </>

@@ -3,7 +3,9 @@
     &:hover,
     &:focus {
         .marquee-group {
-            animation-play-state: paused;
+            @media (hover: hover) {
+                animation-play-state: paused;
+            }
         }
     }
 }

@@ -33,7 +33,7 @@ export default async function Home() {
       <main className="relative">
         <div className="page-container pt-28">
           <div className="text-gray-800 text-xl text-container mb-16">
-            <p className="mb-10">Hello. I’m a senoir full-stack web & app developer living in NYC. Over the past eight years, I&apos;ve done a wide variety of work, from making small personal blogs to servicing Fortune 10 companies. You can see my full resume <a target="_blank" href="/resume.pdf" className="text-blue-700 underline">here</a>.</p>
+            <p className="mb-10">Hello. I’m a senior full-stack web & app developer living in NYC. Over the past eight years, I&apos;ve done a wide variety of work, from making small personal blogs to servicing Fortune 10 companies. You can see my full resume <a target="_blank" href="/resume.pdf" className="text-blue-700 underline">here</a>.</p>
             <a className="contact-btn text-gray-800 hover:text-gray-700 focus:text-gray-700 rounded-2xl font-semibold text-dark" href="mailto:jaredsalzano@gmail.com" target="_blank">Message me</a>
           </div>
         </div>
