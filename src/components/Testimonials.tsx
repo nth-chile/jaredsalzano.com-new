@@ -1,11 +1,12 @@
 "use client"
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { A11y, Autoplay, EffectFade, Pagination } from 'swiper/modules';
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadEmittersPlugin } from "@tsparticles/plugin-emitters";
 import { loadSlim } from "@tsparticles/slim";
+import useMediaQuery from '@/utils/useMediaQuery';
 import "@/styles/testimonials.scss";
 
 const emitterDefaults = {
@@ -23,6 +24,23 @@ const emitterDefaults = {
 
 export default function Testimonials() {
     const [init, setInit] = useState(false);
+    const { md, lg } = useMediaQuery();
+
+    const starsXVals = useMemo(() => {
+        let left = -2, right = 102
+
+        if (md) {
+            left = -1.3;
+            right = 101.3;
+        }
+
+        if (lg) {
+            left = -0.6;
+            right = 100.6;
+        }
+
+        return { left, right }
+    }, [md, lg]);
 
     useEffect(() => {
         initParticlesEngine(async (engine) => {
@@ -41,7 +59,7 @@ export default function Testimonials() {
                 loop={true}
                 spaceBetween={0}
                 slidesPerView={1}
-                modules={[A11y, EffectFade, Pagination]}
+                modules={[A11y, Autoplay, EffectFade, Pagination]}
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 5000, pauseOnMouseEnter: true }}
                 grabCursor={true}
@@ -114,12 +132,12 @@ export default function Testimonials() {
                             {
                                 ...emitterDefaults,
                                 direction: "top-right",
-                                position: { x: -1, y: 50 },
+                                position: { x: starsXVals.left, y: 50 },
                             },
                             {
                                 ...emitterDefaults,
                                 direction: "top-left",
-                                position: { x: 101, y: 50 },
+                                position: { x: starsXVals.right, y: 50 },
                             }
                         ]
                     }}
