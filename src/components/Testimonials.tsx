@@ -24,10 +24,15 @@ const emitterDefaults = {
 
 export default function Testimonials() {
     const [init, setInit] = useState(false);
-    const { md, lg } = useMediaQuery();
+    const { sm, md, lg } = useMediaQuery();
 
     const starsXVals = useMemo(() => {
-        let left = -2, right = 102
+        let left = -2.5, right = 102.5
+
+        if (sm) {
+            left = -1.7;
+            right = 101.7;
+        }
 
         if (md) {
             left = -1.3;
@@ -35,12 +40,12 @@ export default function Testimonials() {
         }
 
         if (lg) {
-            left = -0.6;
-            right = 100.6;
+            left = -0.74;
+            right = 100.74;
         }
 
         return { left, right }
-    }, [md, lg]);
+    }, [sm, md, lg]);
 
     useEffect(() => {
         initParticlesEngine(async (engine) => {
