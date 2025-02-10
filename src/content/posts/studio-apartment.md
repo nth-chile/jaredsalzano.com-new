@@ -2,7 +2,7 @@
 title: Studio Apartment - Design Studio Website
 featuredImage: /posts/studio-apartment/hero6.png
 imgClass: object-left-top
-order: 1
+order: 4
 ---
 
 This is the website for my brother's design studio, [Studio Apartment](https://studioapt.co/), which specializes in brand identity and interface design. Website built with [Jekyll](https://jekyllrb.com/).

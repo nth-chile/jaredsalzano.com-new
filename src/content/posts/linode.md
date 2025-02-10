@@ -2,7 +2,7 @@
 title: Linode - Style Guide Website
 featuredImage: /posts/linode/linode-logo.svg
 imgClass: object-center
-order: 4
+order: 5
 ---
 
 Before its acquisition by Akamai, Linode was a cloud service provider that offered a variety of backend web services to individuals and businesses.

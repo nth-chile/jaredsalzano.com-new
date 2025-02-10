@@ -2,7 +2,7 @@
 title: Dojobase - Professional Community Platform
 featuredImage: /posts/dojobase/hero-rotated-2.png
 imgClass: object-center
-order: 9
+order: 1
 ---
 
 Dojobase was designed for professional communities to share resources, follow guides and get business consultation.
