@@ -33,7 +33,9 @@ export default async function Home() {
       <main className="relative">
         <div className="page-container pt-28">
           <div className="text-gray-800 text-xl text-container mb-16">
-            <p className="mb-10">Hello. I’m a senior full-stack web & app developer living in NYC. Over the past eight years, I&apos;ve done a wide variety of work, from making small personal blogs to servicing Fortune 10 companies. You can see my full resume <a target="_blank" href="/resume.pdf" className="text-blue-700 underline">here</a>.</p>
+            <p className="mb-5">Hello, I’m a full-stack developer based in NYC. Over the past eight years, I’ve built scalable, high-performance web applications for fast-moving startups, creative agencies, and Fortune 50 companies. I’m experienced with leading projects from architecture to deployment, collaborating across teams, and solving complex technical challenges. Lately, I’ve been learning about LLMs, vector databases, and emerging AI cloud services.</p>
+            <p className="mb-5">I'm open to freelance work, and I'm looking for a full-time position at a tech company.</p>
+            <p className="mb-10">You can see my full resume <a target="_blank" href="/resume.pdf" className="text-blue-700 underline">here</a>.</p>
             <a className="contact-btn text-gray-800 hover:text-gray-700 focus:text-gray-700 rounded-2xl font-semibold text-dark" href="mailto:jaredsalzano@gmail.com" target="_blank">Message me</a>
           </div>
         </div>
