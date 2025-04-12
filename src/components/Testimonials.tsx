@@ -78,7 +78,7 @@ export default function Testimonials() {
                         },
                         {
                             id: 1,
-                            quote: "Jared was a smart choice to develop my personal portfolio. He accomplished all the things I was worried wouldn't work and was very patient with all my questions and feedback! He was very responsive and quick with updates. He even met with me in person to show me how to use the custom template he built in WordPress. The project met my vision and I am very happy with it. Thank you!",
+                            quote: "Jared was a smart choice to develop my personal portfolio. He accomplished all the things I was worried wouldn’t work and was very patient with all my questions and feedback! He was very responsive and quick with updates. He even met with me in person to show me how to use the custom template he built in WordPress. The project met my vision and I am very happy with it. Thank you!",
                             name: "Denise M.",
                             small: true
                         },

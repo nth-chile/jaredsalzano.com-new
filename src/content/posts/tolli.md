@@ -9,6 +9,8 @@ Tolli was designed to help artists connect and collaborate with each other. Sort
 
 Designed by my brother, [Gage](https://gagesalzano.com/).
 
+<br>
+
 <img alt="Tolli website screenshot" src="/posts/tolli/2.png" />
 
 <img alt="Tolli website screenshot" src="/posts/tolli/1.png" />
