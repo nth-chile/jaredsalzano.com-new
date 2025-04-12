@@ -5,6 +5,6 @@ imgClass: object-left-top
 order: 4
 ---
 
-This is the website for my brother's design studio, [Studio Apartment](https://studioapt.co/), which specializes in brand identity and interface design. Website built with [Jekyll](https://jekyllrb.com/).
+My brother asked me to help build the site for his design studio. We’d previously built his personal portfolio using Jekyll, so we recycled that codebase to create [studioapt.co](https://studioapt.co). The site has a lot of case studies, so we used Markdown files to generate the pages because they’re easy to version, quick to edit, and kept the workflow simple. There’s also a lot of imagery, which needed to be as crisp as possible without hindering performance, so I implemented responsive image loading to serve sharp photos without overloading mobile devices. For his previous portfolio, we had used Masonry.js for the grid layout, but with modern browser support for CSS Grid, I was able to replace it for better performance, cleaner code, and a smoother visual effect on resize.
 
 <img alt="Studio Apartment website screenshot" src="/posts/studio-apartment/33.png" />
