@@ -5,8 +5,8 @@ imgClass: object-center
 order: 1
 ---
 
-Dojobase was designed for professional communities to share resources, follow guides and get business consultation.
+A client wanted to build a community platform where professionals could create sub-communities specific to their industry and support its subscribers by sharing their expertise, knowledge, and resources. The app featured sophisticated user access management, with role-based permissions and paid feature gating at both global and sub-community levels. It also included complex global state, a WSYWIG editor for publishing articles, and a fully-featured, Reddit-like discussion forum.
 
-I learned a lot from this project, including how to build a discussion forum with groups and user permissions, as well as how to keep a large codebase organized and scalable, in a way that is easy to maintain and modify.
+This was one of the first fully-featured React apps I had built, and it gave me a good chance to dive into a lot of things I had never done before, and to think extensively about complex application architecture. I encountered problems, solutions to those problems, and eventually better, more scalable solutions. I learned to appreciate the DRY (don't repeat yourself) principle of programming, and to write reusable code that was generic enough to accommodate feature changes. By the time it was finished, I had become very familiar with using React, Redux, MongoDB, and Node.js (Express) to create full-stack applications, and had significantly evolved my understanding of scalable architecture, specifically in a rapidly-changing startup context.
 
 <img alt="Dojobase website screenshot" src="/posts/dojobase/1.png" />
