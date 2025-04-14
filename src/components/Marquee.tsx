@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import '../styles/marquee.scss';
+import '../styles/marquee.css';
 
 export default function Marquee({ children, className = '' }: { children: ReactNode, className: string }) {
     return (

@@ -1,12 +1,12 @@
-@use 'swiper/scss';
-@use 'swiper/scss/a11y';
-@use 'swiper/scss/effect-fade';
-@use 'swiper/scss/pagination';
-@use 'swiper/scss/autoplay';
+@import 'swiper/css';
+@import 'swiper/css/a11y';
+@import 'swiper/css/effect-fade';
+@import 'swiper/css/pagination';
+@import 'swiper/css/autoplay';
 
 .testimonials {
     @screen sm {
-        // Match .page-container, but without mobile padding
+        /* Match .page-container, but without mobile padding */
         padding-left: 60px;
         padding-right: 60px;
     }

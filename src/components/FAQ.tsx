@@ -1,5 +1,5 @@
 import getContentBySlug from "@/utils/getContentBySlug"
-import '../styles/faq.scss'
+import '../styles/faq.css'
 
 const faqFilenames = [1, 2, 3, 4, 5, 6]
 

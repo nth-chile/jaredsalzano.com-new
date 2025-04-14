@@ -1,4 +1,4 @@
-import "@/styles/global.scss"
+import "@/styles/global.css"
 import MakeProjectLinksOpenInNewTab from "@/components/MakeProjectLinksOpenInNewTab"
 import Link from "next/link"
 import Footer from "@/components/Footer"

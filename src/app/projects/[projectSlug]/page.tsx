@@ -1,4 +1,4 @@
-import '@/styles/project.scss'
+import '@/styles/project.css'
 import getContentBySlug from "@/utils/getContentBySlug"
 
 export async function generateMetadata({ params }: any) {

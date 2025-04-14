@@ -1,4 +1,4 @@
-import "@/styles/home.scss"
+import "@/styles/home.css"
 import Image from "next/image"
 import getPreviewsForAllPosts from "@/utils/getPreviewsForAllPosts"
 import ImageBg from "@/components/ImageBg"

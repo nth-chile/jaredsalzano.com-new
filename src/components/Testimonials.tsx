@@ -7,7 +7,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadEmittersPlugin } from "@tsparticles/plugin-emitters";
 import { loadSlim } from "@tsparticles/slim";
 import useMediaQuery from '@/utils/useMediaQuery';
-import "@/styles/testimonials.scss";
+import "@/styles/testimonials.css";
 
 const emitterDefaults = {
     rate: { delay: 2, quantity: 3 },

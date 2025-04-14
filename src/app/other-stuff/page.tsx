@@ -1,4 +1,4 @@
-import "@/styles/global.scss"
+import "@/styles/global.css"
 import Footer from "@/components/Footer"
 import Link from "next/link"
 

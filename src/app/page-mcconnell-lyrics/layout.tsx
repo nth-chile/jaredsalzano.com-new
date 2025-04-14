@@ -1,5 +1,5 @@
-import "@/styles/global.scss"
-import "@/styles/page-lyrics.scss"
+import "@/styles/global.css"
+import "@/styles/page-lyrics.css"
 import { ReactNode } from "react"
 import type { Metadata } from "next"
 import Head from "next/head"
