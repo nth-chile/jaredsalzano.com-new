@@ -11,6 +11,4 @@ I gained hands-on project management experience, coordinating with the client, d
 
 I helped the client make smart tradeoffs: explaining when a feature was expensive, suggesting simpler MVP alternatives, or identifying when a spec adjustment could let us use a third-party solution instead of building custom.
 
-<br>
-
 <img alt="Moni Jar screenshot" src="/posts/moni-jar/monijar-tile.png" />

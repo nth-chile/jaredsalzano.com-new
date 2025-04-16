@@ -46,7 +46,7 @@
   &:hover,
   &:focus {
     .project-grid__item__image-container {
-      @screen sm {
+      @media (width >= 640px) {
         box-shadow: 0 50px 80px -20px rgba(0, 0, 0, 0.27), 0 30px 50px -30px rgba(0, 0, 0, 0.3);
         transform: translateY(-1px) scale(1.001);
       }
@@ -63,7 +63,7 @@
     }
 
     h2 {
-      color: theme('colors.gray.700');
+      color: var(--color-gray-700);
       transition: ease-in-out .25s;
     }
   }
@@ -72,7 +72,7 @@
 .project-grid__item__image-container {
   transition: ease-in-out .25s;
 
-  @screen sm {
+  @media (width >= 640px) {
     box-shadow: 0 30px 60px -10px rgb(0 0 0 / 30%), 0 18px 36px -18px rgb(0 0 0 / 33%);
   }
 }

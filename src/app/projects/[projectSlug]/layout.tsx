@@ -11,7 +11,9 @@ export default function ProjectLayout({
   return (
     <div>
       <div className="page-container project">
-        <Link aria-label="home" className="inline-block mt-8 mb-10" href="/">Home</Link>
+        <div className="prose">
+          <Link aria-label="home" className="inline-block mt-8 mb-10" href="/">Home</Link>
+        </div>
         {children}
         <MakeProjectLinksOpenInNewTab />
       </div>

@@ -6,7 +6,7 @@
   font-size: 24px;
   line-height: 1.15;
 
-  @screen sm {
+  @media (width >= 640px) {
     padding: 60px;
   }
 
@@ -47,7 +47,7 @@
 .page-mcconnell-lyrics__lyrics {
   font-size: 20px;
 
-  @screen sm {
+  @media (width >= 640px) {
     font-size: 24px;
   }
 }

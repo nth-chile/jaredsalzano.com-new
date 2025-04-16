@@ -13,6 +13,4 @@ The design emphasized a storytelling tone and animated infographics to reference
 
 The result was a snappy, polished user experience that not only matched the specs, but set a maintainable approach for future iterations.
 
-<br>
-
 <img alt="Thought Catalog Agency screenshot" src="/posts/thought-catalog/tc-grid-1-1.jpg" />

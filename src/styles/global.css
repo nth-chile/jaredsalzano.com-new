@@ -1,9 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+@config "../../tailwind.config.js";
+
+@theme {
+  --font-serif: "Times", serif;
+  --font-sans: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
 
 :root {
-  --swiper-pagination-bottom: theme('spacing.5');
+  --swiper-pagination-bottom: --spacing(5);
 }
 
 html,
@@ -14,11 +19,6 @@ body {
 
 body {
   overflow-x: hidden;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-
-.font-times {
-  font-family: Times, serif;
 }
 
 .page-container {
@@ -30,7 +30,7 @@ body {
   padding-right: 10px;
   position: relative;
 
-  @screen sm {
+  @media (width >= 640px) {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -39,47 +39,32 @@ body {
 .page-container-bottom-padding {
   padding-bottom: 40px;
 
-  @screen sm {
+  @media (width >= 640px) {
     padding-bottom: 100px;
   }
 }
 
-.text-container {
-  max-width: 37em;
-}
-
-.image-bg {
-  position: fixed;
-  top: -240px;
-  right: -240px;
-  bottom: -240px;
-  left: -240px;
-  overflow: hidden;
-  background-color: white;
-}
-
-.image-bg__inner {
-  animation: bg-slide 8s linear infinite;
-  background-image: url(/sky.jpg);
-  background-repeat: repeat-x;
-  background-size: 50% 100%;
-  bottom: 0px;
-  filter: brightness(1.1);
-  opacity: .5;
-  left: 0px;
-  position: absolute;
-  right: 100%;
-  top: 0px;
-  width: 400%;
+.sky-bg {
+  --color-1: hsl(212, 100%, 92%);
+  --color-2: hsl(203, 100%, 95%);
+  animation: bg-slide 18s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--color-1) 0%,
+    var(--color-1) 2%,
+    var(--color-2) 50%, 
+    var(--color-1) 98%,
+    var(--color-1) 100%
+  );
+  background-size: 500% 100%;
   z-index: 0;
 }
 
 @keyframes bg-slide {
   from {
-    background-position: 0%;
+    background-position: 0% 0%;
   }
-
   to {
-    background-position: -100%;
+    background-position: -500% 0%;
   }
 }

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.4",
+    "@tailwindcss/typography": "github:tailwindcss/typography",
     "@tsparticles/engine": "^3.7.1",
     "@tsparticles/plugin-emitters": "^3.7.1",
     "@tsparticles/react": "^3.0.0",

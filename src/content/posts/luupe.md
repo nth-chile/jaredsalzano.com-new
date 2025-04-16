@@ -11,6 +11,4 @@ First, I built and shipped several iterations of their marketing blog to help es
 
 This work helped The Luupe empower hundreds of women and non-binary photographers across 50 countries by providing them with significant economic opportunities. The company has raised $3 million in seed funding, led by Wave Ventures, and collaborates with brands like Sweetgreen, Peloton, and Facebook to deliver diverse, high-quality visual content. The Luupe’s innovative approach to connecting underrepresented creators with global brands has been highlighted by investors and media outlets such as Forbes and Quartz.
 
-<br>
-
 <img alt="The Luupe home page" src="/posts/luupe/luupe-home.png" />

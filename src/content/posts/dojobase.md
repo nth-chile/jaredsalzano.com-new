@@ -9,6 +9,4 @@ A client wanted to build a community platform where professionals could create s
 
 This was one of the first fully featured React apps I built, and my first opportunity to think extensively about complex application architecture. I gained experience with a lot of things I had never done before. I encountered problems, solutions to those problems, and eventually better, more scalable solutions. I learned to appreciate the DRY (don’t repeat yourself) principle of programming, and to write reusable code that was generic enough to accommodate feature changes. By the time it was finished, I had become very familiar with using React, Redux, MongoDB, and Node.js (Express) to create full-stack applications, and had significantly evolved my understanding of scalable architecture, specifically in a rapidly-changing startup context.
 
-<br>
-
 <img alt="Dojobase website screenshot" src="/posts/dojobase/1.png" />

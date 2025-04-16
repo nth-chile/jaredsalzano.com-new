@@ -7,6 +7,11 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadEmittersPlugin } from "@tsparticles/plugin-emitters";
 import { loadSlim } from "@tsparticles/slim";
 import useMediaQuery from '@/utils/useMediaQuery';
+import 'swiper/css';
+import 'swiper/css/a11y';
+import 'swiper/css/effect-fade';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 import "@/styles/testimonials.css";
 
 const emitterDefaults = {
@@ -57,7 +62,7 @@ export default function Testimonials() {
     }, []);
 
     return (
-        <div className={`testimonials mb-4 shadow sm:shadow-none`}>
+        <div className={`testimonials pb-4 shadow-sm sm:shadow-none`}>
             <Swiper
                 autoHeight
                 effect={'fade'}
@@ -95,7 +100,7 @@ export default function Testimonials() {
                             name: "Zach Holub",
                         }
                     ].map(({ linkHref, linkText, id, name, quote, small = false }) => <SwiperSlide key={id}>
-                        <div className="bg-white sm:rounded-2xl border pt-20 pb-14 px-4 sm:px-8 flex flex-col items-center text-gray-800">
+                        <div className="bg-white sm:rounded-2xl border border-gray-200 pt-20 pb-14 px-4 sm:px-8 flex flex-col items-center text-gray-800">
                             <blockquote className={`font-bold text-balance text-center mb-6 ${small ? 'text-xl' : 'text-3xl'}`} style={{ maxWidth: small ? "800px" : "700px" }}>
                                 <p>“{quote}”</p>
                             </blockquote>
