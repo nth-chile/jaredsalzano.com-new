@@ -29,14 +29,6 @@ export default function ProjectGrid({ posts, className = '' }: { className: stri
                                     sizes="(max-width: 768px) 100vw, 50vw"
                                 />
                             )}
-                            {/* <Image
-                                className={`${frontMatter.imgClass} w-full object-cover`}
-                                src={frontMatter.featuredImage}
-                                alt={frontMatter.title}
-                                fill
-                                priority
-                                sizes="(max-width: 768px) 100vw, 50vw"
-                            /> */}
                             <h2 className="opacity-0 absolute bottom-4 pl-5 pr-6 font-semibold text-xl text-white drop-shadow-sm z-20">{frontMatter.title}</h2>
                         </article>
                     </a>

@@ -21,7 +21,7 @@ export default function Marquee({ posts, className = '' }: { className: string, 
         )
 
     return (
-        <div className={`marquee home-projects overflow-hidden flex gap-4 ${className}`}>
+        <div className={`marquee overflow-hidden flex gap-4 ${className}`}>
             <div className='shrink-0 flex gap-4 marquee-group'>{items}</div>
             <div aria-hidden className='shrink-0 flex gap-4 marquee-group'>{items}</div>
         </div>

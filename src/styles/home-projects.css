@@ -1,4 +1,4 @@
-.home-projects {
+.project-grid {
   a {
     &:hover,
     &:focus {
@@ -25,7 +25,6 @@
     transition: opacity ease-in-out 50ms;
   }
 }
-
 /* marquee */
 .marquee {
   &:hover,
@@ -35,6 +34,32 @@
               animation-play-state: paused;
           }
       }
+  }
+
+  a {
+    &:hover,
+    &:focus {
+      article:before,
+      h2 {
+        opacity: 1;
+      }
+    }
+  }
+
+  article {
+    &:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 10;
+      opacity: 0;
+      transition: opacity ease-in-out 50ms;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, .3) 100%);
+    }
+  }
+
+  h2 {
+    transition: opacity ease-in-out 50ms;
   }
 }
 

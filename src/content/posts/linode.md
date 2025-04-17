@@ -2,7 +2,7 @@
 title: Linode - Style Guide Website
 featuredImage: /posts/linode/linode-colors.png
 imgClass: object-center
-order: 5
+order: 6
 ---
 
 Before its acquisition by Akamai, Linode was a cloud service provider offering a variety of developer-friendly backend web services. I helped them create a site that documented their style guide, providing developers and non-technical editors with a reference as well as copy-pasteable, zero-dependency code blocks for use in their pages.

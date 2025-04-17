@@ -2,7 +2,7 @@
 title: Moni Jar - Mobile Savings App
 featuredImage: /posts/moni-jar/mj-rotated.png
 imgClass: object-center
-order: 9
+order: 5
 ---
 
 Moni Jar was a mobile app designed to let people collaboratively save money in a shared virtual savings jar for things like vacations, gifts, and events. I hired two developers to help me and led the development of the iOS pre-release build.
