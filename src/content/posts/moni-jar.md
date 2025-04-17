@@ -1,6 +1,6 @@
 ---
 title: Moni Jar - Mobile Savings App
-featuredImage: /posts/moni-jar/monijar-tile.png
+featuredImage: /posts/moni-jar/mj-rotated.png
 imgClass: object-center
 order: 9
 ---

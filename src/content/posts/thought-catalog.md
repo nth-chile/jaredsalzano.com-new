@@ -1,6 +1,6 @@
 ---
 title: Thought Catalog Agency - Agency Website
-featuredImage: /posts/thought-catalog/thumb.jpg
+featuredImage: /posts/thought-catalog/tc-globe.png
 imgClass: object-center
 order: 2
 ---

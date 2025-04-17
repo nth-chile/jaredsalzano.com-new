@@ -1,6 +1,6 @@
 ---
 title: Linode - Style Guide Website
-featuredImage: /posts/linode/linode-logo.svg
+featuredImage: /posts/linode/linode-colors.png
 imgClass: object-center
 order: 5
 ---

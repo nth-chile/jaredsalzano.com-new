@@ -32,7 +32,7 @@ export default async function ProjectPage({ params }: any) {
   }
 
   return (
-    <main className='prose prose-img:rounded-lg'>
+    <main className='prose prose-img:rounded'>
       <h1 className="font-serif text-2xl text-gray-600">{frontMatter.title}</h1>
       <div className="post-markdown-container" dangerouslySetInnerHTML={{ __html: html }} />
     </main>

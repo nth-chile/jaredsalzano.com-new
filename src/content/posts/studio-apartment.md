@@ -2,7 +2,7 @@
 title: Studio Apartment - Design Studio Website
 featuredImage: /posts/studio-apartment/hero6.png
 imgClass: object-left-top
-order: 4
+order: 3
 ---
 
 My brother asked me to help build the website for his design studio. We’d previously built his personal portfolio using Jekyll, so we recycled that codebase to create [studioapt.co](https://studioapt.co).

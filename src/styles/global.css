@@ -15,6 +15,7 @@ html,
 body {
   height: 100%;
   overscroll-behavior: none;
+  background-color: var(--color-orange-50);
 }
 
 body {
@@ -66,5 +67,21 @@ body {
   }
   to {
     background-position: -500% 0%;
+  }
+}
+
+.btn {
+  background: linear-gradient(133deg, hsl(175, 100%, 70%), hsl(169, 94%, 63%));
+  border: 1px solid #20e9c3;
+  letter-spacing: .01em;
+  padding: .70em .75em .75em .75em;
+  transition: background 1s ease-in-out;
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(133deg, hsl(175, 100%, 80%), hsl(169, 94%, 68%));
+    color: var(--color-gray-700);
   }
 }

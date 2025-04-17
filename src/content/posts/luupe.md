@@ -1,8 +1,8 @@
 ---
 title: The Luupe - Photography Platform
-featuredImage: /posts/luupe/luupe-logo.svg
+featuredImage: /posts/luupe/luupe-article-rotated.png
 imgClass: object-left-top
-order: 3
+order: 1
 ---
 
 As [The Luupe](https://theluupe.com/) grew their audience, they needed to launch a marketing blog to share stories and engage their creative community. Later, they expanded their vision into a full-fledged web platform to support a growing global marketplace of women and non-binary photographers.

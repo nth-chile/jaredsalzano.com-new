@@ -2,7 +2,7 @@
 title: Dojobase - Professional Community Platform
 featuredImage: /posts/dojobase/hero-rotated-2.png
 imgClass: object-center
-order: 1
+order: 4
 ---
 
 A client wanted to build a community platform where professionals could create sub-communities specific to their industry and support its subscribers by sharing their expertise, knowledge, and resources. The app featured sophisticated user access management, with role-based permissions and paid feature gating at both global and sub-community levels. It also included complex global state, a WSYWIG editor for publishing articles, and a fully-featured, Reddit-like discussion forum.
