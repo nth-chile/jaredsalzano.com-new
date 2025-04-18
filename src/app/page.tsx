@@ -46,10 +46,10 @@ export default async function Home() {
         <section aria-label="Projects">
           <ProjectGrid posts={posts} />
         </section>
-        <section className="bg-orange-50 py-4" aria-label="Testimonials">
+        <section className="page-container bg-orange-50 py-4" aria-label="Testimonials">
           <Testimonials />
         </section>
-        <section style={{ backgroundColor: "rgba(255, 255, 255, .9)" }} aria-label="Frequently asked questions">
+        <section className="page-container py-16" style={{ backgroundColor: "rgba(255, 255, 255, .9)" }} aria-label="Frequently asked questions">
           <FAQ />
         </section>
         <section className="page-container py-16" aria-label="Call to action">
