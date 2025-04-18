@@ -27,7 +27,7 @@ const emitterDefaults = {
     }
 };
 
-export default function Testimonials() {
+export default function TestimonialsSlider() {
     const [init, setInit] = useState(false);
     const { sm, md, lg } = useMediaQuery();
 
@@ -62,7 +62,7 @@ export default function Testimonials() {
     }, []);
 
     return (
-        <div className={`testimonials shadow-sm sm:shadow-none`}>
+        <div className={`testimonials-slider shadow-sm sm:shadow-none`}>
             <Swiper
                 autoHeight
                 effect={'fade'}
@@ -80,6 +80,7 @@ export default function Testimonials() {
                             id: 2,
                             quote: "Incredibly professional and nice guy to work with. Genuinely went above and beyond the product requirements.",
                             name: "Avi Muchnick",
+                            secondLine: "Cofounder of Aviary (acquired by Adobe)",
                         },
                         {
                             id: 1,
@@ -99,13 +100,14 @@ export default function Testimonials() {
                             quote: "Jared was easy to get a hold of and plan out the project with. He was flexible as we had to change things around mid-project and stuck to timelines and budget.",
                             name: "Zach Holub",
                         }
-                    ].map(({ linkHref, linkText, id, name, quote, small = false }) => <SwiperSlide key={id}>
+                    ].map(({ linkHref, linkText, id, name, quote, secondLine, small = false }) => <SwiperSlide key={id}>
                         <article className="bg-white sm:rounded-2xl border border-gray-200 pt-20 pb-14 px-4 sm:px-8 flex flex-col items-center text-gray-800">
                             <blockquote className={`font-bold text-balance text-center mb-6 ${small ? 'text-xl' : 'text-3xl'}`} style={{ maxWidth: small ? "800px" : "700px" }}>
                                 <p>“{quote}”</p>
                             </blockquote>
                             <cite className="text-center not-italic">
                                 <p className="font-bold text-xl">{name}</p>
+                                {secondLine && <span className="not-italic">{secondLine}</span>}
                                 {linkHref && <a href={linkHref} target="_blank" className="text-nowrap hover:border-b border-b-gray-800">{linkText}
                                     <svg className="inline ml-1" style={{ marginTop: -1 }} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M2.31787 9.18188L7.97472 3.52503" stroke="black" strokeWidth="1.75" strokeLinecap="square" strokeLinejoin="round" />

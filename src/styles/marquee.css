@@ -1,4 +1,29 @@
-.project-grid {
+.marquee {
+    &:hover,
+    &:focus {
+        .marquee-group {
+            @media (hover: hover) {
+                animation-play-state: paused;
+            }
+        }
+    }
+  }
+  
+  .marquee-group {
+    animation: scroll 45s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+  
+    100% {
+        transform: translateX(calc(-100% - var(--spacing) * 4));
+    }
+  }
+  
+  .projects-marquee {
     a {
       &:hover,
       &:focus {

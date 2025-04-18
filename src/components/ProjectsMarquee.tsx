@@ -1,7 +1,7 @@
 import Image from "next/image"
-import '../styles/home-projects.css';
+import "@/styles/marquee.css";
 
-export default function Marquee({ posts, className = '' }: { className: string, posts: any[] }) {
+export default function ProjectsMarquee({ posts, className = '' }: { className: string, posts: any[] }) {
     const items = posts
         .map(({ frontMatter, slug }, index) => (
             <a key={index} href={`/projects/${slug}`}>
@@ -21,7 +21,7 @@ export default function Marquee({ posts, className = '' }: { className: string, 
         )
 
     return (
-        <div className={`marquee overflow-hidden flex gap-4 ${className}`}>
+        <div className={`marquee projects-marquee overflow-hidden flex gap-4 ${className}`}>
             <div className='shrink-0 flex gap-4 marquee-group'>{items}</div>
             <div aria-hidden className='shrink-0 flex gap-4 marquee-group'>{items}</div>
         </div>

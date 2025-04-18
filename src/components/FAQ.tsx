@@ -26,16 +26,18 @@ export default async function ExpandableFAQ() {
     faq.sort((a, b) => a.filename - b.filename)
 
     return (
-        <div className="prose prose-lg">
-            <h2>Frequently asked questions</h2>
-            {faq.map(({ question, answer }, index) => (
-                <div key={index}>
-                    <h3>{question}</h3>
-                    <div dangerouslySetInnerHTML={{ __html: answer }} />
-                </div>
-            ))
-            }
-            <p>Still have questions? <a className="underline" href="mailto:jaredsalzano@gmail.com" target="_blank">Message me</a>.</p>
+        <div className="page-container">
+            <div className="prose prose-lg">
+                <h2>Frequently asked questions</h2>
+                {faq.map(({ question, answer }, index) => (
+                    <div key={index}>
+                        <h3>{question}</h3>
+                        <div dangerouslySetInnerHTML={{ __html: answer }} />
+                    </div>
+                ))
+                }
+                <p>Still have questions? <a className="underline" href="mailto:jaredsalzano@gmail.com" target="_blank">Message me</a>.</p>
+            </div>
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import '../styles/home-projects.css';
+import '../styles/home.css';
 
 export default function ProjectGrid({ posts }: { posts: any[] }) {
 

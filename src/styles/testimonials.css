@@ -1,4 +1,4 @@
-.testimonials {
+.testimonials-slider {
     @media (width >= 640px) {
         /* Match .page-container, but without mobile padding */
         padding-left: 60px;
