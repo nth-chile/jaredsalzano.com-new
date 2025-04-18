@@ -1,12 +1,15 @@
 .project {
-  img {
-    margin-bottom: 80px;
-    box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.33);
+  .featured-image {
+    @media (min-width: 1024px) {
+      width: 160%;
+      max-width: 160%;
+    }
+  }
 
+  img {
     @media (min-width: 1024px) {
       width: 120%;
       max-width: 120%;
-      margin-bottom: 0;
     }
   }
 }

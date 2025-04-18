@@ -2,7 +2,7 @@
 title: Call & Response Music Practice Tool (Passion Project)
 featuredImage: /posts/music-practice/music-practice.png
 imgClass: object-center
-order: 10
+order: 9
 ---
 
 This [2016 annual report](https://826chi-2016.jaredsalzano.com/) for Chicago nonprofit [826CHI](https://www.826chi.org/) showcases the organization’s work supporting students in developing their writing skills and helping teachers inspire their students to write.

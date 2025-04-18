@@ -62,7 +62,7 @@ export default function Testimonials() {
     }, []);
 
     return (
-        <div className={`testimonials pb-4 shadow-sm sm:shadow-none`}>
+        <div className={`testimonials shadow-sm sm:shadow-none`}>
             <Swiper
                 autoHeight
                 effect={'fade'}
@@ -100,7 +100,7 @@ export default function Testimonials() {
                             name: "Zach Holub",
                         }
                     ].map(({ linkHref, linkText, id, name, quote, small = false }) => <SwiperSlide key={id}>
-                        <div className="bg-white sm:rounded-2xl border border-gray-200 pt-20 pb-14 px-4 sm:px-8 flex flex-col items-center text-gray-800">
+                        <article className="bg-white sm:rounded-2xl border border-gray-200 pt-20 pb-14 px-4 sm:px-8 flex flex-col items-center text-gray-800">
                             <blockquote className={`font-bold text-balance text-center mb-6 ${small ? 'text-xl' : 'text-3xl'}`} style={{ maxWidth: small ? "800px" : "700px" }}>
                                 <p>“{quote}”</p>
                             </blockquote>
@@ -113,7 +113,7 @@ export default function Testimonials() {
                                     </svg>
                                 </a>}
                             </cite>
-                        </div>
+                        </article>
                     </SwiperSlide>)
                 }
                 {init && <Particles

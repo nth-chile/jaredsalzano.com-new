@@ -1,11 +1,11 @@
 import Image from "next/image"
 import '../styles/home-projects.css';
 
-export default function ProjectGrid({ posts, className = '' }: { className: string, posts: any[] }) {
+export default function ProjectGrid({ posts }: { posts: any[] }) {
 
 
     return (
-        <div className={`project-grid grid grid-cols-2 gap-0 px-0 ${className}`}>
+        <div className={`project-grid grid grid-cols-2 gap-0 px-0`}>
             {
                 posts.map(({ frontMatter, slug }, index) => (
                     <a key={index} href={`/projects/${slug}`}>

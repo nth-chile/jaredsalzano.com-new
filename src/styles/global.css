@@ -73,6 +73,7 @@ body {
 .btn {
   background: linear-gradient(133deg, hsl(175, 100%, 70%), hsl(169, 94%, 63%));
   border: 1px solid #20e9c3;
+  display: inline-block;
   letter-spacing: .01em;
   padding: .70em .75em .75em .75em;
   transition: background 1s ease-in-out;
