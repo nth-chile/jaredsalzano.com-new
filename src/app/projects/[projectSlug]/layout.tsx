@@ -9,7 +9,7 @@ export default function ProjectLayout({
   children: React.ReactNode
 }) {
   return (
-    <div>
+    <div className="bg-white/90">
       <nav className="prose page-container" style={{ maxWidth: "none" }}>
         <Link aria-label="home" className="inline-block mt-8 mb-10" href="/">Home</Link>
       </nav>
