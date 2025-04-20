@@ -32,7 +32,6 @@
     "remark-parse": "^11.0.0",
     "remark-preset-lint-markdown-style-guide": "^6.0.0",
     "remark-rehype": "^11.0.0",
-    "sass": "^1.59.2",
     "swiper": "^11.1.15",
     "tailwindcss": "^4.1.4",
     "to-vfile": "^8.0.0",
