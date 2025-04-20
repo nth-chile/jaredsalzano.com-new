@@ -5,7 +5,7 @@ imgClass: object-center
 order: 6
 ---
 
-Before its acquisition by Akamai, Linode was a cloud service provider offering a variety of developer-friendly backend web services. I helped them create a site that documented their style guide, providing developers and non-technical editors with a reference as well as copy-pasteable, zero-dependency code blocks for use in their pages.
+Before its acquisition by Akamai, Linode was a cloud service provider offering a variety of developer-friendly back-end web services. I helped them create a site that documented their style guide, providing developers and non-technical editors with a reference as well as copy-pasteable, zero-dependency code blocks for use in their pages.
 
 To provide HTML and CSS code blocks that editors could paste into any page without breaking the design, we couldn’t rely on utility classes like those in Tailwind CSS which handle cross-browser quirks behind the scenes, and we couldn’t assume the presence of a CSS reset like normalize.css. We included all necessary CSS rules directly in the code blocks, and we used prefixed class names to avoid conflicts.
 

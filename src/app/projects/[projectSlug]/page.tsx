@@ -34,7 +34,15 @@ export default async function ProjectPage({ params }: any) {
 
   return (
     <main className='prose prose-img:rounded prose-img:shadow-lg'>
-      <Image className="featured-image" src={frontMatter.featuredImage} alt="Project featured image" width={640} height={400} />
+      {frontMatter.featuredImageCaption && (
+        <figure>
+          <Image className="featured-image" src={frontMatter.featuredImage} alt="Project featured image" width={640} height={400} />
+          <figcaption>{frontMatter.featuredImageCaption}</figcaption>
+        </figure>
+      )}
+      {!frontMatter.featuredImageCaption && (
+        <Image className="featured-image" src={frontMatter.featuredImage} alt="Project featured image" width={640} height={400} />
+      )}
       <h1 className="font-serif text-3xl">{frontMatter.title}</h1>
       <div className="post-markdown-container" dangerouslySetInnerHTML={{ __html: html }} />
     </main>
