@@ -1,4 +1,4 @@
-[context.production]
+[context.new]
 publish = ".next/"
 command = "npm run build"
 
