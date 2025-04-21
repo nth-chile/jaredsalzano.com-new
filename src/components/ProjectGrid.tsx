@@ -5,7 +5,7 @@ export default function ProjectGrid({ posts }: { posts: any[] }) {
 
 
     return (
-        <div className={`project-grid grid grid-cols-2 gap-0 px-0`}>
+        <div className={`project-grid grid grid-cols-1 sm:grid-cols-2 gap-0 px-0`}>
             {
                 posts.map(({ frontMatter, slug }, index) => (
                     <a key={index} href={`/projects/${slug}`}>
@@ -18,7 +18,7 @@ export default function ProjectGrid({ posts }: { posts: any[] }) {
                                 priority
                                 sizes="(max-width: 768px) 100vw, 50vw"
                             />
-                            <h2 className="opacity-0 absolute bottom-4 pl-5 pr-6 font-semibold text-xl text-white drop-shadow-sm z-20">{frontMatter.title}</h2>
+                            <h2 className="absolute bottom-4 pl-5 pr-6 font-semibold text-xl text-white z-20">{frontMatter.title}</h2>
                         </article>
                     </a>
                 )

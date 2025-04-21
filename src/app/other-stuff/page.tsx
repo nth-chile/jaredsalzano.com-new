@@ -14,9 +14,6 @@ export default async function OtherStuff() {
                 <a target="_blank" href="https://nth-chile.github.io/platos-search/">plato’s search (game)</a>
               </li>
               <li>
-                <a target="_blank" href="https://sugarstream.live/">sugarstream</a>
-              </li>
-              <li>
                 <a href="page-mcconnell-lyrics">page lyrics</a>
               </li>
             </ul>

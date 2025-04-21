@@ -48,13 +48,13 @@ export default async function Home() {
         <section aria-label="Projects">
           <ProjectGrid posts={posts} />
         </section>
-        <section className="bg-orange-50 py-6" aria-label="Testimonials">
+        <section className="bg-orange-50 py-12" aria-label="Testimonials">
           <TestimonialsSlider />
         </section>
         <section className="py-16 bg-white/90" aria-label="Frequently asked questions">
           <FAQ />
         </section>
-        <section className="page-container py-16" aria-label="Call to action">
+        <section className="page-container py-12" aria-label="Call to action">
           <div className="prose prose-xl bg-white shadow-lg rounded-2xl p-8 mx-auto text-center">
             <h2>Let&apos;s work together</h2>
             <p>I&apos;m <b className="font-[500]">actively looking for a full-time role</b> at a thoughtful, purpose-driven startup—NYC or remote—as a senior front-end or full-stack developer. I&apos;m also <b className="font-[500]">currently taking on select freelance projects</b>, always excited to work with new people on fresh challenges.</p>
