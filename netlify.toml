@@ -1,7 +1,7 @@
-[context.new]
+[context.production]
 publish = ".next/"
 command = "npm run build"
 
-[[context.new.plugins]]
+[[context.production.plugins]]
 package = "@netlify/plugin-nextjs"
 
