@@ -1,9 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{md,js,ts,jsx,tsx}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [
-  ],
+    theme: {
+        extend: {
+            typography: {
+                DEFAULT: {
+                    css: {
+                        color: 'var(--color-gray-950)',
+                        a: {
+                            color: 'var(--color-gray-950)',
+                            // '&:hover': { color: ... },
+                        },
+                    },
+                },
+            },
+        },
+    },
 }

@@ -1,0 +1,15 @@
+.project {
+  .featured-image {
+    @media (min-width: 1024px) {
+      width: 160%;
+      max-width: 160%;
+    }
+  }
+
+  img {
+    @media (min-width: 1024px) {
+      width: 120%;
+      max-width: 120%;
+    }
+  }
+}

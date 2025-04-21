@@ -1,0 +1,39 @@
+.project-grid {
+  article {
+    @media (hover: hover) {
+      &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 10;
+        transition: opacity ease-in-out 50ms;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, .3) 100%);
+      }
+    }
+  }
+
+  h2 {
+    transition: opacity ease-in-out 50ms;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, .3);
+  }
+
+  a {
+    @media (hover: hover) {
+
+      article:before,
+      h2 {
+        opacity: 0;
+        text-shadow: none;
+      }
+
+      &:hover,
+      &:focus {
+
+        article:before,
+        h2 {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

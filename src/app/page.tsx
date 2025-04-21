@@ -1,12 +1,10 @@
-import "@/styles/home.scss"
+import "@/styles/home.css"
 import Image from "next/image"
 import getPreviewsForAllPosts from "@/utils/getPreviewsForAllPosts"
-import ImageBg from "@/components/ImageBg"
 import Footer from "@/components/Footer"
-import Marquee from "@/components/Marquee";
-import Testimonials from "@/components/Testimonials"
+import ProjectGrid from "@/components/ProjectGrid";
+import TestimonialsSlider from "@/components/TestimonialsSlider"
 import FAQ from "@/components/FAQ"
-import FAQAddHandlers from "@/components/FAQAddHandlers"
 
 function getSortedPosts(posts: any[]) {
   return [...posts].sort((a, b) => {
@@ -28,44 +26,43 @@ export default async function Home() {
 
   return (
     <>
-      <ImageBg />
       <a className="absolute right-2 underline z-10 text-blue-700" href="/other-stuff">other stuff</a>
       <main className="relative">
-        <div className="page-container pt-28">
-          <div className="text-gray-800 text-xl text-container mb-16">
-            <p className="mb-5">Hello, I&apos;m a full-stack developer based in NYC. Over the past eight years, I&apos;ve built scalable, high-performance web applications for fast-moving startups, creative agencies, and Fortune 50 companies. I&apos;m experienced with leading projects from architecture to deployment, collaborating across teams, and solving complex technical challenges. Lately, I&apos;ve been learning about LLMs, vector databases, and emerging AI cloud services.</p>
-            <p className="mb-5">I&apos;m open to freelance work, and I&apos;m looking for a full-time position at a tech company.</p>
-            <p className="mb-10">You can see my full resume <a target="_blank" href="/resume.pdf" className="text-blue-700 underline">here</a>.</p>
-            <a className="contact-btn text-gray-800 hover:text-gray-700 focus:text-gray-700 rounded-2xl font-semibold text-dark" href="mailto:jaredsalzano@gmail.com" target="_blank">Message me</a>
+        <section className="bg-white/90 pt-28" aria-label="Intro">
+          <div className="page-container flex flex-col md:flex-row items-start gap-8">
+            <Image
+              src="/linkedin.jpg"
+              alt="Jared Salzano portrait"
+              width={150}
+              height={150}
+              className="rounded-lg"
+            />
+            <div className="prose prose-xl mb-16">
+              <p><b className="font-[500]">Hi, I&apos;m a front-end-leaning full-stack developer</b> with 8+ years of experience shipping maintainable, high-performance web apps for fast-moving startups, creative agencies, and Fortune 50 companies. I take ownership of projects from planning to deployment, solve complex technical challenges, and collaborate effectively across teams. Lately, I&apos;ve been exploring LLMs and emerging AI cloud services.</p>
+              <p>I&apos;m <b className="font-[500]">actively looking for a full-time role</b> at a thoughtful, purpose-driven startup—NYC or remote—as a senior front-end or full-stack developer. I&apos;m also <b className="font-[500]">currently taking on select freelance projects</b>, always excited to work with new people on fresh challenges.</p>
+              <p className="mb-10">You can see my full resume <a target="_blank" href="/resume.pdf">here</a>.</p>
+              <a className="btn rounded-2xl" target="_blank" href="mailto:jaredsalzano@gmail.com">💬 Message me</a>
+            </div>
           </div>
-        </div>
-        <Marquee className="project-marquee mb-4">
-          {posts
-            .map(({ frontMatter, slug }, index) => (
-              <a key={index} href={`/projects/${slug}`}>
-                <article className="h-60 sm:h-72 relative rounded-2xl overflow-hidden shadow" style={{ aspectRatio: "1.6 / 1" }}>
-                  <Image
-                    className={`${frontMatter.imgClass} w-full object-cover`}
-                    src={frontMatter.featuredImage}
-                    alt={frontMatter.title}
-                    fill
-                    priority
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                  <h2 className="opacity-0 absolute bottom-4 pl-5 pr-6 font-semibold text-xl text-white drop-shadow z-20">{frontMatter.title}</h2>
-                </article>
-              </a>
-            )
-            )}
-        </Marquee>
-        <Testimonials />
-        <div style={{ backgroundColor: "rgba(255, 255, 255, .9)" }}>
+        </section>
+        <section aria-label="Projects">
+          <ProjectGrid posts={posts} />
+        </section>
+        <section className="bg-orange-50 py-12" aria-label="Testimonials">
+          <TestimonialsSlider />
+        </section>
+        <section className="py-16 bg-white/90" aria-label="Frequently asked questions">
           <FAQ />
-          {/* @ts-expect-error Async Server Component */}
-          <FAQAddHandlers />
-        </div>
-      </main>
-      <div className="relative" style={{ backgroundColor: "rgba(255, 255, 255, 0.9)" }}>
+        </section>
+        <section className="page-container py-12" aria-label="Call to action">
+          <div className="prose prose-xl bg-white shadow-lg rounded-2xl p-8 mx-auto text-center">
+            <h2>Let&apos;s work together</h2>
+            <p>I&apos;m <b className="font-[500]">actively looking for a full-time role</b> at a thoughtful, purpose-driven startup—NYC or remote—as a senior front-end or full-stack developer. I&apos;m also <b className="font-[500]">currently taking on select freelance projects</b>, always excited to work with new people on fresh challenges.</p>
+            <a className="btn rounded-2xl" target="_blank" href="mailto:jaredsalzano@gmail.com">💬 Message me</a>
+          </div>
+        </section>
+      </main >
+      <div className="relative bg-white/90">
         <Footer />
       </div>
     </>

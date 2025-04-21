@@ -1,10 +1,14 @@
 ---
 title: The Luupe - Photography Platform
-featuredImage: /posts/luupe/luupe-logo.svg
+featuredImage: /posts/luupe/luupe-article-rotated.png
 imgClass: object-left-top
-order: 3
+order: 1
 ---
 
-[The Luupe](https://theluupe.com/) is a community of photographers creating custom content for leading brands. The site started as a Wordpress blog, but as they grew into a network of photographers and brands, we built a web app that allows artists to create a portfolio, and allows brands to discover and hire artists. I made several iterations of theluupe.com that matched their visions and designs for what the product needed to be at that time. This was also my first opportunity to build a React UI library.
+As [The Luupe](https://theluupe.com/) grew their audience, they needed to launch a marketing blog to share stories and engage their creative community. Later, they expanded their vision into a full-fledged web platform to support a growing global marketplace of women and non-binary photographers.
+
+First, I built and shipped several iterations of their marketing blog to help establish an early online presence. As their community grew, I built a custom React UI library to streamline product development, and contributed to the development of a full-featured app that showcased artist portfolios, enabled networking and discoverability, incorporated paid feature access, and provided project management tools.
+
+This work helped The Luupe empower hundreds of women and non-binary photographers across 50 countries by providing them with significant economic opportunities. The company has raised $3 million in seed funding, led by Wave Ventures, and collaborates with brands like Sweetgreen, Peloton, and Facebook to deliver diverse, high-quality visual content. The Luupe’s innovative approach to connecting underrepresented creators with global brands has been highlighted by investors and media outlets such as Forbes and Quartz.
 
 <img alt="The Luupe home page" src="/posts/luupe/luupe-home.png" />

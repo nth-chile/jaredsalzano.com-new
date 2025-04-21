@@ -1,0 +1,53 @@
+.page-mcconnell-lyrics {
+  background-color: #FFFAEC;
+  color: #242321;
+  padding: 0 10px 40px;
+  box-sizing: border-box;
+  font-size: 24px;
+  line-height: 1.15;
+
+  @media (width >= 640px) {
+    padding: 60px;
+  }
+
+  h1 {
+    font-size: 39px;
+    margin: 0.67em 0 0;
+  }
+
+  ol {
+    padding: 0 1em;
+  }
+
+  li {
+    margin-bottom: .125em;
+  }
+
+  a {
+    color: #2F69FF;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: #2F69FF;
+    }
+  }
+}
+
+.page-mcconnell-lyrics__index {
+  h1 {
+    margin: 0.67em 0;
+  }
+}
+
+.page-mcconnell-lyrics__back {
+  font-size: 20px;
+}
+
+.page-mcconnell-lyrics__lyrics {
+  font-size: 20px;
+
+  @media (width >= 640px) {
+    font-size: 24px;
+  }
+}

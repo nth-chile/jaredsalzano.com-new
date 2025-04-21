@@ -1,0 +1,88 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+@config "../../tailwind.config.js";
+
+@theme {
+  --font-serif: "Times", serif;
+  --font-sans: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+:root {
+  --swiper-pagination-bottom: --spacing(5);
+}
+
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+  background-color: var(--color-orange-50);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.page-container {
+  box-sizing: border-box;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+
+  @media (width >= 640px) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.page-container-bottom-padding {
+  padding-bottom: 40px;
+
+  @media (width >= 640px) {
+    padding-bottom: 100px;
+  }
+}
+
+.sky-bg {
+  --color-1: hsl(212, 100%, 92%);
+  --color-2: hsl(203, 100%, 95%);
+  animation: bg-slide 18s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--color-1) 0%,
+    var(--color-1) 2%,
+    var(--color-2) 50%, 
+    var(--color-1) 98%,
+    var(--color-1) 100%
+  );
+  background-size: 500% 100%;
+  z-index: 0;
+}
+
+@keyframes bg-slide {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: -500% 0%;
+  }
+}
+
+.btn {
+  background: linear-gradient(133deg, hsl(175, 100%, 70%), hsl(169, 94%, 63%));
+  border: 1px solid #20e9c3;
+  display: inline-block;
+  letter-spacing: .01em;
+  padding: .70em .75em .75em .75em;
+  transition: background 1s ease-in-out;
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(133deg, hsl(175, 100%, 80%), hsl(169, 94%, 68%));
+    color: var(--color-gray-700);
+  }
+}
