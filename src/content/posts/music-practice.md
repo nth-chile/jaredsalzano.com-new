@@ -2,7 +2,7 @@
 title: Call & Response Music Practice Tool (Passion Project)
 featuredImage: /posts/music-practice/music-practice-big.png
 imgClass: object-center
-order: 9
+order: 11
 ---
 
 ## What and why?

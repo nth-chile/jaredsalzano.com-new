@@ -4,7 +4,7 @@ tileImage: /posts/sugarstream/sugarmegs-cropped-depixelated.png
 featuredImage: /posts/sugarstream/sugarmegs.gif
 featuredImageCaption: Love this banner from SugarMegs.org
 imgClass: object-bottom-right
-order: 10
+order: 12
 ---
 
 As a jam band fan, I’ve always used apps like [Relisten](https://relisten.net/) to listen to concerts. When I was learning to code and needed something to build, I made something similar—several iterations, over the years, depending on the tech or concepts I was curious about at the time.
