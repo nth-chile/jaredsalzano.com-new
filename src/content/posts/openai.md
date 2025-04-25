@@ -1,5 +1,5 @@
 ---
-title: OpenAI - Interactive Blog Articles
+title: OpenAI - Interactive Articles
 featuredImage: /posts/openai/oai-logo.svg
 imgClass: object-center
 order: 3
