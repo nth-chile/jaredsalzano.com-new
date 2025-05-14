@@ -77,10 +77,18 @@ export default function TestimonialsSlider() {
                 {
                     [
                         {
-                            id: 2,
-                            quote: "Incredibly professional and nice guy to work with. Genuinely went above and beyond the product requirements.",
-                            name: "Avi Muchnick",
-                            secondLine: "Cofounder of Aviary (acquired by Adobe)",
+                            id: 1234423,
+                            quote: "Jared was a pleasure to work with at our shared time at Elephant. We worked alongside each other with a wide range of web technologies, including React and React Native. I could count on Jared to raise important UX, engineering and feasibility considerations. Any team would be lucky to have him.",
+                            name: "Brittney Kernan",
+                            small: true,
+                            secondLine: "Team Leader & Software Engineer at Notion",
+                        },
+                        {
+                            id: 4234,
+                            quote: "Jared is one of the most creative and determined developers you will ever meet. He brings an all-world mindset to his programming, and is unflappable against challenges and roadblocks as they come up. He is an excellent choice for a development project.",
+                            name: "Adam Spunberg",
+                            small: true,
+                            secondLine: "Global Head of Operations, 100+ Accelerator, AB InBev"
                         },
                         {
                             id: 1,
@@ -89,16 +97,29 @@ export default function TestimonialsSlider() {
                             small: true
                         },
                         {
-                            id: 23,
-                            quote: "Jared has been a great resource for our firm. He promptly executes on updates to our site and is a pleasure to work with.",
-                            name: "Susie Baker",
-                            linkHref: "https://spearstreetcapital.com/",
-                            linkText: "spearstreetcapital.com"
+                            id: 54325,
+                            quote: "Jared was an outstanding software engineer on our team—technically sharp, collaborative, and always focused on delivering high-quality solutions. He consistently took initiative to solve complex problems and improve our product experience, often going above and beyond expectations. Any team would be lucky to have Jared’s combination of technical excellence and strong communication skills.",
+                            name: "David Skara",
+                            small: true,
+                            secondLine: "Product Manager at Elephant",
+                        },
+                        {
+                            id: 2,
+                            quote: "Incredibly professional and nice guy to work with. Genuinely went above and beyond the product requirements.",
+                            name: "Avi Muchnick",
+                            secondLine: "Cofounder of Aviary (acquired by Adobe)",
                         },
                         {
                             id: 3,
                             quote: "Jared was easy to get a hold of and plan out the project with. He was flexible as we had to change things around mid-project and stuck to timelines and budget.",
                             name: "Zach Holub",
+                        },
+                        {
+                            id: 23,
+                            quote: "Jared has been a great resource for our firm. He promptly executes on updates to our site and is a pleasure to work with.",
+                            name: "Susie Baker",
+                            linkHref: "https://spearstreetcapital.com/",
+                            linkText: "spearstreetcapital.com"
                         }
                     ].map(({ linkHref, linkText, id, name, quote, secondLine, small = false }) => <SwiperSlide key={id}>
                         <article className="bg-white sm:rounded-2xl border border-gray-200 pt-20 pb-14 px-4 sm:px-8 flex flex-col items-center text-gray-800">
