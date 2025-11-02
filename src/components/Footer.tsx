@@ -35,6 +35,7 @@ export default function Footer() {
           </a>
         </li>
       </ul>
+      <a className="absolute bottom-2 right-2 underline z-10 text-blue-700" href="/other-stuff">other stuff</a>
     </footer>
   )
 }
