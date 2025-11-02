@@ -58,15 +58,12 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
-        <Script id="analytics" strategy="afterInteractive">
-          {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-            
-              gtag('config', 'UA-105812256-1');
-          `}
-        </Script>
+        <Script
+          src="https://cdn.counter.dev/script.js"
+          data-id="588e79c0-02ae-4811-b033-59f6034fd66f"
+          data-utcoffset="-4"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
