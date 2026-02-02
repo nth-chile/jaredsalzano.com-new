@@ -1,70 +1,199 @@
-import "@/styles/home.css"
-import Image from "next/image"
-import getPreviewsForAllPosts from "@/utils/getPreviewsForAllPosts"
-import Footer from "@/components/Footer"
+import "@/styles/home.css";
+import getPreviewsForAllPosts from "@/utils/getPreviewsForAllPosts";
+import Footer from "@/components/Footer";
 import ProjectGrid from "@/components/ProjectGrid";
-import TestimonialsSlider from "@/components/TestimonialsSlider"
-import NavLink from "@/components/NavLink"
-import ContactButton from "@/components/ContactButton"
-import CTASection from "@/components/CTASection"
-
-function getSortedPosts(posts: any[]) {
-  return [...posts].sort((a, b) => {
-    if (a.frontMatter.order < b.frontMatter.order) {
-      return -1;
-    }
-
-    if (a.frontMatter.order > b.frontMatter.order) {
-      return 1;
-    }
-
-    return 0;
-  })
-}
+import ArticlePreview from "@/components/ArticlePreview";
+import TestimonialsSlider from "@/components/TestimonialsSlider";
+import NavLink from "@/components/NavLink";
+import ContactButton from "@/components/ContactButton";
+import CTASection from "@/components/CTASection";
+import ContinuousImage from "@/components/ContinuousImage";
+import Image from "next/image";
 
 export default async function Home() {
-  let posts = await getPreviewsForAllPosts()
-  posts = getSortedPosts(posts)
+  const posts = await getPreviewsForAllPosts();
+  const postsMap = new Map(posts.map((post) => [post.slug, post]));
+  const getPostsBySlug = (slugs: string[]) =>
+    slugs.map((slug) => postsMap.get(slug)).filter(Boolean);
 
   return (
     <>
-      <main className="relative">
-        <section className="bg-white/90 pb-16" aria-label="Intro">
+      <main className="relative bg-white/90 ">
+        <section className="pb-16" aria-label="Intro">
           <div className="max-w-4xl mx-auto px-10 sm:px-16">
             <div className="pt-8 mb-8 flex gap-4 items-center justify-end">
               <NavLink href="/faq">FAQ</NavLink>
               <ContactButton />
             </div>
             <div className="mb-8">
-              <Image
+              <ContinuousImage
                 src="/linkedin.jpg"
                 alt="Jared Salzano portrait"
                 width={190}
                 height={190}
-                className="rounded-lg"
+                radius={0.25}
+                shadow
+                material3d
               />
             </div>
             <div className="prose prose-lg">
-              <p><b className="font-[500]">Hi. I&apos;m a front-end-leaning full-stack developer</b> with 8+ years of experience shipping maintainable, high-performance web apps for fast-moving startups, creative agencies, and FAANG & Fortune 50 companies. I take ownership of projects from planning to deployment, collaborate effectively across teams, and love solving complex technical challenges. Lately, I&apos;ve been exploring LLMs and emerging AI cloud services.</p>
-              <p>I&apos;m <b className="font-[500]">actively looking for a full-time role</b> at a thoughtful, purpose-driven startup—NYC or remote—as a senior front-end or full-stack developer. I&apos;m also <b className="font-[500]">currently taking on select freelance projects</b>, always excited to work with new people on fresh challenges.</p>
-              <p>You can see my full resume <a target="_blank" href="/resume.pdf">here</a>.</p>
+              <p>
+                <b className="font-[500]">
+                  Hi. I&apos;m a front-end-leaning full-stack developer
+                </b>{" "}
+                with 8+ years of experience shipping maintainable,
+                high-performance web apps for fast-moving startups, creative
+                agencies, and FAANG & Fortune 50 companies. I take ownership of
+                projects from planning to deployment, collaborate effectively
+                across teams, and love solving complex technical challenges.
+                Lately, I&apos;ve been exploring LLMs and emerging AI cloud
+                services.
+              </p>
+              <p>
+                I&apos;m{" "}
+                <b className="font-[500]">
+                  actively looking for a full-time role
+                </b>{" "}
+                at a thoughtful, purpose-driven startup—NYC or remote—as a
+                senior front-end or full-stack developer. I&apos;m also{" "}
+                <b className="font-[500]">
+                  currently taking on select freelance projects
+                </b>
+                , always excited to work with new people on fresh challenges.
+              </p>
+              <p>
+                You can see my full resume{" "}
+                <a target="_blank" href="/resume.pdf">
+                  here
+                </a>
+                .
+              </p>
             </div>
           </div>
         </section>
-        <section aria-label="Projects">
-          <ProjectGrid posts={posts} />
+        <section className="page-container py-16" aria-label="Experience">
+          <div className="prose prose-lg">
+            <h1>Experience</h1>
+            <h2>Huge Inc. & Elephant</h2>
+            <p>
+              Over the past several years, I&apos;ve been fortunate to work with
+              sister companies{" "}
+              <a href="https://www.hugeinc.com/" target="_blank">
+                Huge Inc.
+              </a>{" "}
+              &{" "}
+              <a href="https://www.elephant.is/" target="_blank">
+                Elephant
+              </a>{" "}
+              on a variety of contract projects. Each engagement has brought new
+              challenges, creative problem-solving, and the opportunity to
+              collaborate with talented designers, developers, and strategists.
+            </p>
+          </div>
+          <div className="space-y-8 my-8">
+            {getPostsBySlug([
+              "openai",
+              "apple",
+              "comcast",
+              "blackstone",
+              "elephant-website",
+            ])
+              .filter((post) => post !== undefined)
+              .map((post, index) => (
+                <ArticlePreview
+                  key={index}
+                  frontMatter={post.frontMatter}
+                  slug={post.slug}
+                  hasContent={post.hasContent}
+                />
+              ))}
+          </div>
+          <div className="prose prose-lg mt-16">
+            <h2>Direct Client Work</h2>
+            <p>
+              Over the years, I&apos;ve worked with a range of companies and
+              organizations on projects spanning web development, design
+              systems, and creative technology.
+            </p>
+          </div>
+          <div className="space-y-8 my-8">
+            {getPostsBySlug([
+              "luupe",
+              "thought-catalog",
+              "studio-apartment",
+              "dojobase",
+              "linode",
+              "tolli",
+              "moni-jar",
+              "826chi-2016",
+              "826chi-2017",
+            ])
+              .filter((post) => post !== undefined)
+              .map((post, index) => (
+                <ArticlePreview
+                  key={index}
+                  frontMatter={post.frontMatter}
+                  slug={post.slug}
+                  hasContent={post.hasContent}
+                />
+              ))}
+          </div>
+        </section>
+
+        <section className="page-container py-16" aria-label="Passion Projects">
+          <div className="prose prose-lg">
+            <h1>Passion Projects</h1>
+          </div>
+          <div className="space-y-8 my-8">
+            {getPostsBySlug(["music-practice", "sugarstream", "fs-shows"])
+              .filter((post) => post !== undefined)
+              .map((post, index) => (
+                <ArticlePreview
+                  key={index}
+                  frontMatter={post.frontMatter}
+                  slug={post.slug}
+                  hasContent={post.hasContent}
+                />
+              ))}
+          </div>
+        </section>
+
+        <section className="page-container py-16" aria-label="Resume">
+          <div className="prose prose-lg">
+            <h1>Resume</h1>
+            <p>
+              You can see my full resume{" "}
+              <a target="_blank" href="/resume.pdf">
+                here
+              </a>
+              .
+            </p>
+          </div>
         </section>
         <section className="bg-orange-50 py-12" aria-label="Testimonials">
           <TestimonialsSlider />
         </section>
         <CTASection
-          heading="Let&apos;s work together"
-          description={<>I&apos;m <b className="font-[500]">actively looking for a full-time role</b> at a thoughtful, purpose-driven startup—NYC or remote—as a senior front-end or full-stack developer. I&apos;m also <b className="font-[500]">currently taking on select freelance projects</b>, always excited to work with new people on fresh challenges.</>}
+          heading="Let's work together"
+          description={
+            <>
+              I&apos;m{" "}
+              <b className="font-[500]">
+                actively looking for a full-time role
+              </b>{" "}
+              at a thoughtful, purpose-driven startup—NYC or remote—as a senior
+              front-end or full-stack developer. I&apos;m also{" "}
+              <b className="font-[500]">
+                currently taking on select freelance projects
+              </b>
+              , always excited to work with new people on fresh challenges.
+            </>
+          }
         />
-      </main >
+      </main>
       <div className="relative bg-white/90">
         <Footer />
       </div>
     </>
-  )
+  );
 }

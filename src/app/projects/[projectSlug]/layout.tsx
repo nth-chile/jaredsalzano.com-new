@@ -2,7 +2,7 @@ import "@/styles/global.css"
 import MakeProjectLinksOpenInNewTab from "@/components/MakeProjectLinksOpenInNewTab"
 import NavLink from "@/components/NavLink"
 import Footer from "@/components/Footer"
-import { getNextProject } from "./page"
+import { getNextProject } from "@/utils/getNextProject"
 
 export default async function ProjectLayout({
   children,

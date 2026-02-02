@@ -1,8 +1,8 @@
 ---
-title: fs-shows - Concert Streaming Library (Passion Project)
+title: fs-shows - Concert Streaming Library
 featuredImage: /posts/fs-shows/fs-shows-4.png
 imgClass: object-bottom-left
-order: 13
+excerpt: A flexible npm library that generates a browsing and streaming experience from a remote filesystem, using filename conventions to organize concerts.
 ---
 
 As a jam band fan, I’ve always used apps like [Relisten](https://relisten.net/) to listen to concerts. When I was learning to code and needed something to build, I made something similar—several iterations, over the years, depending on the tech or concepts I was curious about at the time.

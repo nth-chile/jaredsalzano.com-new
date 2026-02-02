@@ -2,7 +2,7 @@
 title: The Luupe - Photography Platform
 featuredImage: /posts/luupe/luupe-article-rotated.png
 imgClass: object-left-top
-order: 1
+excerpt: Built a full-featured web platform and marketing blog for a global marketplace empowering hundreds of women and non-binary photographers across 50 countries to connect with brands like Sweetgreen, Peloton, and Facebook.
 ---
 
 As [The Luupe](https://theluupe.com/) grew their audience, they needed to launch a marketing blog to share stories and engage their creative community. Later, they expanded their vision into a full-fledged web platform to support a growing global marketplace of women and non-binary photographers.

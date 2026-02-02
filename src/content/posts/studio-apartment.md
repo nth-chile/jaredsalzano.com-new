@@ -2,7 +2,7 @@
 title: Studio Apartment - Design Studio Website
 featuredImage: /posts/studio-apartment/hero6.png
 imgClass: object-left-top
-order: 4
+excerpt: Built a design studio portfolio website using Jekyll and CSS Grid, generating case studies from Markdown files with responsive image loading for optimal performance.
 ---
 
 My brother asked me to help build the website for his design studio. We’d previously built his personal portfolio using Jekyll, so we recycled that codebase to create [studioapt.co](https://studioapt.co).
